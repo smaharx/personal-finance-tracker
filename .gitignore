@@ -1,0 +1,91 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+
+# ======================
+# VS Code
+# ======================
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# ======================
+# Jupyter
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# OS junk
+# ======================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ======================
+# Git
+# ======================
+*.orig
+*.rej
+
+# ======================
+# Environment / secrets
+# ======================
+.env
+.env.*
+!.env.example
+
+# ======================
+# Caches / temp
+# ======================
+.cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# ======================
+# Editor swap files
+# ======================
+*.swp
+*.swo
+*~
+.whl
+
+.env
+__pycache__/
+temp_data_*/
+temp_chroma_db_*/
+chroma_storage/

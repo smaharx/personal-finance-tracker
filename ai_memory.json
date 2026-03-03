@@ -1,0 +1,44 @@
+{
+    "Food": [
+        "mcdonalds",
+        "burger",
+        "pizza",
+        "starbucks",
+        "cafe",
+        "foodpanda",
+        "kfc",
+        "biryani"
+    ],
+    "Transport": [
+        "uber",
+        "gas",
+        "shell",
+        "parking",
+        "careem",
+        "indrive",
+        "bykea"
+    ],
+    "Utilities": [
+        "electric",
+        "water",
+        "internet",
+        "netflix",
+        "ptcl",
+        "k-electric",
+        "sui gas"
+    ],
+    "Housing": [
+        "rent",
+        "leasing",
+        "mortgage",
+        "apartments"
+    ],
+    "Shopping": [
+        "daraz",
+        "clothing",
+        "amazon",
+        "mall",
+        "khaadi",
+        "gul ahmed"
+    ]
+}
