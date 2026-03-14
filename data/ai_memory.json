@@ -7,7 +7,10 @@
         "cafe",
         "foodpanda",
         "kfc",
-        "biryani"
+        "biryani",
+        "maani",
+        "groceries",
+        "supermarket"
     ],
     "Transport": [
         "uber",
@@ -16,22 +19,28 @@
         "parking",
         "careem",
         "indrive",
-        "bykea"
+        "bykea",
+        "petrol",
+        "toll",
+        "bus"
     ],
     "Utilities": [
         "electric",
         "water",
         "internet",
-        "netflix",
         "ptcl",
         "k-electric",
-        "sui gas"
+        "sui gas",
+        "mobile",
+        "jazz",
+        "zong"
     ],
     "Housing": [
         "rent",
         "leasing",
         "mortgage",
-        "apartments"
+        "apartments",
+        "maintenance"
     ],
     "Shopping": [
         "daraz",
@@ -39,6 +48,33 @@
         "amazon",
         "mall",
         "khaadi",
-        "gul ahmed"
+        "gul ahmed",
+        "outfitters",
+        "shoes"
+    ],
+    "Entertainment": [
+        "netflix",
+        "spotify",
+        "cinema",
+        "movie",
+        "gaming",
+        "steam"
+    ],
+    "Healthcare": [
+        "pharmacy",
+        "clinic",
+        "hospital",
+        "doctor",
+        "medicine",
+        "chughtai",
+        "agha khan"
+    ],
+    "Income": [
+        "salary",
+        "payroll",
+        "deposit",
+        "freelance",
+        "upwork",
+        "fiverr"
     ]
 }

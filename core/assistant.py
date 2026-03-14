@@ -58,3 +58,31 @@ class FinanceAssistant:
     def health_check(self):
 
         health_check(self.data, self.budget_limit, self.monthly_aggregates)
+
+
+        
+    def teach_the_bot(self):
+        print("\n---Teach the AI ---")
+        category = input("Enter the category (e.g., Food, Transport, Rent): ").strip()
+        keyword = input(f"Enter a keyword for {category} (e.g., walmart, uber): ").strip().lower()
+
+        if not category or not keyword:
+            print("Input cannot be empty. Skipping.")
+            return
+
+        # Create the category if it doesn't exist yet
+        if category not in self.category_keywords:
+            self.category_keywords[category] = []
+
+        # Add the keyword to the AI's memory
+        if keyword not in self.category_keywords[category]:
+            self.category_keywords[category].append(keyword)
+            
+            # Save it to the JSON file using your memory manager
+            save_memory(self.category_keywords)
+            print(f"Got it! I will now remember that '{keyword}' belongs to {category}.")
+            
+            # Re-train the AI immediately so it gets smarter right now
+            self.classifier = train_classifier(self.category_keywords)
+        else:
+            print(f"I already know that '{keyword}' belongs to {category}!")    
