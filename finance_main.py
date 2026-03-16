@@ -30,7 +30,7 @@ def main():
             except ValueError:
                 print("Invalid input. Please enter a valid number (e.g., 50000).")
 
-    print(f"\Monthly Budget set to: ${budget:,.2f}")
+    print(f"\nMonthly Budget set to: ${budget:,.2f}")
     
     # 2. Boot up the Assistant
     time.sleep(0.5) # Gives a cool, slight loading effect
@@ -38,7 +38,7 @@ def main():
 
     # 3. Load Data and Train the Predictor
     if not bot.load_data("data/my_expenses.csv"):
-        print("\CRITICAL: Could not load expense data. Shutting down.")
+        print("\nCRITICAL: Could not load expense data. Shutting down.")
         sys.exit(1)
 
     # Automatically train the forecaster in the background

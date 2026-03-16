@@ -1,85 +1,90 @@
 import pandas as pd
-import numpy as np
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.metrics import mean_absolute_error
+import logging
+
+# Suppress Prophet's background chatter to keep the terminal clean
+logging.getLogger('cmdstanpy').setLevel(logging.WARNING)
+logging.getLogger('prophet').setLevel(logging.WARNING)
+
+try:
+    from prophet import Prophet
+except ImportError:
+    print("Error: Prophet library not found. Please run: pip install prophet")
+    Prophet = None
 
 def train_model(data):
-    """Trains a Linear Regression model on monthly spending trends."""
-    if data is None or data.empty:
+    """Trains a Meta Prophet model on monthly spending trends."""
+    if Prophet is None or data is None or data.empty:
         return None, None
 
     df = data.copy()
-    df = df.sort_values("Date")
-    df = df.set_index("Date")
+    df['Date'] = pd.to_datetime(df['Date'])
     
     # Group data by month
     try:
-        monthly = df.resample("ME")["Amount"].sum().reset_index()
+        monthly = df.set_index('Date').resample("ME")["Amount"].sum().reset_index()
     except TypeError:
-        monthly = df.resample("M")["Amount"].sum().reset_index()
+        monthly = df.set_index('Date').resample("M")["Amount"].sum().reset_index()
         
-    # Safety Check: ML needs at least 2 data points (months) to draw a trendline!
     if len(monthly) < 2:
-        print("Not enough historical data to train the forecasting model. (Need at least 2 months)")
+        print("Warning: Not enough historical data to train Prophet. (Need at least 2 months)")
         return None, monthly
 
-    monthly["Month_Index"] = np.arange(len(monthly))
-    X = monthly[["Month_Index"]]
-    y = monthly["Amount"]
+    # PROPHET REQUIREMENT: Columns MUST be named 'ds' (datestamp) and 'y' (target)
+    prophet_df = monthly.rename(columns={"Date": "ds", "Amount": "y"})
     
-    model = LinearRegression()
-    model.fit(X, y)
+    # Initialize and train Prophet 
+    # (We turn off yearly seasonality because we don't have multiple years of data yet)
+    model = Prophet(yearly_seasonality=False, weekly_seasonality=False, daily_seasonality=False)
+    model.fit(prophet_df)
     
-    return model, monthly
+    return model, prophet_df
 
+def predict_future(model, prophet_df, months_ahead=3):
+    """Predicts future spending ranges using Meta Prophet."""
+    print(f"\n--- PROPHET AI FORECAST (Next {months_ahead} Months) ---")
 
-def predict_future(model, monthly_aggregates, months_ahead=3):
-    """Predicts future spending based on the trained model."""
-    print("\n" + "="*45)
-    print(f"FINANCIAL FORECAST (Next {months_ahead} Months)")
-    print("="*45)
-
-    if model is None or monthly_aggregates is None or len(monthly_aggregates) < 2:
-        print("Cannot generate forecast. Need more historical data.")
-        print("="*45 + "\n")
+    if model is None or prophet_df is None or len(prophet_df) < 2:
+        print("Error: Cannot generate forecast. Model not trained.\n")
         return
 
-    last_month_index = monthly_aggregates['Month_Index'].max()
-    future_indices = np.arange(last_month_index + 1, last_month_index + 1 + months_ahead).reshape(-1, 1)
-    future_df = pd.DataFrame(future_indices, columns=['Month_Index'])
+    # Ask Prophet to generate future dates ('MS' = Month Start)
+    future = model.make_future_dataframe(periods=months_ahead, freq='MS')
+    forecast = model.predict(future)
     
-    predictions = model.predict(future_df)
+    # Filter out the past dates so we only print the future predictions
+    future_forecast = forecast[forecast['ds'] > prophet_df['ds'].max()]
     
-    for i, pred in enumerate(predictions):
-        last_date = monthly_aggregates['Date'].max()
-        month_date = last_date + pd.DateOffset(months=i+1)
-        # Prevent the AI from predicting negative spending
-        display_pred = max(pred, 0)
-        print(f"{month_date.strftime('%B %Y'):<15} : Predicted Spend ${display_pred:,.2f}")
+    for _, row in future_forecast.iterrows():
+        month_date = row['ds']
+        # Prophet generates yhat (guess), yhat_lower (minimum), and yhat_upper (maximum)
+        pred = max(row['yhat'], 0)
+        lower = max(row['yhat_lower'], 0)
+        upper = max(row['yhat_upper'], 0)
+        
+        print(f"{month_date.strftime('%B %Y'):<15}")
+        print(f"   Estimated : ${pred:,.2f}")
+        print(f"   Range     : ${lower:,.2f} - ${upper:,.2f}\n")
     
-    print("="*45 + "\n")
-    return predictions
+    return forecast
 
+def check_accuracy(model, prophet_df):
+    """Tests Prophet's accuracy on historical data."""
+    print("\n--- PROPHET MODEL ACCURACY REPORT ---")
 
-def check_accuracy(model, monthly_aggregates):
-    """Tests how accurate the AI's predictions are on historical data."""
-    print("\n" + "="*45)
-    print("AI MODEL ACCURACY REPORT")
-    print("="*45)
-
-    if model is None or monthly_aggregates is None or len(monthly_aggregates) < 2:
-        print("Model not trained. Need more historical data to check accuracy.")
-        print("="*45 + "\n")
+    if model is None or prophet_df is None or len(prophet_df) < 2:
+        print("Error: Model not trained. Cannot check accuracy.\n")
         return
 
-    X = monthly_aggregates[['Month_Index']]
-    y_real = monthly_aggregates['Amount']
-    y_pred = model.predict(X)
+    # Prophet tests itself against your historical data
+    forecast = model.predict(prophet_df)
+    
+    y_real = prophet_df['y']
+    y_pred = forecast['yhat']
     
     mae = mean_absolute_error(y_real, y_pred)
     mean_actual = y_real.mean()
     
-    # Calculate percentage error safely
     if mean_actual > 0:
         pct_error = (mae / mean_actual) * 100
     else:
@@ -87,12 +92,9 @@ def check_accuracy(model, monthly_aggregates):
 
     print(f"Average Margin of Error : ${mae:,.2f}")
     
-    # Give a dynamic performance grade based on the error percentage
     if pct_error < 10:
-        print(f"Accuracy Grade          : EXCELLENT ({pct_error:.1f}% error)")
+        print(f"Accuracy Grade          : EXCELLENT ({pct_error:.1f}% error)\n")
     elif pct_error < 20:
-        print(f"Accuracy Grade          : GOOD ({pct_error:.1f}% error)")
+        print(f"Accuracy Grade          : GOOD ({pct_error:.1f}% error)\n")
     else:
-        print(f"Accuracy Grade          : NEEDS MORE DATA ({pct_error:.1f}% error)")
-        
-    print("="*45 + "\n")
+        print(f"Accuracy Grade          : NEEDS MORE DATA ({pct_error:.1f}% error)\n")
