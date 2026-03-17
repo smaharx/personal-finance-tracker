@@ -1,3 +1,4 @@
+from ml.anomaly_detector import detect_anomalies
 from core.assistant import FinanceAssistant
 import sys
 import time
@@ -43,7 +44,6 @@ def main():
 
     # Automatically train the forecaster in the background
     bot.train_forecast()
-
     # 4. The Interactive Main Menu Loop
     while True:
         print("\n" + "="*55)
@@ -54,10 +54,11 @@ def main():
         print("[3] AI Financial Forecast & Accuracy")
         print("[4] Show Interactive Donut Chart")
         print("[5] Teach AI a New Category Keyword")
-        print("[6] Exit Program")
+        print("[6] Run AI Anomaly Detection")
+        print("[7] Exit Program")
         print("-" * 55)
         
-        menu_choice = input("Enter your choice (1-6): ").strip()
+        menu_choice = input("Enter your choice (1-7): ").strip()
 
         if menu_choice == '1':
             bot.analyze_spending()
@@ -71,6 +72,8 @@ def main():
         elif menu_choice == '5':
             bot.teach_the_bot()
         elif menu_choice == '6':
+           detect_anomalies(bot.data)   
+        elif menu_choice == '7':
             print("\nSaving AI memory and shutting down. Have a great day!\n")
             break
         else:
