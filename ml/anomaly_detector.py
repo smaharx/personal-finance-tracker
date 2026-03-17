@@ -17,6 +17,8 @@ def detect_anomalies(data, threshold_multiplier=3.0, min_amount=50.0):
         cat = row['Category'] 
         amount = row['Amount']
 
+        desc = row.get('Description', 'Unknown')
+
         try:
             date = pd.to_datetime(row['Date']).strftime('%b, %d, %Y')
         except Exception:
@@ -27,6 +29,7 @@ def detect_anomalies(data, threshold_multiplier=3.0, min_amount=50.0):
             if avg_amount > 0 and amount >= (avg_amount * threshold_multiplier) and amount >=min_amount:
                 print(f"ALERT: Unusually high '{cat}' expense detected.")
                 print(f"   Date   : {date}")
+                print(f"   Item   : {desc}")
                 print(f"   Amount : ${amount:,.2f} (Normal Average: ~${avg_amount:,.2f})")
                 print("-" * 45)
                 anomoly_found += 1
