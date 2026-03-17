@@ -54,7 +54,14 @@ def predict_future(model, prophet_df, months_ahead=3):
     
     # Filter out the past dates so we only print the future predictions
     future_forecast = forecast[forecast['ds'] > prophet_df['ds'].max()]
-    
+   # 1. Print the Header
+    print("\n" + "="*75)
+    print("PROPHET AI FORECAST (Next 3 Months)")
+    print("="*75)
+    print(f"{'Month':<14} | {'Estimated Spend':<16} | {'Safe Low End':<15} | {'Danger High End':<16}")
+    print("-" * 75)
+
+    # 2. Loop through the forecast and print the aligned rows
     for _, row in future_forecast.iterrows():
         month_date = row['ds']
         # Prophet generates yhat (guess), yhat_lower (minimum), and yhat_upper (maximum)
@@ -62,9 +69,13 @@ def predict_future(model, prophet_df, months_ahead=3):
         lower = max(row['yhat_lower'], 0)
         upper = max(row['yhat_upper'], 0)
         
-        print(f"{month_date.strftime('%B %Y'):<15}")
-        print(f"   Estimated : ${pred:,.2f}")
-        print(f"   Range     : ${lower:,.2f} - ${upper:,.2f}\n")
+        month_str = month_date.strftime('%B %Y')
+        
+        # The <14 aligns text left, the >15 aligns numbers right so decimals stack!
+        print(f"{month_str:<14} | ${pred:>15,.2f} | ${lower:>14,.2f} | ${upper:>15,.2f}")
+
+    # 3. Print the Footer
+    print("="*75 + "\n")
     
     return forecast
 
