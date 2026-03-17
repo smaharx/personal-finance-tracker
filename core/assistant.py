@@ -14,6 +14,7 @@ class FinanceAssistant:
     def __init__(self, budget_limit):
 
         self.budget_limit = budget_limit
+        self.category_budgets = {}
         self.data = None
         self.model = None
         self.classifier = None
@@ -22,6 +23,11 @@ class FinanceAssistant:
 
         self.classifier = train_classifier(self.category_keywords)
 
+
+    def set_category_budget(self, category, amount):
+        """Sets a specific spending limit for a category."""
+        self.category_budgets[category] = amount
+        print(f"Budget for '{category}' set to ${amount:,.2f}")
 
     def load_data(self, filepath):
 
@@ -57,7 +63,7 @@ class FinanceAssistant:
 
     def health_check(self):
 
-        health_check(self.data, self.budget_limit, self.monthly_aggregates)
+        health_check(self)
 
 
         

@@ -1,55 +1,48 @@
 import pandas as pd
 
-def health_check(data, budget_limit, monthly_aggregates):
+def health_check(bot): # Changed parameter name to 'bot' for clarity
     print("\n" + "="*45)
-    print("FINANCIAL HEALTH DASHBOARD")
+    print("AI FINANCIAL HEALTH DASHBOARD")
     print("="*45)
 
-    if data is None or data.empty:
-        print("No data available for health check.")
+    if bot.data is None or bot.data.empty:
+        print("No data loaded to perform health check.")
         return
 
-    # BUG FIX: Find the most recent month in your actual data, 
-    # not the real-world calendar. This prevents the $0.0 bug!
-    latest_date = data["Date"].max()
-    latest_month_str = latest_date.strftime("%Y-%m")
-    display_month = latest_date.strftime("%B %Y")
-
-    # Filter data for that specific month
-    month_data = data[data["Date"].dt.strftime("%Y-%m") == latest_month_str]
-    spent = month_data["Amount"].sum()
-    remaining = budget_limit - spent
+    # 1. Prepare Data
+    bot.data['Date'] = pd.to_datetime(bot.data['Date'])
+    current_month = bot.data['Date'].max().month
+    current_year = bot.data['Date'].max().year
     
-    # Calculate percentage for the visual bar
-    if budget_limit > 0:
-        percent_spent = (spent / budget_limit) * 100
-    else:
-        percent_spent = 0
+    monthly_data = bot.data[(bot.data['Date'].dt.month == current_month) & 
+                             (bot.data['Date'].dt.year == current_year)]
 
-    # Print the beautifully formatted dashboard
-    print(f"Active Month : {display_month}")
-    print(f"Total Budget : ${budget_limit:,.2f}")
-    print(f"Total Spent  : ${spent:,.2f}")
+    total_spent = monthly_data['Amount'].sum()
+    
+    # 2. Total Budget Check (Using 'budget_limit' to match assistant.py)
+    print(f"Active Month : {bot.data['Date'].max().strftime('%B %Y')}")
+    print(f"Total Budget : ${bot.budget_limit:,.2f}")
+    print(f"Total Spent  : ${total_spent:,.2f}")
+    
+    status = "SAFE" if total_spent <= bot.budget_limit else "OVER BUDGET!"
+    print(f"Status       : {status}")
     print("-" * 45)
 
-    if remaining >= 0:
-        print(f"Status       : SAFE")
-        print(f"Remaining    : ${remaining:,.2f}")
-    else:
-        print(f"Status       : OVER BUDGET!")
-        print(f"Overspent by : ${abs(remaining):,.2f}")
+    # 3. Granular Category Check
+    if bot.category_budgets:
+        print("CATEGORY SPECIFIC BREAKDOWN:")
+        cat_spent = monthly_data.groupby('Category')['Amount'].sum()
 
-    # Bonus: Draw an ASCII Progress Bar in the terminal
-    bar_length = 20
-    filled_length = int(bar_length * min(percent_spent, 100) / 100)
-    bar = '█' * filled_length + '-' * (bar_length - filled_length)
-    
-    # Change color-coding text based on how much is spent
-    if percent_spent > 100:
-        print(f"\nBudget Used: [{bar}] 🔴 {percent_spent:.1f}% (DANGER)")
-    elif percent_spent > 85:
-        print(f"\nBudget Used: [{bar}] 🟡 {percent_spent:.1f}% (WARNING)")
+        for cat, limit in bot.category_budgets.items():
+            spent = cat_spent.get(cat, 0)
+            diff = limit - spent
+            percent = (spent / limit) * 100 if limit > 0 else 0
+            
+            icon = "✅" if diff >= 0 else "🔴"
+            status_text = "Safe" if diff >= 0 else "OVERSPENT!"
+            
+            print(f"{icon} {cat:<12}: Spent ${spent:>9,.2f} / Limit ${limit:>9,.2f} ({percent:>5.1f}%) - {status_text}")
     else:
-        print(f"\nBudget Used: [{bar}] 🟢 {percent_spent:.1f}% (GOOD)")
-        
+        print("(No category-specific budgets set yet.)")
+
     print("="*45 + "\n")

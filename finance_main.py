@@ -55,10 +55,11 @@ def main():
         print("[4] Show Interactive Donut Chart")
         print("[5] Teach AI a New Category Keyword")
         print("[6] Run AI Anomaly Detection")
-        print("[7] Exit Program")
+        print("[7] Set Category-Specific Budgets")
+        print("[8] Exit Program")
         print("-" * 55)
         
-        menu_choice = input("Enter your choice (1-7): ").strip()
+        menu_choice = input("Enter your choice (1-8): ").strip()
 
         if menu_choice == '1':
             bot.analyze_spending()
@@ -72,12 +73,26 @@ def main():
         elif menu_choice == '5':
             bot.teach_the_bot()
         elif menu_choice == '6':
-           detect_anomalies(bot.data)   
+           detect_anomalies(bot.data)  
         elif menu_choice == '7':
+            # Show existing categories to help the user choose
+            if bot.data is not None:
+                cats = bot.data['Category'].unique()
+                print(f"\nExisting Categories: {', '.join(cats)}")
+                
+                target_cat = input("Enter the category to set a budget for: ").strip()
+                try:
+                    limit_amt = float(input(f"Enter monthly limit for {target_cat} ($): "))
+                    bot.set_category_budget(target_cat, limit_amt)
+                except ValueError:
+                    print("Invalid amount. Please enter a number.")
+            else:
+                print("Please load data first.")    
+        elif menu_choice == '8':
             print("\nSaving AI memory and shutting down. Have a great day!\n")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 6.")
+            print("Invalid choice. Please enter a number between 1 and 8.")
 
 
 if __name__ == "__main__":
