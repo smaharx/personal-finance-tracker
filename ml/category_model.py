@@ -1,43 +1,59 @@
-from sklearn.feature_extraction.text import CountVectorizer
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import make_pipeline
+from sklearn.metrics import accuracy_score
 
-def train_classifier(category_keywords):
-    """Trains a Naive Bayes NLP model to categorize transactions."""
-    print("\n" + "="*45)
-    print("BOOTING AI CATEGORIZATION ENGINE...")
-    
-    training_texts = []
-    training_labels = []
-    
-    # Safety Check: If memory is totally empty, give it a placeholder
-    if not category_keywords:
-        category_keywords = {'Other': ['unknown']}
-        
-    for category, keywords in category_keywords.items():
-        for word in keywords:
-            training_texts.append(word)
-            training_labels.append(category)
-            
-    # Build and train the Machine Learning Pipeline
-    try:
-        classifier = make_pipeline(CountVectorizer(), MultinomialNB())
-        classifier.fit(training_texts, training_labels)
-        print("AI Brain is online and ready to categorize!")
-    except Exception as e:
-        print(f"Critical Error training AI: {e}")
+def train_nlp_classifier(df):
+    """
+    Trains a real Machine Learning pipeline to categorize transactions based on their descriptions.
+    """
+    print("\n" + "="*50)
+    print("TRAINING NLP CATEGORIZATION PIPELINE...")
+    print("="*50)
+
+    # 1. Clean the data (Drop rows where Description or Category is missing)
+    # We assume your CSV has 'Description' and 'Category' columns.
+    df_clean = df.dropna(subset=['Description', 'Category']).copy()
+
+    if len(df_clean) < 10:
+        print("Not enough categorized data to train. Need at least 10 rows.")
         return None
-        
-    print("="*45 + "\n")
-    return classifier
 
-def predict_category(text, classifier):
-    """Uses the trained AI model to guess the category of a new transaction."""
-    if classifier is None or not isinstance(text, str) or not text.strip():
-        return 'Other'
-        
-    try:
-        prediction = classifier.predict([text.lower()])
-        return prediction[0]
-    except:
-        return 'Other'
+    # 2. Define our Features (X) and Target Labels (y)
+    X = df_clean['Description']
+    y = df_clean['Category']
+
+    # 3. PROPER ML PIPELINE: The Train/Test Split
+    # We keep 80% to train, and lock away 20% for the final exam.
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # 4. Build the AI Architecture
+    # TfidfVectorizer: Converts text words into mathematical weights
+    # MultinomialNB: A classic algorithm perfect for text classification
+    nlp_model = make_pipeline(TfidfVectorizer(stop_words='english'), MultinomialNB())
+
+    # 5. Train the Model (The student studies the textbook)
+    nlp_model.fit(X_train, y_train)
+
+    # 6. Evaluate the Model (The student takes the final exam)
+    predictions = nlp_model.predict(X_test)
+    accuracy = accuracy_score(y_test, predictions)
+
+    # Print the professional pipeline metrics
+    print(f"Training Data Size : {len(X_train)} transactions")
+    print(f"Hidden Test Size   : {len(X_test)} transactions")
+    print(f"Model Accuracy     : {accuracy * 100:.1f}%")
+    print("="*50 + "\n")
+
+    return nlp_model
+
+def predict_category(model, description):
+    """Uses the trained model to guess a category for a new transaction."""
+    if model is None:
+        return "Uncategorized"
+    
+    # The model expects a list, so we wrap the single description in brackets
+    prediction = model.predict([description])
+    return prediction[0]
