@@ -8,8 +8,7 @@ import os
 def train_and_save_model():
     print("Loading Big Data...")
     # Load the 5,000 rows we just generated
-    df = pd.read_csv('data/synthetic_transactions.csv')
-    
+    df = pd.read_csv('data/synthetic_expenses.csv')
     # We want the AI to look at the Description (X) and guess the Category (y)
     X = df['Description']
     y = df['Category']
