@@ -1,4 +1,5 @@
 import pandas as pd
+import sqlite3
 from ml.forecast_model import train_model, predict_future, check_accuracy
 from ml.category_model import train_nlp_classifier, predict_category
 from analysis.spending_analysis import spending_breakdown
@@ -21,39 +22,44 @@ class FinanceAssistant:
         self.category_budgets[category] = amount
         print(f"Budget for '{category}' set to ${amount:,.2f}")
 
-    def load_data(self, filepath):
-        """Loads data, trains the NLP model, and auto-categorizes missing rows."""
-        print("\nLoading data from CSV...")
+    def load_data(self):
+        """Upgraded: Connects to SQL database instead of CSV."""
+        print("\nConnecting to SQL Database...")
+        self.db_path = 'data/expenses.db' # Save the path
+        
         try:
-            self.data = pd.read_csv(filepath)
-        except FileNotFoundError:
-            print(f"Error: Could not find {filepath}")
+            # 1. Open SQL Connection
+            conn = sqlite3.connect(self.db_path)
+            
+            # 2. Read data using a real SQL Query!
+            self.data = pd.read_sql_query("SELECT * FROM transactions", conn)
+            conn.close()
+            
+        except sqlite3.OperationalError:
+            print(" Error: Database not found. Did you run migrate_db.py?")
             return False
 
-        # Ensure Category column exists
-        if 'Category' not in self.data.columns:
-            self.data['Category'] = None
-
-        # 1. Train the NLP Pipeline on already categorized data
+        # Train the NLP Pipeline on already categorized data
         self.classifier = train_nlp_classifier(self.data)
 
-        # 2. Predict categories for rows that are missing them
+        # Predict missing categories (Logic stays exactly the same!)
         if self.classifier is not None:
-            # Find rows where Category is missing or NaN
             missing_mask = self.data['Category'].isna() | (self.data['Category'] == '')
-            
             if missing_mask.sum() > 0:
-                print(f"AI is auto-categorizing {missing_mask.sum()} new transactions...")
-                # Apply the prediction model to the descriptions of missing rows
+                print(f" AI is auto-categorizing {missing_mask.sum()} new transactions...")
+                
+                # Predict
                 self.data.loc[missing_mask, 'Category'] = self.data.loc[missing_mask, 'Description'].apply(
                     lambda desc: predict_category(self.classifier, desc)
                 )
                 
-                # Save the newly guessed categories back to the CSV permanently
-                self.data.to_csv(filepath, index=False)
-                print("Saved new AI predictions to CSV.")
+                # 3. Save updates back to SQL
+                conn = sqlite3.connect(self.db_path)
+                self.data.to_sql('transactions', conn, if_exists='replace', index=False)
+                conn.close()
+                print(" Saved new AI predictions to SQL Database.")
         
-        print(f"Successfully loaded {len(self.data)} transactions!")
+        print(f" Successfully loaded {len(self.data)} transactions from Database!")
         return True
 
     def train_forecast(self):
@@ -76,9 +82,8 @@ class FinanceAssistant:
         health_check(self)
 
     def teach_the_bot(self):
-        """Upgraded: Adds a new labeled transaction directly to the CSV training data."""
-        print("\n--- Teach the NLP AI ---")
-        print("To make the AI smarter, provide an example transaction!")
+        """Upgraded: Inserts new data directly into the SQL Database."""
+        print("\n---  Teach the NLP AI (SQL Mode) ---")
         
         date = input("Enter date (YYYY-MM-DD) [or press Enter for today]: ").strip()
         if not date:
@@ -93,12 +98,19 @@ class FinanceAssistant:
             print(" Invalid amount. Cancelling.")
             return
 
-        # Create a new row
-        new_row = pd.DataFrame([{'Date': date, 'Description': desc, 'Amount': amount, 'Category': cat}])
+        # 1. Open SQL Connection
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
         
-        # Append to our active dataframe
-        self.data = pd.concat([self.data, new_row], ignore_index=True)
+        # 2. Execute a raw SQL INSERT command (This is how the pros do it!)
+        sql_command = "INSERT INTO transactions (Date, Description, Amount, Category) VALUES (?, ?, ?, ?)"
+        cursor.execute(sql_command, (date, desc, amount, cat))
         
-        # Save to CSV so it becomes permanent "textbook" material for the next boot
-        self.data.to_csv('data/my_expenses.csv', index=False)
-        print(f" Added! The AI will study this new data point the next time you boot up.")
+        # 3. Commit the transaction and close
+        conn.commit()
+        conn.close()
+        
+        print(f" SQL INSERT Successful! The AI will study this row on next boot.")
+        
+        # Force the bot to reload the data from the DB so memory stays fresh
+        self.load_data()
