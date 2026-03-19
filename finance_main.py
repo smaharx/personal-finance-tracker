@@ -34,12 +34,12 @@ def main():
     print(f"\nMonthly Budget set to: ${budget:,.2f}")
     
     # 2. Boot up the Assistant
-    time.sleep(0.5) # Gives a cool, slight loading effect
+    time.sleep(1.0) # Gives a cool, slight loading effect
     bot = FinanceAssistant(budget_limit=budget)
 
     # 3. Load Data and Train the Predictor
     if not bot.load_data():
-        print("\nCRITICAL: Could not load expense data. Shutting down.")
+        print("\nCRITICAL: Could not loading expense data. Shutting down.")
         sys.exit(1)
 
     # Automatically train the forecaster in the background
