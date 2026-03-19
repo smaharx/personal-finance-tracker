@@ -89,3 +89,8 @@ __pycache__/
 temp_data_*/
 temp_chroma_db_*/
 chroma_storage/
+
+
+.vscode/
+*.db
+*.csv
