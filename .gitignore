@@ -34,15 +34,6 @@
     *.log
 
     # ======================
-    # VS Code
-    # ======================
-    .vscode/*
-    !.vscode/settings.json
-    !.vscode/extensions.json
-    !.vscode/launch.json
-    !.vscode/tasks.json
-
-    # ======================
     # Jupyter
     # ======================
     .ipynb_checkpoints/
@@ -91,5 +82,12 @@
     chroma_storage/
 
 
- .vscode/
+.__pycache__/
+temp_data_*/
+temp_chroma_db_*/
+chroma_storage/
 
+# My custom ignores
+.vscode/
+*.db
+*.csv
