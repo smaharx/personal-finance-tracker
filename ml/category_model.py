@@ -14,7 +14,7 @@ def train_nlp_classifier(df):
     print("="*50)
 
     # 1. Clean the data (Drop rows where Description or Category is missing)
-    # We assume your CSV has 'Description' and 'Category' columns.
+   
     df_clean = df.dropna(subset=['Description', 'Category']).copy()
 
     if len(df_clean) < 10:

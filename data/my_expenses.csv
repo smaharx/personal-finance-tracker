@@ -1,85 +1,87 @@
 Date,Amount,Category,Description
-2025-09-01,35000,Rent,Monthly Flat Rent
-2025-09-02,450,Food,Local Sabzi Mandi
-2025-09-03,250,Food,Chai and Samosa
-2025-09-05,1800,Utilities,Electricity Bill
-2025-09-07,600,Transport,Careem Ride
-2025-09-10,1200,Food,Biryani Order
-2025-09-12,500,Food,Street Shawarma
-2025-09-15,2000,Utilities,Internet PTCL
-2025-09-18,300,Transport,Metro Card Recharge
-2025-09-20,1500,Shopping,Clothes from Local Market
-2025-10-01,35000,Rent,Monthly Flat Rent
-2025-10-03,450,Food,Vegetable Market
-2025-10-06,2200,Utilities,Gas Bill
-2025-10-08,800,Food,Nihari Breakfast
-2025-10-10,1200,Transport,Petrol Refill
-2025-10-14,3000,Shopping,Mobile Accessories
-2025-10-18,700,Food,Dhaba Dinner
-2025-10-20,500,Entertainment,Cinema with Friends
-2025-11-01,35000,Rent,Monthly Flat Rent
-2025-11-03,450,Food,Local Sabzi Mandi
-2025-11-07,2500,Utilities,Electricity Bill
-2025-11-10,900,Food,Karahi Restaurant
-2025-11-12,400,Transport,Auto Rickshaw
-2025-11-15,5000,Shopping,Wedding Clothes
-2025-11-20,1500,Travel,Bus Ticket to Hometown
-2025-12-01,35000,Rent,Monthly Flat Rent
-2025-12-05,3000,Utilities,Gas Bill
-2025-12-10,2000,Food,Family Dinner
-2025-12-15,8000,Travel,Train Tickets
-2025-12-20,6000,Gifts,Wedding Gifts
-2026-01-01,38000,Rent,Rent Increased
-2026-01-05,2500,Utilities,Electricity Bill
-2026-01-10,1000,Food,Fast Food Deal
-2026-01-15,1200,Transport,Petrol Refill
-2026-02-01,38000,Rent,Monthly Flat Rent
-2026-02-05,450,Food,Vegetable Market
-2026-02-10,1500,Food,Valentine Dinner
-2025-09-01,1200.00,Housing,Monthly Apartment Rent
+2025-09-01,35000.0,Rent,Monthly Flat Rent
+2025-09-02,450.0,Food,Local Sabzi Mandicl
+2025-09-03,250.0,Entertainment,Cinema 
+2025-09-05,1800.0,Utilities,Electricity Bill
+2025-09-07,600.0,Transport,Careem Ride
+2025-09-10,1200.0,Food,Biryani Order
+2025-09-12,500.0,Food,Street Shawarma
+2025-09-15,2000.0,Utilities,Internet PTCL
+2025-09-18,300.0,Transport,Metro Card Recharge
+2025-09-20,1500.0,Shopping,Clothes from Local Market
+2025-10-01,35000.0,Rent,Monthly Flat Rent
+2025-10-03,450.0,Food,Vegetable Market
+2025-10-06,2200.0,Utilities,Gas Bill
+2025-10-08,800.0,Food,Nihari Breakfast
+2025-10-10,1200.0,Transport,Petrol Refill
+2025-10-14,3000.0,Shopping,Mobile Accessories
+2025-10-18,700.0,Transport,Car expenses
+2025-10-20,500.0,Entertainment,Cinema with Friends
+2025-11-01,35000.0,Rent,Monthly Flat Rent
+2025-11-03,450.0,Food,Local Sabzi Mandi
+2025-11-07,2500.0,Utilities,Electricity Bill
+2025-11-10,900.0,Food,Karahi Restaurant
+2025-11-12,400.0,Transport,Auto Rickshaw
+2025-11-15,5000.0,Shopping,Wedding Clothes
+2025-11-20,1500.0,Travel,Bus Ticket to Hometown
+2025-12-01,35000.0,Rent,Monthly Flat Rent
+2025-12-05,3000.0,Utilities,Gas Bill
+2025-12-10,2000.0,Food,Family Dinner
+2025-12-15,8000.0,Travel,Train Tickets
+2025-12-20,6000.0,Gifts,Wedding Gifts
+2026-01-01,38000.0,Rent,Rent Increased
+2026-01-05,2500.0,Utilities,Electricity Bill
+2026-01-10,1000.0,Food,Fast Food Deal
+2026-01-15,1200.0,Transport,Petrol Refill
+2026-02-01,38000.0,Rent,Monthly Flat Rent
+2026-02-05,2000.0,Travel,Flight Ticket to UAE
+2026-02-10,1500.0,Food,Valentine Dinner
+2025-09-01,1200.0,Housing,Monthly Apartment Rent
 2025-09-03,15.99,Subscriptions,Netflix Premium
-2025-09-05,45.20,Food,Imtiaz Super Market
-2025-09-10,12.50,Transport,InDrive Ride to Office
-2025-09-12,30.00,Transport,PSO Petrol Pump
-2025-09-15,18.00,Food,Foodpanda Delivery - Biryani
-2025-09-20,60.00,Utilities,PTCL Fiber Internet
-2025-09-25,45.00,Utilities,K-Electric Power Bill
-2025-09-28,25.00,Food,Chai Dhaba & Snacks
-2025-10-01,1200.00,Housing,Monthly Apartment Rent
+2025-09-05,45.2,Food,Imtiaz Super Market
+2025-09-10,12.5,Transport,InDrive Ride to Office
+2025-09-12,30.0,Transport,PSO Petrol Pump
+2025-09-15,18.0,Food,Foodpanda Delivery - Biryani
+2025-09-20,60.0,Utilities,PTCL Fiber Internet
+2025-09-25,45.0,Utilities,K-Electric Power Bill
+2025-09-28,25.0,Food,Chai Dhaba & Snacks
+2025-10-01,1200.0,Housing,Monthly Apartment Rent
 2025-10-03,15.99,Subscriptions,Netflix Premium
-2025-10-07,135.50,Food,Naheed Supermarket Groceries
-2025-10-10,15.00,Transport,Careem Ride
-2025-10-14,55.00,Entertainment,Cinema Tickets
-2025-10-18,22.00,Food,Local Shawarma Joint
-2025-10-21,60.00,Utilities,PTCL Fiber Internet
-2025-10-25,35.00,Utilities,Sui Gas Bill
-2025-10-29,18.50,Transport,Bykea Bike Ride
-2025-11-01,1200.00,Housing,Monthly Apartment Rent
+2025-10-07,135.5,Food,Naheed Supermarket Groceries
+2025-10-10,15.0,Transport,Careem Ride
+2025-10-14,55.0,Entertainment,Cinema Tickets
+2025-10-18,22.0,Food,Local Shawarma Joint
+2025-10-21,60.0,Utilities,PTCL Fiber Internet
+2025-10-25,35.0,Utilities,Sui Gas Bill
+2025-10-29,18.5,Transport,Bykea Bike Ride
+2025-11-01,1200.0,Housing,Monthly Apartment Rent
 2025-11-04,15.99,Subscriptions,Netflix Premium
-2025-11-10,40.00,Transport,Shell Petrol Pump
-2025-11-15,250.00,Shopping,Daraz.pk 11.11 Sale
-2025-11-18,35.00,Food,Imtiaz Super Market
-2025-11-22,20.00,Food,Foodpanda Delivery - Karahi
-2025-11-25,45.00,Shopping,Gul Ahmed Clothing
-2025-11-28,60.00,Utilities,PTCL Fiber Internet
-2025-12-01,1200.00,Housing,Monthly Apartment Rent
+2025-11-10,40.0,Transport,Shell Petrol Pump
+2025-11-15,250.0,Shopping,Daraz.pk 11.11 Sale
+2025-11-18,35.0,Housing,Painting house
+2025-11-22,20.0,Food,Foodpanda Delivery - Karahi
+2025-11-25,45.0,Shopping,Gul Ahmed Clothing
+2025-11-28,60.0,Utilities,PTCL Fiber Internet
+2025-12-01,1200.0,Housing,Monthly Apartment Rent
 2025-12-05,15.99,Subscriptions,Netflix Premium
-2025-12-10,50.00,Utilities,K-Electric Power Bill
-2025-12-15,300.00,Travel,SereneAir Flight Tickets
-2025-12-20,85.00,Shopping,Khaadi Winter Collection
-2025-12-24,150.00,Gifts,Wedding Salami / Gift
-2025-12-28,40.00,Food,Family Dinner at Monal
-2026-01-01,1250.00,Housing,Rent Increase :(
+2025-12-10,50.0,Utilities,K-Electric Power Bill
+2025-12-15,300.0,Travel,SereneAir Flight Tickets
+2025-12-20,85.0,Shopping,Khaadi Winter Collection
+2025-12-24,150.0,Gifts,Wedding Salami / Gift
+2025-12-28,40.0,Food,Family Dinner at Monal
+2026-01-01,1250.0,Housing,Rent Increase     
 2026-01-03,15.99,Subscriptions,Netflix Premium
-2026-01-08,30.00,Transport,PSO Petrol Pump
-2026-01-10,80.00,Food,Carrefour Groceries
-2026-01-15,12.00,Transport,InDrive Ride
-2026-01-20,65.00,Utilities,PTCL Fiber Internet
-2026-01-25,55.00,Utilities,Winter Gas Bill (SSGC)
-2026-01-29,25.00,Food,Bakers & Sweets
-2026-02-01,1250.00,Housing,Monthly Apartment Rent
+2026-01-08,30.0,Transport,PSO Petrol Pump
+2026-01-10,80.0,Food,Carrefour Groceries
+2026-01-15,12.0,Transport,InDrive Ride
+2026-01-20,65.0,Utilities,PTCL Fiber Internet
+2026-01-25,55.0,Utilities,Winter Gas Bill (SSGC)
+2026-01-29,25.0,Food,Bakers & Sweets
+2026-02-01,1250.0,Housing,Monthly Apartment Rent
 2026-02-05,15.99,Subscriptions,Netflix Premium
-2026-02-10,45.00,Transport,Careem Ride
-2026-02-14,120.00,Food,Fine Dining Restaurant
-2026-02-18,60.00,Food,Imtiaz Super Market
-2026-02-22,70.00,Utilities,K-Electric Power Bill
+2026-02-10,45.0,Transport,Careem Ride
+2026-02-14,120.0,Food,Fine Dining Restaurant
+2026-02-18,60.0,Food,Imtiaz Super Market
+2026-02-22,70.0,Utilities,K-Electric Power Bill
+2026-03-19,20.0,Food,Chai sambosa at lunch
+2026-03-15,5000.0,Shopping,Eid Clothes
