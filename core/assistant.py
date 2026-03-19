@@ -18,20 +18,55 @@ class FinanceAssistant:
         self.classifier = None 
 
     def set_category_budget(self, category, amount):
-        """Sets a specific spending limit for a category."""
+        """Saves a budget to both RAM and the permanent SQL Database."""
+        
+        # 1. Save to RAM (so it updates the current session instantly)
         self.category_budgets[category] = amount
-        print(f"Budget for '{category}' set to ${amount:,.2f}")
+        
+        # 2. Save to SQL (so it remembers forever)
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        #  Data Science Trick: UPSERT (Update or Insert)
+        # If "Sleeping" already exists, it updates it. If not, it creates it.
+        cursor.execute('''
+            INSERT OR REPLACE INTO budgets (Category, Monthly_Limit) 
+            VALUES (?, ?)
+        ''', (category, amount))
+        
+        conn.commit()
+        conn.close()
+        
+        print(f" Permanent Budget for '{category}' securely saved to Database as ${amount:,.2f}")
 
     def load_data(self):
-        """Upgraded: Connects to SQL database instead of CSV."""
+        """Upgraded: Connects to SQL, auto-creates tables, and loads budgets."""
         print("\nConnecting to SQL Database...")
-        self.db_path = 'data/expenses.db' # Save the path
+        self.db_path = 'data/expenses.db' 
         
         try:
             # 1. Open SQL Connection
             conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
             
-            # 2. Read data using a real SQL Query!
+            # ---  THE NEW POLISH: Auto-create and load budgets ---
+            # Create the table if it doesn't exist yet
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS budgets (
+                    Category TEXT PRIMARY KEY,
+                    Monthly_Limit REAL
+                )
+            ''')
+            
+            # Load all saved budgets from the hard drive into RAM
+            cursor.execute("SELECT Category, Monthly_Limit FROM budgets")
+            for row in cursor.fetchall():
+                category_name = row[0]
+                budget_amount = row[1]
+                self.category_budgets[category_name] = budget_amount
+            # -------------------------------------------------------
+
+            # 2. Read transaction data using a real SQL Query
             self.data = pd.read_sql_query("SELECT * FROM transactions", conn)
             conn.close()
             
@@ -42,24 +77,22 @@ class FinanceAssistant:
         # Train the NLP Pipeline on already categorized data
         self.classifier = train_nlp_classifier(self.data)
 
-        # Predict missing categories (Logic stays exactly the same!)
+        # Predict missing categories
         if self.classifier is not None:
             missing_mask = self.data['Category'].isna() | (self.data['Category'] == '')
             if missing_mask.sum() > 0:
                 print(f" AI is auto-categorizing {missing_mask.sum()} new transactions...")
-                
-                # Predict
                 self.data.loc[missing_mask, 'Category'] = self.data.loc[missing_mask, 'Description'].apply(
                     lambda desc: predict_category(self.classifier, desc)
                 )
-                
-                # 3. Save updates back to SQL
+                # Save updates back to SQL
                 conn = sqlite3.connect(self.db_path)
                 self.data.to_sql('transactions', conn, if_exists='replace', index=False)
                 conn.close()
-                print(" Saved new AI predictions to SQL Database.")
         
-        print(f" Successfully loaded {len(self.data)} transactions from Database!")
+        # Count how many budgets we loaded to show the user
+        budget_count = len(self.category_budgets)
+        print(f" Loaded {len(self.data)} transactions and {budget_count} permanent budgets!")
         return True
 
     def train_forecast(self):
