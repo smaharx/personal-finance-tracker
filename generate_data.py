@@ -1,46 +1,47 @@
-import csv
+import pandas as pd
 import random
 from datetime import datetime, timedelta
+import os
 
-# Realistic bank transaction descriptions
-TEMPLATES = {
-    "Food": ["STARBUCKS STORE", "MCDONALDS", "WHOLE FOODS", "TRADER JOES", "DOORDASH", "UBEREATS", "TACO BELL"],
-    "Rent": ["CITY APARTMENTS", "VILLAGE GREEN RENT", "OAKWOOD LEASING"],
-    "Transport": ["UBER RIDE", "LYFT", "CHEVRON GAS", "SHELL OIL", "MTA SUBWAY", "EXXONMOBIL"],
-    "Subscriptions": ["NETFLIX", "SPOTIFY", "AMAZON PRIME", "HULU", "DISNEY PLUS", "GYM MEMBERSHIP"],
-    "Entertainment": ["AMC THEATERS", "TICKETMASTER", "STEAM GAMES", "PLAYSTATION NETWORK", "BOWLING ALLEY"],
-    "Shopping": ["AMZN MKTP US", "TARGET", "WALMART", "APPLE STORE", "BEST BUY", "H&M"],
-    "Income": ["PAYROLL DIRECT DEP", "VENMO CASHOUT", "STRIPE TRANSFER"]
+print("Generating 5,000 localized transactions...")
+
+# 🌟 THE NEW, LOCALIZED AI VOCABULARY 🌟
+# We added your specific words, plus common regional brands to make the AI super smart!
+CATEGORIES = {
+    "Food": ["Starbucks", "McDonalds", "Chai", "Sambosa", "Biryani", "Foodpanda", "KFC", "Cafe", "Restaurant"],
+    "Transport": ["Uber Ride", "Careem", "Petrol", "Shell Oil", "Bykea", "Bus Ticket", "InDrive", "PSO Pump"],
+    "Shopping": ["Amazon", "Target", "Walmart", "Eid Clothes", "Bazaar", "Daraz", "Imtiaz Super Market", "Grocery"],
+    "Utilities": ["Electric Bill", "K-Electric", "Water Bill", "Sui Gas", "PTCL Internet"],
+    "Subscriptions": ["Netflix Subscription", "Spotify Premium", "Gym Membership", "Cloud Storage"],
+    "Entertainment": ["Cinema", "Nueplex", "Steam Games", "Concert Ticket"],
+    "Rent": ["Apartment Rent", "House Leasing", "Hostel Dues"],
+    "Health": ["Pharmacy", "Agha Khan Hospital", "Doctor Clinic", "Panadol", "Medical Store"],
+    "Travel": ["Emirates Airline", "PIA Ticket", "Hotel Booking", "Train Ticket"]
 }
 
-def generate_transactions(num_rows=5000):
-    start_date = datetime(2022, 1, 1)
-    
-    with open('data/synthetic_transactions.csv', 'w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(["Date", "Description", "Amount", "Category"])
-        
-        for _ in range(num_rows):
-            category = random.choices(
-                list(TEMPLATES.keys()), 
-                weights=[25, 5, 15, 10, 10, 30, 5], k=1
-            )[0]
-            
-            description = random.choice(TEMPLATES[category]) + " #" + str(random.randint(1000, 9999))
-            
-            # Generate realistic amounts based on category
-            if category == "Income":
-                amount = round(random.uniform(2000, 5000), 2)
-            elif category == "Rent":
-                amount = round(random.uniform(1000, 2500), 2)
-            else:
-                amount = round(random.uniform(5, 150), 2)
-                
-            date = start_date + timedelta(days=random.randint(0, 700))
-            
-            writer.writerow([date.strftime("%Y-%m-%d"), description, amount, category])
+data = []
+start_date = datetime.today() - timedelta(days=365)
 
-if __name__ == "__main__":
-    print("Generating 5,000 synthetic bank transactions...")
-    generate_transactions(5000)
-    print("Success! Data saved to data/synthetic_transactions.csv")
+for _ in range(5000):
+    # Pick a random category
+    cat = random.choice(list(CATEGORIES.keys()))
+    
+    # Pick a random word from that category
+    desc = random.choice(CATEGORIES[cat])
+    
+    # Generate a random amount and date
+    amount = round(random.uniform(5.0, 500.0), 2)
+    random_days = random.randint(0, 365)
+    txn_date = (start_date + timedelta(days=random_days)).strftime("%Y-%m-%d")
+    
+    data.append([txn_date, desc, amount, cat])
+
+# Ensure the data directory exists
+os.makedirs("data", exist_ok=True)
+
+# Save to CSV (Make sure this matches the filename your train_model.py looks for!)
+file_path = "data/synthetic_expenses.csv" 
+df = pd.DataFrame(data, columns=["Date", "Description", "Amount", "Category"])
+df.to_csv(file_path, index=False)
+
+print(f"✅ Successfully generated 5,000 localized rows in {file_path}!")
