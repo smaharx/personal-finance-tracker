@@ -72,7 +72,7 @@ class FinanceAssistant:
         check_accuracy(self.model, self.monthly_aggregates)
 
     def analyze_spending(self):
-        spending_breakdown(self.data)
+        spending_breakdown(self.data, self.category_budgets)
 
     def show_pie_chart(self):
         plot_pie(self.data)

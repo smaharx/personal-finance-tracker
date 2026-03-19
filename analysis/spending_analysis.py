@@ -1,44 +1,50 @@
 import pandas as pd
 
-def spending_breakdown(data):
-    """Prints a beautifully formatted breakdown of spending by category."""
-    print("\n" + "="*50)
-    print("CATEGORY SPENDING BREAKDOWN")
-    print("="*50)
+def spending_breakdown(df, budgets=None):
+    """
+    Analyzes spending and compares it against set budgets.
+    Shows categories even if $0 has been spent.
+    """
+    if budgets is None:
+        budgets = {}
 
-    # Safety Check 1: Is there actually data?
-    if data is None or data.empty:
-        print("No data available to analyze.")
-        print("="*50 + "\n")
-        return
+    print("\n" + "="*65)
+    print(" CATEGORY SPENDING & BUDGET BREAKDOWN")
+    print("="*65)
 
-    # Group data by category and sum the amounts
-    breakdown = data.groupby("Category")["Amount"].sum()
-    
-    # Filter out any negative or zero amounts just in case
-    breakdown = breakdown[breakdown > 0]
-    total = breakdown.sum()
-    
-    # Safety Check 2: Prevent a "Division by Zero" error
-    if total == 0:
-        print("Total spending is $0.00. Nothing to break down!")
-        print("="*50 + "\n")
-        return
+    # 1. Calculate actual spending from the database
+    if df is not None and not df.empty and 'Category' in df.columns:
+        spent_data = df.groupby('Category')['Amount'].sum().to_dict()
+    else:
+        spent_data = {}
 
-    # Sort from highest spending to lowest
-    breakdown = breakdown.sort_values(ascending=False)
+    # 2. Find ALL categories (combine what we spent AND what we budgeted)
+    all_categories = set(list(spent_data.keys()) + list(budgets.keys()))
 
-    # Print the table header
-    print(f"{'Category':<18} | {'Amount':<13} | {'% of Total'}")
-    print("-" * 50)
+    # 3. Print the new, advanced table header
+    print(f"{'Category':<16} | {'Spent':<12} | {'Budget':<12} | {'Status'}")
+    print("-" * 65)
 
-    # Print each category row nicely formatted
-    for category, amount in breakdown.items():
-        pct = (amount / total) * 100
-        # <18 means align left with 18 spaces. >11 means align right with 11 spaces.
-        print(f"{category:<18} | ${amount:>11,.2f} | {pct:>7.1f}%")
+    # 4. Loop through every category and compare
+    total_spent = 0
+    for cat in sorted(all_categories):
+        spent = spent_data.get(cat, 0.0)
+        budget = budgets.get(cat, 0.0)
+        total_spent += spent
 
-    # Print the final total
-    print("-" * 50)
-    print(f"{'TOTAL SPENDING':<18} | ${total:>11,.2f} |  100.0%")
-    print("="*50 + "\n")
+        # Determine the health status
+        status = ""
+        if budget > 0:
+            if spent > budget:
+                status = " OVER BUDGET!"
+            else:
+                status = f" ${(budget - spent):,.2f} left"
+        else:
+            status = "No Budget Set"
+
+        budget_str = f"${budget:,.2f}" if budget > 0 else "---"
+        print(f"{cat:<16} | ${spent:<11,.2f} | {budget_str:<12} | {status}")
+
+    print("-" * 65)
+    print(f"{'TOTAL SPENT':<16} | ${total_spent:<11,.2f} |")
+    print("="*65)
