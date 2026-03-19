@@ -91,7 +91,5 @@
     chroma_storage/
 
 
-    .vscode/
-    *.db
-    *.csv
-    
+ .vscode/
+
