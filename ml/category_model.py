@@ -49,11 +49,24 @@ def train_nlp_classifier(df):
 
     return nlp_model
 
-def predict_category(model, description):
-    """Uses the trained model to guess a category for a new transaction."""
-    if model is None:
-        return "Uncategorized"
+import joblib
+import os
+
+def predict_category(description):
+    model_path = 'ml/saved_brain.pkl'
     
-    # The model expects a list, so we wrap the single description in brackets
-    prediction = model.predict([description])
-    return prediction[0]
+    # Check if the brain exists
+    if not os.path.exists(model_path):
+        return "Uncategorized (Please run ml/train_model.py first!)"
+    
+    # Load the brain instantly
+    model = joblib.load(model_path)
+    
+    # Make the prediction
+    prediction = model.predict([description])[0]
+    return prediction
+
+# Test it out!
+if __name__ == "__main__":
+    test_desc = "UBER RIDES SF #8392"
+    print(f"'{test_desc}' was categorized as: {predict_category(test_desc)}")
