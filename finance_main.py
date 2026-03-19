@@ -38,7 +38,7 @@ def main():
     bot = FinanceAssistant(budget_limit=budget)
 
     # 3. Load Data and Train the Predictor
-    if not bot.load_data("data/my_expenses.csv"):
+    if not bot.load_data():
         print("\nCRITICAL: Could not load expense data. Shutting down.")
         sys.exit(1)
 
