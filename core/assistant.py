@@ -1,7 +1,7 @@
 import pandas as pd
 import sqlite3
 from ml.forecast_model import train_model, predict_future, check_accuracy
-from ml.category_model import train_nlp_classifier, predict_category
+from ml.category_model import predict_category
 from analysis.spending_analysis import spending_breakdown
 from analysis.visualization import plot_pie
 from analysis.health_monitor import health_check
@@ -13,9 +13,7 @@ class FinanceAssistant:
         self.category_budgets = {}
         self.data = None
         self.model = None
-        
-        # This will now hold our Scikit-Learn NLP Pipeline
-        self.classifier = None 
+        # Deleted self.classifier - we don't need it anymore! The brain is on the hard drive.
 
     def set_category_budget(self, category, amount):
         """Saves a budget to both RAM and the permanent SQL Database."""
@@ -27,8 +25,7 @@ class FinanceAssistant:
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
         
-        #  Data Science Trick: UPSERT (Update or Insert)
-        # If "Sleeping" already exists, it updates it. If not, it creates it.
+        # Data Science Trick: UPSERT (Update or Insert)
         cursor.execute('''
             INSERT OR REPLACE INTO budgets (Category, Monthly_Limit) 
             VALUES (?, ?)
@@ -49,8 +46,7 @@ class FinanceAssistant:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
             
-            # ---  THE NEW POLISH: Auto-create and load budgets ---
-            # Create the table if it doesn't exist yet
+            # --- THE NEW POLISH: Auto-create and load budgets ---
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS budgets (
                     Category TEXT PRIMARY KEY,
@@ -74,21 +70,20 @@ class FinanceAssistant:
             print(" Error: Database not found. Did you run migrate_db.py?")
             return False
 
-        # Train the NLP Pipeline on already categorized data
-        self.classifier = train_nlp_classifier(self.data)
-
-        # Predict missing categories
-        if self.classifier is not None:
-            missing_mask = self.data['Category'].isna() | (self.data['Category'] == '')
-            if missing_mask.sum() > 0:
-                print(f" AI is auto-categorizing {missing_mask.sum()} new transactions...")
-                self.data.loc[missing_mask, 'Category'] = self.data.loc[missing_mask, 'Description'].apply(
-                    lambda desc: predict_category(self.classifier, desc)
-                )
-                # Save updates back to SQL
-                conn = sqlite3.connect(self.db_path)
-                self.data.to_sql('transactions', conn, if_exists='replace', index=False)
-                conn.close()
+        # --- THE AI UPGRADE: No more slow training! Just predict instantly. ---
+        missing_mask = self.data['Category'].isna() | (self.data['Category'] == '')
+        if missing_mask.sum() > 0:
+            print(f" AI is auto-categorizing {missing_mask.sum()} new transactions...")
+            
+            # Call the Kaggle brain directly!
+            self.data.loc[missing_mask, 'Category'] = self.data.loc[missing_mask, 'Description'].apply(
+                lambda desc: predict_category(desc)
+            )
+            
+            # Save updates back to SQL
+            conn = sqlite3.connect(self.db_path)
+            self.data.to_sql('transactions', conn, if_exists='replace', index=False)
+            conn.close()
         
         # Count how many budgets we loaded to show the user
         budget_count = len(self.category_budgets)
@@ -116,7 +111,7 @@ class FinanceAssistant:
 
     def teach_the_bot(self):
         """Upgraded: Inserts new data directly into the SQL Database."""
-        print("\n---  Teach the NLP AI (SQL Mode) ---")
+        print("\n---  Add Manual Transaction (SQL Mode) ---")
         
         date = input("Enter date (YYYY-MM-DD) [or press Enter for today]: ").strip()
         if not date:
@@ -143,7 +138,7 @@ class FinanceAssistant:
         conn.commit()
         conn.close()
         
-        print(f" SQL INSERT Successful! The AI will study this row on next boot.")
+        print(f" SQL INSERT Successful! Row saved to database.")
         
         # Force the bot to reload the data from the DB so memory stays fresh
         self.load_data()

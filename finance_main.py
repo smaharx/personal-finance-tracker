@@ -1,4 +1,5 @@
 from ml.anomaly_detector import detect_anomalies
+from ml.category_model import predict_category  #  1. Imported your new AI Brain!
 from core.assistant import FinanceAssistant
 import sys
 import time
@@ -6,7 +7,7 @@ import time
 def print_header():
     """Prints a beautiful welcome header for the application."""
     print("\n" + "="*55)
-    print("AI PERSONAL FINANCE TRACKER v2.0")
+    print("AI PERSONAL FINANCE TRACKER v2.0 (Kaggle AI Edition)")
     print("="*55)
 
 def main():
@@ -44,11 +45,13 @@ def main():
 
     # Automatically train the forecaster in the background
     bot.train_forecast()
+    
     # 4. The Interactive Main Menu Loop
     while True:
         print("\n" + "="*55)
         print("MAIN MENU")
         print("="*55)
+        print("[0] Add New Expense (AI Auto-Categorize) ")
         print("[1] View Spending Breakdown")
         print("[2] Run Health Check (Current vs Budget)")
         print("[3] AI Financial Forecast & Accuracy")
@@ -59,9 +62,23 @@ def main():
         print("[8] Exit Program")
         print("-" * 55)
         
-        menu_choice = input("Enter your choice (1-8): ").strip()
+        menu_choice = input("Enter your choice (0-8): ").strip()
 
-        if menu_choice == '1':
+        if menu_choice == '0':
+            #  2. Using the new AI Brain to instantly predict!
+            print("\n--- AI Categorizer ---")
+            desc = input("Enter the expense description (e.g., 'Uber Ride', 'Walmart'): ")
+            
+            # The Brain does its magic here
+            predicted_cat = predict_category(desc)
+            
+            print("-" * 30)
+            print(f" AI Prediction: '{desc}' belongs in **{predicted_cat}**")
+            print("-" * 30)
+            print("(Note: To save this to the database permanently, we will link it to the DB in the next update!)")
+            time.sleep(1)
+
+        elif menu_choice == '1':
             bot.analyze_spending()
         elif menu_choice == '2':
             bot.health_check()
@@ -73,7 +90,7 @@ def main():
         elif menu_choice == '5':
             bot.teach_the_bot()
         elif menu_choice == '6':
-           detect_anomalies(bot.data)  
+            detect_anomalies(bot.data)  
         elif menu_choice == '7':
             # Show existing categories to help the user choose
             if bot.data is not None:
@@ -92,8 +109,7 @@ def main():
             print("\nSaving AI memory and shutting down. Have a great day!\n")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 8.")
-
+            print("Invalid choice. Please enter a number between 0 and 8.")
 
 if __name__ == "__main__":
     main()
