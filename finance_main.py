@@ -14,12 +14,12 @@ def main():
     print_header()
 
     # 1. Budget Initialization with Crash Protection
-    default_budget = 50000.0
+    default_budget = 60000.0
     budget = default_budget
 
     choice = input("Do you want to set a custom monthly budget? (y/n): ").strip().lower()
     
-    if choice == 'y':
+    if choice == 'y' or choice =="Y":
         while True:
             try:
                 budget_input = input("Enter your monthly budget ($): ")

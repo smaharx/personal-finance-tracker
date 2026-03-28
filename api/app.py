@@ -1,7 +1,7 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
-import joblib
-import os
+from fastapi import FastAPI # recieving the requests by creating new web server
+from pydantic import BaseModel  
+import joblib # 
+import os  # for files directory handling
 
 app = FastAPI(title="Finance AI Inference API")
 
@@ -12,7 +12,7 @@ model = joblib.load(MODEL_PATH)
 class Transaction(BaseModel):
     description: str
 
-@app.post("/predict")
+#@app.post("/predict")
 def predict(item: Transaction):
     # The actual AI logic
     prediction = model.predict([item.description])[0]
