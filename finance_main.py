@@ -1,8 +1,8 @@
 from ml.anomaly_detector import detect_anomalies
 from ml.category_model import predict_category  #  1. Imported your new AI Brain!
 from core.assistant import FinanceAssistant
-import sys
-import time
+import sys # maintianences of the sytems openrations
+import time #maintain the time forcating relted operations 
 
 def print_header():
     """Prints a beautiful welcome header for the application."""
@@ -71,7 +71,7 @@ def main():
             try:
                 amount = float(input("Enter amount: "))
             except ValueError:
-                print("❌ Invalid amount. Please enter a number.")
+                print("Invalid amount. Please enter a number.")
                 continue 
 
             # 1. Get the date automatically
@@ -96,7 +96,7 @@ def main():
             conn.commit()
             conn.close()
 
-            print("✅ Transaction saved successfully to expenses.db!")
+            print("Transaction saved successfully to expenses.db!")
             
             # 4. THE CRITICAL STEP: Tell the bot to refresh its memory!
             bot.load_data()
