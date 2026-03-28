@@ -67,31 +67,39 @@ def main():
         if menu_choice == '0':
             print("\n--- AI Categorizer & Save ---")
             desc = input("Enter description (e.g., 'Petrol', 'Chai'): ")
-    
-            # Professional touch: handle errors if user types a letter instead of a number
+            
             try:
-                 amount = float(input("Enter amount: "))
+                amount = float(input("Enter amount: "))
             except ValueError:
-                 print(" Invalid amount. Please enter a number.")
-            continue # Skips back to menu
+                print("❌ Invalid amount. Please enter a number.")
+                continue 
 
             # 1. Get the date automatically
             from datetime import datetime
             txn_date = datetime.now().strftime("%Y-%m-%d")
 
-            # 2. Get the AI Category from your API
+            # 2. Get the AI Category (Make sure the API terminal is running!)
             predicted_cat = predict_category(desc)
-    
+            
             print("-" * 30)
             print(f" AI Prediction: '{desc}' -> **{predicted_cat}**")
             print("-" * 30)
 
-            # 3. SAVE to the real SQL Database
-            # NOTE: Ensure your database helper (e.g., db_manager) has an add_expense function
-            from database.db_manager import add_expense 
-            add_expense(txn_date, desc, amount, predicted_cat)
+            # 3. SAVE to the SQL Database directly
+            import sqlite3
+            conn = sqlite3.connect('data/expenses.db')
+            cursor = conn.cursor()
+            cursor.execute(
+                "INSERT INTO transactions (Date, Description, Amount, Category) VALUES (?, ?, ?, ?)", 
+                (txn_date, desc, amount, predicted_cat)
+            )
+            conn.commit()
+            conn.close()
 
-            print(f" Transaction saved successfully to expenses.db!")
+            print("✅ Transaction saved successfully to expenses.db!")
+            
+            # 4. THE CRITICAL STEP: Tell the bot to refresh its memory!
+            bot.load_data()
             time.sleep(1)
 
         elif menu_choice == '1':
