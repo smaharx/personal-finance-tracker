@@ -1,6 +1,22 @@
 import joblib
 import os
 
+
+import requests
+
+def predict_category(description):
+    url = "http://127.0.0.1:8000/predict"
+    try:
+        # Send the description to the API server
+        response = requests.post(url, json={"description": description}, timeout=2)
+        if response.status_code == 200:
+            return response.json()["category"]
+        return "Uncategorized (API Error)"
+    except requests.exceptions.ConnectionError:
+        return "Uncategorized (Server Offline)"
+
+# No more joblib.load() here! The main app is now "lightweight."
+
 def predict_category(description):
     model_path = 'ml/saved_brain.pkl'
     
