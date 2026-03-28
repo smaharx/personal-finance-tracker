@@ -1,0 +1,5001 @@
+Date,Description,Amount,Category
+2025-04-10,InDrive,70.72,Transport
+2025-12-14,House Leasing,126.53,Rent
+2025-06-12,Steam Games,350.84,Entertainment
+2025-07-07,Apartment Rent,110.52,Rent
+2025-04-17,Steam Games,331.37,Entertainment
+2025-06-14,Steam Games,267.41,Entertainment
+2025-10-15,Water Bill,426.67,Utilities
+2025-06-17,Eid Clothes,425.07,Shopping
+2025-09-17,Concert Ticket,96.09,Entertainment
+2026-01-22,House Leasing,232.79,Rent
+2026-02-26,Emirates Airline,200.04,Travel
+2025-07-17,Chai,420.62,Food
+2025-07-29,K-Electric,192.55,Utilities
+2025-10-17,Apartment Rent,86.63,Rent
+2025-05-27,Spotify Premium,273.93,Subscriptions
+2025-07-14,Foodpanda,289.44,Food
+2025-12-08,Sambosa,206.5,Food
+2025-10-15,Cinema,197.8,Entertainment
+2025-10-20,Sui Gas,451.35,Utilities
+2025-10-20,Nueplex,303.66,Entertainment
+2025-07-05,Hostel Dues,326.08,Rent
+2025-11-23,Panadol,436.57,Health
+2025-09-29,Emirates Airline,275.01,Travel
+2025-12-03,Train Ticket,47.37,Travel
+2025-05-19,Gym Membership,399.12,Subscriptions
+2025-05-11,Train Ticket,51.26,Travel
+2025-04-21,Petrol,195.73,Transport
+2025-06-24,Train Ticket,165.26,Travel
+2025-08-25,Gym Membership,293.71,Subscriptions
+2026-01-18,K-Electric,382.51,Utilities
+2025-05-13,Apartment Rent,118.46,Rent
+2026-03-14,PTCL Internet,329.46,Utilities
+2025-11-27,Train Ticket,14.82,Travel
+2026-01-15,Hotel Booking,116.55,Travel
+2025-04-12,Sui Gas,465.31,Utilities
+2026-01-13,Train Ticket,256.74,Travel
+2025-06-13,Cloud Storage,75.77,Subscriptions
+2025-11-30,Eid Clothes,339.05,Shopping
+2025-08-05,Bazaar,498.63,Shopping
+2025-09-03,Emirates Airline,57.89,Travel
+2025-09-10,K-Electric,47.62,Utilities
+2026-01-24,Cloud Storage,256.26,Subscriptions
+2026-01-10,Concert Ticket,261.75,Entertainment
+2025-04-16,Shell Oil,249.32,Transport
+2025-11-05,McDonalds,22.84,Food
+2025-12-18,Grocery,100.63,Shopping
+2025-06-17,Gym Membership,42.27,Subscriptions
+2025-10-15,Sui Gas,480.38,Utilities
+2025-09-16,Chai,189.66,Food
+2025-04-02,Hostel Dues,385.99,Rent
+2025-06-11,KFC,170.31,Food
+2025-10-01,Careem,258.62,Transport
+2025-11-10,Cloud Storage,460.62,Subscriptions
+2025-04-23,Gym Membership,481.49,Subscriptions
+2025-08-14,Panadol,70.58,Health
+2026-03-02,Train Ticket,400.16,Travel
+2025-12-13,Emirates Airline,383.65,Travel
+2025-08-19,Cinema,486.65,Entertainment
+2025-06-01,PSO Pump,136.21,Transport
+2025-08-05,Imtiaz Super Market,477.46,Shopping
+2025-12-03,Steam Games,467.45,Entertainment
+2025-05-26,Walmart,482.48,Shopping
+2025-08-03,Sui Gas,96.32,Utilities
+2025-12-07,Gym Membership,247.15,Subscriptions
+2025-09-19,InDrive,167.47,Transport
+2025-05-15,Foodpanda,409.78,Food
+2025-12-31,Imtiaz Super Market,67.33,Shopping
+2025-05-01,Apartment Rent,308.59,Rent
+2025-03-27,Cafe,485.92,Food
+2025-05-18,InDrive,415.1,Transport
+2025-09-23,PIA Ticket,239.43,Travel
+2025-09-08,Cinema,425.31,Entertainment
+2026-01-02,KFC,94.18,Food
+2026-02-10,Cloud Storage,151.66,Subscriptions
+2025-12-27,PTCL Internet,17.05,Utilities
+2025-04-02,Electric Bill,263.79,Utilities
+2025-06-28,Nueplex,101.29,Entertainment
+2025-04-27,Walmart,444.79,Shopping
+2025-05-18,Imtiaz Super Market,198.69,Shopping
+2026-01-11,Cloud Storage,243.79,Subscriptions
+2026-02-25,Gym Membership,183.98,Subscriptions
+2026-01-06,Apartment Rent,45.29,Rent
+2025-06-12,PTCL Internet,113.62,Utilities
+2025-12-29,Starbucks,272.82,Food
+2025-12-09,Daraz,367.96,Shopping
+2025-12-06,House Leasing,113.88,Rent
+2025-12-06,Agha Khan Hospital,412.21,Health
+2025-11-09,Netflix Subscription,247.22,Subscriptions
+2025-07-25,Concert Ticket,477.86,Entertainment
+2025-11-11,InDrive,165.88,Transport
+2025-08-19,Cloud Storage,57.52,Subscriptions
+2025-03-30,Spotify Premium,302.19,Subscriptions
+2025-08-17,PIA Ticket,84.0,Travel
+2025-11-14,InDrive,190.44,Transport
+2025-05-10,Careem,443.51,Transport
+2026-01-17,Biryani,110.55,Food
+2025-10-30,Spotify Premium,474.92,Subscriptions
+2026-02-11,Spotify Premium,92.12,Subscriptions
+2025-09-30,Target,281.71,Shopping
+2025-11-02,InDrive,368.57,Transport
+2025-12-22,Hotel Booking,343.93,Travel
+2025-07-19,Eid Clothes,149.83,Shopping
+2025-10-28,Apartment Rent,339.03,Rent
+2025-08-10,Doctor Clinic,397.47,Health
+2025-11-07,Cinema,166.33,Entertainment
+2025-10-14,Pharmacy,314.32,Health
+2025-06-12,Train Ticket,390.38,Travel
+2025-10-09,Emirates Airline,496.62,Travel
+2025-10-31,Water Bill,38.28,Utilities
+2025-08-18,McDonalds,389.35,Food
+2025-10-18,Sui Gas,489.09,Utilities
+2025-09-12,Sui Gas,55.28,Utilities
+2025-06-24,Cloud Storage,108.36,Subscriptions
+2026-01-03,Train Ticket,120.15,Travel
+2025-08-27,Train Ticket,197.79,Travel
+2025-08-24,Netflix Subscription,282.93,Subscriptions
+2025-12-26,Sambosa,345.36,Food
+2025-12-26,Imtiaz Super Market,81.63,Shopping
+2025-04-15,Amazon,265.66,Shopping
+2025-05-13,Starbucks,29.99,Food
+2025-07-11,Emirates Airline,35.01,Travel
+2025-10-03,Netflix Subscription,228.17,Subscriptions
+2026-02-13,House Leasing,28.61,Rent
+2025-08-05,Chai,161.85,Food
+2026-02-28,Water Bill,226.57,Utilities
+2025-06-29,PIA Ticket,39.48,Travel
+2025-04-21,Walmart,164.51,Shopping
+2026-03-20,Emirates Airline,107.3,Travel
+2026-03-14,Emirates Airline,487.36,Travel
+2026-02-20,Doctor Clinic,127.75,Health
+2025-09-07,Nueplex,493.38,Entertainment
+2025-09-15,Concert Ticket,202.4,Entertainment
+2025-03-28,House Leasing,454.52,Rent
+2025-11-12,Gym Membership,112.26,Subscriptions
+2025-12-14,Nueplex,420.75,Entertainment
+2025-09-17,Bus Ticket,158.18,Transport
+2025-10-02,Careem,214.04,Transport
+2025-09-21,Train Ticket,447.72,Travel
+2025-09-02,Panadol,118.72,Health
+2025-09-01,Target,276.48,Shopping
+2025-05-12,Cinema,171.59,Entertainment
+2025-09-07,Spotify Premium,65.13,Subscriptions
+2025-03-31,Foodpanda,416.14,Food
+2025-07-01,Gym Membership,125.75,Subscriptions
+2025-06-27,Gym Membership,368.47,Subscriptions
+2025-07-22,PSO Pump,488.42,Transport
+2026-01-10,Shell Oil,70.59,Transport
+2025-09-26,Walmart,177.86,Shopping
+2025-05-19,House Leasing,253.51,Rent
+2025-06-14,Electric Bill,210.22,Utilities
+2025-06-06,Chai,53.08,Food
+2025-11-21,Foodpanda,55.75,Food
+2025-10-07,Sambosa,325.03,Food
+2025-11-03,Nueplex,336.33,Entertainment
+2025-11-21,KFC,126.01,Food
+2025-05-18,Spotify Premium,447.98,Subscriptions
+2025-07-07,Water Bill,218.25,Utilities
+2025-06-17,Apartment Rent,258.99,Rent
+2025-11-26,Water Bill,119.76,Utilities
+2025-12-26,McDonalds,366.34,Food
+2025-03-21,K-Electric,223.0,Utilities
+2025-04-02,Pharmacy,252.8,Health
+2025-05-13,Cafe,367.8,Food
+2025-11-30,Spotify Premium,311.87,Subscriptions
+2025-10-15,Apartment Rent,15.73,Rent
+2026-01-25,Water Bill,381.7,Utilities
+2025-09-22,McDonalds,207.29,Food
+2026-01-10,Foodpanda,297.0,Food
+2025-07-27,Apartment Rent,104.14,Rent
+2025-07-09,K-Electric,383.12,Utilities
+2025-09-06,Daraz,402.79,Shopping
+2025-04-20,Sui Gas,176.55,Utilities
+2025-05-29,PTCL Internet,135.7,Utilities
+2025-09-03,Walmart,188.93,Shopping
+2025-07-05,Spotify Premium,156.61,Subscriptions
+2025-07-26,Cloud Storage,146.25,Subscriptions
+2025-04-28,Electric Bill,377.59,Utilities
+2025-04-01,Chai,178.38,Food
+2025-12-02,Spotify Premium,436.2,Subscriptions
+2025-07-02,Apartment Rent,486.63,Rent
+2025-11-26,Cinema,252.72,Entertainment
+2025-05-23,Imtiaz Super Market,448.35,Shopping
+2025-08-30,Spotify Premium,226.95,Subscriptions
+2025-12-25,Gym Membership,26.13,Subscriptions
+2025-10-24,Gym Membership,30.65,Subscriptions
+2025-04-04,Water Bill,167.93,Utilities
+2025-06-07,Doctor Clinic,90.59,Health
+2026-02-06,Grocery,491.48,Shopping
+2025-07-16,Petrol,438.52,Transport
+2025-05-22,Emirates Airline,263.06,Travel
+2026-02-01,KFC,374.84,Food
+2025-05-30,Apartment Rent,303.74,Rent
+2025-11-05,Gym Membership,422.62,Subscriptions
+2025-08-17,Medical Store,498.09,Health
+2026-02-19,Cinema,114.11,Entertainment
+2025-09-14,Doctor Clinic,36.64,Health
+2025-06-02,Steam Games,214.92,Entertainment
+2025-10-11,InDrive,70.29,Transport
+2026-02-02,PIA Ticket,271.75,Travel
+2026-02-13,Train Ticket,241.36,Travel
+2025-05-16,Hotel Booking,346.41,Travel
+2025-08-01,Nueplex,92.34,Entertainment
+2025-05-18,Cloud Storage,427.84,Subscriptions
+2026-02-26,Netflix Subscription,498.2,Subscriptions
+2025-12-14,PTCL Internet,274.19,Utilities
+2025-12-06,K-Electric,327.37,Utilities
+2025-04-02,Panadol,235.43,Health
+2026-03-16,Doctor Clinic,144.15,Health
+2025-12-10,House Leasing,143.23,Rent
+2025-07-10,Hostel Dues,120.85,Rent
+2025-09-23,Netflix Subscription,332.48,Subscriptions
+2026-01-18,Electric Bill,323.92,Utilities
+2025-12-02,Emirates Airline,400.83,Travel
+2026-01-22,Walmart,7.0,Shopping
+2026-01-24,Apartment Rent,210.72,Rent
+2025-05-22,Daraz,49.96,Shopping
+2025-04-18,Electric Bill,144.34,Utilities
+2025-06-08,Hostel Dues,154.31,Rent
+2025-05-05,Shell Oil,333.19,Transport
+2025-05-12,InDrive,330.02,Transport
+2025-07-26,Cloud Storage,405.25,Subscriptions
+2025-10-07,Eid Clothes,485.47,Shopping
+2025-08-27,Starbucks,87.37,Food
+2025-09-29,Gym Membership,415.66,Subscriptions
+2026-02-02,Hotel Booking,499.11,Travel
+2025-06-26,Sui Gas,270.76,Utilities
+2026-03-08,Eid Clothes,62.29,Shopping
+2025-12-19,Sambosa,173.59,Food
+2025-12-20,PTCL Internet,201.58,Utilities
+2025-03-23,Gym Membership,133.16,Subscriptions
+2025-11-29,K-Electric,102.29,Utilities
+2025-04-27,Cloud Storage,277.59,Subscriptions
+2026-01-22,Bazaar,325.93,Shopping
+2025-12-14,House Leasing,205.67,Rent
+2025-11-07,Emirates Airline,33.33,Travel
+2025-03-20,Petrol,350.85,Transport
+2025-04-10,Bykea,199.57,Transport
+2025-05-17,Shell Oil,134.93,Transport
+2025-10-02,Cloud Storage,7.52,Subscriptions
+2025-06-09,Doctor Clinic,457.4,Health
+2026-02-20,Doctor Clinic,202.85,Health
+2026-03-10,Sambosa,288.15,Food
+2025-11-20,Cinema,82.78,Entertainment
+2025-03-27,Concert Ticket,411.63,Entertainment
+2025-05-14,K-Electric,263.73,Utilities
+2025-11-05,Netflix Subscription,364.21,Subscriptions
+2025-09-01,Uber Ride,266.5,Transport
+2025-05-08,Hotel Booking,440.66,Travel
+2026-03-10,Spotify Premium,306.3,Subscriptions
+2026-02-26,Sui Gas,7.7,Utilities
+2025-07-06,Concert Ticket,329.59,Entertainment
+2025-05-30,Hostel Dues,211.64,Rent
+2025-11-28,Cinema,376.4,Entertainment
+2025-10-04,Gym Membership,158.71,Subscriptions
+2025-06-25,Spotify Premium,478.85,Subscriptions
+2026-01-10,Spotify Premium,48.24,Subscriptions
+2025-11-14,Bykea,381.88,Transport
+2025-10-18,Steam Games,392.1,Entertainment
+2025-05-02,Walmart,142.07,Shopping
+2025-05-07,Foodpanda,283.99,Food
+2025-03-28,Gym Membership,229.77,Subscriptions
+2025-04-24,Agha Khan Hospital,231.52,Health
+2025-10-05,House Leasing,490.03,Rent
+2025-09-02,House Leasing,185.96,Rent
+2025-04-08,Agha Khan Hospital,217.03,Health
+2025-08-14,Bus Ticket,17.77,Transport
+2025-11-03,Agha Khan Hospital,56.7,Health
+2026-03-03,PTCL Internet,477.72,Utilities
+2025-03-30,InDrive,151.3,Transport
+2026-01-23,Water Bill,293.14,Utilities
+2025-12-17,Uber Ride,307.6,Transport
+2025-10-18,Panadol,67.19,Health
+2026-02-09,Cinema,74.91,Entertainment
+2025-09-15,Walmart,414.03,Shopping
+2025-05-18,Imtiaz Super Market,367.34,Shopping
+2025-07-19,KFC,174.3,Food
+2025-12-10,K-Electric,418.53,Utilities
+2025-10-16,Hostel Dues,70.48,Rent
+2025-07-01,Cinema,465.56,Entertainment
+2025-12-16,Chai,355.03,Food
+2025-07-21,Grocery,89.16,Shopping
+2025-04-14,Agha Khan Hospital,230.99,Health
+2026-02-19,KFC,203.14,Food
+2025-07-20,Netflix Subscription,426.4,Subscriptions
+2025-05-22,Sambosa,211.38,Food
+2025-07-10,Bykea,184.65,Transport
+2025-08-19,PTCL Internet,258.32,Utilities
+2025-07-05,Chai,13.7,Food
+2025-08-19,Cloud Storage,141.36,Subscriptions
+2026-03-12,Restaurant,484.62,Food
+2026-03-01,PTCL Internet,463.25,Utilities
+2026-01-23,Cafe,95.59,Food
+2025-09-12,Gym Membership,386.59,Subscriptions
+2026-03-15,House Leasing,335.55,Rent
+2025-12-25,Netflix Subscription,405.83,Subscriptions
+2025-12-25,Nueplex,318.39,Entertainment
+2025-09-28,Train Ticket,77.85,Travel
+2025-03-22,Apartment Rent,135.85,Rent
+2025-07-27,KFC,42.5,Food
+2025-05-27,Sambosa,413.0,Food
+2025-10-06,Train Ticket,127.23,Travel
+2025-10-22,Hotel Booking,352.09,Travel
+2026-03-06,Hostel Dues,98.31,Rent
+2025-09-06,Cafe,332.5,Food
+2025-08-10,Spotify Premium,90.63,Subscriptions
+2025-12-05,Daraz,146.88,Shopping
+2026-02-15,Restaurant,444.56,Food
+2025-05-22,Hostel Dues,484.24,Rent
+2025-05-09,Nueplex,68.1,Entertainment
+2026-02-04,Petrol,242.48,Transport
+2026-02-17,Target,420.05,Shopping
+2025-07-17,Cinema,205.61,Entertainment
+2025-04-26,Sui Gas,323.76,Utilities
+2026-02-26,House Leasing,453.36,Rent
+2025-07-08,Sambosa,382.45,Food
+2025-11-10,Bykea,422.69,Transport
+2025-10-06,Bykea,362.35,Transport
+2025-06-20,Grocery,157.62,Shopping
+2025-06-18,Concert Ticket,309.76,Entertainment
+2025-10-24,Eid Clothes,474.25,Shopping
+2025-06-03,Bus Ticket,376.76,Transport
+2025-06-24,Train Ticket,230.46,Travel
+2025-09-01,Electric Bill,413.8,Utilities
+2025-04-18,Shell Oil,154.12,Transport
+2025-07-04,Hotel Booking,147.15,Travel
+2026-02-27,Bykea,45.36,Transport
+2025-10-29,Panadol,363.67,Health
+2025-11-20,Medical Store,163.15,Health
+2025-04-01,Uber Ride,35.28,Transport
+2025-07-26,PIA Ticket,64.76,Travel
+2025-09-22,PSO Pump,293.78,Transport
+2025-05-08,Careem,180.85,Transport
+2025-05-16,Pharmacy,359.64,Health
+2025-10-08,Nueplex,239.66,Entertainment
+2025-10-03,K-Electric,461.96,Utilities
+2025-09-07,Hotel Booking,70.5,Travel
+2025-06-05,Netflix Subscription,400.39,Subscriptions
+2025-07-26,Bazaar,36.56,Shopping
+2025-07-05,Cinema,88.27,Entertainment
+2025-10-07,Train Ticket,131.33,Travel
+2025-06-04,Hostel Dues,172.18,Rent
+2025-11-04,Cloud Storage,135.09,Subscriptions
+2025-05-29,Biryani,431.57,Food
+2025-05-23,Emirates Airline,480.5,Travel
+2026-03-14,Panadol,437.25,Health
+2025-06-17,Bazaar,100.38,Shopping
+2025-07-28,Cloud Storage,123.39,Subscriptions
+2025-04-16,Hotel Booking,483.52,Travel
+2025-07-24,Spotify Premium,392.69,Subscriptions
+2025-11-10,Sui Gas,305.52,Utilities
+2025-08-17,Bykea,208.77,Transport
+2025-08-23,Cloud Storage,464.6,Subscriptions
+2026-02-21,Train Ticket,382.23,Travel
+2025-09-16,K-Electric,289.36,Utilities
+2025-08-09,Water Bill,64.64,Utilities
+2025-09-30,Train Ticket,10.47,Travel
+2025-08-08,Steam Games,109.28,Entertainment
+2025-10-28,Restaurant,365.58,Food
+2025-11-10,Concert Ticket,175.86,Entertainment
+2026-01-31,Spotify Premium,373.22,Subscriptions
+2026-02-22,Water Bill,313.69,Utilities
+2025-12-30,Sambosa,100.84,Food
+2026-01-05,Sui Gas,85.74,Utilities
+2026-01-25,Agha Khan Hospital,451.57,Health
+2025-10-08,Hostel Dues,68.47,Rent
+2025-08-25,Amazon,363.08,Shopping
+2025-06-09,Concert Ticket,101.12,Entertainment
+2025-11-24,Hotel Booking,459.44,Travel
+2025-07-07,Cafe,259.67,Food
+2025-09-01,Panadol,327.75,Health
+2025-08-03,Shell Oil,329.16,Transport
+2026-01-08,Concert Ticket,393.72,Entertainment
+2025-10-15,Bykea,19.38,Transport
+2025-08-04,Restaurant,330.43,Food
+2025-07-01,Gym Membership,188.09,Subscriptions
+2026-02-10,K-Electric,367.57,Utilities
+2025-10-08,Uber Ride,170.74,Transport
+2025-07-17,Sambosa,480.27,Food
+2026-03-18,Walmart,248.18,Shopping
+2026-02-01,Restaurant,264.29,Food
+2026-02-11,Spotify Premium,117.95,Subscriptions
+2025-06-22,Nueplex,427.14,Entertainment
+2025-11-28,Sui Gas,71.5,Utilities
+2025-04-11,K-Electric,446.25,Utilities
+2025-07-29,McDonalds,127.46,Food
+2025-04-25,Steam Games,157.31,Entertainment
+2025-12-08,Concert Ticket,93.81,Entertainment
+2025-10-05,Nueplex,204.92,Entertainment
+2025-07-16,Sui Gas,305.88,Utilities
+2025-09-21,Doctor Clinic,380.01,Health
+2025-05-25,Cinema,340.26,Entertainment
+2025-08-09,K-Electric,169.54,Utilities
+2026-02-25,Medical Store,338.37,Health
+2025-05-27,KFC,221.4,Food
+2025-08-23,Daraz,123.54,Shopping
+2025-05-17,Foodpanda,339.15,Food
+2025-12-22,Water Bill,375.3,Utilities
+2025-05-03,Walmart,138.03,Shopping
+2025-08-21,Steam Games,113.64,Entertainment
+2025-10-14,Train Ticket,451.5,Travel
+2025-12-15,Emirates Airline,415.48,Travel
+2026-01-16,Grocery,25.57,Shopping
+2025-07-15,Apartment Rent,328.18,Rent
+2025-04-30,Emirates Airline,296.94,Travel
+2025-10-13,Cinema,380.02,Entertainment
+2025-08-06,Shell Oil,123.94,Transport
+2025-06-25,Apartment Rent,108.24,Rent
+2025-12-15,Concert Ticket,440.83,Entertainment
+2026-03-14,McDonalds,311.46,Food
+2025-04-04,Electric Bill,314.27,Utilities
+2026-02-06,Steam Games,213.82,Entertainment
+2025-06-27,PIA Ticket,182.5,Travel
+2025-07-23,Apartment Rent,78.83,Rent
+2025-11-23,Sui Gas,161.47,Utilities
+2025-10-02,Bykea,406.98,Transport
+2025-05-26,Gym Membership,38.92,Subscriptions
+2025-05-22,Cafe,279.22,Food
+2025-11-12,PTCL Internet,382.32,Utilities
+2025-08-19,Petrol,146.24,Transport
+2025-11-17,Doctor Clinic,290.45,Health
+2025-07-13,PIA Ticket,498.26,Travel
+2025-07-23,PSO Pump,463.36,Transport
+2025-04-27,Hotel Booking,77.35,Travel
+2026-02-09,Nueplex,45.4,Entertainment
+2026-01-02,Amazon,110.32,Shopping
+2025-12-22,Bus Ticket,415.72,Transport
+2025-05-23,Petrol,227.01,Transport
+2025-11-25,Cloud Storage,413.71,Subscriptions
+2025-11-11,Spotify Premium,361.12,Subscriptions
+2026-02-03,PTCL Internet,154.21,Utilities
+2025-06-20,Medical Store,361.97,Health
+2025-11-20,PIA Ticket,230.83,Travel
+2025-09-06,Bykea,365.06,Transport
+2025-07-25,Bazaar,465.98,Shopping
+2025-04-23,Bazaar,391.72,Shopping
+2025-07-19,Panadol,362.8,Health
+2025-08-23,Panadol,99.88,Health
+2025-05-08,Foodpanda,454.08,Food
+2025-09-28,Gym Membership,29.35,Subscriptions
+2025-10-24,Cinema,432.15,Entertainment
+2025-05-25,Cinema,349.41,Entertainment
+2025-05-09,Steam Games,172.76,Entertainment
+2025-09-04,Eid Clothes,304.96,Shopping
+2026-01-13,Electric Bill,240.89,Utilities
+2026-02-27,Shell Oil,38.6,Transport
+2025-11-01,Concert Ticket,231.13,Entertainment
+2025-06-15,Train Ticket,425.17,Travel
+2025-05-30,Concert Ticket,99.77,Entertainment
+2025-04-11,Steam Games,332.6,Entertainment
+2025-04-11,Target,338.27,Shopping
+2026-01-15,Water Bill,35.18,Utilities
+2026-02-27,House Leasing,326.54,Rent
+2025-11-06,Careem,484.55,Transport
+2025-05-06,Gym Membership,178.18,Subscriptions
+2025-10-27,Medical Store,272.12,Health
+2025-09-09,Sambosa,406.14,Food
+2025-12-11,Nueplex,273.92,Entertainment
+2025-08-13,Medical Store,263.73,Health
+2026-02-03,Spotify Premium,96.62,Subscriptions
+2025-07-29,Sambosa,201.91,Food
+2026-01-12,Agha Khan Hospital,64.3,Health
+2025-06-07,Doctor Clinic,286.06,Health
+2025-07-13,Biryani,26.83,Food
+2026-03-11,Spotify Premium,52.2,Subscriptions
+2025-08-30,Hotel Booking,316.97,Travel
+2025-04-26,Apartment Rent,264.21,Rent
+2025-12-26,Grocery,312.51,Shopping
+2025-09-29,Bykea,77.46,Transport
+2025-09-04,Apartment Rent,177.11,Rent
+2025-08-17,Petrol,461.47,Transport
+2025-12-27,Agha Khan Hospital,348.81,Health
+2026-03-20,Netflix Subscription,302.7,Subscriptions
+2025-11-29,Bus Ticket,86.57,Transport
+2025-04-10,K-Electric,67.78,Utilities
+2026-02-18,Uber Ride,220.58,Transport
+2025-12-04,Hostel Dues,466.33,Rent
+2026-01-16,Hostel Dues,211.1,Rent
+2025-05-07,Target,252.14,Shopping
+2025-04-07,KFC,232.5,Food
+2025-11-16,Apartment Rent,137.05,Rent
+2025-04-02,Bazaar,402.14,Shopping
+2025-09-14,PIA Ticket,193.83,Travel
+2025-09-07,Daraz,337.95,Shopping
+2025-07-24,Medical Store,366.5,Health
+2025-05-10,Doctor Clinic,79.69,Health
+2026-03-17,Netflix Subscription,250.33,Subscriptions
+2026-02-14,Bykea,238.87,Transport
+2025-11-11,Hostel Dues,127.72,Rent
+2025-05-24,Electric Bill,466.88,Utilities
+2025-04-30,Steam Games,130.61,Entertainment
+2025-11-21,KFC,88.03,Food
+2025-11-09,Walmart,274.63,Shopping
+2025-07-05,Electric Bill,226.65,Utilities
+2025-04-26,Hotel Booking,6.61,Travel
+2025-03-22,Steam Games,52.74,Entertainment
+2025-12-28,PSO Pump,191.81,Transport
+2026-02-11,Sui Gas,458.08,Utilities
+2026-01-16,Concert Ticket,40.98,Entertainment
+2025-06-26,Pharmacy,244.77,Health
+2025-10-11,PTCL Internet,479.69,Utilities
+2025-08-28,K-Electric,401.96,Utilities
+2025-08-23,Medical Store,276.01,Health
+2025-04-21,McDonalds,298.79,Food
+2025-06-17,Daraz,433.28,Shopping
+2025-03-22,Medical Store,274.03,Health
+2026-03-17,Hotel Booking,222.35,Travel
+2025-10-13,Grocery,68.16,Shopping
+2025-07-07,Hostel Dues,334.65,Rent
+2025-11-01,Imtiaz Super Market,254.48,Shopping
+2026-01-14,Starbucks,194.41,Food
+2025-10-08,Concert Ticket,73.65,Entertainment
+2025-05-28,Amazon,160.57,Shopping
+2025-11-01,Medical Store,291.75,Health
+2025-07-19,Train Ticket,301.9,Travel
+2025-07-02,Doctor Clinic,479.66,Health
+2025-08-20,Train Ticket,378.51,Travel
+2025-07-04,Concert Ticket,132.92,Entertainment
+2025-03-22,Sui Gas,231.35,Utilities
+2025-10-28,Cinema,381.37,Entertainment
+2025-11-19,K-Electric,367.14,Utilities
+2025-05-05,Eid Clothes,273.85,Shopping
+2025-05-30,Doctor Clinic,55.18,Health
+2025-06-25,Cloud Storage,302.21,Subscriptions
+2026-01-31,Doctor Clinic,77.6,Health
+2025-08-20,Nueplex,60.1,Entertainment
+2025-12-29,Pharmacy,140.83,Health
+2026-03-13,Medical Store,238.39,Health
+2025-11-18,Sui Gas,446.89,Utilities
+2025-11-14,Medical Store,50.15,Health
+2025-04-17,Emirates Airline,60.6,Travel
+2025-03-31,Train Ticket,414.56,Travel
+2025-12-18,Concert Ticket,217.41,Entertainment
+2025-09-25,Cinema,259.29,Entertainment
+2025-12-29,Restaurant,252.93,Food
+2026-03-05,Gym Membership,105.84,Subscriptions
+2026-02-20,Pharmacy,406.99,Health
+2025-04-27,Concert Ticket,305.1,Entertainment
+2026-03-08,PIA Ticket,67.79,Travel
+2026-01-21,Spotify Premium,81.84,Subscriptions
+2025-12-24,Cloud Storage,155.39,Subscriptions
+2026-01-26,Water Bill,370.24,Utilities
+2026-01-13,PIA Ticket,461.3,Travel
+2025-11-30,Imtiaz Super Market,46.2,Shopping
+2025-09-04,Emirates Airline,497.51,Travel
+2025-11-01,Netflix Subscription,232.2,Subscriptions
+2025-09-17,Netflix Subscription,397.87,Subscriptions
+2025-05-29,PTCL Internet,351.48,Utilities
+2025-09-10,House Leasing,267.37,Rent
+2026-03-19,Uber Ride,180.84,Transport
+2025-05-08,Netflix Subscription,448.67,Subscriptions
+2026-01-10,Gym Membership,8.84,Subscriptions
+2025-10-01,Nueplex,364.21,Entertainment
+2025-04-03,Doctor Clinic,469.48,Health
+2025-11-01,Hostel Dues,19.13,Rent
+2026-02-24,Hostel Dues,468.45,Rent
+2026-02-15,Water Bill,435.27,Utilities
+2025-04-08,Sui Gas,497.32,Utilities
+2025-06-06,Apartment Rent,175.58,Rent
+2025-07-20,Sui Gas,46.53,Utilities
+2025-09-11,Electric Bill,194.68,Utilities
+2025-04-25,Petrol,357.07,Transport
+2026-02-06,Careem,44.61,Transport
+2025-08-08,PSO Pump,330.82,Transport
+2025-07-19,Doctor Clinic,308.17,Health
+2025-08-03,House Leasing,415.37,Rent
+2025-12-14,Train Ticket,457.03,Travel
+2025-09-18,Sambosa,307.28,Food
+2026-03-09,Walmart,488.0,Shopping
+2025-03-28,Nueplex,165.8,Entertainment
+2026-03-20,Steam Games,352.23,Entertainment
+2026-02-09,Cloud Storage,157.26,Subscriptions
+2025-11-26,Eid Clothes,413.54,Shopping
+2025-05-04,Hotel Booking,295.43,Travel
+2025-09-16,Concert Ticket,272.25,Entertainment
+2025-07-16,Bus Ticket,307.8,Transport
+2025-08-22,Imtiaz Super Market,343.22,Shopping
+2025-07-15,Bus Ticket,420.22,Transport
+2025-04-26,House Leasing,88.01,Rent
+2025-04-17,Steam Games,171.87,Entertainment
+2025-06-20,Target,120.89,Shopping
+2026-01-04,Train Ticket,474.98,Travel
+2026-03-06,Spotify Premium,15.67,Subscriptions
+2025-07-19,PIA Ticket,425.84,Travel
+2025-05-14,Steam Games,465.22,Entertainment
+2025-12-25,Spotify Premium,69.8,Subscriptions
+2025-08-09,Spotify Premium,407.2,Subscriptions
+2025-08-12,InDrive,438.0,Transport
+2025-04-22,Cloud Storage,408.36,Subscriptions
+2025-07-03,Medical Store,193.97,Health
+2025-07-27,Sui Gas,111.88,Utilities
+2026-01-26,KFC,302.87,Food
+2025-03-25,Medical Store,409.78,Health
+2025-04-14,Gym Membership,129.27,Subscriptions
+2025-11-12,Apartment Rent,16.97,Rent
+2025-04-18,Nueplex,254.51,Entertainment
+2025-11-09,Netflix Subscription,474.5,Subscriptions
+2026-01-17,Gym Membership,291.62,Subscriptions
+2025-10-19,Concert Ticket,271.96,Entertainment
+2026-02-19,Gym Membership,319.51,Subscriptions
+2026-03-06,Petrol,379.37,Transport
+2025-07-02,Medical Store,143.67,Health
+2025-07-07,Medical Store,12.18,Health
+2026-01-13,Cafe,253.11,Food
+2026-01-03,PIA Ticket,480.58,Travel
+2025-12-03,Agha Khan Hospital,322.42,Health
+2025-10-20,Spotify Premium,272.3,Subscriptions
+2025-10-01,Bazaar,74.77,Shopping
+2025-10-12,Steam Games,397.33,Entertainment
+2026-02-26,Panadol,6.41,Health
+2026-03-16,Cinema,436.54,Entertainment
+2025-09-12,Hotel Booking,161.85,Travel
+2025-04-25,Netflix Subscription,443.78,Subscriptions
+2025-06-15,Sui Gas,289.45,Utilities
+2025-12-13,Petrol,105.01,Transport
+2025-12-11,Train Ticket,81.49,Travel
+2025-09-05,Water Bill,204.49,Utilities
+2026-01-19,Eid Clothes,223.17,Shopping
+2025-05-24,PTCL Internet,265.78,Utilities
+2025-06-20,Daraz,24.81,Shopping
+2026-01-05,Apartment Rent,421.76,Rent
+2025-11-10,Medical Store,34.28,Health
+2026-01-02,Eid Clothes,171.03,Shopping
+2025-09-07,Nueplex,487.88,Entertainment
+2026-02-11,Hostel Dues,498.37,Rent
+2025-12-30,Cafe,165.98,Food
+2025-06-29,Cloud Storage,242.9,Subscriptions
+2025-09-03,Bus Ticket,406.36,Transport
+2025-08-12,Agha Khan Hospital,470.41,Health
+2025-06-14,Cloud Storage,376.95,Subscriptions
+2025-11-11,Grocery,314.94,Shopping
+2025-11-22,Doctor Clinic,46.72,Health
+2025-06-15,Target,273.78,Shopping
+2025-07-03,K-Electric,111.03,Utilities
+2025-09-02,Emirates Airline,300.36,Travel
+2025-06-03,Shell Oil,403.57,Transport
+2026-01-26,Bykea,383.07,Transport
+2025-12-27,Starbucks,296.49,Food
+2025-09-08,Target,478.29,Shopping
+2026-02-15,Concert Ticket,39.17,Entertainment
+2025-06-30,Biryani,126.07,Food
+2025-07-06,Concert Ticket,366.55,Entertainment
+2025-08-06,Hostel Dues,104.43,Rent
+2025-12-14,Pharmacy,9.15,Health
+2026-02-25,Agha Khan Hospital,305.56,Health
+2025-09-14,Emirates Airline,429.74,Travel
+2025-08-22,Doctor Clinic,279.56,Health
+2026-01-14,Cloud Storage,471.44,Subscriptions
+2025-06-17,Careem,409.05,Transport
+2025-12-22,Nueplex,202.11,Entertainment
+2025-05-08,Concert Ticket,102.49,Entertainment
+2025-08-11,Bus Ticket,113.09,Transport
+2025-12-09,InDrive,150.06,Transport
+2026-01-31,Hotel Booking,418.88,Travel
+2025-03-28,Emirates Airline,8.63,Travel
+2026-01-09,Emirates Airline,327.18,Travel
+2026-03-11,PSO Pump,44.31,Transport
+2025-11-04,Imtiaz Super Market,19.69,Shopping
+2026-01-24,Uber Ride,382.45,Transport
+2025-06-12,Gym Membership,448.84,Subscriptions
+2026-03-14,KFC,109.36,Food
+2025-05-22,Cloud Storage,101.77,Subscriptions
+2025-05-01,Apartment Rent,43.68,Rent
+2025-10-21,Hotel Booking,368.86,Travel
+2026-01-30,Nueplex,385.19,Entertainment
+2026-03-08,Concert Ticket,171.05,Entertainment
+2025-11-10,InDrive,258.98,Transport
+2026-03-15,Water Bill,405.23,Utilities
+2025-07-04,Panadol,14.08,Health
+2025-09-20,Gym Membership,99.94,Subscriptions
+2025-04-01,PTCL Internet,105.8,Utilities
+2025-12-20,Emirates Airline,103.0,Travel
+2025-06-12,Bazaar,291.15,Shopping
+2025-04-20,Sambosa,70.04,Food
+2026-01-01,PIA Ticket,26.63,Travel
+2025-10-15,Cloud Storage,229.56,Subscriptions
+2025-07-27,Uber Ride,240.47,Transport
+2025-04-16,Gym Membership,209.11,Subscriptions
+2026-01-15,Water Bill,318.75,Utilities
+2026-01-07,Nueplex,178.19,Entertainment
+2026-01-16,Netflix Subscription,357.9,Subscriptions
+2026-02-20,Starbucks,97.93,Food
+2026-03-09,Electric Bill,315.12,Utilities
+2025-07-24,Spotify Premium,485.99,Subscriptions
+2025-06-12,Foodpanda,93.98,Food
+2025-06-11,Nueplex,279.95,Entertainment
+2026-03-04,Netflix Subscription,280.83,Subscriptions
+2025-10-02,Hostel Dues,137.27,Rent
+2025-08-24,Nueplex,165.94,Entertainment
+2025-03-26,Gym Membership,395.11,Subscriptions
+2025-07-12,Agha Khan Hospital,143.19,Health
+2025-09-18,Target,63.99,Shopping
+2025-07-24,Uber Ride,78.07,Transport
+2025-08-20,Petrol,126.67,Transport
+2025-04-04,PIA Ticket,143.79,Travel
+2025-05-05,Train Ticket,39.24,Travel
+2025-08-24,Electric Bill,145.37,Utilities
+2025-04-12,PIA Ticket,204.07,Travel
+2025-12-12,Hotel Booking,105.59,Travel
+2026-03-04,Electric Bill,335.19,Utilities
+2025-07-07,Electric Bill,202.3,Utilities
+2025-04-25,Panadol,241.62,Health
+2025-10-30,Bazaar,115.67,Shopping
+2025-09-10,Bus Ticket,257.2,Transport
+2026-03-19,Steam Games,48.26,Entertainment
+2025-05-04,Electric Bill,414.58,Utilities
+2025-08-10,Pharmacy,158.35,Health
+2026-03-10,PIA Ticket,241.69,Travel
+2025-06-20,Imtiaz Super Market,53.22,Shopping
+2026-01-01,Netflix Subscription,452.76,Subscriptions
+2025-04-03,Starbucks,332.42,Food
+2026-01-05,Water Bill,428.99,Utilities
+2025-07-31,K-Electric,201.85,Utilities
+2025-08-22,Water Bill,452.7,Utilities
+2025-11-20,Sambosa,219.73,Food
+2026-01-17,Pharmacy,164.63,Health
+2025-12-21,Electric Bill,68.06,Utilities
+2025-04-01,House Leasing,34.41,Rent
+2025-06-15,Restaurant,432.7,Food
+2026-01-07,Steam Games,79.16,Entertainment
+2025-09-13,Steam Games,159.67,Entertainment
+2025-08-15,K-Electric,246.04,Utilities
+2026-02-23,Doctor Clinic,416.77,Health
+2025-11-25,K-Electric,222.69,Utilities
+2025-06-08,Grocery,479.11,Shopping
+2025-03-27,Cloud Storage,293.63,Subscriptions
+2025-11-11,Gym Membership,499.34,Subscriptions
+2025-07-01,InDrive,393.94,Transport
+2025-07-15,PIA Ticket,110.92,Travel
+2026-03-11,PTCL Internet,165.13,Utilities
+2026-01-03,Agha Khan Hospital,495.77,Health
+2025-07-23,Spotify Premium,23.31,Subscriptions
+2026-02-25,Apartment Rent,399.45,Rent
+2026-01-27,Cinema,238.83,Entertainment
+2026-02-28,House Leasing,414.85,Rent
+2025-12-02,Pharmacy,472.93,Health
+2025-09-02,Hotel Booking,461.74,Travel
+2026-03-03,Agha Khan Hospital,372.54,Health
+2025-08-12,Sui Gas,462.83,Utilities
+2026-02-09,Water Bill,84.47,Utilities
+2026-01-01,Panadol,437.89,Health
+2025-08-31,Starbucks,290.2,Food
+2025-12-03,Careem,349.29,Transport
+2025-12-25,Biryani,252.82,Food
+2025-11-07,Uber Ride,352.69,Transport
+2025-09-28,Gym Membership,299.55,Subscriptions
+2026-03-12,Apartment Rent,314.46,Rent
+2025-04-07,Foodpanda,116.72,Food
+2025-06-23,Chai,302.23,Food
+2025-11-26,Uber Ride,363.62,Transport
+2025-07-29,Netflix Subscription,197.58,Subscriptions
+2025-08-28,Gym Membership,40.29,Subscriptions
+2025-11-07,Steam Games,101.08,Entertainment
+2025-12-07,Water Bill,182.85,Utilities
+2025-11-21,PIA Ticket,225.31,Travel
+2025-05-04,Train Ticket,162.15,Travel
+2025-05-13,Bazaar,241.75,Shopping
+2025-04-29,Electric Bill,177.27,Utilities
+2025-07-27,PTCL Internet,175.19,Utilities
+2025-08-05,Cinema,102.66,Entertainment
+2026-01-02,Water Bill,433.69,Utilities
+2026-02-08,PSO Pump,73.63,Transport
+2025-03-25,Hostel Dues,407.79,Rent
+2025-04-03,Amazon,131.16,Shopping
+2025-11-24,Train Ticket,108.73,Travel
+2025-09-25,Amazon,325.09,Shopping
+2025-08-12,Hotel Booking,132.98,Travel
+2025-10-17,Pharmacy,223.26,Health
+2026-01-31,Agha Khan Hospital,272.05,Health
+2025-11-25,Bazaar,374.61,Shopping
+2025-11-14,PTCL Internet,42.0,Utilities
+2025-12-15,Gym Membership,394.67,Subscriptions
+2025-09-05,PTCL Internet,258.65,Utilities
+2025-09-23,Bus Ticket,360.52,Transport
+2025-03-30,Careem,108.81,Transport
+2025-06-21,Gym Membership,95.04,Subscriptions
+2025-11-05,Amazon,166.05,Shopping
+2026-02-04,Steam Games,144.68,Entertainment
+2026-03-01,Train Ticket,227.35,Travel
+2025-12-06,Agha Khan Hospital,149.6,Health
+2025-05-26,Gym Membership,397.6,Subscriptions
+2025-07-28,Cinema,209.81,Entertainment
+2025-12-17,Sambosa,307.46,Food
+2025-07-02,Amazon,361.94,Shopping
+2026-01-01,Doctor Clinic,388.52,Health
+2025-05-22,Netflix Subscription,388.94,Subscriptions
+2025-07-12,K-Electric,100.71,Utilities
+2025-08-04,Petrol,237.11,Transport
+2025-11-05,Foodpanda,274.26,Food
+2025-08-23,K-Electric,454.69,Utilities
+2025-07-22,Cinema,155.37,Entertainment
+2026-02-25,Agha Khan Hospital,317.99,Health
+2025-12-27,Water Bill,92.22,Utilities
+2025-06-22,Pharmacy,42.27,Health
+2026-03-03,Pharmacy,393.9,Health
+2025-12-31,Panadol,354.28,Health
+2025-07-01,Train Ticket,459.77,Travel
+2025-05-24,Starbucks,64.51,Food
+2025-09-25,House Leasing,181.11,Rent
+2025-05-02,Apartment Rent,90.44,Rent
+2025-06-21,Train Ticket,364.96,Travel
+2026-01-26,Emirates Airline,383.35,Travel
+2026-02-26,Grocery,486.7,Shopping
+2025-08-25,Bazaar,302.02,Shopping
+2025-08-12,Nueplex,92.73,Entertainment
+2026-01-21,Gym Membership,316.81,Subscriptions
+2025-08-09,Chai,454.01,Food
+2025-07-15,Nueplex,157.1,Entertainment
+2025-09-04,Apartment Rent,122.91,Rent
+2025-12-08,Starbucks,374.17,Food
+2025-06-21,Careem,314.14,Transport
+2026-01-24,Steam Games,353.26,Entertainment
+2025-06-21,Apartment Rent,59.14,Rent
+2025-04-11,House Leasing,16.64,Rent
+2025-04-19,Steam Games,454.08,Entertainment
+2025-06-17,Apartment Rent,156.11,Rent
+2025-10-17,Steam Games,84.22,Entertainment
+2025-08-12,Emirates Airline,488.9,Travel
+2026-02-25,Petrol,233.15,Transport
+2026-02-13,Cloud Storage,110.58,Subscriptions
+2025-08-02,Apartment Rent,276.66,Rent
+2026-01-29,Target,422.54,Shopping
+2025-10-05,Panadol,357.21,Health
+2025-09-29,Nueplex,70.09,Entertainment
+2025-05-09,Chai,104.16,Food
+2025-11-11,Nueplex,299.56,Entertainment
+2026-01-10,Amazon,418.73,Shopping
+2025-04-14,Concert Ticket,120.5,Entertainment
+2025-11-10,Agha Khan Hospital,383.28,Health
+2025-12-02,Emirates Airline,311.26,Travel
+2025-12-31,Agha Khan Hospital,432.36,Health
+2025-06-12,Agha Khan Hospital,43.71,Health
+2025-05-29,Concert Ticket,146.83,Entertainment
+2025-10-03,Emirates Airline,63.41,Travel
+2025-11-30,Train Ticket,61.8,Travel
+2025-09-11,Cinema,375.9,Entertainment
+2025-04-03,Pharmacy,305.19,Health
+2025-05-27,Cloud Storage,371.79,Subscriptions
+2025-10-10,Spotify Premium,406.47,Subscriptions
+2025-09-03,Eid Clothes,373.97,Shopping
+2025-04-28,Train Ticket,412.53,Travel
+2025-10-17,Netflix Subscription,454.93,Subscriptions
+2026-03-20,Panadol,57.84,Health
+2025-08-19,PSO Pump,465.61,Transport
+2025-08-25,PIA Ticket,420.32,Travel
+2025-06-25,Nueplex,81.89,Entertainment
+2025-04-13,Pharmacy,336.02,Health
+2025-06-04,PTCL Internet,431.88,Utilities
+2025-07-04,Bykea,455.13,Transport
+2025-09-06,Pharmacy,245.28,Health
+2025-05-23,Sui Gas,309.77,Utilities
+2026-03-08,Train Ticket,487.71,Travel
+2025-12-04,Hostel Dues,236.15,Rent
+2025-03-27,House Leasing,94.67,Rent
+2026-02-17,Apartment Rent,245.38,Rent
+2025-12-23,House Leasing,204.58,Rent
+2025-04-19,Concert Ticket,497.9,Entertainment
+2025-12-10,Spotify Premium,342.22,Subscriptions
+2025-09-04,Agha Khan Hospital,72.09,Health
+2026-03-13,PSO Pump,488.21,Transport
+2025-07-30,Netflix Subscription,182.02,Subscriptions
+2025-12-29,Cloud Storage,241.16,Subscriptions
+2025-06-13,Amazon,97.14,Shopping
+2026-01-31,Shell Oil,474.78,Transport
+2025-07-25,Sui Gas,363.19,Utilities
+2025-05-20,Gym Membership,440.91,Subscriptions
+2025-07-26,House Leasing,97.66,Rent
+2026-01-18,Uber Ride,310.9,Transport
+2025-10-18,Pharmacy,283.11,Health
+2025-06-26,Concert Ticket,33.08,Entertainment
+2025-06-12,InDrive,138.16,Transport
+2025-07-24,Daraz,224.13,Shopping
+2025-07-19,Agha Khan Hospital,187.04,Health
+2026-02-27,Apartment Rent,383.67,Rent
+2025-12-07,Agha Khan Hospital,305.23,Health
+2025-09-25,PIA Ticket,188.19,Travel
+2025-12-30,PSO Pump,60.18,Transport
+2025-08-01,Apartment Rent,419.78,Rent
+2025-10-24,PIA Ticket,301.54,Travel
+2025-05-03,Sui Gas,150.12,Utilities
+2025-07-08,Steam Games,129.18,Entertainment
+2025-10-09,Foodpanda,17.82,Food
+2025-08-01,Concert Ticket,374.86,Entertainment
+2026-01-07,Train Ticket,413.15,Travel
+2025-10-11,K-Electric,399.33,Utilities
+2025-12-26,Grocery,50.39,Shopping
+2025-12-23,Train Ticket,306.03,Travel
+2025-10-12,House Leasing,272.52,Rent
+2025-12-11,Careem,142.1,Transport
+2026-03-05,Panadol,108.84,Health
+2025-08-15,Agha Khan Hospital,472.17,Health
+2026-02-14,Emirates Airline,402.78,Travel
+2025-07-15,Imtiaz Super Market,95.93,Shopping
+2025-06-10,Concert Ticket,113.43,Entertainment
+2025-11-18,McDonalds,486.59,Food
+2025-04-18,Pharmacy,74.4,Health
+2025-04-16,Foodpanda,220.05,Food
+2026-02-03,Sui Gas,286.39,Utilities
+2026-02-13,PIA Ticket,152.14,Travel
+2025-04-09,Water Bill,232.65,Utilities
+2025-04-02,PIA Ticket,346.6,Travel
+2025-05-15,Steam Games,322.27,Entertainment
+2025-11-30,PTCL Internet,453.31,Utilities
+2025-06-02,PIA Ticket,163.29,Travel
+2025-08-20,Starbucks,260.5,Food
+2026-03-13,Nueplex,498.47,Entertainment
+2025-08-30,Panadol,304.63,Health
+2026-02-23,McDonalds,483.54,Food
+2025-04-09,Cinema,213.47,Entertainment
+2025-09-17,Hotel Booking,416.75,Travel
+2025-09-22,Grocery,17.83,Shopping
+2025-06-06,Uber Ride,136.44,Transport
+2025-06-12,Panadol,294.71,Health
+2026-02-15,Steam Games,485.44,Entertainment
+2025-12-06,Starbucks,120.42,Food
+2025-11-18,Train Ticket,91.72,Travel
+2025-10-16,Spotify Premium,65.55,Subscriptions
+2026-01-09,Cinema,285.24,Entertainment
+2025-12-21,Steam Games,271.15,Entertainment
+2025-10-14,Target,54.72,Shopping
+2025-07-26,Train Ticket,469.54,Travel
+2025-08-29,Shell Oil,496.6,Transport
+2025-12-24,Target,50.97,Shopping
+2025-04-26,Emirates Airline,329.4,Travel
+2025-09-18,Shell Oil,407.46,Transport
+2025-11-29,Grocery,469.83,Shopping
+2025-06-30,Steam Games,194.8,Entertainment
+2025-08-12,Cinema,267.14,Entertainment
+2026-02-14,Hostel Dues,343.73,Rent
+2025-06-18,Grocery,78.8,Shopping
+2025-04-22,Agha Khan Hospital,454.77,Health
+2025-05-05,Cloud Storage,206.31,Subscriptions
+2025-08-05,House Leasing,320.95,Rent
+2026-03-09,Hostel Dues,461.9,Rent
+2025-04-17,Foodpanda,225.19,Food
+2025-08-28,Daraz,424.85,Shopping
+2025-04-28,PSO Pump,349.33,Transport
+2026-01-05,K-Electric,282.72,Utilities
+2026-02-12,K-Electric,480.64,Utilities
+2025-09-11,Daraz,52.08,Shopping
+2025-04-22,PTCL Internet,462.06,Utilities
+2025-11-13,Sambosa,75.56,Food
+2025-05-31,Uber Ride,489.0,Transport
+2025-12-13,Careem,492.82,Transport
+2025-07-22,Pharmacy,357.7,Health
+2025-12-10,Target,441.4,Shopping
+2026-01-25,Amazon,400.68,Shopping
+2025-09-17,Emirates Airline,31.93,Travel
+2026-03-05,Eid Clothes,156.48,Shopping
+2025-10-13,Apartment Rent,324.87,Rent
+2025-03-30,Gym Membership,34.21,Subscriptions
+2025-05-22,Emirates Airline,304.65,Travel
+2025-12-22,McDonalds,451.94,Food
+2026-01-18,Petrol,194.47,Transport
+2025-12-30,Cloud Storage,102.37,Subscriptions
+2026-03-14,Nueplex,329.84,Entertainment
+2026-03-02,Bazaar,251.11,Shopping
+2025-10-17,KFC,459.8,Food
+2025-11-18,Train Ticket,128.26,Travel
+2025-04-03,Foodpanda,473.43,Food
+2025-10-17,Apartment Rent,238.45,Rent
+2025-09-15,Bykea,351.56,Transport
+2025-04-17,Amazon,19.23,Shopping
+2025-12-22,Biryani,386.81,Food
+2025-12-30,Hostel Dues,75.3,Rent
+2026-03-20,Chai,386.27,Food
+2025-10-03,Foodpanda,186.18,Food
+2025-11-05,Apartment Rent,244.03,Rent
+2025-06-14,KFC,188.13,Food
+2025-12-13,Cloud Storage,499.04,Subscriptions
+2025-04-16,Medical Store,119.7,Health
+2026-01-12,Doctor Clinic,244.49,Health
+2025-10-24,Imtiaz Super Market,156.38,Shopping
+2025-06-29,Train Ticket,317.2,Travel
+2026-02-04,Pharmacy,184.06,Health
+2025-08-03,Nueplex,121.18,Entertainment
+2025-11-27,Emirates Airline,20.55,Travel
+2025-08-29,McDonalds,134.22,Food
+2025-06-13,Bus Ticket,12.2,Transport
+2025-09-01,Petrol,46.15,Transport
+2025-07-15,Foodpanda,230.41,Food
+2025-11-30,Train Ticket,90.33,Travel
+2025-08-22,Bus Ticket,169.45,Transport
+2025-08-14,Train Ticket,428.87,Travel
+2025-10-29,Concert Ticket,144.99,Entertainment
+2026-01-09,Electric Bill,252.87,Utilities
+2026-01-06,Careem,319.54,Transport
+2025-10-08,Hotel Booking,479.08,Travel
+2025-09-14,Water Bill,85.06,Utilities
+2025-11-06,Train Ticket,44.84,Travel
+2025-04-20,Pharmacy,474.69,Health
+2025-11-13,Amazon,117.44,Shopping
+2025-09-11,Sambosa,156.36,Food
+2025-09-14,Spotify Premium,138.83,Subscriptions
+2025-07-01,Apartment Rent,186.2,Rent
+2025-11-18,Imtiaz Super Market,21.29,Shopping
+2025-03-29,Daraz,323.01,Shopping
+2025-07-31,Cinema,238.04,Entertainment
+2025-07-30,Water Bill,189.59,Utilities
+2025-09-11,Pharmacy,150.8,Health
+2025-04-09,Doctor Clinic,239.05,Health
+2025-06-01,PSO Pump,79.77,Transport
+2025-07-14,Cafe,30.19,Food
+2026-03-19,Bazaar,489.62,Shopping
+2026-03-13,Electric Bill,131.33,Utilities
+2025-12-08,Spotify Premium,191.26,Subscriptions
+2026-02-10,Emirates Airline,129.19,Travel
+2025-06-21,Steam Games,21.88,Entertainment
+2025-10-06,Agha Khan Hospital,143.74,Health
+2026-02-18,Apartment Rent,25.33,Rent
+2025-10-13,Bus Ticket,235.67,Transport
+2026-02-05,Cloud Storage,148.0,Subscriptions
+2025-05-01,Chai,440.9,Food
+2025-09-24,Bazaar,389.3,Shopping
+2025-05-26,Shell Oil,425.56,Transport
+2025-07-26,Restaurant,11.58,Food
+2025-05-24,Walmart,246.91,Shopping
+2025-05-15,PIA Ticket,105.42,Travel
+2025-05-29,Starbucks,67.87,Food
+2025-10-25,K-Electric,318.35,Utilities
+2025-05-29,Cinema,311.56,Entertainment
+2025-03-21,Grocery,98.67,Shopping
+2026-03-07,Electric Bill,246.73,Utilities
+2025-04-03,Petrol,488.48,Transport
+2025-09-04,PSO Pump,497.49,Transport
+2025-10-23,Hostel Dues,279.9,Rent
+2026-03-12,PTCL Internet,454.92,Utilities
+2026-03-01,Eid Clothes,122.43,Shopping
+2026-02-21,Bus Ticket,293.25,Transport
+2025-05-16,Panadol,108.66,Health
+2025-07-27,Gym Membership,274.76,Subscriptions
+2025-09-08,Pharmacy,11.44,Health
+2025-06-23,Bazaar,249.18,Shopping
+2025-09-29,Cloud Storage,365.04,Subscriptions
+2025-12-12,Doctor Clinic,7.96,Health
+2025-11-02,Target,412.36,Shopping
+2026-01-21,Petrol,482.95,Transport
+2025-04-01,Eid Clothes,217.85,Shopping
+2025-08-24,KFC,84.98,Food
+2026-02-03,Imtiaz Super Market,31.44,Shopping
+2025-12-31,Hotel Booking,424.52,Travel
+2026-01-07,Target,257.81,Shopping
+2026-03-16,Water Bill,256.43,Utilities
+2025-04-01,Apartment Rent,310.15,Rent
+2025-03-29,Emirates Airline,435.64,Travel
+2025-08-16,PIA Ticket,109.28,Travel
+2025-04-10,Medical Store,315.09,Health
+2025-04-06,House Leasing,123.46,Rent
+2025-03-24,Panadol,179.37,Health
+2025-09-10,Pharmacy,118.85,Health
+2025-05-09,Hostel Dues,410.67,Rent
+2025-11-13,Sui Gas,10.63,Utilities
+2025-07-13,Sui Gas,284.96,Utilities
+2025-08-05,Steam Games,156.37,Entertainment
+2025-04-04,Doctor Clinic,39.65,Health
+2025-07-01,Emirates Airline,187.79,Travel
+2025-09-07,KFC,75.02,Food
+2026-03-01,Medical Store,55.69,Health
+2025-12-25,Water Bill,221.68,Utilities
+2025-03-31,Cloud Storage,422.04,Subscriptions
+2026-03-20,Agha Khan Hospital,40.29,Health
+2025-11-25,Panadol,297.57,Health
+2025-07-06,KFC,180.56,Food
+2025-11-03,Doctor Clinic,143.44,Health
+2025-11-20,House Leasing,103.61,Rent
+2025-08-28,Netflix Subscription,497.63,Subscriptions
+2025-04-30,House Leasing,337.95,Rent
+2025-08-05,Amazon,71.2,Shopping
+2025-08-14,Target,69.28,Shopping
+2025-12-19,Biryani,73.88,Food
+2026-03-20,Nueplex,350.54,Entertainment
+2025-05-18,McDonalds,216.41,Food
+2025-04-30,Uber Ride,175.75,Transport
+2026-01-21,Netflix Subscription,326.42,Subscriptions
+2025-06-08,Gym Membership,398.7,Subscriptions
+2025-07-26,Eid Clothes,197.19,Shopping
+2025-05-07,Emirates Airline,435.52,Travel
+2025-07-17,McDonalds,389.34,Food
+2025-05-17,Chai,343.61,Food
+2025-09-18,K-Electric,30.0,Utilities
+2025-11-21,PTCL Internet,281.78,Utilities
+2026-01-28,PTCL Internet,110.9,Utilities
+2026-02-16,Shell Oil,129.74,Transport
+2025-09-29,Agha Khan Hospital,171.09,Health
+2026-01-23,Agha Khan Hospital,256.6,Health
+2026-03-08,Spotify Premium,226.78,Subscriptions
+2025-07-06,Cinema,480.32,Entertainment
+2025-06-30,Netflix Subscription,278.85,Subscriptions
+2025-04-02,Hostel Dues,135.57,Rent
+2025-11-17,Cafe,331.98,Food
+2025-07-16,Careem,279.12,Transport
+2025-07-09,Concert Ticket,158.15,Entertainment
+2025-03-27,Concert Ticket,392.64,Entertainment
+2025-10-25,Water Bill,276.61,Utilities
+2025-06-22,Target,139.43,Shopping
+2026-01-21,Sambosa,342.01,Food
+2025-11-07,Netflix Subscription,138.4,Subscriptions
+2025-12-29,Cinema,418.81,Entertainment
+2025-10-12,Medical Store,203.2,Health
+2025-09-25,K-Electric,68.59,Utilities
+2025-08-22,Cloud Storage,321.78,Subscriptions
+2025-04-28,Imtiaz Super Market,204.56,Shopping
+2025-06-15,PIA Ticket,201.83,Travel
+2025-11-14,Concert Ticket,402.07,Entertainment
+2026-01-07,Daraz,35.72,Shopping
+2025-06-25,Walmart,203.91,Shopping
+2025-12-15,Starbucks,342.34,Food
+2025-12-30,Medical Store,300.31,Health
+2025-11-27,Train Ticket,368.03,Travel
+2025-04-22,Cinema,142.23,Entertainment
+2025-05-02,Foodpanda,466.06,Food
+2025-10-26,House Leasing,358.81,Rent
+2025-05-15,Careem,43.67,Transport
+2025-05-26,Steam Games,74.71,Entertainment
+2025-09-29,Sui Gas,212.44,Utilities
+2026-02-11,Train Ticket,385.56,Travel
+2026-01-06,Restaurant,233.86,Food
+2025-09-17,Bykea,328.22,Transport
+2025-08-23,Petrol,176.12,Transport
+2025-11-09,Grocery,423.89,Shopping
+2025-07-16,Spotify Premium,481.65,Subscriptions
+2025-07-19,Steam Games,221.62,Entertainment
+2026-01-30,Netflix Subscription,241.63,Subscriptions
+2025-10-27,Medical Store,378.06,Health
+2025-06-12,Panadol,66.36,Health
+2025-11-14,Agha Khan Hospital,211.67,Health
+2025-08-03,Cloud Storage,364.18,Subscriptions
+2025-10-03,House Leasing,229.62,Rent
+2025-08-22,Cloud Storage,185.56,Subscriptions
+2026-01-24,Netflix Subscription,203.37,Subscriptions
+2025-08-08,Cinema,413.54,Entertainment
+2025-06-19,Steam Games,366.41,Entertainment
+2026-02-21,Nueplex,9.92,Entertainment
+2025-11-04,Water Bill,260.0,Utilities
+2025-07-01,Cloud Storage,179.31,Subscriptions
+2025-06-03,K-Electric,374.89,Utilities
+2025-10-21,Hostel Dues,108.63,Rent
+2025-05-13,Hotel Booking,289.92,Travel
+2025-08-16,Medical Store,58.54,Health
+2026-01-22,Train Ticket,495.58,Travel
+2026-02-24,Medical Store,290.53,Health
+2026-01-01,Apartment Rent,218.1,Rent
+2025-05-05,Emirates Airline,172.2,Travel
+2025-09-13,Electric Bill,139.33,Utilities
+2025-06-10,Eid Clothes,246.77,Shopping
+2025-07-13,PIA Ticket,140.21,Travel
+2025-10-25,Netflix Subscription,40.6,Subscriptions
+2025-09-25,Bykea,47.94,Transport
+2025-11-03,Steam Games,295.98,Entertainment
+2026-02-08,Grocery,88.18,Shopping
+2025-11-05,PIA Ticket,223.77,Travel
+2026-01-15,Restaurant,313.48,Food
+2026-03-08,Cloud Storage,384.74,Subscriptions
+2025-08-16,Bus Ticket,425.22,Transport
+2025-05-19,Spotify Premium,303.16,Subscriptions
+2025-05-29,House Leasing,414.98,Rent
+2025-06-15,McDonalds,446.5,Food
+2026-03-09,Hostel Dues,120.09,Rent
+2026-01-24,Restaurant,326.58,Food
+2025-07-14,Cinema,344.34,Entertainment
+2025-12-22,Nueplex,325.98,Entertainment
+2025-05-26,InDrive,134.86,Transport
+2025-05-08,Medical Store,122.86,Health
+2025-12-25,Bazaar,484.31,Shopping
+2025-04-08,K-Electric,265.88,Utilities
+2025-10-08,Spotify Premium,184.9,Subscriptions
+2025-09-02,Water Bill,14.99,Utilities
+2025-09-28,House Leasing,327.7,Rent
+2025-10-19,Cloud Storage,425.58,Subscriptions
+2025-03-31,Medical Store,483.26,Health
+2025-07-11,Nueplex,499.43,Entertainment
+2026-03-11,Concert Ticket,110.44,Entertainment
+2025-06-02,Train Ticket,73.16,Travel
+2025-11-24,Water Bill,431.38,Utilities
+2026-01-30,Apartment Rent,309.74,Rent
+2026-03-06,Water Bill,429.47,Utilities
+2025-04-22,Doctor Clinic,11.17,Health
+2025-10-12,Medical Store,132.23,Health
+2025-06-28,Sui Gas,335.09,Utilities
+2025-11-07,Gym Membership,180.62,Subscriptions
+2025-10-16,Grocery,262.95,Shopping
+2026-01-24,Imtiaz Super Market,64.85,Shopping
+2025-12-13,Pharmacy,208.7,Health
+2025-11-06,Doctor Clinic,421.19,Health
+2025-04-29,Emirates Airline,136.79,Travel
+2025-11-14,Starbucks,99.93,Food
+2025-12-29,Nueplex,35.18,Entertainment
+2026-02-03,KFC,124.31,Food
+2025-10-05,PIA Ticket,441.95,Travel
+2025-11-04,InDrive,194.41,Transport
+2025-06-30,Electric Bill,235.33,Utilities
+2025-09-13,Netflix Subscription,306.98,Subscriptions
+2025-05-25,Agha Khan Hospital,323.58,Health
+2025-03-29,Cinema,314.37,Entertainment
+2025-11-07,Amazon,18.93,Shopping
+2026-01-08,Gym Membership,223.37,Subscriptions
+2025-04-02,Uber Ride,171.13,Transport
+2025-11-20,Shell Oil,257.79,Transport
+2026-03-06,Cinema,428.06,Entertainment
+2025-12-20,Cloud Storage,342.29,Subscriptions
+2026-03-13,Cinema,100.59,Entertainment
+2026-01-08,Doctor Clinic,190.64,Health
+2026-02-07,Uber Ride,436.25,Transport
+2026-03-19,McDonalds,468.6,Food
+2025-08-12,Amazon,111.69,Shopping
+2025-11-13,Walmart,88.47,Shopping
+2025-10-26,Hostel Dues,325.46,Rent
+2026-02-02,McDonalds,236.4,Food
+2025-04-27,K-Electric,173.91,Utilities
+2025-03-28,Cafe,471.49,Food
+2025-10-04,Nueplex,340.21,Entertainment
+2025-10-24,Spotify Premium,498.86,Subscriptions
+2025-12-18,Hotel Booking,213.83,Travel
+2025-11-20,Agha Khan Hospital,482.38,Health
+2025-12-14,Nueplex,447.16,Entertainment
+2025-11-14,Chai,494.3,Food
+2025-08-28,McDonalds,18.33,Food
+2025-07-26,Train Ticket,381.96,Travel
+2025-06-03,Target,305.31,Shopping
+2025-11-13,Electric Bill,371.26,Utilities
+2026-02-26,K-Electric,267.94,Utilities
+2025-10-29,Cafe,45.53,Food
+2025-05-04,Hotel Booking,181.41,Travel
+2026-02-11,Cinema,353.92,Entertainment
+2025-11-20,PTCL Internet,58.33,Utilities
+2025-06-02,Daraz,237.29,Shopping
+2025-03-23,Starbucks,213.43,Food
+2025-09-07,Netflix Subscription,424.23,Subscriptions
+2025-04-12,Restaurant,229.92,Food
+2025-06-14,Spotify Premium,443.73,Subscriptions
+2025-06-16,K-Electric,261.61,Utilities
+2025-09-05,Hostel Dues,236.26,Rent
+2025-07-12,Restaurant,204.31,Food
+2025-08-01,Biryani,217.29,Food
+2026-01-08,Target,303.05,Shopping
+2026-01-10,House Leasing,307.48,Rent
+2025-07-09,Hotel Booking,45.44,Travel
+2025-04-05,Pharmacy,51.04,Health
+2025-08-20,Apartment Rent,334.46,Rent
+2025-12-06,Emirates Airline,354.21,Travel
+2026-03-14,Electric Bill,108.1,Utilities
+2026-03-13,Panadol,323.32,Health
+2026-02-08,PIA Ticket,78.98,Travel
+2025-07-22,Pharmacy,325.27,Health
+2025-09-30,Train Ticket,328.13,Travel
+2025-10-17,Concert Ticket,482.14,Entertainment
+2025-07-19,Chai,26.49,Food
+2025-09-01,Shell Oil,24.44,Transport
+2025-05-09,Imtiaz Super Market,321.76,Shopping
+2025-08-21,Panadol,301.99,Health
+2025-08-16,Apartment Rent,478.21,Rent
+2025-12-16,Starbucks,488.17,Food
+2026-03-18,Emirates Airline,295.07,Travel
+2026-03-17,McDonalds,256.49,Food
+2025-08-01,Agha Khan Hospital,245.54,Health
+2026-02-03,Nueplex,122.22,Entertainment
+2025-09-16,Petrol,406.29,Transport
+2026-01-18,PSO Pump,262.51,Transport
+2025-08-15,Pharmacy,72.29,Health
+2025-09-09,Hostel Dues,422.43,Rent
+2025-05-25,Emirates Airline,132.52,Travel
+2025-04-12,Steam Games,449.15,Entertainment
+2026-02-21,Starbucks,410.33,Food
+2025-12-09,House Leasing,325.13,Rent
+2025-08-15,Hostel Dues,256.73,Rent
+2025-06-10,Pharmacy,186.18,Health
+2025-04-09,Sambosa,145.85,Food
+2025-10-31,PIA Ticket,98.76,Travel
+2025-10-04,Panadol,306.73,Health
+2025-09-13,Doctor Clinic,272.99,Health
+2025-06-20,Uber Ride,160.16,Transport
+2026-01-29,Foodpanda,269.98,Food
+2025-11-27,Cinema,373.35,Entertainment
+2025-04-17,Starbucks,136.46,Food
+2025-05-21,House Leasing,162.69,Rent
+2026-02-05,Biryani,366.39,Food
+2025-05-01,PIA Ticket,215.39,Travel
+2025-11-24,Emirates Airline,203.43,Travel
+2025-06-07,Emirates Airline,262.64,Travel
+2025-08-01,Doctor Clinic,191.41,Health
+2025-07-20,Careem,370.54,Transport
+2026-02-25,PTCL Internet,234.44,Utilities
+2025-05-19,Grocery,165.49,Shopping
+2025-07-14,Steam Games,368.98,Entertainment
+2025-08-24,House Leasing,346.45,Rent
+2026-01-02,PIA Ticket,364.97,Travel
+2025-08-27,Medical Store,291.2,Health
+2025-11-19,Doctor Clinic,97.02,Health
+2025-05-14,Netflix Subscription,463.03,Subscriptions
+2025-04-23,House Leasing,216.89,Rent
+2026-02-11,Restaurant,282.18,Food
+2026-01-01,Agha Khan Hospital,23.45,Health
+2026-01-30,Nueplex,279.62,Entertainment
+2025-08-20,Apartment Rent,196.83,Rent
+2026-02-13,PIA Ticket,38.92,Travel
+2026-03-17,KFC,298.12,Food
+2025-11-27,Hotel Booking,138.47,Travel
+2025-12-10,Netflix Subscription,101.8,Subscriptions
+2025-03-24,Netflix Subscription,380.49,Subscriptions
+2025-10-31,K-Electric,38.91,Utilities
+2025-11-30,Petrol,368.03,Transport
+2025-09-19,Medical Store,455.15,Health
+2025-03-24,Doctor Clinic,75.43,Health
+2025-12-22,Starbucks,36.36,Food
+2025-08-09,KFC,20.34,Food
+2025-07-29,Pharmacy,307.4,Health
+2025-09-21,Water Bill,375.57,Utilities
+2025-05-13,Hostel Dues,294.55,Rent
+2025-09-08,Bazaar,150.01,Shopping
+2025-09-19,Concert Ticket,349.88,Entertainment
+2026-03-03,Careem,323.39,Transport
+2025-05-04,InDrive,205.12,Transport
+2026-02-09,Agha Khan Hospital,17.26,Health
+2025-12-16,Water Bill,476.39,Utilities
+2025-08-05,Bykea,184.47,Transport
+2025-06-21,Imtiaz Super Market,263.55,Shopping
+2025-12-17,Concert Ticket,5.38,Entertainment
+2025-04-29,Doctor Clinic,489.66,Health
+2025-08-24,Apartment Rent,464.16,Rent
+2025-10-30,Eid Clothes,472.69,Shopping
+2025-06-30,PTCL Internet,126.8,Utilities
+2025-06-13,Emirates Airline,270.38,Travel
+2025-05-26,Petrol,171.94,Transport
+2025-06-16,Walmart,81.98,Shopping
+2025-04-02,Restaurant,64.88,Food
+2026-01-13,Eid Clothes,229.87,Shopping
+2025-08-20,Cinema,263.56,Entertainment
+2025-06-05,PIA Ticket,191.08,Travel
+2025-09-22,Panadol,209.45,Health
+2025-11-09,Apartment Rent,146.25,Rent
+2026-02-06,Walmart,458.26,Shopping
+2025-03-25,Bykea,372.6,Transport
+2026-01-13,Agha Khan Hospital,402.05,Health
+2025-05-16,Doctor Clinic,83.52,Health
+2025-11-21,Cloud Storage,30.51,Subscriptions
+2025-09-01,Gym Membership,253.83,Subscriptions
+2025-07-18,Apartment Rent,365.4,Rent
+2026-01-24,Concert Ticket,244.66,Entertainment
+2025-04-08,House Leasing,9.13,Rent
+2025-09-26,Careem,236.09,Transport
+2025-09-11,InDrive,424.48,Transport
+2025-06-03,PSO Pump,374.28,Transport
+2025-12-21,Shell Oil,229.77,Transport
+2026-01-25,Concert Ticket,382.65,Entertainment
+2025-10-12,Hostel Dues,428.51,Rent
+2025-09-16,Petrol,190.68,Transport
+2025-08-14,Gym Membership,219.3,Subscriptions
+2026-02-27,Apartment Rent,71.9,Rent
+2025-12-20,Concert Ticket,207.21,Entertainment
+2025-12-15,Cinema,390.39,Entertainment
+2026-01-23,Netflix Subscription,267.78,Subscriptions
+2025-09-17,InDrive,21.68,Transport
+2025-06-10,Steam Games,153.75,Entertainment
+2025-04-18,Sui Gas,90.56,Utilities
+2025-03-23,Bazaar,438.58,Shopping
+2025-11-23,Sambosa,184.39,Food
+2025-07-07,Nueplex,237.83,Entertainment
+2025-06-26,Medical Store,353.61,Health
+2025-08-31,House Leasing,152.9,Rent
+2025-07-30,House Leasing,6.67,Rent
+2025-09-19,Bus Ticket,31.79,Transport
+2025-11-27,Steam Games,450.1,Entertainment
+2026-03-01,Foodpanda,478.85,Food
+2025-05-15,Concert Ticket,173.27,Entertainment
+2025-05-13,Hotel Booking,382.59,Travel
+2025-07-19,Train Ticket,495.85,Travel
+2025-12-12,Bykea,291.17,Transport
+2025-10-03,Hostel Dues,271.9,Rent
+2025-05-27,Steam Games,29.6,Entertainment
+2026-02-25,Uber Ride,66.35,Transport
+2025-04-01,Foodpanda,35.35,Food
+2025-08-21,Gym Membership,169.9,Subscriptions
+2025-11-21,InDrive,483.65,Transport
+2025-06-17,PSO Pump,454.04,Transport
+2025-03-23,House Leasing,51.23,Rent
+2026-01-03,Bykea,124.11,Transport
+2025-04-25,Hotel Booking,220.51,Travel
+2025-04-04,Agha Khan Hospital,448.22,Health
+2025-06-21,PIA Ticket,225.67,Travel
+2026-02-24,Panadol,52.91,Health
+2025-08-08,Steam Games,248.15,Entertainment
+2025-06-06,Careem,71.09,Transport
+2025-06-29,Netflix Subscription,126.21,Subscriptions
+2025-12-18,McDonalds,134.29,Food
+2026-02-27,PIA Ticket,347.1,Travel
+2025-10-04,InDrive,124.33,Transport
+2025-08-14,Bus Ticket,328.19,Transport
+2025-10-15,InDrive,401.42,Transport
+2025-05-15,Agha Khan Hospital,128.68,Health
+2025-04-23,Panadol,407.98,Health
+2025-07-15,K-Electric,423.71,Utilities
+2026-01-08,Target,472.38,Shopping
+2026-02-14,Doctor Clinic,39.51,Health
+2025-07-16,Careem,281.64,Transport
+2025-10-14,Concert Ticket,449.89,Entertainment
+2026-01-16,Sui Gas,54.33,Utilities
+2025-03-28,Steam Games,456.1,Entertainment
+2025-10-22,Emirates Airline,158.4,Travel
+2025-05-10,Pharmacy,405.16,Health
+2025-05-19,K-Electric,147.77,Utilities
+2025-06-12,Careem,436.76,Transport
+2026-03-03,Imtiaz Super Market,254.07,Shopping
+2025-06-26,Careem,267.03,Transport
+2026-02-13,Foodpanda,320.56,Food
+2025-04-16,Target,410.39,Shopping
+2025-09-20,Gym Membership,184.34,Subscriptions
+2025-10-20,Spotify Premium,343.25,Subscriptions
+2025-10-12,Foodpanda,328.75,Food
+2025-10-22,Gym Membership,432.08,Subscriptions
+2025-12-11,Panadol,392.5,Health
+2025-06-12,KFC,411.02,Food
+2026-02-06,Medical Store,354.37,Health
+2025-08-14,Petrol,375.04,Transport
+2025-11-14,Daraz,406.37,Shopping
+2025-04-24,Daraz,489.12,Shopping
+2025-06-13,Hostel Dues,473.22,Rent
+2025-12-16,Petrol,43.71,Transport
+2025-10-26,Sui Gas,90.8,Utilities
+2025-05-01,Nueplex,393.95,Entertainment
+2026-01-10,Hostel Dues,162.64,Rent
+2025-10-22,Hostel Dues,44.57,Rent
+2025-06-30,Steam Games,397.56,Entertainment
+2025-04-13,Sambosa,235.84,Food
+2025-08-01,Shell Oil,376.47,Transport
+2025-12-08,PTCL Internet,133.18,Utilities
+2025-08-11,Concert Ticket,9.15,Entertainment
+2026-01-18,Train Ticket,434.41,Travel
+2025-12-25,Concert Ticket,441.44,Entertainment
+2025-07-23,Sambosa,262.86,Food
+2026-02-15,Spotify Premium,303.1,Subscriptions
+2025-04-27,Sambosa,56.9,Food
+2025-03-26,Concert Ticket,242.85,Entertainment
+2025-12-17,Gym Membership,487.69,Subscriptions
+2025-08-07,Bazaar,196.38,Shopping
+2025-10-11,Apartment Rent,21.81,Rent
+2025-07-05,PTCL Internet,497.14,Utilities
+2025-10-29,Amazon,167.44,Shopping
+2025-09-30,KFC,367.82,Food
+2026-01-09,Spotify Premium,289.53,Subscriptions
+2025-09-04,Bus Ticket,135.87,Transport
+2025-12-06,Hostel Dues,339.24,Rent
+2025-07-30,Starbucks,363.94,Food
+2026-03-09,Cloud Storage,411.97,Subscriptions
+2025-04-20,Bazaar,53.45,Shopping
+2026-03-04,Target,63.97,Shopping
+2025-05-22,Agha Khan Hospital,37.78,Health
+2025-05-29,Chai,43.2,Food
+2025-09-03,Doctor Clinic,35.43,Health
+2025-12-26,Bazaar,172.63,Shopping
+2025-06-06,Daraz,80.71,Shopping
+2025-08-15,PIA Ticket,316.27,Travel
+2025-10-19,InDrive,342.84,Transport
+2025-06-04,Uber Ride,458.9,Transport
+2025-11-20,Amazon,34.8,Shopping
+2025-06-23,Cinema,490.34,Entertainment
+2026-03-17,Cloud Storage,64.43,Subscriptions
+2025-05-10,InDrive,89.17,Transport
+2025-08-14,Cloud Storage,143.05,Subscriptions
+2025-10-10,Daraz,30.51,Shopping
+2025-07-15,PIA Ticket,40.54,Travel
+2026-02-09,McDonalds,331.1,Food
+2026-01-19,Imtiaz Super Market,446.02,Shopping
+2026-01-06,Panadol,241.65,Health
+2025-06-16,Panadol,393.09,Health
+2025-03-23,Apartment Rent,240.3,Rent
+2025-05-01,Netflix Subscription,233.59,Subscriptions
+2025-05-03,McDonalds,362.72,Food
+2025-09-11,Bykea,151.6,Transport
+2025-08-13,Careem,213.08,Transport
+2025-07-14,Emirates Airline,199.29,Travel
+2026-03-19,House Leasing,435.72,Rent
+2025-08-12,Hostel Dues,160.41,Rent
+2025-09-10,Concert Ticket,211.18,Entertainment
+2025-11-20,Pharmacy,406.14,Health
+2025-06-19,PSO Pump,37.35,Transport
+2025-11-17,Pharmacy,288.51,Health
+2025-07-10,Sambosa,474.48,Food
+2025-11-26,Spotify Premium,254.3,Subscriptions
+2025-07-04,Cafe,427.3,Food
+2025-11-21,Train Ticket,155.89,Travel
+2025-12-25,Hostel Dues,51.44,Rent
+2026-02-12,Walmart,178.35,Shopping
+2025-09-03,K-Electric,65.98,Utilities
+2025-04-03,Train Ticket,495.41,Travel
+2025-04-23,Restaurant,414.33,Food
+2025-11-22,Steam Games,337.58,Entertainment
+2025-10-24,Bazaar,149.36,Shopping
+2025-09-28,Hotel Booking,80.69,Travel
+2025-05-11,Hostel Dues,338.04,Rent
+2025-04-30,Cloud Storage,178.52,Subscriptions
+2026-02-28,InDrive,85.34,Transport
+2025-11-15,K-Electric,437.09,Utilities
+2025-06-15,Gym Membership,461.38,Subscriptions
+2025-07-03,Chai,56.83,Food
+2025-10-15,Agha Khan Hospital,437.14,Health
+2025-10-28,Electric Bill,229.34,Utilities
+2026-01-05,House Leasing,415.39,Rent
+2025-03-22,Gym Membership,495.24,Subscriptions
+2025-04-17,Cinema,22.04,Entertainment
+2025-10-08,Spotify Premium,301.68,Subscriptions
+2025-12-09,Agha Khan Hospital,338.57,Health
+2026-01-28,Electric Bill,365.87,Utilities
+2025-07-16,Cloud Storage,496.38,Subscriptions
+2025-09-05,Amazon,317.76,Shopping
+2025-03-24,Bazaar,307.84,Shopping
+2025-11-24,Hostel Dues,293.05,Rent
+2025-05-28,Medical Store,53.25,Health
+2026-02-21,Pharmacy,482.31,Health
+2025-09-01,Cloud Storage,273.52,Subscriptions
+2025-04-25,Concert Ticket,361.42,Entertainment
+2025-08-04,Bus Ticket,9.19,Transport
+2025-10-28,Walmart,483.39,Shopping
+2026-02-26,K-Electric,103.54,Utilities
+2026-01-25,Netflix Subscription,289.23,Subscriptions
+2025-04-01,Train Ticket,380.51,Travel
+2025-12-25,KFC,250.33,Food
+2025-10-02,Gym Membership,60.22,Subscriptions
+2025-11-26,Cloud Storage,110.01,Subscriptions
+2026-02-18,Spotify Premium,326.05,Subscriptions
+2025-04-24,Biryani,287.12,Food
+2025-06-25,Foodpanda,7.58,Food
+2025-09-10,Sambosa,21.65,Food
+2025-04-30,Spotify Premium,143.13,Subscriptions
+2026-03-01,Foodpanda,172.93,Food
+2025-09-06,Petrol,258.61,Transport
+2025-05-31,Cafe,321.58,Food
+2025-08-20,House Leasing,356.8,Rent
+2025-08-23,Petrol,374.63,Transport
+2025-05-20,Apartment Rent,92.28,Rent
+2025-11-28,Bazaar,458.82,Shopping
+2025-07-03,Amazon,487.84,Shopping
+2025-07-24,Sui Gas,219.62,Utilities
+2025-05-14,Gym Membership,498.7,Subscriptions
+2025-12-09,Shell Oil,85.4,Transport
+2025-06-05,Gym Membership,276.03,Subscriptions
+2025-09-17,Sui Gas,371.62,Utilities
+2026-01-26,Grocery,306.42,Shopping
+2025-09-03,PTCL Internet,233.07,Utilities
+2025-11-23,Panadol,244.18,Health
+2025-06-25,Careem,216.3,Transport
+2026-03-03,Walmart,283.54,Shopping
+2025-04-04,Doctor Clinic,57.83,Health
+2025-05-08,Pharmacy,484.32,Health
+2025-11-08,Steam Games,124.53,Entertainment
+2025-05-31,Panadol,86.8,Health
+2026-03-13,Emirates Airline,146.7,Travel
+2026-02-06,Imtiaz Super Market,253.19,Shopping
+2025-04-25,Spotify Premium,301.01,Subscriptions
+2025-05-05,Bazaar,71.39,Shopping
+2025-12-05,Cinema,300.98,Entertainment
+2025-10-02,Doctor Clinic,446.73,Health
+2025-12-25,PSO Pump,343.94,Transport
+2025-08-15,Cinema,334.12,Entertainment
+2025-11-11,Apartment Rent,213.62,Rent
+2025-09-04,House Leasing,449.9,Rent
+2025-09-04,InDrive,385.95,Transport
+2025-12-25,Cloud Storage,311.91,Subscriptions
+2025-09-19,Emirates Airline,408.05,Travel
+2026-03-14,Steam Games,247.61,Entertainment
+2025-04-20,House Leasing,136.96,Rent
+2025-05-25,PTCL Internet,403.95,Utilities
+2025-06-01,Eid Clothes,170.98,Shopping
+2025-12-12,Petrol,386.41,Transport
+2025-09-03,Apartment Rent,186.53,Rent
+2025-06-06,Bykea,65.62,Transport
+2026-01-08,Amazon,181.3,Shopping
+2025-06-04,Emirates Airline,102.3,Travel
+2025-09-27,Foodpanda,285.79,Food
+2025-03-21,Nueplex,349.56,Entertainment
+2025-06-04,Pharmacy,489.53,Health
+2025-09-27,Bazaar,387.29,Shopping
+2026-02-15,Panadol,243.22,Health
+2026-02-23,Cloud Storage,404.63,Subscriptions
+2025-11-14,Apartment Rent,467.23,Rent
+2025-10-11,Amazon,133.89,Shopping
+2025-09-06,Steam Games,24.36,Entertainment
+2025-09-21,Daraz,362.12,Shopping
+2026-01-25,Sui Gas,38.12,Utilities
+2025-10-06,Train Ticket,391.0,Travel
+2025-03-30,Doctor Clinic,278.63,Health
+2025-11-28,Medical Store,332.09,Health
+2026-03-01,K-Electric,367.22,Utilities
+2025-08-15,Apartment Rent,353.43,Rent
+2026-02-23,Netflix Subscription,293.04,Subscriptions
+2025-05-15,Starbucks,200.37,Food
+2025-08-13,Sui Gas,64.69,Utilities
+2025-05-22,Spotify Premium,311.76,Subscriptions
+2025-04-12,Doctor Clinic,299.4,Health
+2026-03-01,Nueplex,206.0,Entertainment
+2025-03-21,Bus Ticket,350.89,Transport
+2026-01-22,Spotify Premium,164.22,Subscriptions
+2026-03-14,Cinema,479.39,Entertainment
+2025-05-23,Starbucks,384.26,Food
+2025-07-12,Cafe,20.3,Food
+2025-06-07,PTCL Internet,267.09,Utilities
+2025-03-24,Agha Khan Hospital,134.31,Health
+2025-12-17,Hotel Booking,65.3,Travel
+2026-03-06,Cinema,71.34,Entertainment
+2025-04-09,Cinema,93.22,Entertainment
+2026-03-08,Panadol,64.88,Health
+2025-03-28,Walmart,7.89,Shopping
+2025-06-26,Starbucks,427.22,Food
+2026-01-08,KFC,252.48,Food
+2026-03-09,Steam Games,288.47,Entertainment
+2025-06-16,Starbucks,61.96,Food
+2025-10-07,Daraz,174.15,Shopping
+2025-04-12,Bus Ticket,357.45,Transport
+2026-03-06,Sui Gas,326.34,Utilities
+2025-04-29,Imtiaz Super Market,36.34,Shopping
+2025-10-20,Amazon,402.63,Shopping
+2025-07-08,Restaurant,411.5,Food
+2025-04-01,Emirates Airline,208.86,Travel
+2025-11-10,Amazon,429.74,Shopping
+2025-09-09,Cafe,390.14,Food
+2025-12-10,Sui Gas,344.34,Utilities
+2025-08-05,Medical Store,76.06,Health
+2025-07-26,Doctor Clinic,262.92,Health
+2025-12-17,Doctor Clinic,329.05,Health
+2026-02-06,Sambosa,393.57,Food
+2025-09-22,Hotel Booking,250.42,Travel
+2025-07-05,Chai,223.65,Food
+2025-06-30,Bazaar,176.82,Shopping
+2025-07-06,Amazon,333.74,Shopping
+2026-01-22,Sambosa,351.24,Food
+2025-12-09,House Leasing,104.1,Rent
+2025-12-04,Careem,477.75,Transport
+2025-05-06,Train Ticket,97.5,Travel
+2025-11-23,Apartment Rent,443.06,Rent
+2025-12-16,House Leasing,391.44,Rent
+2025-03-28,PTCL Internet,330.63,Utilities
+2025-05-21,Chai,309.66,Food
+2026-02-18,Restaurant,58.45,Food
+2025-11-05,Medical Store,152.99,Health
+2025-03-24,Hotel Booking,488.0,Travel
+2025-09-13,Cinema,394.0,Entertainment
+2026-01-13,Imtiaz Super Market,370.54,Shopping
+2025-09-04,Cinema,385.23,Entertainment
+2025-06-27,Apartment Rent,300.81,Rent
+2025-12-02,PIA Ticket,429.06,Travel
+2025-10-23,Emirates Airline,146.8,Travel
+2025-12-08,Bus Ticket,336.54,Transport
+2026-01-13,Emirates Airline,492.18,Travel
+2025-06-05,Biryani,137.64,Food
+2025-06-17,Bykea,442.58,Transport
+2025-04-03,Sui Gas,113.96,Utilities
+2025-05-13,Apartment Rent,15.46,Rent
+2025-10-16,Cloud Storage,103.51,Subscriptions
+2025-06-03,Apartment Rent,489.72,Rent
+2026-01-21,Restaurant,133.44,Food
+2025-08-01,McDonalds,464.32,Food
+2025-04-05,Apartment Rent,421.52,Rent
+2025-06-04,Cinema,116.75,Entertainment
+2025-05-25,Medical Store,439.17,Health
+2025-10-10,Bazaar,368.39,Shopping
+2025-05-12,PSO Pump,445.8,Transport
+2025-10-03,Apartment Rent,194.9,Rent
+2025-05-18,Gym Membership,470.58,Subscriptions
+2025-09-14,Steam Games,421.92,Entertainment
+2025-11-23,Sui Gas,446.14,Utilities
+2026-03-10,Cloud Storage,285.56,Subscriptions
+2026-02-15,Apartment Rent,391.95,Rent
+2026-03-17,Bus Ticket,212.19,Transport
+2026-01-15,KFC,136.91,Food
+2026-01-02,Cloud Storage,343.93,Subscriptions
+2025-10-01,PIA Ticket,81.03,Travel
+2026-01-31,K-Electric,257.65,Utilities
+2025-04-02,Sui Gas,196.81,Utilities
+2025-07-04,Walmart,13.38,Shopping
+2025-07-08,Hotel Booking,46.58,Travel
+2025-12-05,Panadol,110.76,Health
+2026-02-07,Spotify Premium,488.61,Subscriptions
+2025-05-02,Uber Ride,165.58,Transport
+2025-08-06,PIA Ticket,368.98,Travel
+2026-01-24,Train Ticket,291.41,Travel
+2026-01-17,Hostel Dues,210.56,Rent
+2025-06-20,Emirates Airline,411.43,Travel
+2025-09-06,Panadol,90.66,Health
+2025-10-16,PIA Ticket,239.24,Travel
+2025-07-13,Chai,244.39,Food
+2025-04-08,InDrive,59.48,Transport
+2025-03-25,Chai,414.77,Food
+2026-02-02,Spotify Premium,124.29,Subscriptions
+2025-06-23,House Leasing,287.34,Rent
+2025-07-09,Daraz,355.49,Shopping
+2025-07-23,Doctor Clinic,345.44,Health
+2025-08-03,Steam Games,478.93,Entertainment
+2025-03-31,Panadol,188.15,Health
+2026-01-19,Doctor Clinic,364.24,Health
+2025-06-30,McDonalds,120.29,Food
+2026-03-06,Nueplex,289.77,Entertainment
+2026-01-13,Petrol,266.41,Transport
+2026-01-31,Emirates Airline,160.89,Travel
+2025-11-21,Shell Oil,46.95,Transport
+2025-08-02,Careem,283.46,Transport
+2025-09-19,Medical Store,217.07,Health
+2026-01-04,Uber Ride,134.63,Transport
+2025-06-26,Spotify Premium,473.87,Subscriptions
+2025-12-14,Gym Membership,187.52,Subscriptions
+2025-08-08,Walmart,254.69,Shopping
+2025-06-16,Netflix Subscription,187.76,Subscriptions
+2025-08-16,PTCL Internet,14.69,Utilities
+2025-04-11,Spotify Premium,484.73,Subscriptions
+2025-05-25,Train Ticket,265.37,Travel
+2025-04-02,Panadol,382.96,Health
+2025-11-22,Shell Oil,261.8,Transport
+2025-07-28,Netflix Subscription,255.59,Subscriptions
+2026-01-13,Grocery,66.47,Shopping
+2025-11-26,Steam Games,168.15,Entertainment
+2026-02-19,Uber Ride,408.34,Transport
+2026-02-25,Netflix Subscription,44.34,Subscriptions
+2025-10-10,Hostel Dues,339.79,Rent
+2025-07-29,House Leasing,169.09,Rent
+2025-09-28,House Leasing,431.78,Rent
+2025-08-31,Steam Games,265.82,Entertainment
+2025-06-07,PIA Ticket,134.34,Travel
+2025-08-06,Emirates Airline,391.69,Travel
+2025-07-29,Gym Membership,113.51,Subscriptions
+2025-06-14,PIA Ticket,436.34,Travel
+2025-08-29,Cinema,209.81,Entertainment
+2025-10-31,House Leasing,321.65,Rent
+2025-10-01,Nueplex,479.4,Entertainment
+2025-08-02,Bykea,238.93,Transport
+2025-09-18,Spotify Premium,257.2,Subscriptions
+2025-08-09,Steam Games,9.59,Entertainment
+2025-05-31,Gym Membership,299.04,Subscriptions
+2025-04-25,Pharmacy,358.54,Health
+2025-11-01,Panadol,269.69,Health
+2025-10-28,Spotify Premium,101.65,Subscriptions
+2025-04-10,McDonalds,289.13,Food
+2025-07-09,Shell Oil,414.3,Transport
+2025-05-07,Gym Membership,359.04,Subscriptions
+2025-05-27,Steam Games,82.39,Entertainment
+2025-07-11,Uber Ride,363.5,Transport
+2025-09-20,Concert Ticket,284.35,Entertainment
+2025-12-03,Emirates Airline,247.59,Travel
+2025-10-20,Imtiaz Super Market,50.92,Shopping
+2025-10-24,Cinema,61.23,Entertainment
+2025-05-07,Panadol,486.86,Health
+2025-12-16,Starbucks,455.35,Food
+2025-10-04,Gym Membership,111.83,Subscriptions
+2025-09-03,Cafe,472.99,Food
+2025-09-01,Foodpanda,465.59,Food
+2026-02-11,Steam Games,417.86,Entertainment
+2026-02-04,Pharmacy,492.11,Health
+2025-11-13,Eid Clothes,357.77,Shopping
+2025-03-30,Electric Bill,17.7,Utilities
+2025-03-25,PTCL Internet,490.31,Utilities
+2026-03-13,KFC,470.39,Food
+2025-04-27,K-Electric,250.84,Utilities
+2025-10-03,Biryani,298.39,Food
+2025-09-16,KFC,280.59,Food
+2025-05-06,PSO Pump,414.32,Transport
+2026-02-02,Electric Bill,454.98,Utilities
+2025-07-15,Electric Bill,101.41,Utilities
+2025-07-25,Sambosa,12.45,Food
+2025-07-03,Grocery,86.66,Shopping
+2025-06-01,Daraz,336.78,Shopping
+2025-07-25,K-Electric,404.24,Utilities
+2026-02-10,Apartment Rent,445.59,Rent
+2025-12-01,Hostel Dues,264.33,Rent
+2026-02-27,Target,402.53,Shopping
+2025-08-04,Spotify Premium,451.43,Subscriptions
+2026-02-28,Water Bill,62.83,Utilities
+2025-03-30,Emirates Airline,349.14,Travel
+2025-06-03,Water Bill,463.58,Utilities
+2025-10-04,Spotify Premium,154.62,Subscriptions
+2025-11-07,InDrive,340.84,Transport
+2026-02-11,Starbucks,341.91,Food
+2026-01-30,Grocery,315.95,Shopping
+2025-10-20,Foodpanda,220.61,Food
+2026-01-22,Electric Bill,294.96,Utilities
+2025-05-18,Gym Membership,367.17,Subscriptions
+2025-04-01,Spotify Premium,188.39,Subscriptions
+2025-04-02,Pharmacy,256.29,Health
+2025-10-29,McDonalds,126.67,Food
+2025-05-26,Apartment Rent,416.06,Rent
+2026-01-21,Amazon,195.06,Shopping
+2025-06-09,Hotel Booking,182.02,Travel
+2026-02-08,Sambosa,236.57,Food
+2026-01-21,McDonalds,90.54,Food
+2025-07-09,Uber Ride,130.36,Transport
+2025-12-04,K-Electric,146.34,Utilities
+2025-04-20,Foodpanda,440.5,Food
+2026-01-25,Netflix Subscription,292.61,Subscriptions
+2025-03-25,Hostel Dues,437.59,Rent
+2025-07-05,Gym Membership,30.41,Subscriptions
+2026-01-08,Water Bill,350.01,Utilities
+2025-08-23,House Leasing,364.93,Rent
+2025-04-30,Steam Games,103.44,Entertainment
+2025-04-21,Medical Store,374.57,Health
+2026-03-07,Doctor Clinic,107.99,Health
+2026-01-26,Hostel Dues,144.83,Rent
+2025-12-31,Agha Khan Hospital,67.98,Health
+2025-10-08,Apartment Rent,159.29,Rent
+2025-05-27,Doctor Clinic,285.25,Health
+2025-12-06,Netflix Subscription,263.26,Subscriptions
+2025-11-22,Petrol,182.47,Transport
+2025-08-09,Nueplex,378.91,Entertainment
+2025-06-09,Apartment Rent,394.96,Rent
+2025-08-21,Sambosa,148.72,Food
+2025-04-10,Pharmacy,464.51,Health
+2025-07-27,PIA Ticket,52.02,Travel
+2025-12-19,Uber Ride,486.13,Transport
+2026-03-12,Nueplex,20.42,Entertainment
+2025-08-22,Steam Games,306.51,Entertainment
+2025-05-04,Netflix Subscription,490.22,Subscriptions
+2025-09-10,House Leasing,151.13,Rent
+2026-01-08,KFC,9.3,Food
+2025-04-30,Steam Games,463.67,Entertainment
+2025-04-14,K-Electric,10.98,Utilities
+2025-10-26,Panadol,249.13,Health
+2025-09-11,Agha Khan Hospital,208.62,Health
+2025-12-23,Cinema,135.75,Entertainment
+2025-10-04,KFC,209.35,Food
+2025-09-03,Imtiaz Super Market,170.73,Shopping
+2025-10-11,Train Ticket,467.32,Travel
+2025-07-08,Petrol,328.5,Transport
+2025-11-05,PIA Ticket,308.07,Travel
+2025-05-31,InDrive,96.09,Transport
+2025-05-20,PIA Ticket,404.18,Travel
+2025-10-09,PSO Pump,290.55,Transport
+2025-03-25,Doctor Clinic,391.33,Health
+2025-05-30,Walmart,318.39,Shopping
+2025-12-07,Apartment Rent,97.57,Rent
+2025-05-07,InDrive,104.44,Transport
+2025-10-20,Sui Gas,289.53,Utilities
+2025-04-07,Emirates Airline,196.06,Travel
+2025-08-28,Grocery,105.23,Shopping
+2025-12-13,Cinema,446.27,Entertainment
+2025-09-03,Hostel Dues,262.68,Rent
+2025-09-01,Imtiaz Super Market,217.66,Shopping
+2025-06-19,Concert Ticket,489.77,Entertainment
+2025-09-18,InDrive,304.23,Transport
+2026-02-10,Pharmacy,449.11,Health
+2026-03-13,Train Ticket,31.43,Travel
+2025-10-16,Panadol,214.03,Health
+2026-01-27,K-Electric,66.26,Utilities
+2025-05-27,Netflix Subscription,470.05,Subscriptions
+2026-01-16,House Leasing,362.23,Rent
+2025-04-14,Water Bill,155.14,Utilities
+2025-11-30,House Leasing,466.94,Rent
+2025-05-03,Concert Ticket,18.14,Entertainment
+2025-11-17,Doctor Clinic,215.51,Health
+2025-10-16,Petrol,115.56,Transport
+2025-10-06,Apartment Rent,281.58,Rent
+2025-03-23,Electric Bill,463.14,Utilities
+2025-12-25,Gym Membership,369.24,Subscriptions
+2026-02-01,Apartment Rent,226.51,Rent
+2025-12-23,Hostel Dues,357.16,Rent
+2025-12-07,Gym Membership,75.5,Subscriptions
+2025-07-10,Spotify Premium,236.94,Subscriptions
+2025-10-22,Restaurant,100.02,Food
+2025-05-21,Emirates Airline,457.66,Travel
+2025-07-06,Daraz,365.59,Shopping
+2025-07-21,Hotel Booking,316.58,Travel
+2025-04-20,Gym Membership,466.78,Subscriptions
+2025-05-09,Pharmacy,106.12,Health
+2026-01-19,Train Ticket,291.23,Travel
+2025-12-30,Spotify Premium,363.64,Subscriptions
+2025-10-16,Bus Ticket,248.28,Transport
+2025-06-17,Grocery,333.83,Shopping
+2026-01-23,Hostel Dues,155.79,Rent
+2025-04-25,Hotel Booking,37.42,Travel
+2025-06-27,Apartment Rent,277.06,Rent
+2025-08-25,Emirates Airline,17.09,Travel
+2025-05-01,Cloud Storage,349.6,Subscriptions
+2025-09-13,PTCL Internet,195.14,Utilities
+2025-11-09,Netflix Subscription,244.91,Subscriptions
+2026-02-02,Agha Khan Hospital,465.34,Health
+2025-08-16,Foodpanda,104.23,Food
+2026-03-08,Train Ticket,406.14,Travel
+2025-08-20,Hostel Dues,208.94,Rent
+2026-02-14,Shell Oil,139.92,Transport
+2025-05-30,Restaurant,473.1,Food
+2025-04-29,House Leasing,323.17,Rent
+2025-09-28,Careem,326.73,Transport
+2025-08-02,Cafe,390.64,Food
+2025-12-09,PIA Ticket,445.73,Travel
+2026-03-10,Panadol,8.13,Health
+2025-06-08,Cinema,386.53,Entertainment
+2025-05-31,InDrive,497.94,Transport
+2025-12-14,Water Bill,297.92,Utilities
+2025-07-26,K-Electric,303.12,Utilities
+2025-12-23,Starbucks,386.69,Food
+2025-07-07,Apartment Rent,335.71,Rent
+2026-03-17,Sui Gas,382.09,Utilities
+2025-03-25,Foodpanda,486.42,Food
+2025-12-03,Daraz,184.13,Shopping
+2026-02-28,Electric Bill,169.68,Utilities
+2025-10-31,Electric Bill,193.29,Utilities
+2025-11-10,Nueplex,169.42,Entertainment
+2026-02-03,Gym Membership,498.41,Subscriptions
+2025-12-01,Nueplex,90.78,Entertainment
+2025-07-10,Apartment Rent,313.26,Rent
+2025-08-31,Concert Ticket,450.21,Entertainment
+2026-01-21,Eid Clothes,313.97,Shopping
+2025-09-10,PTCL Internet,257.82,Utilities
+2025-10-04,Panadol,187.47,Health
+2025-08-19,PIA Ticket,471.28,Travel
+2026-03-12,Concert Ticket,422.86,Entertainment
+2025-07-06,Netflix Subscription,43.28,Subscriptions
+2025-07-18,Panadol,187.8,Health
+2025-04-01,Steam Games,188.02,Entertainment
+2026-02-03,Concert Ticket,165.62,Entertainment
+2025-10-05,PTCL Internet,214.49,Utilities
+2026-02-20,Cinema,75.39,Entertainment
+2025-06-20,Agha Khan Hospital,333.55,Health
+2025-10-14,Restaurant,132.78,Food
+2026-01-09,Doctor Clinic,145.3,Health
+2025-12-19,Steam Games,374.26,Entertainment
+2025-12-19,Cinema,152.24,Entertainment
+2026-01-27,Gym Membership,411.37,Subscriptions
+2025-09-20,Petrol,258.05,Transport
+2026-01-03,KFC,376.32,Food
+2026-03-13,Eid Clothes,298.99,Shopping
+2025-04-23,Steam Games,275.0,Entertainment
+2025-07-11,Starbucks,256.05,Food
+2026-02-21,Gym Membership,482.23,Subscriptions
+2025-07-03,Steam Games,473.15,Entertainment
+2025-11-29,Electric Bill,186.56,Utilities
+2025-09-18,Daraz,466.17,Shopping
+2025-12-18,Daraz,199.12,Shopping
+2025-10-21,Uber Ride,423.87,Transport
+2026-01-03,Doctor Clinic,49.92,Health
+2025-10-11,Eid Clothes,173.77,Shopping
+2026-03-16,Careem,398.59,Transport
+2025-05-29,Cloud Storage,12.76,Subscriptions
+2025-08-02,Electric Bill,287.32,Utilities
+2025-06-12,Concert Ticket,59.51,Entertainment
+2025-04-14,Cinema,411.97,Entertainment
+2025-03-26,Bus Ticket,259.14,Transport
+2025-07-10,Restaurant,113.69,Food
+2025-09-11,Medical Store,181.4,Health
+2026-03-15,Hotel Booking,289.77,Travel
+2025-07-15,McDonalds,61.78,Food
+2025-04-18,Doctor Clinic,448.3,Health
+2026-01-02,Eid Clothes,58.83,Shopping
+2025-08-16,Foodpanda,132.95,Food
+2025-10-18,Medical Store,240.43,Health
+2025-08-10,Emirates Airline,307.19,Travel
+2025-08-06,Concert Ticket,81.45,Entertainment
+2025-09-18,Netflix Subscription,196.72,Subscriptions
+2025-05-08,Shell Oil,314.26,Transport
+2025-06-12,Apartment Rent,241.84,Rent
+2025-03-30,Petrol,161.75,Transport
+2025-09-04,Spotify Premium,95.38,Subscriptions
+2026-01-16,PIA Ticket,299.17,Travel
+2026-01-22,Steam Games,101.05,Entertainment
+2025-11-16,House Leasing,70.48,Rent
+2025-09-19,Walmart,328.52,Shopping
+2025-10-10,House Leasing,75.27,Rent
+2025-03-29,Target,399.23,Shopping
+2025-04-23,Hostel Dues,112.17,Rent
+2025-06-16,Cinema,54.51,Entertainment
+2026-02-23,PIA Ticket,360.51,Travel
+2026-02-13,Daraz,69.17,Shopping
+2025-05-11,Sambosa,241.54,Food
+2025-11-26,Cinema,91.62,Entertainment
+2026-01-11,Panadol,13.35,Health
+2026-03-01,Spotify Premium,248.71,Subscriptions
+2025-05-29,Cinema,286.02,Entertainment
+2025-07-01,Sui Gas,114.37,Utilities
+2025-10-26,Apartment Rent,114.38,Rent
+2025-09-04,KFC,188.6,Food
+2025-04-14,Cloud Storage,367.88,Subscriptions
+2026-01-06,PSO Pump,35.15,Transport
+2025-05-01,Emirates Airline,358.56,Travel
+2025-06-08,Agha Khan Hospital,45.53,Health
+2026-01-28,Hotel Booking,44.52,Travel
+2025-10-23,Gym Membership,352.5,Subscriptions
+2025-04-04,Sui Gas,173.19,Utilities
+2026-01-28,PIA Ticket,171.11,Travel
+2025-04-12,Sui Gas,149.99,Utilities
+2025-08-25,Hostel Dues,318.89,Rent
+2025-04-13,Cafe,441.68,Food
+2025-09-11,Steam Games,340.01,Entertainment
+2025-06-21,Emirates Airline,159.36,Travel
+2025-05-05,Electric Bill,452.2,Utilities
+2025-06-02,Cinema,352.96,Entertainment
+2026-02-19,Pharmacy,456.99,Health
+2025-09-16,Agha Khan Hospital,366.17,Health
+2025-04-06,Water Bill,389.07,Utilities
+2025-11-29,Electric Bill,188.3,Utilities
+2025-12-06,Restaurant,250.73,Food
+2025-10-30,Uber Ride,141.41,Transport
+2025-10-06,Spotify Premium,310.95,Subscriptions
+2026-02-09,Steam Games,392.99,Entertainment
+2025-05-21,Panadol,206.91,Health
+2025-12-29,Bus Ticket,171.92,Transport
+2025-06-03,Target,302.8,Shopping
+2026-01-02,Biryani,184.88,Food
+2025-10-23,Amazon,283.0,Shopping
+2025-10-28,Medical Store,40.28,Health
+2025-08-28,Concert Ticket,372.78,Entertainment
+2025-12-28,Emirates Airline,25.8,Travel
+2025-05-12,InDrive,442.31,Transport
+2025-04-01,Hostel Dues,156.93,Rent
+2025-04-19,Uber Ride,282.03,Transport
+2025-05-02,Hotel Booking,88.01,Travel
+2025-07-14,Cloud Storage,373.93,Subscriptions
+2025-05-03,Steam Games,306.0,Entertainment
+2025-07-28,Apartment Rent,192.01,Rent
+2025-09-01,Daraz,149.73,Shopping
+2025-08-12,Water Bill,327.53,Utilities
+2025-11-14,Hostel Dues,101.53,Rent
+2025-06-26,Petrol,194.97,Transport
+2025-06-21,Petrol,44.36,Transport
+2025-03-21,Sui Gas,293.88,Utilities
+2025-12-25,PTCL Internet,234.87,Utilities
+2025-04-29,Apartment Rent,78.94,Rent
+2025-10-14,InDrive,183.32,Transport
+2026-01-02,Panadol,55.99,Health
+2026-01-10,Emirates Airline,180.73,Travel
+2025-09-19,Hotel Booking,288.27,Travel
+2025-03-27,Emirates Airline,253.28,Travel
+2026-01-08,Netflix Subscription,167.92,Subscriptions
+2025-10-16,Electric Bill,57.05,Utilities
+2025-09-26,Grocery,415.48,Shopping
+2025-10-12,House Leasing,53.68,Rent
+2025-12-21,Apartment Rent,347.21,Rent
+2025-06-08,Sui Gas,290.55,Utilities
+2026-01-05,Grocery,93.9,Shopping
+2026-01-14,Electric Bill,454.43,Utilities
+2025-04-21,Hotel Booking,315.62,Travel
+2026-03-13,Medical Store,129.77,Health
+2025-07-29,Hotel Booking,200.29,Travel
+2025-09-06,Medical Store,371.59,Health
+2025-08-15,Restaurant,226.36,Food
+2025-10-01,KFC,400.5,Food
+2026-01-03,Chai,425.84,Food
+2025-04-04,Hotel Booking,236.96,Travel
+2025-07-02,Biryani,178.51,Food
+2025-08-13,House Leasing,459.7,Rent
+2025-07-19,Agha Khan Hospital,173.67,Health
+2025-05-30,Doctor Clinic,22.83,Health
+2026-01-02,Careem,148.67,Transport
+2026-03-14,Agha Khan Hospital,110.19,Health
+2025-04-16,Medical Store,276.56,Health
+2025-09-28,Hotel Booking,384.44,Travel
+2025-08-19,Bykea,116.8,Transport
+2026-03-12,Concert Ticket,175.26,Entertainment
+2025-11-17,InDrive,322.8,Transport
+2025-06-03,Biryani,275.03,Food
+2025-10-26,Electric Bill,46.26,Utilities
+2025-12-21,Nueplex,31.96,Entertainment
+2025-09-24,Steam Games,375.22,Entertainment
+2025-12-07,Shell Oil,365.83,Transport
+2025-04-02,Water Bill,308.02,Utilities
+2025-04-21,Sui Gas,443.9,Utilities
+2025-12-21,K-Electric,350.33,Utilities
+2025-09-19,House Leasing,35.63,Rent
+2026-01-09,Biryani,185.68,Food
+2025-07-29,Medical Store,431.29,Health
+2025-08-11,Hostel Dues,203.9,Rent
+2025-11-09,Water Bill,321.13,Utilities
+2025-09-10,Train Ticket,114.73,Travel
+2026-01-05,Concert Ticket,199.98,Entertainment
+2025-09-28,Nueplex,416.58,Entertainment
+2025-07-14,Concert Ticket,406.86,Entertainment
+2025-07-13,House Leasing,256.84,Rent
+2025-07-14,Cinema,449.86,Entertainment
+2025-12-29,Cinema,460.95,Entertainment
+2025-05-30,Imtiaz Super Market,462.96,Shopping
+2025-09-24,Hostel Dues,226.75,Rent
+2025-06-10,PIA Ticket,9.15,Travel
+2025-06-03,Water Bill,395.43,Utilities
+2025-07-30,PIA Ticket,391.57,Travel
+2026-03-14,Medical Store,194.98,Health
+2025-12-19,Emirates Airline,186.55,Travel
+2025-05-30,Cinema,274.39,Entertainment
+2025-05-16,House Leasing,36.76,Rent
+2026-03-08,House Leasing,5.53,Rent
+2025-09-17,House Leasing,383.97,Rent
+2026-01-12,Daraz,230.36,Shopping
+2025-06-05,Starbucks,493.07,Food
+2025-11-16,Petrol,273.95,Transport
+2026-01-31,KFC,304.72,Food
+2025-11-13,PTCL Internet,213.22,Utilities
+2025-12-17,Hostel Dues,370.79,Rent
+2025-09-24,Eid Clothes,296.5,Shopping
+2025-12-29,Careem,138.98,Transport
+2025-11-17,Biryani,396.41,Food
+2026-01-18,Amazon,199.45,Shopping
+2025-10-16,Apartment Rent,440.07,Rent
+2025-05-08,Cafe,9.11,Food
+2025-03-27,Amazon,169.97,Shopping
+2025-07-31,Cloud Storage,60.68,Subscriptions
+2025-12-13,K-Electric,6.57,Utilities
+2025-10-31,Apartment Rent,174.3,Rent
+2025-10-30,Bazaar,478.86,Shopping
+2025-03-27,Emirates Airline,427.39,Travel
+2025-11-30,House Leasing,14.76,Rent
+2026-02-14,Water Bill,89.44,Utilities
+2025-07-02,Cloud Storage,52.29,Subscriptions
+2025-08-22,Sambosa,77.03,Food
+2025-04-16,Hostel Dues,57.79,Rent
+2025-09-18,Sui Gas,129.98,Utilities
+2025-10-23,Imtiaz Super Market,35.41,Shopping
+2025-06-22,PTCL Internet,297.42,Utilities
+2026-01-19,Chai,99.77,Food
+2026-02-05,Imtiaz Super Market,13.37,Shopping
+2025-06-01,Cinema,494.6,Entertainment
+2025-04-08,Petrol,384.1,Transport
+2025-06-09,Foodpanda,195.73,Food
+2025-12-30,Hostel Dues,201.89,Rent
+2025-08-25,Petrol,344.08,Transport
+2025-03-25,House Leasing,455.37,Rent
+2025-12-15,Daraz,45.05,Shopping
+2025-04-27,Apartment Rent,44.82,Rent
+2025-06-17,Netflix Subscription,106.92,Subscriptions
+2025-07-02,Restaurant,448.67,Food
+2025-07-27,Amazon,18.1,Shopping
+2025-08-26,PTCL Internet,142.01,Utilities
+2025-12-01,Concert Ticket,150.42,Entertainment
+2025-07-09,Careem,470.13,Transport
+2025-12-23,Electric Bill,97.42,Utilities
+2025-04-23,Panadol,307.39,Health
+2026-01-03,Apartment Rent,438.19,Rent
+2025-11-13,Apartment Rent,163.78,Rent
+2026-02-06,Doctor Clinic,256.7,Health
+2025-08-31,Careem,491.31,Transport
+2026-01-11,Train Ticket,402.57,Travel
+2025-06-24,PIA Ticket,236.96,Travel
+2025-04-27,Agha Khan Hospital,134.16,Health
+2025-12-20,Panadol,330.33,Health
+2025-08-10,Steam Games,480.13,Entertainment
+2025-04-23,Starbucks,406.73,Food
+2025-04-10,Uber Ride,65.48,Transport
+2025-07-17,KFC,144.1,Food
+2026-02-14,Walmart,151.01,Shopping
+2025-04-17,Spotify Premium,433.52,Subscriptions
+2025-04-06,Spotify Premium,18.8,Subscriptions
+2025-07-31,Gym Membership,327.95,Subscriptions
+2025-03-30,Emirates Airline,428.13,Travel
+2026-02-11,Cloud Storage,125.13,Subscriptions
+2025-12-02,Apartment Rent,354.44,Rent
+2025-10-09,Panadol,338.23,Health
+2025-06-10,Hostel Dues,224.57,Rent
+2026-01-09,Spotify Premium,345.68,Subscriptions
+2026-03-06,PTCL Internet,227.89,Utilities
+2025-07-22,Shell Oil,414.22,Transport
+2025-05-07,House Leasing,296.77,Rent
+2026-01-14,Cloud Storage,367.64,Subscriptions
+2025-08-09,PIA Ticket,12.96,Travel
+2026-01-03,Bus Ticket,120.16,Transport
+2025-12-24,Apartment Rent,304.73,Rent
+2025-09-11,Eid Clothes,21.16,Shopping
+2025-04-18,House Leasing,221.43,Rent
+2025-12-02,Panadol,49.83,Health
+2025-11-11,Starbucks,482.83,Food
+2025-08-28,Netflix Subscription,140.54,Subscriptions
+2025-10-08,Water Bill,192.93,Utilities
+2026-02-28,House Leasing,398.6,Rent
+2025-03-21,Medical Store,156.49,Health
+2025-09-03,Apartment Rent,141.65,Rent
+2026-03-01,Gym Membership,409.23,Subscriptions
+2025-05-01,Emirates Airline,489.98,Travel
+2025-04-14,Target,215.34,Shopping
+2026-01-06,Apartment Rent,333.6,Rent
+2025-04-20,Petrol,142.19,Transport
+2026-01-07,PTCL Internet,209.86,Utilities
+2025-07-31,Imtiaz Super Market,377.2,Shopping
+2025-06-27,Foodpanda,157.09,Food
+2025-12-12,Doctor Clinic,358.57,Health
+2025-07-13,PTCL Internet,252.0,Utilities
+2026-01-07,KFC,17.92,Food
+2025-03-29,Grocery,430.23,Shopping
+2025-12-15,Hostel Dues,50.78,Rent
+2025-04-18,Hotel Booking,237.38,Travel
+2026-03-12,Water Bill,350.59,Utilities
+2025-05-02,Water Bill,204.12,Utilities
+2025-05-26,Apartment Rent,326.35,Rent
+2025-07-03,Panadol,94.96,Health
+2025-09-20,Biryani,125.39,Food
+2025-10-31,Hostel Dues,280.56,Rent
+2026-03-06,Petrol,298.41,Transport
+2025-09-18,Eid Clothes,17.06,Shopping
+2025-05-28,Sambosa,137.12,Food
+2025-08-18,Target,61.21,Shopping
+2025-10-01,McDonalds,282.43,Food
+2025-09-13,Steam Games,149.32,Entertainment
+2025-03-29,Shell Oil,488.39,Transport
+2025-12-03,Panadol,459.48,Health
+2025-04-18,Cafe,433.77,Food
+2025-10-08,Biryani,409.11,Food
+2025-07-03,Starbucks,281.06,Food
+2025-08-14,Shell Oil,179.58,Transport
+2025-04-25,Concert Ticket,8.32,Entertainment
+2025-08-31,Sambosa,207.11,Food
+2026-03-08,Panadol,196.4,Health
+2025-09-17,Nueplex,493.58,Entertainment
+2025-08-05,Doctor Clinic,492.85,Health
+2025-11-01,Hotel Booking,142.18,Travel
+2025-05-12,Starbucks,47.87,Food
+2025-06-04,House Leasing,360.37,Rent
+2025-05-16,Cinema,9.41,Entertainment
+2026-02-07,Apartment Rent,265.65,Rent
+2025-07-04,Cinema,365.28,Entertainment
+2025-10-16,Hotel Booking,496.8,Travel
+2026-02-05,Petrol,387.5,Transport
+2025-05-19,Train Ticket,6.78,Travel
+2025-04-22,Foodpanda,444.29,Food
+2026-02-15,Bus Ticket,143.44,Transport
+2026-02-08,Cloud Storage,382.79,Subscriptions
+2025-09-01,Train Ticket,171.69,Travel
+2025-08-08,PTCL Internet,84.97,Utilities
+2025-10-13,House Leasing,375.87,Rent
+2026-03-05,Apartment Rent,466.31,Rent
+2025-10-13,Hostel Dues,297.16,Rent
+2025-04-13,Water Bill,52.29,Utilities
+2025-10-04,Panadol,437.9,Health
+2026-01-23,Panadol,98.95,Health
+2025-10-09,Spotify Premium,426.99,Subscriptions
+2025-04-22,PSO Pump,50.07,Transport
+2025-12-09,K-Electric,352.95,Utilities
+2025-12-11,Apartment Rent,183.7,Rent
+2025-12-19,Bazaar,415.45,Shopping
+2025-07-07,Doctor Clinic,340.72,Health
+2025-04-29,House Leasing,289.71,Rent
+2025-06-29,Electric Bill,144.41,Utilities
+2025-08-14,House Leasing,247.03,Rent
+2025-10-27,Emirates Airline,423.88,Travel
+2026-01-29,Hostel Dues,185.27,Rent
+2025-04-28,Doctor Clinic,392.49,Health
+2025-09-28,Netflix Subscription,88.47,Subscriptions
+2025-06-20,Apartment Rent,50.82,Rent
+2025-10-03,PSO Pump,320.35,Transport
+2025-11-28,Medical Store,333.35,Health
+2025-03-25,Bykea,88.96,Transport
+2025-11-28,PTCL Internet,133.73,Utilities
+2025-09-15,PSO Pump,345.72,Transport
+2025-08-21,Hotel Booking,119.06,Travel
+2025-09-06,Spotify Premium,294.22,Subscriptions
+2025-04-15,PSO Pump,147.63,Transport
+2025-09-12,Electric Bill,29.27,Utilities
+2025-12-12,Bus Ticket,282.73,Transport
+2026-03-02,Cinema,489.67,Entertainment
+2026-03-18,K-Electric,441.83,Utilities
+2025-08-14,Daraz,350.29,Shopping
+2025-12-30,Doctor Clinic,434.43,Health
+2025-12-16,Sambosa,118.76,Food
+2025-04-24,Hotel Booking,411.49,Travel
+2025-10-15,Water Bill,62.42,Utilities
+2025-09-13,Electric Bill,258.0,Utilities
+2025-09-16,PIA Ticket,18.39,Travel
+2025-12-13,Train Ticket,337.38,Travel
+2026-03-04,PIA Ticket,235.3,Travel
+2026-02-02,Medical Store,28.01,Health
+2025-08-14,Hotel Booking,237.2,Travel
+2026-03-13,Hostel Dues,392.6,Rent
+2025-03-31,Hostel Dues,379.75,Rent
+2025-07-21,Biryani,274.62,Food
+2025-11-18,Panadol,73.54,Health
+2025-08-07,KFC,206.49,Food
+2026-02-25,Eid Clothes,407.57,Shopping
+2026-01-02,Concert Ticket,457.44,Entertainment
+2025-09-06,House Leasing,434.83,Rent
+2025-12-07,Medical Store,328.48,Health
+2025-03-27,Panadol,38.14,Health
+2025-10-29,Shell Oil,396.65,Transport
+2025-06-24,Cloud Storage,139.79,Subscriptions
+2025-12-06,Grocery,248.4,Shopping
+2025-10-05,Cloud Storage,84.66,Subscriptions
+2025-04-07,Netflix Subscription,289.52,Subscriptions
+2025-09-02,Walmart,213.55,Shopping
+2025-10-20,Gym Membership,360.02,Subscriptions
+2025-12-20,Walmart,219.71,Shopping
+2026-03-19,PIA Ticket,76.63,Travel
+2025-06-15,Agha Khan Hospital,149.21,Health
+2025-11-05,Emirates Airline,455.77,Travel
+2025-09-26,Cloud Storage,119.87,Subscriptions
+2025-07-05,Cinema,105.6,Entertainment
+2025-09-24,Biryani,201.37,Food
+2025-11-04,Concert Ticket,354.04,Entertainment
+2026-02-28,Nueplex,457.52,Entertainment
+2026-01-13,PSO Pump,450.3,Transport
+2025-05-14,Cloud Storage,199.44,Subscriptions
+2025-09-30,K-Electric,236.09,Utilities
+2025-12-15,Uber Ride,321.77,Transport
+2025-03-28,Netflix Subscription,5.72,Subscriptions
+2025-11-06,Petrol,259.55,Transport
+2026-02-24,McDonalds,395.47,Food
+2026-02-03,K-Electric,17.28,Utilities
+2025-11-02,Steam Games,478.96,Entertainment
+2025-12-22,Petrol,359.91,Transport
+2025-06-10,Target,310.11,Shopping
+2025-07-31,K-Electric,458.71,Utilities
+2025-09-19,Steam Games,268.15,Entertainment
+2025-04-11,Water Bill,491.62,Utilities
+2026-01-08,House Leasing,211.67,Rent
+2025-11-04,Shell Oil,454.57,Transport
+2025-05-26,Imtiaz Super Market,35.24,Shopping
+2025-07-08,Nueplex,17.57,Entertainment
+2026-01-31,Amazon,283.94,Shopping
+2025-04-10,Starbucks,387.77,Food
+2025-07-25,Amazon,448.94,Shopping
+2026-01-27,Water Bill,321.74,Utilities
+2025-09-09,Netflix Subscription,340.87,Subscriptions
+2025-08-19,Netflix Subscription,399.35,Subscriptions
+2026-02-28,Hotel Booking,380.53,Travel
+2026-03-20,Gym Membership,255.11,Subscriptions
+2025-10-06,Doctor Clinic,496.57,Health
+2025-10-02,Train Ticket,193.58,Travel
+2025-10-22,Panadol,290.42,Health
+2025-08-01,Eid Clothes,123.88,Shopping
+2025-08-29,Hostel Dues,342.5,Rent
+2025-09-06,Train Ticket,395.31,Travel
+2025-09-29,Netflix Subscription,402.62,Subscriptions
+2025-07-29,Petrol,160.96,Transport
+2026-02-09,Uber Ride,336.63,Transport
+2025-10-16,Pharmacy,312.8,Health
+2025-07-02,Daraz,52.07,Shopping
+2025-05-08,Nueplex,57.85,Entertainment
+2025-03-26,House Leasing,430.06,Rent
+2025-06-18,Spotify Premium,151.69,Subscriptions
+2025-07-04,PTCL Internet,305.0,Utilities
+2025-05-10,Emirates Airline,316.49,Travel
+2025-05-22,Cloud Storage,406.53,Subscriptions
+2025-12-11,Imtiaz Super Market,272.22,Shopping
+2025-05-31,Eid Clothes,140.93,Shopping
+2025-03-31,Hostel Dues,43.31,Rent
+2025-05-05,Hotel Booking,237.6,Travel
+2025-10-01,Hotel Booking,10.42,Travel
+2025-07-08,Doctor Clinic,428.88,Health
+2026-03-18,Chai,42.7,Food
+2025-05-01,PIA Ticket,19.82,Travel
+2025-09-17,Foodpanda,20.33,Food
+2026-01-12,KFC,38.34,Food
+2026-03-16,Apartment Rent,304.11,Rent
+2025-10-16,Apartment Rent,65.96,Rent
+2025-04-03,Walmart,218.44,Shopping
+2025-06-14,Gym Membership,327.85,Subscriptions
+2025-04-28,Panadol,74.0,Health
+2025-11-06,Bus Ticket,25.31,Transport
+2025-05-08,Water Bill,88.26,Utilities
+2025-05-09,Hotel Booking,225.19,Travel
+2026-03-20,Medical Store,399.8,Health
+2025-05-14,K-Electric,90.77,Utilities
+2025-09-16,Emirates Airline,367.42,Travel
+2025-07-14,Hotel Booking,69.22,Travel
+2025-12-21,PIA Ticket,268.86,Travel
+2025-07-24,Doctor Clinic,124.48,Health
+2025-12-31,Emirates Airline,62.94,Travel
+2025-11-08,Agha Khan Hospital,9.86,Health
+2025-09-06,Gym Membership,191.88,Subscriptions
+2025-07-26,Nueplex,47.73,Entertainment
+2026-02-05,Train Ticket,391.01,Travel
+2025-07-23,Bykea,303.07,Transport
+2025-07-21,Electric Bill,126.49,Utilities
+2025-07-03,Chai,178.97,Food
+2025-06-06,Grocery,72.18,Shopping
+2025-09-30,Doctor Clinic,428.3,Health
+2026-03-20,House Leasing,79.48,Rent
+2025-05-07,Water Bill,294.55,Utilities
+2025-04-04,Doctor Clinic,181.94,Health
+2025-05-21,Chai,404.73,Food
+2026-03-01,Sui Gas,126.14,Utilities
+2026-03-18,Spotify Premium,354.96,Subscriptions
+2025-08-28,Doctor Clinic,101.11,Health
+2026-01-01,Cinema,342.8,Entertainment
+2026-03-09,Uber Ride,366.34,Transport
+2025-08-08,Agha Khan Hospital,368.9,Health
+2025-07-02,Netflix Subscription,496.84,Subscriptions
+2025-05-14,Spotify Premium,183.56,Subscriptions
+2025-11-24,Cinema,270.14,Entertainment
+2025-04-23,PSO Pump,288.28,Transport
+2025-10-06,Agha Khan Hospital,318.33,Health
+2025-06-12,Steam Games,98.77,Entertainment
+2026-03-10,Electric Bill,222.52,Utilities
+2025-05-05,Grocery,228.22,Shopping
+2025-05-01,Spotify Premium,76.36,Subscriptions
+2025-03-27,House Leasing,69.86,Rent
+2025-04-05,Agha Khan Hospital,216.15,Health
+2026-03-19,Hostel Dues,372.4,Rent
+2025-06-17,Eid Clothes,285.23,Shopping
+2025-07-27,Spotify Premium,470.93,Subscriptions
+2025-05-31,Nueplex,388.92,Entertainment
+2025-07-05,Foodpanda,88.32,Food
+2025-09-07,Emirates Airline,187.76,Travel
+2025-05-28,Amazon,119.78,Shopping
+2026-01-16,Doctor Clinic,230.25,Health
+2025-03-26,Walmart,343.79,Shopping
+2025-06-13,Starbucks,227.24,Food
+2025-05-17,PTCL Internet,178.35,Utilities
+2025-03-29,Nueplex,213.7,Entertainment
+2025-09-08,Chai,296.24,Food
+2026-02-26,Medical Store,417.54,Health
+2026-01-25,Shell Oil,330.66,Transport
+2025-10-22,Nueplex,13.02,Entertainment
+2026-02-22,PTCL Internet,496.69,Utilities
+2025-06-28,Water Bill,487.45,Utilities
+2025-05-30,Amazon,194.55,Shopping
+2025-08-31,Restaurant,35.58,Food
+2026-02-24,Steam Games,459.76,Entertainment
+2026-01-31,Doctor Clinic,181.88,Health
+2025-09-12,Steam Games,84.13,Entertainment
+2025-06-28,Gym Membership,205.83,Subscriptions
+2025-04-18,Shell Oil,284.49,Transport
+2025-04-29,Hotel Booking,437.12,Travel
+2025-05-04,Water Bill,467.89,Utilities
+2025-07-01,House Leasing,498.87,Rent
+2025-03-25,Concert Ticket,346.04,Entertainment
+2026-01-26,Steam Games,193.44,Entertainment
+2025-03-30,Bykea,174.78,Transport
+2025-08-02,Medical Store,183.42,Health
+2026-03-18,Petrol,195.34,Transport
+2025-11-20,Panadol,59.4,Health
+2025-04-09,Bazaar,387.6,Shopping
+2026-03-14,Bus Ticket,411.83,Transport
+2025-12-16,Apartment Rent,71.79,Rent
+2025-10-24,Sui Gas,404.45,Utilities
+2026-03-15,Hostel Dues,392.71,Rent
+2025-10-19,Imtiaz Super Market,195.6,Shopping
+2025-06-22,Hotel Booking,318.8,Travel
+2025-05-16,McDonalds,190.71,Food
+2025-08-14,Emirates Airline,239.1,Travel
+2025-10-09,PIA Ticket,340.97,Travel
+2026-03-16,Gym Membership,95.47,Subscriptions
+2025-06-09,K-Electric,211.75,Utilities
+2025-07-25,Bus Ticket,215.51,Transport
+2025-05-22,Walmart,107.84,Shopping
+2025-05-21,KFC,365.89,Food
+2025-09-12,Walmart,358.38,Shopping
+2025-05-08,Emirates Airline,170.69,Travel
+2025-04-03,Panadol,456.08,Health
+2025-09-07,Agha Khan Hospital,294.32,Health
+2025-11-17,Cafe,341.19,Food
+2025-10-02,Steam Games,21.73,Entertainment
+2025-07-13,Walmart,253.34,Shopping
+2025-04-13,Uber Ride,151.85,Transport
+2026-03-02,Steam Games,490.42,Entertainment
+2025-08-30,House Leasing,153.35,Rent
+2026-01-03,Emirates Airline,493.19,Travel
+2025-04-07,Biryani,128.71,Food
+2025-06-15,PIA Ticket,403.48,Travel
+2025-11-27,Medical Store,236.78,Health
+2026-02-03,Hostel Dues,90.35,Rent
+2025-05-08,Medical Store,461.74,Health
+2025-04-23,Sambosa,270.48,Food
+2025-08-23,Electric Bill,344.98,Utilities
+2025-04-12,Medical Store,249.79,Health
+2026-02-23,Sambosa,339.48,Food
+2025-08-23,PIA Ticket,174.39,Travel
+2026-02-07,Apartment Rent,393.49,Rent
+2025-06-12,Biryani,261.67,Food
+2025-05-02,Sui Gas,144.93,Utilities
+2025-04-08,Agha Khan Hospital,253.94,Health
+2025-04-30,Emirates Airline,410.95,Travel
+2025-06-23,PSO Pump,412.91,Transport
+2025-04-24,Electric Bill,354.41,Utilities
+2025-06-20,Gym Membership,33.91,Subscriptions
+2025-08-15,Daraz,482.72,Shopping
+2026-02-19,Eid Clothes,80.37,Shopping
+2025-08-24,Hotel Booking,268.53,Travel
+2025-08-19,Cinema,136.59,Entertainment
+2025-08-19,Emirates Airline,54.48,Travel
+2025-09-12,Emirates Airline,212.82,Travel
+2026-02-22,K-Electric,157.8,Utilities
+2026-03-13,Foodpanda,93.81,Food
+2025-08-25,Apartment Rent,107.47,Rent
+2026-01-17,K-Electric,444.98,Utilities
+2025-08-22,Medical Store,468.46,Health
+2025-06-04,Gym Membership,425.82,Subscriptions
+2025-06-15,House Leasing,329.55,Rent
+2025-03-22,PSO Pump,405.42,Transport
+2026-02-10,Apartment Rent,202.32,Rent
+2025-09-19,Target,218.46,Shopping
+2025-04-04,Hostel Dues,155.22,Rent
+2025-10-10,Doctor Clinic,293.54,Health
+2025-05-14,Biryani,28.94,Food
+2025-08-07,Concert Ticket,244.54,Entertainment
+2025-10-14,McDonalds,376.0,Food
+2025-10-07,Hostel Dues,348.0,Rent
+2025-11-30,Netflix Subscription,265.55,Subscriptions
+2025-05-01,House Leasing,133.96,Rent
+2025-05-05,Doctor Clinic,418.66,Health
+2025-08-10,Concert Ticket,427.12,Entertainment
+2025-04-25,Shell Oil,270.07,Transport
+2026-02-24,Apartment Rent,290.12,Rent
+2025-10-17,PTCL Internet,460.94,Utilities
+2025-11-11,Steam Games,189.31,Entertainment
+2026-03-18,Target,202.04,Shopping
+2025-05-17,Grocery,89.99,Shopping
+2026-02-22,Sambosa,402.08,Food
+2025-10-13,Emirates Airline,432.5,Travel
+2025-06-30,Bykea,339.2,Transport
+2025-08-23,Electric Bill,362.87,Utilities
+2025-06-15,Concert Ticket,104.36,Entertainment
+2026-02-28,K-Electric,481.68,Utilities
+2026-01-29,Medical Store,333.04,Health
+2025-07-08,Eid Clothes,289.75,Shopping
+2025-07-02,Biryani,171.47,Food
+2025-10-06,Bykea,192.07,Transport
+2025-04-26,Doctor Clinic,281.25,Health
+2025-05-09,Concert Ticket,166.9,Entertainment
+2025-06-28,Restaurant,80.68,Food
+2025-07-09,Train Ticket,88.25,Travel
+2025-11-04,Nueplex,122.75,Entertainment
+2026-02-17,Doctor Clinic,429.63,Health
+2025-09-02,Biryani,446.87,Food
+2025-07-04,Grocery,110.55,Shopping
+2025-07-14,Biryani,76.74,Food
+2026-03-18,Cloud Storage,376.38,Subscriptions
+2025-04-10,House Leasing,444.3,Rent
+2025-08-10,Imtiaz Super Market,484.92,Shopping
+2025-10-09,Daraz,408.53,Shopping
+2025-08-07,Panadol,324.74,Health
+2026-01-05,Starbucks,498.73,Food
+2026-01-06,Gym Membership,129.82,Subscriptions
+2025-04-05,Steam Games,66.83,Entertainment
+2025-11-20,Bazaar,342.69,Shopping
+2025-04-29,Daraz,36.72,Shopping
+2025-06-12,PSO Pump,444.3,Transport
+2026-03-16,K-Electric,256.92,Utilities
+2025-10-20,Daraz,464.19,Shopping
+2025-11-06,PTCL Internet,239.64,Utilities
+2025-05-21,Walmart,224.71,Shopping
+2026-02-10,Water Bill,496.85,Utilities
+2025-04-08,Imtiaz Super Market,38.67,Shopping
+2025-03-27,Train Ticket,37.26,Travel
+2026-01-28,Sui Gas,6.77,Utilities
+2025-12-31,Nueplex,434.48,Entertainment
+2025-04-20,Hostel Dues,206.59,Rent
+2025-09-08,Steam Games,193.62,Entertainment
+2025-08-29,Bus Ticket,420.94,Transport
+2025-06-05,Emirates Airline,378.07,Travel
+2026-03-02,Emirates Airline,318.81,Travel
+2025-11-27,Walmart,247.86,Shopping
+2026-03-20,Doctor Clinic,166.18,Health
+2025-07-27,Gym Membership,449.1,Subscriptions
+2025-07-24,Hotel Booking,427.33,Travel
+2025-06-21,Daraz,76.46,Shopping
+2025-05-01,Emirates Airline,323.86,Travel
+2025-04-05,Agha Khan Hospital,39.57,Health
+2025-08-05,Netflix Subscription,371.22,Subscriptions
+2025-08-27,PIA Ticket,251.57,Travel
+2025-08-19,Cinema,304.71,Entertainment
+2026-01-24,InDrive,233.48,Transport
+2025-05-12,InDrive,80.11,Transport
+2025-12-13,Panadol,52.72,Health
+2026-02-20,Cinema,432.58,Entertainment
+2025-05-12,Sui Gas,154.54,Utilities
+2026-01-08,Hotel Booking,226.42,Travel
+2025-05-06,PIA Ticket,422.41,Travel
+2026-01-08,PTCL Internet,147.49,Utilities
+2026-01-15,Cafe,238.08,Food
+2025-09-26,Steam Games,359.81,Entertainment
+2025-04-11,Netflix Subscription,188.83,Subscriptions
+2025-04-13,Spotify Premium,37.41,Subscriptions
+2026-02-17,Nueplex,254.57,Entertainment
+2026-01-26,PSO Pump,482.77,Transport
+2025-11-24,Medical Store,51.58,Health
+2026-01-26,Electric Bill,333.5,Utilities
+2025-10-11,Bus Ticket,98.22,Transport
+2025-05-06,Sui Gas,453.67,Utilities
+2025-12-23,Spotify Premium,191.15,Subscriptions
+2025-08-11,Water Bill,313.41,Utilities
+2025-05-06,PSO Pump,252.11,Transport
+2025-03-26,Nueplex,445.68,Entertainment
+2026-03-01,Spotify Premium,9.34,Subscriptions
+2025-07-28,Apartment Rent,124.53,Rent
+2026-03-08,Eid Clothes,439.54,Shopping
+2025-07-01,Cinema,431.5,Entertainment
+2025-06-15,Pharmacy,323.56,Health
+2025-03-26,Hostel Dues,136.15,Rent
+2025-09-26,Apartment Rent,270.5,Rent
+2025-05-04,Walmart,120.69,Shopping
+2026-03-06,Chai,185.9,Food
+2026-01-13,Uber Ride,289.29,Transport
+2025-07-15,McDonalds,388.36,Food
+2025-03-26,PIA Ticket,477.96,Travel
+2025-12-27,Hostel Dues,371.01,Rent
+2025-11-02,Careem,167.79,Transport
+2026-03-15,Daraz,369.4,Shopping
+2025-05-14,Pharmacy,484.64,Health
+2025-12-18,Gym Membership,22.61,Subscriptions
+2025-08-11,K-Electric,80.55,Utilities
+2026-01-24,Gym Membership,356.91,Subscriptions
+2025-05-14,Concert Ticket,224.38,Entertainment
+2025-12-05,Petrol,76.84,Transport
+2025-11-12,PTCL Internet,6.02,Utilities
+2025-07-21,Steam Games,72.21,Entertainment
+2025-11-01,House Leasing,252.57,Rent
+2025-12-08,Biryani,418.13,Food
+2026-02-08,Hotel Booking,483.73,Travel
+2025-09-30,Netflix Subscription,194.78,Subscriptions
+2025-09-17,KFC,324.31,Food
+2025-05-28,Nueplex,31.72,Entertainment
+2025-12-29,Sui Gas,430.62,Utilities
+2026-03-02,Cloud Storage,149.35,Subscriptions
+2025-12-11,Doctor Clinic,44.31,Health
+2025-08-11,Hostel Dues,189.51,Rent
+2025-04-27,Gym Membership,155.74,Subscriptions
+2025-12-03,Foodpanda,384.87,Food
+2026-01-24,Grocery,315.0,Shopping
+2026-01-24,KFC,292.55,Food
+2025-07-16,Amazon,263.56,Shopping
+2025-09-11,Target,190.01,Shopping
+2025-12-01,Gym Membership,445.72,Subscriptions
+2025-11-09,Electric Bill,475.58,Utilities
+2025-05-12,Hostel Dues,126.9,Rent
+2026-02-07,Concert Ticket,370.44,Entertainment
+2025-04-21,Netflix Subscription,11.44,Subscriptions
+2025-06-03,Sui Gas,471.96,Utilities
+2025-07-05,Apartment Rent,483.31,Rent
+2025-08-16,House Leasing,362.2,Rent
+2025-12-19,McDonalds,426.92,Food
+2026-02-27,Careem,298.72,Transport
+2025-10-08,Emirates Airline,450.42,Travel
+2025-05-20,PSO Pump,304.76,Transport
+2026-03-14,Cafe,247.1,Food
+2026-03-02,Amazon,175.7,Shopping
+2025-04-15,Gym Membership,229.64,Subscriptions
+2026-01-22,InDrive,75.54,Transport
+2025-07-26,Nueplex,155.58,Entertainment
+2025-03-30,Restaurant,317.09,Food
+2025-05-31,Sui Gas,327.26,Utilities
+2025-07-30,Biryani,156.6,Food
+2025-10-10,Shell Oil,56.06,Transport
+2025-08-28,Train Ticket,473.17,Travel
+2025-08-10,Starbucks,87.1,Food
+2025-12-17,Hostel Dues,371.43,Rent
+2025-04-29,Cafe,449.19,Food
+2025-10-06,Grocery,456.0,Shopping
+2026-02-25,Doctor Clinic,478.21,Health
+2025-08-19,Chai,448.96,Food
+2025-09-07,Netflix Subscription,305.72,Subscriptions
+2026-02-14,Steam Games,15.72,Entertainment
+2025-09-14,Electric Bill,152.55,Utilities
+2026-01-22,Hotel Booking,125.18,Travel
+2025-06-12,Sui Gas,286.53,Utilities
+2025-10-13,Apartment Rent,178.87,Rent
+2025-11-07,Medical Store,80.18,Health
+2025-11-26,Bykea,9.65,Transport
+2025-10-16,Water Bill,481.19,Utilities
+2025-11-17,Electric Bill,343.1,Utilities
+2025-04-10,Panadol,257.07,Health
+2025-07-22,House Leasing,86.45,Rent
+2025-11-16,Biryani,175.56,Food
+2025-11-03,Cinema,356.59,Entertainment
+2025-10-04,Bus Ticket,248.71,Transport
+2026-02-02,Water Bill,434.66,Utilities
+2025-09-27,Biryani,265.83,Food
+2025-10-24,Uber Ride,133.51,Transport
+2026-02-16,KFC,32.92,Food
+2026-02-15,Agha Khan Hospital,218.1,Health
+2025-04-27,Hostel Dues,139.8,Rent
+2025-11-22,Sui Gas,221.99,Utilities
+2026-01-21,Cafe,266.75,Food
+2025-08-27,Sui Gas,254.23,Utilities
+2026-01-02,Nueplex,414.81,Entertainment
+2025-06-08,McDonalds,163.86,Food
+2025-09-26,Concert Ticket,19.55,Entertainment
+2025-04-02,Train Ticket,334.54,Travel
+2025-03-30,Emirates Airline,350.94,Travel
+2025-03-30,Bykea,403.8,Transport
+2026-03-01,Emirates Airline,306.47,Travel
+2025-03-28,Hostel Dues,184.51,Rent
+2025-12-24,Spotify Premium,247.81,Subscriptions
+2025-06-07,Pharmacy,129.17,Health
+2025-03-25,Agha Khan Hospital,164.91,Health
+2025-11-15,Bazaar,280.96,Shopping
+2025-12-24,Apartment Rent,383.32,Rent
+2026-02-22,Uber Ride,214.46,Transport
+2025-06-17,PSO Pump,368.22,Transport
+2026-01-03,Gym Membership,259.82,Subscriptions
+2025-04-05,Pharmacy,426.73,Health
+2025-10-28,Bus Ticket,319.9,Transport
+2025-11-19,Shell Oil,401.25,Transport
+2026-02-08,House Leasing,434.75,Rent
+2026-03-01,Shell Oil,234.61,Transport
+2025-10-14,Bus Ticket,255.53,Transport
+2026-01-27,Restaurant,194.64,Food
+2025-07-05,Imtiaz Super Market,222.36,Shopping
+2026-01-29,Bykea,32.37,Transport
+2025-07-27,Target,477.62,Shopping
+2025-05-24,Agha Khan Hospital,438.4,Health
+2025-09-25,Biryani,344.9,Food
+2025-08-29,Cloud Storage,388.46,Subscriptions
+2026-02-21,Bykea,122.15,Transport
+2025-05-21,PIA Ticket,291.12,Travel
+2025-06-23,Uber Ride,117.29,Transport
+2025-09-28,Concert Ticket,153.78,Entertainment
+2025-11-29,Restaurant,287.37,Food
+2025-05-09,Netflix Subscription,336.33,Subscriptions
+2025-08-14,Hostel Dues,449.19,Rent
+2025-11-23,Petrol,326.27,Transport
+2026-02-23,Grocery,64.03,Shopping
+2025-10-01,Target,60.36,Shopping
+2025-04-03,PIA Ticket,445.65,Travel
+2025-11-11,Panadol,455.86,Health
+2026-01-10,Restaurant,106.74,Food
+2025-04-23,Pharmacy,369.23,Health
+2025-05-05,PIA Ticket,394.04,Travel
+2026-02-22,Train Ticket,413.27,Travel
+2025-04-01,Spotify Premium,202.99,Subscriptions
+2025-04-19,Doctor Clinic,30.01,Health
+2025-07-13,Emirates Airline,263.63,Travel
+2025-11-13,House Leasing,278.45,Rent
+2026-01-07,Amazon,54.61,Shopping
+2025-08-12,Bykea,467.48,Transport
+2025-11-07,Hotel Booking,430.63,Travel
+2026-03-14,Shell Oil,88.22,Transport
+2025-12-26,Sui Gas,354.55,Utilities
+2025-11-02,Agha Khan Hospital,92.23,Health
+2025-11-05,Target,154.84,Shopping
+2025-09-22,Biryani,9.07,Food
+2026-02-22,Restaurant,399.65,Food
+2025-06-30,Emirates Airline,442.55,Travel
+2025-08-24,Hotel Booking,318.24,Travel
+2025-09-24,Netflix Subscription,32.44,Subscriptions
+2026-01-31,House Leasing,169.63,Rent
+2025-10-16,Hostel Dues,210.98,Rent
+2025-11-20,Bazaar,400.95,Shopping
+2025-06-11,Cinema,462.34,Entertainment
+2025-06-15,Netflix Subscription,132.79,Subscriptions
+2025-03-28,Gym Membership,171.38,Subscriptions
+2025-08-03,Bazaar,380.91,Shopping
+2025-07-10,Hostel Dues,27.16,Rent
+2025-11-17,Foodpanda,352.38,Food
+2026-03-06,Careem,385.32,Transport
+2025-05-12,Emirates Airline,246.59,Travel
+2025-06-19,Pharmacy,252.43,Health
+2026-01-20,Emirates Airline,40.9,Travel
+2025-08-15,PSO Pump,388.65,Transport
+2025-11-15,Bus Ticket,254.12,Transport
+2025-10-19,Uber Ride,170.13,Transport
+2025-06-05,Imtiaz Super Market,6.55,Shopping
+2025-08-30,Bykea,175.17,Transport
+2025-04-13,Eid Clothes,498.46,Shopping
+2025-06-23,Cinema,490.16,Entertainment
+2026-02-26,Panadol,380.22,Health
+2025-06-23,House Leasing,75.33,Rent
+2025-10-24,Sambosa,203.83,Food
+2025-10-02,Hotel Booking,18.54,Travel
+2025-09-26,Uber Ride,418.25,Transport
+2025-06-30,Target,493.62,Shopping
+2025-11-15,Train Ticket,476.04,Travel
+2025-09-13,House Leasing,120.77,Rent
+2025-08-01,Cinema,23.58,Entertainment
+2026-03-05,InDrive,302.82,Transport
+2025-10-08,Target,236.93,Shopping
+2025-12-20,Shell Oil,439.19,Transport
+2025-05-16,Panadol,215.81,Health
+2025-12-04,Chai,363.65,Food
+2026-03-02,PIA Ticket,473.24,Travel
+2025-04-14,Chai,316.33,Food
+2025-11-11,Restaurant,102.21,Food
+2026-03-01,Medical Store,393.15,Health
+2025-04-24,Foodpanda,289.03,Food
+2025-07-12,Hostel Dues,399.8,Rent
+2026-02-01,Steam Games,194.3,Entertainment
+2025-10-09,Restaurant,116.03,Food
+2025-10-11,PSO Pump,379.36,Transport
+2026-01-10,Emirates Airline,374.42,Travel
+2025-06-29,PSO Pump,437.69,Transport
+2025-05-02,Train Ticket,418.13,Travel
+2025-09-16,Sui Gas,37.14,Utilities
+2025-06-11,Gym Membership,473.41,Subscriptions
+2025-12-09,Pharmacy,24.36,Health
+2025-04-21,Nueplex,159.33,Entertainment
+2025-07-03,Restaurant,124.76,Food
+2025-05-29,Careem,473.0,Transport
+2026-01-10,Apartment Rent,18.39,Rent
+2025-05-01,Spotify Premium,462.02,Subscriptions
+2026-01-09,Train Ticket,44.84,Travel
+2025-03-21,Nueplex,122.85,Entertainment
+2026-01-27,Cinema,52.99,Entertainment
+2025-11-22,Emirates Airline,484.32,Travel
+2025-12-15,Chai,158.4,Food
+2025-05-16,Agha Khan Hospital,162.06,Health
+2025-05-15,Netflix Subscription,288.35,Subscriptions
+2025-09-28,Cafe,370.49,Food
+2025-07-29,Water Bill,164.48,Utilities
+2025-06-29,Agha Khan Hospital,313.73,Health
+2026-03-17,Apartment Rent,297.22,Rent
+2025-08-10,Sambosa,219.69,Food
+2025-12-17,Cloud Storage,329.66,Subscriptions
+2026-02-06,Panadol,334.36,Health
+2025-08-31,Hostel Dues,457.35,Rent
+2025-06-19,Train Ticket,428.13,Travel
+2025-09-09,Biryani,29.37,Food
+2025-10-30,Careem,179.71,Transport
+2026-01-24,Agha Khan Hospital,36.79,Health
+2026-01-22,Eid Clothes,302.31,Shopping
+2025-09-15,Chai,194.76,Food
+2025-04-29,Biryani,94.62,Food
+2025-12-13,PIA Ticket,395.17,Travel
+2026-01-12,Hostel Dues,444.24,Rent
+2025-09-09,Cinema,442.13,Entertainment
+2026-02-20,Spotify Premium,78.1,Subscriptions
+2026-01-28,Spotify Premium,24.69,Subscriptions
+2026-01-24,Apartment Rent,112.32,Rent
+2025-05-19,Spotify Premium,49.9,Subscriptions
+2026-01-01,Steam Games,88.15,Entertainment
+2025-04-26,Cinema,67.17,Entertainment
+2026-02-28,Concert Ticket,277.61,Entertainment
+2025-05-06,PIA Ticket,261.35,Travel
+2025-10-02,Cinema,78.73,Entertainment
+2025-03-27,Petrol,461.25,Transport
+2025-08-27,Hostel Dues,330.24,Rent
+2025-05-05,Bus Ticket,356.95,Transport
+2026-02-02,Emirates Airline,360.81,Travel
+2025-09-08,K-Electric,153.54,Utilities
+2025-05-30,Bykea,94.59,Transport
+2025-05-17,Daraz,141.88,Shopping
+2025-11-19,Daraz,204.61,Shopping
+2025-06-17,Agha Khan Hospital,335.19,Health
+2025-12-23,Bazaar,364.36,Shopping
+2025-07-07,Cloud Storage,213.92,Subscriptions
+2026-01-02,Steam Games,372.15,Entertainment
+2025-11-01,Hostel Dues,161.95,Rent
+2025-05-20,Doctor Clinic,433.78,Health
+2025-09-15,Imtiaz Super Market,320.58,Shopping
+2025-12-18,Spotify Premium,43.08,Subscriptions
+2025-08-01,Careem,21.91,Transport
+2025-07-30,Petrol,374.39,Transport
+2025-07-01,PTCL Internet,102.65,Utilities
+2025-06-23,House Leasing,36.36,Rent
+2026-03-16,Nueplex,108.79,Entertainment
+2025-11-19,House Leasing,115.85,Rent
+2025-11-21,Concert Ticket,433.54,Entertainment
+2025-12-22,Apartment Rent,174.43,Rent
+2025-04-09,Uber Ride,254.9,Transport
+2026-02-25,Starbucks,91.9,Food
+2025-09-28,Amazon,118.9,Shopping
+2025-05-12,Netflix Subscription,466.62,Subscriptions
+2025-05-09,K-Electric,272.76,Utilities
+2026-01-12,Concert Ticket,225.86,Entertainment
+2026-03-13,Nueplex,493.02,Entertainment
+2025-05-30,Agha Khan Hospital,402.49,Health
+2025-07-23,Hostel Dues,362.89,Rent
+2025-09-25,Train Ticket,274.19,Travel
+2025-10-18,Pharmacy,8.63,Health
+2025-07-14,Concert Ticket,243.57,Entertainment
+2025-09-23,Netflix Subscription,248.81,Subscriptions
+2025-04-25,Sui Gas,428.07,Utilities
+2025-12-07,Agha Khan Hospital,499.13,Health
+2025-04-13,Concert Ticket,163.34,Entertainment
+2025-09-04,InDrive,235.52,Transport
+2025-03-30,House Leasing,244.3,Rent
+2025-06-08,Petrol,287.19,Transport
+2025-04-22,PTCL Internet,107.83,Utilities
+2025-06-28,PIA Ticket,365.24,Travel
+2025-04-27,Cloud Storage,403.75,Subscriptions
+2025-05-24,Sui Gas,294.15,Utilities
+2025-10-15,Target,395.33,Shopping
+2025-05-27,Nueplex,299.88,Entertainment
+2025-11-15,InDrive,324.79,Transport
+2025-10-16,Electric Bill,480.69,Utilities
+2026-01-27,Netflix Subscription,247.08,Subscriptions
+2026-02-10,Water Bill,379.22,Utilities
+2026-02-25,PTCL Internet,157.38,Utilities
+2025-08-25,Petrol,363.57,Transport
+2025-08-15,Nueplex,433.89,Entertainment
+2026-01-30,Medical Store,132.67,Health
+2025-04-04,Spotify Premium,314.16,Subscriptions
+2025-07-14,Grocery,156.88,Shopping
+2025-12-17,Gym Membership,359.7,Subscriptions
+2025-10-21,Shell Oil,394.21,Transport
+2025-08-21,Train Ticket,298.11,Travel
+2025-05-28,Spotify Premium,295.09,Subscriptions
+2026-01-12,KFC,327.38,Food
+2025-04-12,Bus Ticket,393.39,Transport
+2025-08-25,Sambosa,95.5,Food
+2025-06-25,Train Ticket,163.12,Travel
+2026-02-08,Nueplex,401.47,Entertainment
+2025-11-21,Gym Membership,329.0,Subscriptions
+2026-01-03,Bazaar,100.88,Shopping
+2025-10-16,Foodpanda,472.99,Food
+2025-03-30,Chai,19.14,Food
+2025-04-22,Careem,30.86,Transport
+2026-01-28,Hostel Dues,24.73,Rent
+2025-09-04,PSO Pump,106.47,Transport
+2026-03-01,Train Ticket,367.7,Travel
+2025-11-30,Foodpanda,426.06,Food
+2025-06-22,Gym Membership,203.1,Subscriptions
+2025-07-29,Netflix Subscription,88.09,Subscriptions
+2025-09-09,Apartment Rent,421.33,Rent
+2025-10-06,PIA Ticket,429.25,Travel
+2025-05-20,K-Electric,424.81,Utilities
+2025-08-29,Imtiaz Super Market,391.24,Shopping
+2025-08-03,Sambosa,45.76,Food
+2025-10-02,Bazaar,265.51,Shopping
+2025-12-13,Panadol,264.99,Health
+2026-03-03,Hostel Dues,432.17,Rent
+2025-12-08,Gym Membership,429.93,Subscriptions
+2025-06-09,Nueplex,204.19,Entertainment
+2026-01-03,Hotel Booking,48.67,Travel
+2025-04-19,Concert Ticket,381.59,Entertainment
+2025-04-21,Walmart,122.96,Shopping
+2026-01-19,Nueplex,442.61,Entertainment
+2026-03-09,InDrive,393.47,Transport
+2025-11-10,Grocery,94.76,Shopping
+2025-11-25,Amazon,355.9,Shopping
+2025-11-12,Cinema,71.21,Entertainment
+2026-02-12,Steam Games,309.87,Entertainment
+2025-09-19,Hostel Dues,54.51,Rent
+2025-10-23,Bykea,115.14,Transport
+2026-02-26,Cinema,146.24,Entertainment
+2026-02-17,Cafe,363.69,Food
+2025-04-23,Gym Membership,337.41,Subscriptions
+2026-01-05,Cinema,192.28,Entertainment
+2025-05-25,Gym Membership,384.75,Subscriptions
+2026-02-18,House Leasing,465.51,Rent
+2025-06-18,Concert Ticket,266.74,Entertainment
+2025-09-08,Imtiaz Super Market,355.18,Shopping
+2025-07-10,Pharmacy,97.0,Health
+2025-09-12,Sui Gas,110.96,Utilities
+2025-11-21,Spotify Premium,58.15,Subscriptions
+2025-07-28,Cinema,6.51,Entertainment
+2025-08-28,Imtiaz Super Market,116.93,Shopping
+2025-12-07,Spotify Premium,102.3,Subscriptions
+2025-06-09,Agha Khan Hospital,478.17,Health
+2025-11-30,Careem,322.44,Transport
+2025-07-17,Sui Gas,107.88,Utilities
+2025-09-24,Hotel Booking,76.28,Travel
+2025-09-07,Emirates Airline,243.57,Travel
+2025-09-08,Emirates Airline,44.27,Travel
+2026-03-18,Sambosa,203.72,Food
+2025-08-11,Medical Store,394.95,Health
+2025-06-01,Emirates Airline,38.38,Travel
+2025-04-28,Sambosa,430.11,Food
+2025-04-23,Agha Khan Hospital,446.67,Health
+2025-12-06,K-Electric,158.82,Utilities
+2025-05-15,Netflix Subscription,430.54,Subscriptions
+2025-09-05,Nueplex,419.44,Entertainment
+2025-04-11,PTCL Internet,242.67,Utilities
+2026-02-28,Cafe,314.91,Food
+2026-01-02,PIA Ticket,431.33,Travel
+2025-12-07,PIA Ticket,427.18,Travel
+2025-03-20,Gym Membership,257.95,Subscriptions
+2025-12-06,Agha Khan Hospital,380.69,Health
+2026-01-29,Agha Khan Hospital,401.12,Health
+2026-01-17,Steam Games,424.94,Entertainment
+2025-10-10,Uber Ride,121.69,Transport
+2025-09-01,Agha Khan Hospital,35.44,Health
+2025-05-06,Netflix Subscription,42.77,Subscriptions
+2025-08-04,Shell Oil,272.55,Transport
+2025-11-04,Hostel Dues,359.43,Rent
+2025-08-08,Grocery,120.87,Shopping
+2025-09-27,Sui Gas,63.49,Utilities
+2025-11-19,Apartment Rent,77.85,Rent
+2025-10-25,Electric Bill,154.3,Utilities
+2025-09-14,House Leasing,370.76,Rent
+2025-10-10,PIA Ticket,324.1,Travel
+2025-04-15,Medical Store,417.14,Health
+2025-11-19,Grocery,364.92,Shopping
+2025-06-29,Apartment Rent,317.6,Rent
+2025-07-24,McDonalds,363.67,Food
+2025-08-17,Eid Clothes,132.57,Shopping
+2025-03-22,PSO Pump,139.14,Transport
+2025-04-14,Electric Bill,426.47,Utilities
+2025-07-22,Netflix Subscription,394.93,Subscriptions
+2025-06-02,PIA Ticket,148.16,Travel
+2025-08-30,Netflix Subscription,465.21,Subscriptions
+2025-07-18,Apartment Rent,84.57,Rent
+2025-10-31,Hostel Dues,174.42,Rent
+2025-11-12,Pharmacy,449.25,Health
+2025-10-25,Bus Ticket,219.83,Transport
+2025-09-08,Imtiaz Super Market,60.99,Shopping
+2026-03-12,Apartment Rent,17.18,Rent
+2025-04-16,PTCL Internet,397.54,Utilities
+2026-01-10,Restaurant,263.79,Food
+2025-09-29,Steam Games,379.39,Entertainment
+2025-11-12,Gym Membership,160.85,Subscriptions
+2025-05-17,Doctor Clinic,211.63,Health
+2025-07-20,Train Ticket,488.55,Travel
+2025-03-20,Amazon,325.25,Shopping
+2026-03-07,McDonalds,155.87,Food
+2025-04-01,PTCL Internet,191.67,Utilities
+2025-06-27,K-Electric,77.44,Utilities
+2025-04-25,Cinema,204.69,Entertainment
+2025-05-25,Shell Oil,5.22,Transport
+2026-01-13,Target,468.62,Shopping
+2026-02-04,Emirates Airline,365.5,Travel
+2026-02-11,Train Ticket,77.02,Travel
+2025-04-09,Hostel Dues,370.5,Rent
+2026-01-06,Doctor Clinic,324.94,Health
+2025-03-21,Pharmacy,430.76,Health
+2026-02-06,Hostel Dues,103.26,Rent
+2025-10-19,PTCL Internet,199.09,Utilities
+2025-09-13,Panadol,237.91,Health
+2025-07-25,InDrive,21.18,Transport
+2026-01-18,McDonalds,140.34,Food
+2025-11-04,Netflix Subscription,385.09,Subscriptions
+2025-11-26,Cloud Storage,86.19,Subscriptions
+2025-07-09,Emirates Airline,295.0,Travel
+2025-06-09,Starbucks,22.03,Food
+2025-04-02,Doctor Clinic,97.66,Health
+2026-02-26,Netflix Subscription,307.79,Subscriptions
+2025-03-25,PSO Pump,325.32,Transport
+2025-06-12,KFC,115.91,Food
+2025-12-31,Agha Khan Hospital,369.31,Health
+2025-06-13,Electric Bill,55.66,Utilities
+2025-11-06,Steam Games,6.01,Entertainment
+2025-08-13,Apartment Rent,278.75,Rent
+2025-04-26,Bus Ticket,179.19,Transport
+2025-05-17,Emirates Airline,387.63,Travel
+2025-06-16,McDonalds,270.04,Food
+2025-11-19,Spotify Premium,223.7,Subscriptions
+2025-05-07,PTCL Internet,109.79,Utilities
+2025-08-15,PIA Ticket,453.69,Travel
+2025-11-03,Agha Khan Hospital,177.97,Health
+2026-01-18,Gym Membership,135.47,Subscriptions
+2025-07-13,Hostel Dues,367.85,Rent
+2025-09-17,Biryani,304.18,Food
+2026-01-15,PIA Ticket,421.92,Travel
+2025-10-04,Cafe,129.8,Food
+2025-11-10,Hotel Booking,11.44,Travel
+2025-04-06,Cinema,44.8,Entertainment
+2025-08-21,PTCL Internet,87.7,Utilities
+2025-06-14,Bykea,301.89,Transport
+2026-02-07,PTCL Internet,191.65,Utilities
+2026-01-14,Chai,431.09,Food
+2025-07-09,Water Bill,324.63,Utilities
+2025-08-11,Cinema,39.46,Entertainment
+2025-03-23,Bazaar,96.49,Shopping
+2025-05-11,Careem,170.66,Transport
+2025-06-07,Apartment Rent,355.1,Rent
+2025-04-23,Spotify Premium,148.84,Subscriptions
+2026-02-27,Medical Store,124.05,Health
+2025-08-12,Medical Store,13.63,Health
+2025-11-19,Sambosa,306.79,Food
+2025-06-14,House Leasing,247.46,Rent
+2026-01-04,Cloud Storage,488.16,Subscriptions
+2025-12-22,Grocery,354.47,Shopping
+2025-09-12,Water Bill,344.38,Utilities
+2025-11-21,Cloud Storage,108.61,Subscriptions
+2025-06-21,Cloud Storage,387.13,Subscriptions
+2025-04-24,InDrive,317.23,Transport
+2025-08-19,Eid Clothes,188.23,Shopping
+2026-02-25,Cloud Storage,173.63,Subscriptions
+2025-03-28,Hostel Dues,145.17,Rent
+2025-04-26,Grocery,393.44,Shopping
+2025-09-08,Eid Clothes,130.98,Shopping
+2025-08-16,Foodpanda,335.76,Food
+2025-06-14,PTCL Internet,144.92,Utilities
+2026-02-23,Train Ticket,211.06,Travel
+2026-02-05,Hostel Dues,235.02,Rent
+2025-07-07,InDrive,356.99,Transport
+2026-01-06,Cafe,290.93,Food
+2026-03-06,Apartment Rent,424.43,Rent
+2025-11-14,Water Bill,81.18,Utilities
+2026-01-23,Biryani,178.96,Food
+2025-09-03,Restaurant,180.36,Food
+2025-08-14,Panadol,473.85,Health
+2025-11-02,Pharmacy,56.55,Health
+2026-01-04,House Leasing,334.3,Rent
+2025-03-27,Starbucks,128.38,Food
+2025-04-10,Spotify Premium,228.42,Subscriptions
+2026-03-16,Emirates Airline,450.47,Travel
+2026-02-26,Train Ticket,239.3,Travel
+2025-11-05,Bazaar,83.92,Shopping
+2025-07-31,Gym Membership,129.73,Subscriptions
+2026-01-17,Apartment Rent,327.67,Rent
+2026-01-06,Petrol,395.12,Transport
+2026-01-08,Spotify Premium,487.89,Subscriptions
+2025-12-21,Walmart,236.46,Shopping
+2025-09-05,Cloud Storage,297.0,Subscriptions
+2026-01-16,Water Bill,63.32,Utilities
+2025-04-03,Concert Ticket,287.59,Entertainment
+2025-07-28,Concert Ticket,368.07,Entertainment
+2026-01-16,PIA Ticket,99.16,Travel
+2026-03-05,Eid Clothes,73.25,Shopping
+2025-11-25,Agha Khan Hospital,38.04,Health
+2025-04-24,Pharmacy,296.77,Health
+2025-10-17,Emirates Airline,278.76,Travel
+2025-04-21,Train Ticket,375.73,Travel
+2025-12-29,Spotify Premium,441.22,Subscriptions
+2025-11-27,Cinema,243.5,Entertainment
+2025-03-30,PIA Ticket,311.09,Travel
+2025-07-25,Gym Membership,55.19,Subscriptions
+2025-06-23,House Leasing,477.93,Rent
+2025-04-22,Sui Gas,245.88,Utilities
+2026-02-09,Daraz,265.33,Shopping
+2025-03-28,Target,64.54,Shopping
+2025-06-20,Sui Gas,465.02,Utilities
+2026-03-02,House Leasing,266.43,Rent
+2025-04-30,Shell Oil,94.9,Transport
+2026-02-22,Medical Store,376.07,Health
+2025-08-10,PSO Pump,43.25,Transport
+2025-07-28,Sambosa,90.68,Food
+2025-08-25,Agha Khan Hospital,189.16,Health
+2025-12-27,Concert Ticket,362.33,Entertainment
+2025-09-29,Petrol,133.47,Transport
+2026-02-04,Pharmacy,451.72,Health
+2025-11-04,PIA Ticket,391.08,Travel
+2025-11-02,PIA Ticket,473.96,Travel
+2026-01-24,Steam Games,230.95,Entertainment
+2025-12-13,Medical Store,457.97,Health
+2025-03-28,Train Ticket,297.63,Travel
+2025-04-01,Steam Games,83.15,Entertainment
+2026-03-01,Nueplex,408.68,Entertainment
+2025-03-31,Grocery,256.69,Shopping
+2026-02-23,Nueplex,218.65,Entertainment
+2026-02-22,Apartment Rent,189.83,Rent
+2025-11-10,Hostel Dues,415.87,Rent
+2026-03-15,McDonalds,21.9,Food
+2025-04-02,Grocery,372.8,Shopping
+2025-07-27,Apartment Rent,495.48,Rent
+2025-05-11,Spotify Premium,57.4,Subscriptions
+2025-12-31,House Leasing,498.86,Rent
+2025-04-20,Pharmacy,487.67,Health
+2025-12-23,Netflix Subscription,161.04,Subscriptions
+2025-04-19,Bus Ticket,253.58,Transport
+2025-05-28,Hotel Booking,491.47,Travel
+2025-08-07,Careem,283.81,Transport
+2025-11-30,Panadol,200.54,Health
+2025-07-01,Pharmacy,46.31,Health
+2026-01-10,Water Bill,349.01,Utilities
+2025-09-23,Spotify Premium,165.25,Subscriptions
+2025-05-19,Doctor Clinic,173.14,Health
+2025-08-10,Bazaar,347.36,Shopping
+2025-10-03,Spotify Premium,472.33,Subscriptions
+2026-03-10,Steam Games,121.33,Entertainment
+2026-03-07,Emirates Airline,318.23,Travel
+2025-06-04,Biryani,106.73,Food
+2025-09-29,House Leasing,497.87,Rent
+2026-01-12,Steam Games,260.49,Entertainment
+2025-11-08,Bus Ticket,276.33,Transport
+2025-05-09,Emirates Airline,22.6,Travel
+2025-06-07,Foodpanda,54.57,Food
+2025-07-14,Sambosa,240.69,Food
+2026-01-08,Sambosa,296.75,Food
+2025-12-11,McDonalds,434.07,Food
+2025-06-06,Cinema,472.55,Entertainment
+2026-01-27,House Leasing,178.5,Rent
+2025-07-01,Bazaar,407.31,Shopping
+2025-12-26,Amazon,151.49,Shopping
+2025-05-11,Electric Bill,51.97,Utilities
+2025-12-23,Sui Gas,279.32,Utilities
+2025-12-29,Shell Oil,61.86,Transport
+2025-08-12,Eid Clothes,307.11,Shopping
+2025-06-11,Agha Khan Hospital,318.14,Health
+2026-02-15,Water Bill,310.51,Utilities
+2026-03-03,Eid Clothes,214.41,Shopping
+2025-06-11,House Leasing,396.31,Rent
+2025-05-09,Apartment Rent,403.37,Rent
+2025-11-17,Bazaar,398.23,Shopping
+2025-11-09,House Leasing,376.59,Rent
+2025-12-13,Panadol,132.8,Health
+2025-04-10,K-Electric,114.48,Utilities
+2025-05-04,Sui Gas,143.83,Utilities
+2026-02-28,Spotify Premium,183.07,Subscriptions
+2025-08-18,Electric Bill,130.5,Utilities
+2025-07-13,Doctor Clinic,160.92,Health
+2025-10-21,Pharmacy,47.82,Health
+2025-12-13,Pharmacy,166.61,Health
+2025-09-06,Restaurant,409.34,Food
+2025-05-01,Electric Bill,396.32,Utilities
+2026-03-08,Amazon,17.41,Shopping
+2025-07-09,PSO Pump,41.35,Transport
+2025-08-25,Target,331.29,Shopping
+2025-08-22,Biryani,152.28,Food
+2025-03-28,Nueplex,445.96,Entertainment
+2025-08-05,House Leasing,433.66,Rent
+2025-12-17,Walmart,279.97,Shopping
+2025-07-02,Cloud Storage,16.0,Subscriptions
+2025-04-24,InDrive,228.79,Transport
+2025-04-11,PTCL Internet,401.3,Utilities
+2026-02-21,Medical Store,284.57,Health
+2025-12-03,Pharmacy,479.83,Health
+2025-11-27,Train Ticket,288.2,Travel
+2025-10-22,Bazaar,450.84,Shopping
+2026-01-09,Imtiaz Super Market,407.51,Shopping
+2026-03-10,PTCL Internet,113.01,Utilities
+2025-07-28,K-Electric,409.05,Utilities
+2026-03-04,Train Ticket,301.75,Travel
+2026-02-27,PSO Pump,96.64,Transport
+2026-03-16,Grocery,252.24,Shopping
+2026-03-15,Panadol,67.73,Health
+2025-12-26,InDrive,275.88,Transport
+2025-04-26,Doctor Clinic,314.5,Health
+2025-07-13,Hotel Booking,287.91,Travel
+2026-02-04,Sui Gas,472.22,Utilities
+2025-05-15,KFC,220.97,Food
+2025-06-15,Amazon,439.42,Shopping
+2025-08-31,Cloud Storage,259.94,Subscriptions
+2025-09-04,Hotel Booking,8.23,Travel
+2026-02-15,House Leasing,452.17,Rent
+2025-12-03,Panadol,151.18,Health
+2025-05-08,Grocery,319.01,Shopping
+2025-07-08,Emirates Airline,412.47,Travel
+2025-10-09,Water Bill,270.95,Utilities
+2025-05-16,Water Bill,413.75,Utilities
+2025-06-17,Cinema,8.9,Entertainment
+2025-04-27,Cinema,296.87,Entertainment
+2025-03-22,Cinema,451.29,Entertainment
+2026-01-29,Spotify Premium,473.06,Subscriptions
+2025-08-25,Restaurant,128.36,Food
+2025-11-09,Hotel Booking,279.42,Travel
+2025-12-28,Spotify Premium,300.55,Subscriptions
+2025-09-22,Train Ticket,179.02,Travel
+2025-12-02,Hostel Dues,171.73,Rent
+2025-12-17,PSO Pump,363.89,Transport
+2025-05-14,Walmart,311.22,Shopping
+2025-05-15,Agha Khan Hospital,298.73,Health
+2025-10-15,InDrive,391.82,Transport
+2025-11-09,Pharmacy,379.65,Health
+2025-12-17,Electric Bill,307.07,Utilities
+2025-07-23,Cinema,424.94,Entertainment
+2025-12-04,Netflix Subscription,482.04,Subscriptions
+2025-04-17,InDrive,201.62,Transport
+2025-09-05,Apartment Rent,189.3,Rent
+2026-02-28,Hostel Dues,308.09,Rent
+2026-03-20,Netflix Subscription,450.3,Subscriptions
+2025-10-05,McDonalds,453.66,Food
+2025-11-07,PIA Ticket,50.85,Travel
+2025-12-26,PTCL Internet,250.39,Utilities
+2025-11-22,Foodpanda,160.53,Food
+2025-04-02,KFC,448.4,Food
+2026-01-21,Steam Games,442.91,Entertainment
+2025-07-24,Emirates Airline,421.62,Travel
+2025-05-02,Uber Ride,131.12,Transport
+2025-05-22,Netflix Subscription,84.0,Subscriptions
+2026-01-03,Netflix Subscription,447.96,Subscriptions
+2025-11-23,Cinema,413.97,Entertainment
+2025-10-06,PTCL Internet,238.79,Utilities
+2025-12-18,Target,309.16,Shopping
+2025-07-08,Bazaar,197.06,Shopping
+2025-10-14,Grocery,202.41,Shopping
+2025-12-05,Imtiaz Super Market,277.86,Shopping
+2025-07-19,Gym Membership,193.52,Subscriptions
+2025-09-18,Bykea,145.98,Transport
+2025-07-13,Petrol,429.99,Transport
+2025-06-23,Hotel Booking,280.21,Travel
+2026-02-03,Sambosa,430.47,Food
+2025-08-08,Apartment Rent,254.23,Rent
+2025-09-29,Hostel Dues,493.33,Rent
+2025-12-15,House Leasing,252.91,Rent
+2025-11-08,Imtiaz Super Market,60.94,Shopping
+2025-12-03,Gym Membership,172.38,Subscriptions
+2025-05-05,Cloud Storage,212.31,Subscriptions
+2025-11-25,Cinema,465.56,Entertainment
+2025-10-29,Biryani,205.27,Food
+2025-09-26,Careem,411.85,Transport
+2025-04-01,Pharmacy,202.09,Health
+2025-07-09,Bazaar,237.74,Shopping
+2025-05-07,Steam Games,182.04,Entertainment
+2025-10-29,Agha Khan Hospital,166.09,Health
+2026-03-08,K-Electric,250.34,Utilities
+2025-06-17,Starbucks,319.61,Food
+2025-11-28,Concert Ticket,189.43,Entertainment
+2025-12-24,House Leasing,182.64,Rent
+2026-01-20,Electric Bill,185.53,Utilities
+2026-02-21,PIA Ticket,86.09,Travel
+2025-09-26,Amazon,484.24,Shopping
+2025-07-31,Apartment Rent,374.92,Rent
+2025-09-03,Eid Clothes,25.3,Shopping
+2025-08-16,Nueplex,322.82,Entertainment
+2026-03-10,PIA Ticket,449.62,Travel
+2025-11-14,Hostel Dues,268.05,Rent
+2025-04-28,Eid Clothes,256.75,Shopping
+2025-05-02,Water Bill,45.01,Utilities
+2026-01-20,Electric Bill,451.81,Utilities
+2026-02-15,Concert Ticket,219.59,Entertainment
+2025-10-06,Agha Khan Hospital,84.14,Health
+2025-08-06,Grocery,31.52,Shopping
+2025-11-04,Cinema,400.91,Entertainment
+2025-03-27,Nueplex,366.78,Entertainment
+2025-05-24,Doctor Clinic,26.13,Health
+2025-04-29,Bus Ticket,490.25,Transport
+2025-11-02,Gym Membership,286.16,Subscriptions
+2025-09-13,Bus Ticket,69.4,Transport
+2025-06-23,House Leasing,243.4,Rent
+2025-04-29,Sambosa,291.05,Food
+2025-11-06,Chai,240.68,Food
+2025-09-10,Bus Ticket,95.18,Transport
+2025-11-12,Eid Clothes,425.63,Shopping
+2026-02-23,PIA Ticket,205.99,Travel
+2025-10-05,Eid Clothes,277.38,Shopping
+2025-10-17,Gym Membership,457.59,Subscriptions
+2025-08-06,Grocery,66.32,Shopping
+2025-11-01,Concert Ticket,459.03,Entertainment
+2025-10-10,Water Bill,218.57,Utilities
+2026-02-10,Hostel Dues,379.93,Rent
+2025-07-05,Biryani,374.16,Food
+2025-05-13,Bazaar,450.84,Shopping
+2026-01-25,Train Ticket,307.41,Travel
+2025-07-02,Panadol,288.89,Health
+2025-05-27,Starbucks,270.41,Food
+2025-07-03,Sui Gas,414.44,Utilities
+2025-05-27,PTCL Internet,447.87,Utilities
+2025-08-14,Hostel Dues,154.35,Rent
+2025-04-20,Steam Games,379.18,Entertainment
+2025-08-31,Hostel Dues,147.35,Rent
+2025-05-07,Doctor Clinic,142.83,Health
+2025-06-16,House Leasing,297.9,Rent
+2025-11-27,Doctor Clinic,6.77,Health
+2025-11-29,Pharmacy,121.62,Health
+2026-02-22,Water Bill,482.48,Utilities
+2025-04-16,Shell Oil,452.8,Transport
+2025-08-30,PIA Ticket,182.05,Travel
+2026-01-21,Train Ticket,336.48,Travel
+2025-08-11,Spotify Premium,47.74,Subscriptions
+2025-07-26,Grocery,32.31,Shopping
+2026-01-13,Foodpanda,64.12,Food
+2025-11-04,K-Electric,415.84,Utilities
+2025-12-10,House Leasing,273.15,Rent
+2026-02-19,Water Bill,391.67,Utilities
+2026-01-19,Cloud Storage,437.17,Subscriptions
+2025-04-27,Hostel Dues,352.92,Rent
+2025-03-30,House Leasing,382.62,Rent
+2025-09-17,Careem,476.53,Transport
+2025-04-03,Medical Store,31.43,Health
+2025-05-21,Medical Store,378.27,Health
+2025-07-27,Concert Ticket,98.09,Entertainment
+2025-07-02,Spotify Premium,275.11,Subscriptions
+2025-09-17,Train Ticket,404.82,Travel
+2025-10-17,Bykea,499.09,Transport
+2025-09-21,Hostel Dues,457.42,Rent
+2025-10-16,Hostel Dues,106.99,Rent
+2025-05-26,PTCL Internet,99.25,Utilities
+2025-11-04,Biryani,123.97,Food
+2025-09-14,Grocery,365.25,Shopping
+2025-05-15,Cafe,278.31,Food
+2025-12-27,Emirates Airline,346.25,Travel
+2025-05-11,Gym Membership,261.19,Subscriptions
+2026-03-09,Biryani,75.4,Food
+2026-01-24,Nueplex,409.31,Entertainment
+2026-02-21,Hotel Booking,277.91,Travel
+2025-05-06,Netflix Subscription,489.44,Subscriptions
+2025-11-26,Sui Gas,334.44,Utilities
+2026-03-08,Foodpanda,312.73,Food
+2026-03-12,Netflix Subscription,253.94,Subscriptions
+2025-07-31,Hostel Dues,168.7,Rent
+2025-11-26,Petrol,331.13,Transport
+2025-12-26,Cloud Storage,226.14,Subscriptions
+2026-02-25,Cloud Storage,56.06,Subscriptions
+2025-05-19,PSO Pump,120.5,Transport
+2025-05-11,Bykea,306.0,Transport
+2025-07-16,Foodpanda,207.36,Food
+2025-05-20,Cloud Storage,494.01,Subscriptions
+2025-07-12,Sambosa,262.14,Food
+2025-04-12,Concert Ticket,299.76,Entertainment
+2025-10-11,Spotify Premium,269.67,Subscriptions
+2025-12-11,Panadol,128.52,Health
+2025-05-27,Eid Clothes,475.93,Shopping
+2025-04-18,Gym Membership,496.07,Subscriptions
+2025-09-20,Bus Ticket,336.84,Transport
+2025-09-26,Cafe,449.34,Food
+2025-10-02,Steam Games,95.72,Entertainment
+2025-12-26,House Leasing,92.3,Rent
+2025-11-13,Nueplex,249.21,Entertainment
+2025-06-16,PIA Ticket,79.43,Travel
+2025-10-26,Gym Membership,116.43,Subscriptions
+2025-05-22,Nueplex,483.43,Entertainment
+2026-01-11,Petrol,29.16,Transport
+2025-12-27,Gym Membership,205.41,Subscriptions
+2026-03-17,Agha Khan Hospital,255.83,Health
+2025-05-31,Bazaar,410.52,Shopping
+2025-08-19,Imtiaz Super Market,385.17,Shopping
+2025-06-04,Medical Store,195.21,Health
+2025-05-03,Cinema,85.93,Entertainment
+2025-07-02,Target,176.59,Shopping
+2025-09-16,Concert Ticket,62.36,Entertainment
+2026-01-01,Gym Membership,159.78,Subscriptions
+2026-01-20,Pharmacy,57.16,Health
+2026-02-14,Foodpanda,187.93,Food
+2026-01-17,Cloud Storage,244.71,Subscriptions
+2025-05-02,Pharmacy,92.11,Health
+2025-11-24,Cloud Storage,180.91,Subscriptions
+2025-09-28,Panadol,185.16,Health
+2025-10-28,Sui Gas,378.75,Utilities
+2025-10-02,Cinema,307.22,Entertainment
+2025-08-02,Imtiaz Super Market,354.61,Shopping
+2025-09-26,Shell Oil,145.16,Transport
+2026-02-22,Petrol,289.87,Transport
+2025-08-12,Petrol,253.6,Transport
+2025-08-06,Medical Store,416.02,Health
+2025-04-02,Spotify Premium,257.35,Subscriptions
+2026-02-23,Doctor Clinic,474.19,Health
+2026-02-05,Water Bill,276.34,Utilities
+2025-03-23,Spotify Premium,199.36,Subscriptions
+2025-04-24,K-Electric,177.75,Utilities
+2025-11-14,Sui Gas,407.49,Utilities
+2025-07-28,Petrol,184.8,Transport
+2025-07-10,Restaurant,229.82,Food
+2026-02-17,Hotel Booking,390.34,Travel
+2025-08-04,Spotify Premium,13.77,Subscriptions
+2025-04-19,Sui Gas,416.84,Utilities
+2025-04-15,Eid Clothes,299.09,Shopping
+2025-10-31,Train Ticket,480.24,Travel
+2025-09-25,Netflix Subscription,59.32,Subscriptions
+2025-05-13,Apartment Rent,303.08,Rent
+2025-05-21,Restaurant,134.39,Food
+2025-11-24,Petrol,161.81,Transport
+2025-07-13,House Leasing,368.95,Rent
+2025-09-30,Train Ticket,395.05,Travel
+2025-04-01,Agha Khan Hospital,429.0,Health
+2026-01-03,Foodpanda,261.76,Food
+2026-02-14,Eid Clothes,360.68,Shopping
+2025-09-02,Nueplex,139.44,Entertainment
+2026-02-22,Walmart,336.86,Shopping
+2025-03-20,Imtiaz Super Market,312.87,Shopping
+2025-07-23,Petrol,416.53,Transport
+2026-03-14,Apartment Rent,227.14,Rent
+2025-05-07,Eid Clothes,275.13,Shopping
+2025-09-14,Nueplex,486.5,Entertainment
+2025-11-13,Apartment Rent,331.87,Rent
+2025-10-09,Walmart,122.49,Shopping
+2025-04-08,Biryani,137.35,Food
+2025-06-03,Imtiaz Super Market,136.39,Shopping
+2025-12-16,Emirates Airline,73.0,Travel
+2025-07-10,Apartment Rent,63.65,Rent
+2025-12-27,Imtiaz Super Market,297.86,Shopping
+2025-12-14,Foodpanda,58.73,Food
+2026-02-15,Nueplex,8.63,Entertainment
+2025-06-27,Doctor Clinic,270.27,Health
+2025-12-21,Sui Gas,71.91,Utilities
+2025-04-28,Panadol,88.19,Health
+2026-03-17,Grocery,100.26,Shopping
+2025-09-23,Medical Store,425.3,Health
+2026-01-08,Medical Store,7.24,Health
+2025-08-26,PTCL Internet,352.78,Utilities
+2025-11-12,Uber Ride,135.47,Transport
+2025-05-22,Gym Membership,316.37,Subscriptions
+2025-11-29,Doctor Clinic,461.73,Health
+2025-06-25,House Leasing,63.45,Rent
+2025-08-07,KFC,89.81,Food
+2025-05-03,PTCL Internet,68.73,Utilities
+2026-01-19,Hotel Booking,374.75,Travel
+2025-12-10,Train Ticket,411.46,Travel
+2026-02-02,Panadol,94.89,Health
+2025-03-26,InDrive,251.61,Transport
+2025-07-02,PIA Ticket,293.51,Travel
+2025-07-10,Pharmacy,255.96,Health
+2025-09-21,Panadol,102.09,Health
+2025-04-15,Gym Membership,496.5,Subscriptions
+2026-02-27,Panadol,79.99,Health
+2026-02-18,Emirates Airline,183.58,Travel
+2025-03-29,PSO Pump,326.38,Transport
+2025-07-10,Pharmacy,453.62,Health
+2025-05-20,Train Ticket,299.97,Travel
+2025-08-25,Cloud Storage,380.98,Subscriptions
+2026-01-25,Bazaar,180.04,Shopping
+2025-04-09,Medical Store,409.78,Health
+2025-08-18,Chai,272.6,Food
+2025-05-07,PIA Ticket,118.05,Travel
+2025-10-07,PTCL Internet,38.12,Utilities
+2025-07-26,Panadol,111.45,Health
+2025-11-21,Panadol,234.37,Health
+2025-04-07,Gym Membership,255.28,Subscriptions
+2025-08-14,Hotel Booking,358.91,Travel
+2025-07-25,Steam Games,311.96,Entertainment
+2026-01-19,Medical Store,241.65,Health
+2025-06-10,Target,255.28,Shopping
+2025-11-20,InDrive,90.06,Transport
+2025-09-25,PSO Pump,280.16,Transport
+2026-03-12,InDrive,37.45,Transport
+2025-05-14,Bykea,177.52,Transport
+2025-08-12,Imtiaz Super Market,130.7,Shopping
+2025-06-17,Hostel Dues,308.45,Rent
+2025-08-04,Apartment Rent,265.72,Rent
+2025-04-12,Sambosa,152.72,Food
+2025-10-13,Emirates Airline,184.41,Travel
+2025-08-21,Cinema,291.31,Entertainment
+2025-07-31,PTCL Internet,385.81,Utilities
+2025-11-12,Sui Gas,385.78,Utilities
+2026-01-20,Biryani,92.35,Food
+2025-06-25,Amazon,276.94,Shopping
+2025-08-01,Train Ticket,172.62,Travel
+2026-02-24,Netflix Subscription,101.09,Subscriptions
+2025-12-23,Gym Membership,179.41,Subscriptions
+2025-12-01,Cinema,305.38,Entertainment
+2026-02-16,Hotel Booking,192.22,Travel
+2026-03-04,Train Ticket,260.24,Travel
+2025-05-08,Starbucks,342.95,Food
+2025-04-21,Panadol,426.35,Health
+2026-01-23,Steam Games,173.72,Entertainment
+2025-12-13,Netflix Subscription,433.87,Subscriptions
+2025-08-11,Nueplex,465.46,Entertainment
+2025-04-15,PIA Ticket,285.13,Travel
+2025-05-17,Target,108.43,Shopping
+2025-04-20,Uber Ride,325.74,Transport
+2026-03-03,Imtiaz Super Market,377.84,Shopping
+2026-03-08,Doctor Clinic,315.36,Health
+2025-05-26,McDonalds,366.45,Food
+2025-05-11,Doctor Clinic,448.14,Health
+2025-07-04,Foodpanda,154.33,Food
+2025-08-05,Spotify Premium,488.93,Subscriptions
+2026-02-02,Electric Bill,253.74,Utilities
+2025-04-13,Target,24.35,Shopping
+2025-10-03,Shell Oil,212.34,Transport
+2025-07-30,Steam Games,422.11,Entertainment
+2025-12-16,Steam Games,269.42,Entertainment
+2026-03-08,Nueplex,236.24,Entertainment
+2026-02-14,Spotify Premium,105.97,Subscriptions
+2025-08-11,Nueplex,89.06,Entertainment
+2025-07-14,Walmart,89.31,Shopping
+2026-03-18,Netflix Subscription,482.03,Subscriptions
+2025-10-16,Starbucks,330.66,Food
+2025-04-25,Bazaar,329.26,Shopping
+2025-07-24,House Leasing,237.95,Rent
+2025-10-27,Pharmacy,275.78,Health
+2025-05-18,Shell Oil,140.01,Transport
+2025-08-15,Sui Gas,280.08,Utilities
+2025-08-03,Nueplex,157.41,Entertainment
+2025-04-17,Imtiaz Super Market,78.11,Shopping
+2025-06-16,Doctor Clinic,421.14,Health
+2025-05-22,Cafe,85.89,Food
+2025-05-04,Netflix Subscription,118.0,Subscriptions
+2025-03-21,House Leasing,102.13,Rent
+2025-10-26,Steam Games,303.09,Entertainment
+2025-09-25,Train Ticket,37.52,Travel
+2025-11-24,Cinema,372.11,Entertainment
+2025-10-20,Spotify Premium,160.86,Subscriptions
+2025-04-11,House Leasing,95.84,Rent
+2026-01-04,Netflix Subscription,78.17,Subscriptions
+2025-05-26,Medical Store,113.26,Health
+2025-05-02,Netflix Subscription,329.85,Subscriptions
+2026-01-27,Steam Games,392.35,Entertainment
+2026-01-18,Doctor Clinic,82.22,Health
+2025-04-09,Target,119.95,Shopping
+2025-10-20,Netflix Subscription,145.78,Subscriptions
+2025-09-26,Sambosa,218.49,Food
+2025-06-26,Netflix Subscription,156.21,Subscriptions
+2025-06-16,K-Electric,466.05,Utilities
+2026-02-13,McDonalds,364.2,Food
+2025-05-16,PTCL Internet,435.74,Utilities
+2025-09-03,House Leasing,494.32,Rent
+2025-07-31,Concert Ticket,452.27,Entertainment
+2025-09-19,Emirates Airline,61.19,Travel
+2026-01-20,Water Bill,341.06,Utilities
+2025-05-04,House Leasing,33.38,Rent
+2025-08-28,KFC,196.41,Food
+2025-06-04,PTCL Internet,485.18,Utilities
+2025-10-17,Emirates Airline,180.85,Travel
+2025-08-05,Hostel Dues,80.53,Rent
+2025-04-06,PTCL Internet,266.95,Utilities
+2025-09-07,Eid Clothes,335.45,Shopping
+2025-04-24,House Leasing,99.11,Rent
+2025-12-19,Apartment Rent,44.88,Rent
+2025-04-23,Nueplex,218.08,Entertainment
+2025-06-21,Bus Ticket,158.36,Transport
+2025-08-29,PIA Ticket,236.2,Travel
+2025-05-16,Hostel Dues,92.36,Rent
+2026-03-08,House Leasing,214.54,Rent
+2026-02-23,PTCL Internet,24.58,Utilities
+2026-03-16,Bus Ticket,130.11,Transport
+2025-07-25,Spotify Premium,336.77,Subscriptions
+2025-05-02,KFC,272.43,Food
+2026-01-06,House Leasing,67.51,Rent
+2025-11-30,Water Bill,434.04,Utilities
+2025-11-27,Agha Khan Hospital,350.08,Health
+2025-04-04,McDonalds,287.65,Food
+2026-01-21,Imtiaz Super Market,424.7,Shopping
+2025-08-28,Hotel Booking,374.36,Travel
+2026-02-07,Sambosa,218.21,Food
+2025-07-17,Pharmacy,125.27,Health
+2026-01-06,Imtiaz Super Market,153.41,Shopping
+2025-12-13,Cloud Storage,166.75,Subscriptions
+2025-09-05,Panadol,362.06,Health
+2025-12-15,Spotify Premium,188.83,Subscriptions
+2026-01-17,Grocery,425.7,Shopping
+2026-02-01,Restaurant,332.43,Food
+2025-08-16,Sambosa,202.78,Food
+2025-11-27,Electric Bill,327.18,Utilities
+2025-06-14,Concert Ticket,5.87,Entertainment
+2025-08-25,Netflix Subscription,65.47,Subscriptions
+2025-11-01,McDonalds,183.95,Food
+2025-06-16,KFC,21.61,Food
+2026-02-11,PSO Pump,470.98,Transport
+2025-04-20,Hotel Booking,498.19,Travel
+2025-09-13,Hostel Dues,430.91,Rent
+2025-10-05,Pharmacy,311.02,Health
+2025-05-17,Sambosa,455.32,Food
+2025-06-14,House Leasing,25.64,Rent
+2026-02-09,Medical Store,146.25,Health
+2025-06-06,Agha Khan Hospital,231.97,Health
+2025-05-31,Concert Ticket,182.03,Entertainment
+2026-02-06,Imtiaz Super Market,440.43,Shopping
+2025-04-24,Pharmacy,131.11,Health
+2025-03-25,Water Bill,365.43,Utilities
+2026-01-12,Petrol,431.32,Transport
+2025-11-03,Foodpanda,253.57,Food
+2025-12-21,Spotify Premium,138.8,Subscriptions
+2026-02-21,Spotify Premium,126.67,Subscriptions
+2026-03-01,Emirates Airline,96.28,Travel
+2025-11-26,Concert Ticket,163.25,Entertainment
+2026-03-03,Grocery,251.45,Shopping
+2025-09-08,Bykea,159.33,Transport
+2025-08-13,InDrive,104.4,Transport
+2026-03-14,Apartment Rent,261.25,Rent
+2025-12-29,PTCL Internet,91.2,Utilities
+2025-05-31,Concert Ticket,321.4,Entertainment
+2025-05-23,Shell Oil,46.13,Transport
+2025-08-14,Medical Store,376.54,Health
+2025-04-27,Chai,121.21,Food
+2026-02-08,Doctor Clinic,87.45,Health
+2025-04-28,Netflix Subscription,63.5,Subscriptions
+2025-10-12,Cinema,82.59,Entertainment
+2025-03-28,Water Bill,46.49,Utilities
+2025-04-05,Eid Clothes,414.29,Shopping
+2025-09-12,PTCL Internet,159.62,Utilities
+2026-03-06,Cloud Storage,338.07,Subscriptions
+2025-11-03,Nueplex,42.81,Entertainment
+2025-09-06,Netflix Subscription,121.45,Subscriptions
+2025-07-18,Bykea,385.76,Transport
+2025-03-26,Sui Gas,59.13,Utilities
+2025-08-28,Doctor Clinic,47.09,Health
+2025-06-29,Doctor Clinic,93.76,Health
+2025-11-15,Spotify Premium,215.37,Subscriptions
+2025-09-16,Netflix Subscription,416.41,Subscriptions
+2025-10-08,Target,421.33,Shopping
+2026-02-24,Medical Store,65.12,Health
+2025-07-11,Apartment Rent,488.42,Rent
+2025-10-16,Daraz,468.48,Shopping
+2025-06-04,Shell Oil,272.18,Transport
+2025-07-15,Cloud Storage,214.6,Subscriptions
+2025-07-27,Sui Gas,62.15,Utilities
+2025-06-18,Electric Bill,229.65,Utilities
+2025-12-06,Cloud Storage,171.86,Subscriptions
+2025-06-18,Netflix Subscription,341.1,Subscriptions
+2025-09-30,House Leasing,413.76,Rent
+2025-05-29,Hotel Booking,307.01,Travel
+2025-05-30,Medical Store,401.57,Health
+2025-10-25,Steam Games,499.07,Entertainment
+2025-10-08,Apartment Rent,231.47,Rent
+2026-02-03,Netflix Subscription,50.44,Subscriptions
+2025-04-03,Amazon,392.25,Shopping
+2025-06-11,Careem,284.79,Transport
+2025-07-27,Emirates Airline,68.56,Travel
+2025-08-07,McDonalds,21.17,Food
+2025-04-15,Steam Games,253.46,Entertainment
+2026-01-15,Cloud Storage,371.55,Subscriptions
+2025-11-20,Foodpanda,184.18,Food
+2026-02-21,Amazon,454.91,Shopping
+2025-12-24,Daraz,7.79,Shopping
+2025-08-13,Cloud Storage,436.15,Subscriptions
+2025-07-13,Netflix Subscription,278.1,Subscriptions
+2026-02-16,PTCL Internet,155.5,Utilities
+2025-03-21,Water Bill,83.12,Utilities
+2025-12-31,Cloud Storage,218.46,Subscriptions
+2026-03-10,Shell Oil,345.29,Transport
+2026-02-26,Panadol,80.12,Health
+2025-06-17,Foodpanda,440.39,Food
+2025-10-27,Water Bill,49.55,Utilities
+2025-05-04,Careem,148.91,Transport
+2025-04-08,PIA Ticket,127.54,Travel
+2025-06-13,InDrive,117.4,Transport
+2026-02-10,Biryani,473.44,Food
+2026-03-14,Biryani,102.27,Food
+2025-06-09,Nueplex,451.57,Entertainment
+2026-02-25,Imtiaz Super Market,120.87,Shopping
+2026-02-07,Cinema,379.64,Entertainment
+2026-01-24,Restaurant,55.84,Food
+2025-05-20,Apartment Rent,439.0,Rent
+2025-11-06,Cloud Storage,255.65,Subscriptions
+2025-07-27,K-Electric,483.03,Utilities
+2025-04-24,Careem,170.05,Transport
+2025-07-19,Cloud Storage,350.21,Subscriptions
+2025-10-15,House Leasing,213.52,Rent
+2026-02-17,Hostel Dues,42.16,Rent
+2025-06-30,Steam Games,345.95,Entertainment
+2025-10-08,PIA Ticket,201.45,Travel
+2025-12-01,Nueplex,52.87,Entertainment
+2025-11-03,InDrive,367.74,Transport
+2026-03-18,Gym Membership,132.01,Subscriptions
+2025-12-04,McDonalds,103.41,Food
+2025-04-21,Cloud Storage,396.28,Subscriptions
+2025-09-07,Concert Ticket,305.07,Entertainment
+2025-07-22,Biryani,54.15,Food
+2025-04-23,K-Electric,166.39,Utilities
+2025-09-01,PIA Ticket,101.96,Travel
+2026-03-14,Careem,383.4,Transport
+2025-09-07,Foodpanda,228.5,Food
+2025-12-05,Gym Membership,203.57,Subscriptions
+2025-09-25,House Leasing,85.14,Rent
+2025-09-22,Walmart,210.97,Shopping
+2025-09-30,PTCL Internet,237.39,Utilities
+2026-03-18,Daraz,145.46,Shopping
+2025-10-26,House Leasing,217.6,Rent
+2025-05-16,Emirates Airline,230.18,Travel
+2025-06-17,Hotel Booking,309.68,Travel
+2025-09-29,Agha Khan Hospital,314.22,Health
+2026-01-10,InDrive,378.09,Transport
+2025-09-02,Train Ticket,198.3,Travel
+2025-05-04,Hostel Dues,11.79,Rent
+2025-05-20,Spotify Premium,468.13,Subscriptions
+2026-01-30,KFC,35.9,Food
+2026-03-19,Steam Games,499.69,Entertainment
+2025-06-26,Sui Gas,430.54,Utilities
+2025-05-25,Eid Clothes,289.74,Shopping
+2026-03-03,PSO Pump,9.56,Transport
+2025-06-05,Medical Store,367.46,Health
+2026-01-31,Imtiaz Super Market,274.85,Shopping
+2025-08-09,Concert Ticket,471.0,Entertainment
+2025-07-01,Target,437.79,Shopping
+2025-08-20,Hotel Booking,314.62,Travel
+2025-11-18,Cloud Storage,25.31,Subscriptions
+2025-06-21,Hostel Dues,149.05,Rent
+2025-05-17,PIA Ticket,455.73,Travel
+2026-01-20,Doctor Clinic,336.31,Health
+2026-02-09,Eid Clothes,337.94,Shopping
+2025-12-01,Train Ticket,137.84,Travel
+2026-02-18,Emirates Airline,388.17,Travel
+2025-10-16,Electric Bill,341.89,Utilities
+2025-10-07,Eid Clothes,479.63,Shopping
+2025-10-05,Spotify Premium,210.08,Subscriptions
+2025-09-02,Chai,136.33,Food
+2026-01-09,Amazon,163.99,Shopping
+2025-05-18,House Leasing,265.75,Rent
+2025-12-08,Sui Gas,83.49,Utilities
+2025-07-10,Biryani,76.55,Food
+2025-12-11,Cafe,240.76,Food
+2025-08-08,Concert Ticket,314.76,Entertainment
+2025-07-30,Biryani,405.26,Food
+2025-10-29,House Leasing,474.92,Rent
+2026-02-16,Foodpanda,114.38,Food
+2025-06-21,Gym Membership,146.47,Subscriptions
+2025-07-23,Restaurant,200.38,Food
+2025-08-13,Careem,58.31,Transport
+2025-04-07,Pharmacy,82.79,Health
+2025-04-02,PIA Ticket,319.66,Travel
+2026-01-02,Petrol,408.23,Transport
+2025-05-10,Sambosa,204.43,Food
+2025-07-28,Imtiaz Super Market,353.41,Shopping
+2025-06-04,Train Ticket,180.12,Travel
+2025-05-10,Sambosa,197.67,Food
+2025-08-16,Hostel Dues,268.5,Rent
+2026-01-05,Cloud Storage,430.84,Subscriptions
+2025-08-09,Pharmacy,411.81,Health
+2025-12-03,Foodpanda,196.59,Food
+2026-01-05,K-Electric,396.69,Utilities
+2025-11-06,Sambosa,137.42,Food
+2025-05-25,Careem,444.0,Transport
+2025-08-13,Hotel Booking,46.58,Travel
+2025-04-11,House Leasing,475.04,Rent
+2025-04-29,Apartment Rent,32.47,Rent
+2025-07-23,Daraz,193.07,Shopping
+2026-03-10,Gym Membership,209.41,Subscriptions
+2026-03-15,Gym Membership,26.62,Subscriptions
+2026-03-09,Walmart,499.42,Shopping
+2026-03-12,PIA Ticket,180.34,Travel
+2025-04-13,Electric Bill,249.72,Utilities
+2025-10-03,KFC,105.93,Food
+2026-02-13,InDrive,65.43,Transport
+2025-08-09,Hostel Dues,5.2,Rent
+2025-04-23,Train Ticket,363.12,Travel
+2026-01-31,Spotify Premium,256.68,Subscriptions
+2026-02-22,Water Bill,223.21,Utilities
+2025-06-06,Apartment Rent,199.44,Rent
+2025-10-30,Agha Khan Hospital,317.62,Health
+2025-09-30,Cafe,235.2,Food
+2025-09-17,Cinema,370.79,Entertainment
+2025-04-27,Restaurant,442.89,Food
+2025-08-31,Concert Ticket,79.92,Entertainment
+2025-08-11,Walmart,482.24,Shopping
+2025-07-21,McDonalds,88.33,Food
+2025-04-03,Cinema,387.14,Entertainment
+2025-07-05,Panadol,238.42,Health
+2026-02-07,Emirates Airline,391.8,Travel
+2026-03-02,InDrive,101.12,Transport
+2025-05-26,Apartment Rent,329.35,Rent
+2026-01-13,Electric Bill,396.06,Utilities
+2025-09-07,PIA Ticket,146.15,Travel
+2025-10-24,Starbucks,492.35,Food
+2025-07-02,Concert Ticket,349.32,Entertainment
+2025-10-03,Agha Khan Hospital,303.29,Health
+2026-03-18,Foodpanda,182.98,Food
+2025-04-21,Restaurant,495.49,Food
+2025-07-13,Agha Khan Hospital,339.43,Health
+2026-03-06,Steam Games,239.96,Entertainment
+2025-03-22,Uber Ride,416.71,Transport
+2026-03-11,Pharmacy,431.12,Health
+2025-04-13,Gym Membership,322.27,Subscriptions
+2025-08-16,Sui Gas,465.44,Utilities
+2025-07-28,Gym Membership,460.08,Subscriptions
+2025-06-15,Gym Membership,119.91,Subscriptions
+2025-09-17,Petrol,360.11,Transport
+2026-01-02,Pharmacy,332.52,Health
+2025-12-20,Starbucks,168.46,Food
+2026-01-31,Bykea,413.01,Transport
+2025-06-05,Gym Membership,362.83,Subscriptions
+2025-12-26,Sui Gas,491.03,Utilities
+2025-07-19,Netflix Subscription,321.03,Subscriptions
+2026-01-09,Train Ticket,329.88,Travel
+2026-03-17,Bykea,92.58,Transport
+2026-03-18,Apartment Rent,388.72,Rent
+2025-11-17,PTCL Internet,352.18,Utilities
+2026-03-20,Biryani,458.36,Food
+2025-11-11,Nueplex,23.89,Entertainment
+2025-05-09,Cinema,209.71,Entertainment
+2026-02-05,Hotel Booking,137.61,Travel
+2025-11-24,PTCL Internet,158.33,Utilities
+2025-08-10,Steam Games,207.28,Entertainment
+2026-03-17,Uber Ride,486.91,Transport
+2026-03-09,Pharmacy,352.42,Health
+2025-09-07,Target,264.4,Shopping
+2026-03-19,Steam Games,229.95,Entertainment
+2025-11-11,Apartment Rent,96.25,Rent
+2025-05-25,Walmart,270.78,Shopping
+2026-03-07,Cafe,206.01,Food
+2025-08-07,Steam Games,218.98,Entertainment
+2025-12-10,Shell Oil,248.32,Transport
+2026-02-14,Amazon,483.67,Shopping
+2025-09-03,Sui Gas,322.59,Utilities
+2026-02-04,Spotify Premium,430.1,Subscriptions
+2026-02-24,Cloud Storage,174.78,Subscriptions
+2025-08-21,Careem,283.69,Transport
+2025-11-19,Cloud Storage,394.77,Subscriptions
+2025-07-11,Sui Gas,310.48,Utilities
+2025-03-27,Bykea,498.72,Transport
+2025-05-31,Hostel Dues,276.64,Rent
+2025-05-12,Gym Membership,92.39,Subscriptions
+2025-11-21,Pharmacy,168.56,Health
+2025-11-07,Hotel Booking,465.12,Travel
+2025-08-11,House Leasing,68.67,Rent
+2025-06-10,Bus Ticket,308.89,Transport
+2026-01-19,Steam Games,81.21,Entertainment
+2025-05-21,Bykea,419.08,Transport
+2026-02-16,Concert Ticket,161.89,Entertainment
+2025-08-01,Grocery,133.39,Shopping
+2025-05-24,Hotel Booking,404.87,Travel
+2025-12-24,House Leasing,40.64,Rent
+2025-05-02,Nueplex,32.88,Entertainment
+2026-03-12,InDrive,251.34,Transport
+2025-10-19,Apartment Rent,273.6,Rent
+2026-01-28,K-Electric,292.68,Utilities
+2026-01-13,Walmart,84.95,Shopping
+2025-03-20,Steam Games,148.99,Entertainment
+2025-09-11,Pharmacy,419.56,Health
+2025-03-31,K-Electric,423.59,Utilities
+2025-06-30,K-Electric,426.33,Utilities
+2026-01-19,Daraz,113.43,Shopping
+2026-01-15,PTCL Internet,141.62,Utilities
+2025-09-09,Apartment Rent,434.1,Rent
+2026-02-21,KFC,440.96,Food
+2025-04-23,Panadol,452.67,Health
+2025-07-26,PTCL Internet,320.38,Utilities
+2025-12-11,Apartment Rent,39.77,Rent
+2025-10-02,Imtiaz Super Market,25.04,Shopping
+2025-03-29,Netflix Subscription,46.71,Subscriptions
+2025-06-12,Concert Ticket,483.62,Entertainment
+2025-06-17,Cinema,429.28,Entertainment
+2025-10-03,PSO Pump,432.62,Transport
+2025-09-22,Walmart,414.59,Shopping
+2026-02-01,Sambosa,227.54,Food
+2026-01-08,Steam Games,195.3,Entertainment
+2025-08-08,Petrol,71.6,Transport
+2025-11-25,Electric Bill,112.88,Utilities
+2025-12-17,Daraz,369.83,Shopping
+2025-08-12,InDrive,311.41,Transport
+2025-06-25,Nueplex,464.29,Entertainment
+2025-11-23,Panadol,50.62,Health
+2025-09-23,Hostel Dues,499.16,Rent
+2025-04-07,Steam Games,151.79,Entertainment
+2025-06-11,Restaurant,466.54,Food
+2025-04-10,Apartment Rent,247.23,Rent
+2025-08-09,Hotel Booking,184.13,Travel
+2026-02-06,Hotel Booking,314.99,Travel
+2025-08-08,Bazaar,167.12,Shopping
+2025-04-06,Agha Khan Hospital,24.92,Health
+2025-07-05,Bykea,265.36,Transport
+2025-11-19,Spotify Premium,345.63,Subscriptions
+2025-08-01,Grocery,270.58,Shopping
+2026-03-06,Bus Ticket,35.55,Transport
+2025-12-23,Cloud Storage,450.34,Subscriptions
+2025-06-28,Train Ticket,66.55,Travel
+2025-03-22,Bus Ticket,177.76,Transport
+2025-09-28,Gym Membership,242.09,Subscriptions
+2025-05-11,Biryani,403.73,Food
+2025-07-27,Chai,204.91,Food
+2025-08-12,Netflix Subscription,254.1,Subscriptions
+2025-10-24,K-Electric,235.22,Utilities
+2025-08-19,Starbucks,125.75,Food
+2026-02-19,Hostel Dues,62.42,Rent
+2025-09-18,Concert Ticket,321.83,Entertainment
+2026-02-27,Bazaar,405.58,Shopping
+2025-11-17,Hostel Dues,294.51,Rent
+2025-11-22,InDrive,397.52,Transport
+2025-06-12,Foodpanda,15.45,Food
+2025-07-15,Hostel Dues,112.33,Rent
+2025-04-06,Restaurant,286.06,Food
+2025-08-31,Petrol,129.73,Transport
+2025-05-18,Bus Ticket,373.09,Transport
+2026-02-03,Netflix Subscription,427.93,Subscriptions
+2025-11-05,Gym Membership,141.45,Subscriptions
+2026-03-01,Eid Clothes,275.43,Shopping
+2025-06-12,Hotel Booking,107.56,Travel
+2025-08-01,PTCL Internet,492.49,Utilities
+2025-11-07,Shell Oil,13.35,Transport
+2025-10-31,Panadol,239.15,Health
+2025-04-05,Doctor Clinic,80.13,Health
+2025-06-03,Apartment Rent,232.97,Rent
+2026-02-14,Hostel Dues,385.46,Rent
+2025-11-28,Doctor Clinic,272.44,Health
+2025-06-26,InDrive,392.51,Transport
+2025-09-15,Hostel Dues,208.4,Rent
+2025-11-07,Spotify Premium,464.78,Subscriptions
+2025-06-14,Electric Bill,300.59,Utilities
+2025-04-01,Medical Store,267.19,Health
+2025-04-12,House Leasing,370.72,Rent
+2025-05-08,Walmart,92.57,Shopping
+2025-08-20,Chai,496.3,Food
+2025-11-08,Biryani,466.06,Food
+2025-08-08,Concert Ticket,300.38,Entertainment
+2025-04-03,K-Electric,374.58,Utilities
+2025-11-26,Agha Khan Hospital,27.04,Health
+2025-05-21,Netflix Subscription,252.96,Subscriptions
+2025-05-17,Eid Clothes,277.22,Shopping
+2025-12-10,Panadol,207.92,Health
+2025-07-17,Agha Khan Hospital,344.22,Health
+2026-03-02,Hotel Booking,32.83,Travel
+2025-04-14,Sui Gas,435.47,Utilities
+2025-04-17,Apartment Rent,413.4,Rent
+2025-07-22,Hostel Dues,497.09,Rent
+2026-01-02,Pharmacy,497.77,Health
+2025-07-04,Panadol,404.22,Health
+2025-04-12,Cinema,188.77,Entertainment
+2025-09-23,Amazon,218.73,Shopping
+2025-04-19,Hotel Booking,402.0,Travel
+2025-12-07,Spotify Premium,314.34,Subscriptions
+2026-03-16,Starbucks,105.12,Food
+2025-11-27,Train Ticket,474.77,Travel
+2025-12-20,House Leasing,476.96,Rent
+2025-04-08,Panadol,162.57,Health
+2025-05-12,McDonalds,156.4,Food
+2025-06-04,PTCL Internet,246.34,Utilities
+2025-12-17,Panadol,383.0,Health
+2025-12-04,Grocery,23.81,Shopping
+2025-03-25,Hotel Booking,138.37,Travel
+2025-12-17,Steam Games,122.98,Entertainment
+2025-06-24,Pharmacy,42.8,Health
+2025-07-20,Cinema,251.54,Entertainment
+2025-11-12,Water Bill,402.8,Utilities
+2025-09-30,Walmart,396.31,Shopping
+2025-05-07,Pharmacy,8.78,Health
+2026-01-11,Concert Ticket,411.37,Entertainment
+2025-05-30,Sui Gas,404.83,Utilities
+2025-08-07,Train Ticket,18.54,Travel
+2025-04-23,Pharmacy,183.13,Health
+2025-05-08,Starbucks,369.26,Food
+2026-02-14,Agha Khan Hospital,309.93,Health
+2025-09-15,Panadol,371.54,Health
+2025-07-07,PTCL Internet,132.69,Utilities
+2025-04-14,Medical Store,148.87,Health
+2025-05-01,McDonalds,171.45,Food
+2026-01-06,Foodpanda,112.28,Food
+2026-03-15,Water Bill,309.6,Utilities
+2025-10-20,Doctor Clinic,249.6,Health
+2025-11-23,Water Bill,77.42,Utilities
+2025-10-25,Sambosa,460.51,Food
+2025-03-25,Doctor Clinic,244.83,Health
+2026-02-07,Gym Membership,166.14,Subscriptions
+2025-08-07,Hotel Booking,93.49,Travel
+2025-04-07,Hostel Dues,111.25,Rent
+2025-09-21,Emirates Airline,418.9,Travel
+2025-05-21,Apartment Rent,339.94,Rent
+2025-08-25,Apartment Rent,386.47,Rent
+2025-11-14,House Leasing,182.39,Rent
+2026-03-15,Medical Store,78.33,Health
+2025-10-03,Foodpanda,225.75,Food
+2025-08-07,Apartment Rent,207.61,Rent
+2025-08-02,Chai,12.12,Food
+2025-08-26,Electric Bill,499.85,Utilities
+2025-07-05,Cloud Storage,454.21,Subscriptions
+2025-09-21,Steam Games,204.66,Entertainment
+2025-12-16,Panadol,493.61,Health
+2025-03-30,Chai,197.18,Food
+2025-04-20,Uber Ride,184.77,Transport
+2025-11-26,Agha Khan Hospital,460.48,Health
+2026-01-01,PIA Ticket,67.48,Travel
+2025-10-09,Agha Khan Hospital,227.77,Health
+2026-01-12,Netflix Subscription,10.48,Subscriptions
+2026-01-02,Eid Clothes,494.34,Shopping
+2025-05-12,Water Bill,245.83,Utilities
+2025-05-23,House Leasing,308.35,Rent
+2025-07-13,Agha Khan Hospital,404.29,Health
+2026-01-13,Target,74.62,Shopping
+2026-01-06,Cinema,22.84,Entertainment
+2025-12-08,InDrive,465.2,Transport
+2026-01-16,Eid Clothes,451.46,Shopping
+2026-03-09,Sui Gas,54.99,Utilities
+2025-06-16,KFC,387.29,Food
+2025-07-03,Spotify Premium,243.4,Subscriptions
+2025-11-07,Medical Store,460.19,Health
+2025-07-24,Electric Bill,142.79,Utilities
+2025-06-18,Target,156.4,Shopping
+2026-01-21,Careem,492.78,Transport
+2026-03-16,Emirates Airline,261.2,Travel
+2025-08-19,Doctor Clinic,202.69,Health
+2025-03-23,PIA Ticket,256.55,Travel
+2025-07-29,Netflix Subscription,29.24,Subscriptions
+2025-05-16,Concert Ticket,306.61,Entertainment
+2025-06-07,Cloud Storage,230.85,Subscriptions
+2025-07-21,Cinema,162.72,Entertainment
+2025-10-06,Hostel Dues,479.2,Rent
+2025-07-24,Train Ticket,81.9,Travel
+2026-03-11,Apartment Rent,382.62,Rent
+2025-12-16,Apartment Rent,93.02,Rent
+2025-07-28,Foodpanda,38.25,Food
+2025-06-07,Careem,130.01,Transport
+2025-09-01,Gym Membership,267.96,Subscriptions
+2026-02-10,House Leasing,427.82,Rent
+2025-11-16,Apartment Rent,107.78,Rent
+2025-10-02,Hostel Dues,430.88,Rent
+2026-02-15,Foodpanda,146.61,Food
+2025-03-28,Hotel Booking,64.95,Travel
+2025-11-21,Panadol,463.86,Health
+2025-04-20,Cinema,63.36,Entertainment
+2026-01-05,Biryani,312.61,Food
+2025-12-22,Restaurant,125.29,Food
+2025-04-17,Sambosa,378.28,Food
+2025-11-25,PTCL Internet,374.2,Utilities
+2025-05-02,K-Electric,113.9,Utilities
+2025-10-21,PTCL Internet,473.37,Utilities
+2025-11-12,House Leasing,149.69,Rent
+2025-10-10,Shell Oil,67.79,Transport
+2026-02-07,PSO Pump,41.5,Transport
+2026-02-04,Agha Khan Hospital,93.76,Health
+2026-02-03,Bazaar,130.87,Shopping
+2025-07-04,Biryani,461.98,Food
+2025-10-01,PIA Ticket,388.01,Travel
+2025-12-08,Target,154.11,Shopping
+2025-11-21,Apartment Rent,117.88,Rent
+2025-07-17,House Leasing,418.59,Rent
+2025-09-09,PSO Pump,480.74,Transport
+2025-09-30,Steam Games,364.72,Entertainment
+2026-01-17,Medical Store,430.59,Health
+2025-10-17,Netflix Subscription,403.54,Subscriptions
+2025-05-16,Biryani,64.2,Food
+2025-10-23,House Leasing,99.72,Rent
+2025-04-29,House Leasing,45.7,Rent
+2025-06-13,Water Bill,248.36,Utilities
+2026-02-10,Hotel Booking,373.26,Travel
+2025-10-08,Imtiaz Super Market,233.42,Shopping
+2026-02-07,PIA Ticket,32.53,Travel
+2025-10-16,McDonalds,91.47,Food
+2025-12-30,Starbucks,124.8,Food
+2025-07-15,Pharmacy,93.81,Health
+2025-06-06,Bus Ticket,311.14,Transport
+2026-01-11,Cafe,451.89,Food
+2025-05-19,Spotify Premium,313.78,Subscriptions
+2026-01-17,Apartment Rent,266.87,Rent
+2025-06-06,Concert Ticket,184.24,Entertainment
+2025-06-17,Medical Store,325.44,Health
+2025-08-01,Apartment Rent,374.26,Rent
+2025-04-22,Panadol,443.32,Health
+2026-02-28,McDonalds,414.41,Food
+2025-05-20,Gym Membership,472.23,Subscriptions
+2025-12-17,Petrol,384.78,Transport
+2026-03-18,Water Bill,157.02,Utilities
+2026-02-04,Starbucks,381.1,Food
+2025-04-01,Netflix Subscription,465.41,Subscriptions
+2025-06-22,Apartment Rent,373.39,Rent
+2025-04-16,Electric Bill,126.18,Utilities
+2025-08-15,Nueplex,290.23,Entertainment
+2025-05-16,Water Bill,272.29,Utilities
+2026-01-17,Doctor Clinic,97.49,Health
+2026-02-20,Netflix Subscription,410.76,Subscriptions
+2025-07-08,Hotel Booking,466.18,Travel
+2025-10-05,Netflix Subscription,399.01,Subscriptions
+2025-07-31,Cinema,209.65,Entertainment
+2025-06-06,Shell Oil,265.84,Transport
+2025-07-30,Cafe,79.23,Food
+2025-05-31,Bazaar,305.36,Shopping
+2025-07-06,Emirates Airline,430.29,Travel
+2025-04-08,Hotel Booking,35.37,Travel
+2026-02-22,Medical Store,60.48,Health
+2025-11-07,Apartment Rent,68.95,Rent
+2025-06-29,PIA Ticket,357.69,Travel
+2025-05-08,Apartment Rent,298.38,Rent
+2025-10-21,PTCL Internet,313.96,Utilities
+2026-02-21,House Leasing,432.84,Rent
+2025-06-16,Bykea,328.46,Transport
+2025-07-07,Electric Bill,483.56,Utilities
+2025-07-30,Concert Ticket,468.01,Entertainment
+2025-09-15,K-Electric,483.26,Utilities
+2025-11-11,Cafe,63.13,Food
+2025-03-24,K-Electric,179.81,Utilities
+2026-01-07,Concert Ticket,370.88,Entertainment
+2025-07-06,Foodpanda,118.82,Food
+2025-04-25,Hostel Dues,64.1,Rent
+2025-11-24,Concert Ticket,328.26,Entertainment
+2026-01-13,Eid Clothes,54.22,Shopping
+2025-09-14,Panadol,266.97,Health
+2025-11-02,Apartment Rent,118.56,Rent
+2025-10-22,Emirates Airline,127.32,Travel
+2025-03-27,Pharmacy,176.86,Health
+2025-12-29,Bykea,128.41,Transport
+2025-05-20,K-Electric,270.67,Utilities
+2025-07-10,Electric Bill,90.33,Utilities
+2026-02-16,Concert Ticket,355.94,Entertainment
+2026-03-03,Emirates Airline,9.22,Travel
+2026-03-02,Electric Bill,246.38,Utilities
+2025-04-28,Concert Ticket,103.76,Entertainment
+2025-10-14,Hotel Booking,146.03,Travel
+2025-10-21,KFC,123.6,Food
+2025-12-06,Hostel Dues,287.62,Rent
+2026-01-06,Gym Membership,89.0,Subscriptions
+2025-09-29,PSO Pump,363.22,Transport
+2025-11-09,Agha Khan Hospital,165.06,Health
+2025-06-17,Concert Ticket,451.06,Entertainment
+2025-10-27,Medical Store,264.33,Health
+2025-12-01,Grocery,401.65,Shopping
+2025-07-14,Shell Oil,152.35,Transport
+2025-10-20,PTCL Internet,337.06,Utilities
+2025-11-20,Steam Games,87.47,Entertainment
+2026-02-24,Biryani,403.75,Food
+2025-11-11,Doctor Clinic,280.93,Health
+2026-02-16,Gym Membership,300.54,Subscriptions
+2026-01-14,Netflix Subscription,421.82,Subscriptions
+2025-08-22,Netflix Subscription,451.14,Subscriptions
+2025-04-02,Amazon,89.12,Shopping
+2025-06-10,Nueplex,402.15,Entertainment
+2025-10-22,Spotify Premium,185.81,Subscriptions
+2025-04-13,Restaurant,23.4,Food
+2025-10-25,Netflix Subscription,68.93,Subscriptions
+2026-02-27,Hostel Dues,471.59,Rent
+2025-07-21,Spotify Premium,308.38,Subscriptions
+2025-07-11,Uber Ride,418.59,Transport
+2025-09-06,K-Electric,27.86,Utilities
+2025-07-04,Amazon,328.38,Shopping
+2025-08-04,Target,489.67,Shopping
+2026-01-19,PIA Ticket,242.07,Travel
+2025-10-11,Concert Ticket,453.71,Entertainment
+2025-07-01,Electric Bill,297.0,Utilities
+2025-07-26,Sambosa,108.54,Food
+2025-12-30,Biryani,78.72,Food
+2025-09-08,Apartment Rent,301.98,Rent
+2026-03-07,McDonalds,380.64,Food
+2026-03-13,Careem,453.22,Transport
+2025-08-17,McDonalds,121.64,Food
+2025-09-29,Uber Ride,498.53,Transport
+2025-09-29,Cloud Storage,150.66,Subscriptions
+2026-02-16,K-Electric,462.92,Utilities
+2025-11-24,Train Ticket,349.0,Travel
+2026-01-29,Hostel Dues,89.56,Rent
+2025-04-24,Electric Bill,84.21,Utilities
+2025-10-08,Gym Membership,251.28,Subscriptions
+2025-08-21,Pharmacy,433.24,Health
+2026-01-01,Electric Bill,263.93,Utilities
+2025-05-11,Medical Store,37.45,Health
+2026-01-11,Electric Bill,275.86,Utilities
+2025-10-16,Concert Ticket,197.52,Entertainment
+2025-12-06,Amazon,162.73,Shopping
+2025-12-10,Concert Ticket,50.08,Entertainment
+2025-09-25,Cafe,497.53,Food
+2025-07-07,Foodpanda,48.71,Food
+2025-12-22,Hostel Dues,288.41,Rent
+2025-09-19,Sui Gas,346.91,Utilities
+2025-05-26,Bus Ticket,54.04,Transport
+2025-09-10,Netflix Subscription,456.25,Subscriptions
+2026-01-26,Doctor Clinic,383.13,Health
+2025-05-07,Doctor Clinic,335.11,Health
+2025-12-31,Apartment Rent,255.18,Rent
+2025-04-01,Hostel Dues,433.19,Rent
+2025-09-20,Netflix Subscription,384.55,Subscriptions
+2025-04-13,Shell Oil,357.57,Transport
+2025-05-28,Cinema,492.55,Entertainment
+2026-01-13,Nueplex,413.82,Entertainment
+2025-10-27,Steam Games,307.82,Entertainment
+2025-11-21,Pharmacy,395.42,Health
+2026-01-20,PIA Ticket,160.6,Travel
+2025-04-18,Medical Store,85.0,Health
+2026-03-16,Steam Games,102.56,Entertainment
+2026-01-20,PIA Ticket,136.65,Travel
+2026-02-26,Hostel Dues,139.81,Rent
+2025-11-08,KFC,250.36,Food
+2025-11-23,K-Electric,44.05,Utilities
+2025-09-21,Emirates Airline,452.85,Travel
+2025-06-08,Cloud Storage,229.88,Subscriptions
+2026-03-09,Steam Games,325.75,Entertainment
+2025-05-06,Agha Khan Hospital,408.28,Health
+2025-08-16,K-Electric,65.41,Utilities
+2025-06-26,Gym Membership,31.2,Subscriptions
+2025-08-02,Train Ticket,357.46,Travel
+2025-09-02,Hostel Dues,43.53,Rent
+2025-10-23,Walmart,128.73,Shopping
+2025-10-09,Cloud Storage,429.36,Subscriptions
+2025-04-01,Emirates Airline,177.15,Travel
+2026-01-05,Bus Ticket,474.33,Transport
+2025-04-29,Walmart,423.47,Shopping
+2025-08-29,Agha Khan Hospital,400.8,Health
+2025-08-19,McDonalds,268.92,Food
+2025-08-10,Sui Gas,61.03,Utilities
+2025-12-23,Electric Bill,198.64,Utilities
+2025-10-19,Grocery,352.97,Shopping
+2025-05-27,Spotify Premium,477.91,Subscriptions
+2026-01-27,Apartment Rent,158.37,Rent
+2025-05-13,Doctor Clinic,479.95,Health
+2025-05-26,House Leasing,182.87,Rent
+2025-05-10,PTCL Internet,96.62,Utilities
+2026-02-16,Netflix Subscription,386.98,Subscriptions
+2025-08-13,McDonalds,86.91,Food
+2025-05-24,Apartment Rent,342.46,Rent
+2026-01-03,Chai,343.75,Food
+2025-07-20,Chai,405.48,Food
+2025-08-17,Shell Oil,219.57,Transport
+2026-01-09,Hostel Dues,35.06,Rent
+2025-04-01,Nueplex,71.52,Entertainment
+2025-10-07,Concert Ticket,420.5,Entertainment
+2025-04-12,Cafe,347.59,Food
+2025-08-10,Spotify Premium,460.02,Subscriptions
+2025-08-22,Electric Bill,202.39,Utilities
+2025-07-11,House Leasing,254.49,Rent
+2026-01-26,Hostel Dues,363.35,Rent
+2026-01-30,Apartment Rent,115.78,Rent
+2025-06-15,Shell Oil,402.79,Transport
+2025-05-22,House Leasing,236.1,Rent
+2025-04-24,Bazaar,81.16,Shopping
+2025-10-22,PSO Pump,478.4,Transport
+2026-03-15,Agha Khan Hospital,89.85,Health
+2025-12-01,Shell Oil,301.07,Transport
+2026-01-29,K-Electric,275.69,Utilities
+2026-02-08,Cafe,459.27,Food
+2025-03-30,Panadol,206.54,Health
+2025-07-28,K-Electric,146.62,Utilities
+2025-11-14,PTCL Internet,317.85,Utilities
+2026-01-24,Concert Ticket,201.22,Entertainment
+2026-01-03,Restaurant,112.4,Food
+2026-02-03,Hotel Booking,285.91,Travel
+2026-01-01,Doctor Clinic,356.88,Health
+2025-05-07,Cafe,142.84,Food
+2026-02-18,Hotel Booking,221.99,Travel
+2025-07-18,Cloud Storage,310.95,Subscriptions
+2025-11-07,House Leasing,150.52,Rent
+2025-12-25,Sui Gas,174.44,Utilities
+2025-08-31,Doctor Clinic,149.04,Health
+2025-11-01,Netflix Subscription,265.68,Subscriptions
+2025-06-17,Restaurant,345.37,Food
+2025-11-14,Nueplex,431.89,Entertainment
+2025-06-14,Electric Bill,215.76,Utilities
+2025-11-26,Concert Ticket,339.97,Entertainment
+2025-09-25,Bus Ticket,363.57,Transport
+2025-03-24,Hostel Dues,243.68,Rent
+2025-07-28,Emirates Airline,70.84,Travel
+2025-04-19,Gym Membership,169.12,Subscriptions
+2025-10-03,Biryani,354.71,Food
+2025-07-30,Hostel Dues,472.61,Rent
+2025-07-19,Apartment Rent,77.39,Rent
+2025-06-11,Steam Games,216.42,Entertainment
+2026-01-05,Cloud Storage,268.08,Subscriptions
+2026-03-13,Hotel Booking,311.51,Travel
+2025-10-29,PTCL Internet,305.2,Utilities
+2026-02-11,Cloud Storage,159.23,Subscriptions
+2026-03-05,Sui Gas,267.43,Utilities
+2025-09-22,House Leasing,363.03,Rent
+2025-05-05,Water Bill,420.41,Utilities
+2026-02-22,House Leasing,423.13,Rent
+2025-05-05,Spotify Premium,222.83,Subscriptions
+2025-03-27,Walmart,197.37,Shopping
+2025-10-06,Target,324.36,Shopping
+2025-10-27,Water Bill,60.0,Utilities
+2025-11-15,Water Bill,239.39,Utilities
+2025-04-06,Gym Membership,433.26,Subscriptions
+2025-04-15,PIA Ticket,357.36,Travel
+2026-02-15,Careem,217.11,Transport
+2026-01-21,PSO Pump,304.36,Transport
+2025-07-05,Target,404.74,Shopping
+2025-04-01,Imtiaz Super Market,364.18,Shopping
+2025-12-12,Medical Store,425.86,Health
+2025-06-16,Bazaar,17.08,Shopping
+2026-01-27,Apartment Rent,185.82,Rent
+2025-08-22,Water Bill,94.94,Utilities
+2026-03-18,House Leasing,341.36,Rent
+2025-11-02,Electric Bill,444.69,Utilities
+2025-08-07,Hotel Booking,112.66,Travel
+2025-05-08,Pharmacy,209.42,Health
+2025-05-11,Chai,382.41,Food
+2025-04-28,Bazaar,247.97,Shopping
+2025-08-04,Hostel Dues,309.3,Rent
+2025-08-04,Train Ticket,67.64,Travel
+2025-07-22,Foodpanda,372.54,Food
+2025-10-01,Netflix Subscription,419.63,Subscriptions
+2026-01-17,Nueplex,220.14,Entertainment
+2025-06-28,Agha Khan Hospital,421.05,Health
+2025-10-08,Sui Gas,54.69,Utilities
+2025-04-17,House Leasing,311.09,Rent
+2025-04-04,McDonalds,290.0,Food
+2025-05-12,K-Electric,259.93,Utilities
+2025-05-11,Apartment Rent,227.08,Rent
+2025-12-01,Sambosa,126.95,Food
+2025-12-01,Water Bill,451.83,Utilities
+2026-03-04,Spotify Premium,141.36,Subscriptions
+2025-09-28,Amazon,292.32,Shopping
+2026-01-11,Pharmacy,106.85,Health
+2026-01-09,Bykea,306.12,Transport
+2026-01-10,Cinema,274.44,Entertainment
+2026-01-27,Hotel Booking,161.31,Travel
+2025-12-03,Grocery,185.23,Shopping
+2026-03-13,Eid Clothes,417.04,Shopping
+2026-03-18,Nueplex,236.21,Entertainment
+2025-04-18,Steam Games,197.55,Entertainment
+2025-09-27,Train Ticket,228.45,Travel
+2025-12-26,Apartment Rent,428.61,Rent
+2025-08-05,Petrol,391.08,Transport
+2025-10-23,Cinema,206.32,Entertainment
+2025-06-13,Concert Ticket,356.22,Entertainment
+2025-06-17,Petrol,404.8,Transport
+2026-02-24,Electric Bill,42.37,Utilities
+2025-11-06,Pharmacy,412.11,Health
+2025-11-11,Emirates Airline,480.06,Travel
+2025-11-30,Emirates Airline,297.39,Travel
+2025-08-01,Panadol,330.74,Health
+2025-06-23,Netflix Subscription,218.76,Subscriptions
+2026-02-27,Hotel Booking,402.91,Travel
+2025-06-10,Hostel Dues,333.34,Rent
+2025-06-04,Grocery,316.03,Shopping
+2025-06-12,Hostel Dues,352.65,Rent
+2026-02-25,Apartment Rent,224.71,Rent
+2025-11-01,Electric Bill,42.93,Utilities
+2026-01-23,Grocery,282.05,Shopping
+2025-06-23,Cafe,95.69,Food
+2025-07-30,Agha Khan Hospital,303.92,Health
+2025-06-27,Shell Oil,333.09,Transport
+2025-10-13,Foodpanda,106.69,Food
+2025-04-05,Water Bill,206.87,Utilities
+2025-09-26,Bazaar,235.9,Shopping
+2025-09-28,Nueplex,454.41,Entertainment
+2026-02-24,Cinema,237.43,Entertainment
+2025-11-13,Train Ticket,276.88,Travel
+2025-07-22,Careem,56.33,Transport
+2026-02-09,Amazon,378.91,Shopping
+2025-06-02,Agha Khan Hospital,483.71,Health
+2025-05-04,Shell Oil,401.58,Transport
+2025-06-27,Train Ticket,101.68,Travel
+2025-04-07,Walmart,113.22,Shopping
+2025-05-11,Netflix Subscription,257.03,Subscriptions
+2025-05-28,Careem,87.23,Transport
+2026-03-12,Starbucks,31.62,Food
+2025-07-20,Water Bill,381.49,Utilities
+2025-10-25,Target,311.98,Shopping
+2025-07-10,Agha Khan Hospital,285.51,Health
+2025-12-17,Imtiaz Super Market,82.61,Shopping
+2025-05-30,Hostel Dues,294.85,Rent
+2025-06-23,Apartment Rent,488.98,Rent
+2026-03-02,Amazon,232.18,Shopping
+2026-01-22,Hostel Dues,243.49,Rent
+2026-03-16,Nueplex,447.04,Entertainment
+2025-05-24,Hotel Booking,272.72,Travel
+2025-09-14,Medical Store,59.98,Health
+2025-10-03,Nueplex,109.7,Entertainment
+2026-02-01,Bus Ticket,280.9,Transport
+2025-05-20,Amazon,356.53,Shopping
+2025-12-02,Careem,435.79,Transport
+2025-07-21,Train Ticket,318.3,Travel
+2025-06-23,Steam Games,364.54,Entertainment
+2026-02-10,Concert Ticket,354.24,Entertainment
+2026-02-09,Bykea,103.49,Transport
+2025-03-28,Sui Gas,384.28,Utilities
+2025-06-30,Bykea,423.44,Transport
+2025-09-11,Electric Bill,461.4,Utilities
+2025-06-11,Careem,208.53,Transport
+2025-10-30,Grocery,238.33,Shopping
+2025-09-08,K-Electric,25.92,Utilities
+2025-06-16,Electric Bill,97.27,Utilities
+2025-10-29,Netflix Subscription,131.47,Subscriptions
+2025-11-16,Biryani,75.71,Food
+2026-02-25,Agha Khan Hospital,491.86,Health
+2025-07-01,Pharmacy,227.63,Health
+2025-11-28,K-Electric,137.01,Utilities
+2025-09-08,K-Electric,476.8,Utilities
+2025-04-11,Eid Clothes,112.99,Shopping
+2025-11-25,Eid Clothes,301.35,Shopping
+2025-12-15,PTCL Internet,10.05,Utilities
+2025-06-25,Panadol,186.75,Health
+2025-08-22,Petrol,235.97,Transport
+2026-03-01,Cafe,151.17,Food
+2025-05-28,KFC,181.71,Food
+2025-08-22,Chai,437.44,Food
+2025-08-08,Amazon,39.9,Shopping
+2025-03-22,Cafe,58.36,Food
+2025-09-14,Gym Membership,246.37,Subscriptions
+2026-02-07,Uber Ride,487.61,Transport
+2026-02-20,Bus Ticket,261.39,Transport
+2025-07-30,Spotify Premium,396.28,Subscriptions
+2025-08-10,Electric Bill,104.42,Utilities
+2025-06-09,Steam Games,479.61,Entertainment
+2025-08-12,Concert Ticket,496.4,Entertainment
+2026-02-25,Starbucks,51.84,Food
+2025-06-09,Petrol,217.35,Transport
+2026-02-06,Bykea,82.66,Transport
+2025-10-17,Chai,460.84,Food
+2025-04-06,Walmart,477.25,Shopping
+2025-11-07,Petrol,182.37,Transport
+2025-05-27,Walmart,134.76,Shopping
+2025-09-01,House Leasing,35.88,Rent
+2025-04-22,Cloud Storage,244.96,Subscriptions
+2025-11-11,Nueplex,139.68,Entertainment
+2025-11-22,Emirates Airline,101.11,Travel
+2025-08-21,Water Bill,439.71,Utilities
+2025-08-14,PIA Ticket,178.7,Travel
+2025-06-08,Cloud Storage,58.16,Subscriptions
+2026-01-31,PSO Pump,259.64,Transport
+2025-08-19,Hostel Dues,346.18,Rent
+2025-05-29,Careem,464.51,Transport
+2025-09-21,Train Ticket,413.62,Travel
+2025-11-26,Uber Ride,444.45,Transport
+2026-02-02,Train Ticket,323.69,Travel
+2025-07-10,Foodpanda,403.31,Food
+2025-03-20,Water Bill,284.47,Utilities
+2025-10-01,Cinema,112.6,Entertainment
+2026-01-08,Steam Games,128.14,Entertainment
+2025-06-29,Cloud Storage,139.74,Subscriptions
+2025-09-22,House Leasing,82.82,Rent
+2025-07-19,Gym Membership,145.16,Subscriptions
+2026-01-18,KFC,138.63,Food
+2025-04-06,House Leasing,219.62,Rent
+2025-11-01,Pharmacy,260.09,Health
+2025-11-03,Sui Gas,441.69,Utilities
+2025-06-23,Careem,438.19,Transport
+2025-06-16,PTCL Internet,213.59,Utilities
+2025-08-21,Cafe,320.88,Food
+2025-12-12,Train Ticket,313.4,Travel
+2025-04-25,Walmart,58.71,Shopping
+2025-11-18,Train Ticket,226.18,Travel
+2025-12-19,Panadol,98.52,Health
+2026-01-28,Daraz,364.0,Shopping
+2026-02-25,Sui Gas,253.66,Utilities
+2025-06-06,K-Electric,393.68,Utilities
+2025-06-02,House Leasing,51.78,Rent
+2025-12-16,Cloud Storage,194.17,Subscriptions
+2025-05-27,Uber Ride,229.61,Transport
+2026-01-05,Train Ticket,189.86,Travel
+2025-07-14,Concert Ticket,176.49,Entertainment
+2025-09-11,K-Electric,69.81,Utilities
+2025-04-01,Gym Membership,116.16,Subscriptions
+2026-03-09,Agha Khan Hospital,40.41,Health
+2025-06-25,Steam Games,109.03,Entertainment
+2025-10-14,Chai,249.7,Food
+2025-07-17,Sambosa,402.73,Food
+2025-11-29,Cloud Storage,186.71,Subscriptions
+2025-09-06,Medical Store,5.7,Health
+2025-05-22,Train Ticket,215.95,Travel
+2025-10-08,Gym Membership,314.17,Subscriptions
+2025-06-11,Petrol,319.95,Transport
+2025-10-15,Bykea,371.14,Transport
+2025-09-04,Bazaar,328.3,Shopping
+2025-07-19,PIA Ticket,137.26,Travel
+2025-06-10,Petrol,33.71,Transport
+2026-02-27,Grocery,51.72,Shopping
+2025-05-31,PIA Ticket,160.56,Travel
+2026-01-02,Grocery,326.4,Shopping
+2025-07-07,Petrol,82.93,Transport
+2026-03-13,Water Bill,224.09,Utilities
+2025-04-24,Apartment Rent,93.26,Rent
+2025-12-20,House Leasing,237.08,Rent
+2026-03-01,Cinema,271.79,Entertainment
+2025-12-12,K-Electric,407.52,Utilities
+2025-08-21,House Leasing,119.91,Rent
+2025-03-24,House Leasing,351.4,Rent
+2025-09-03,Apartment Rent,305.82,Rent
+2026-01-16,Cloud Storage,303.77,Subscriptions
+2026-02-05,Cloud Storage,332.33,Subscriptions
+2025-11-08,Panadol,317.97,Health
+2025-12-08,Spotify Premium,323.11,Subscriptions
+2025-11-06,Hostel Dues,316.79,Rent
+2025-12-29,Apartment Rent,473.52,Rent
+2025-12-11,Petrol,234.61,Transport
+2025-09-13,Train Ticket,9.8,Travel
+2025-07-19,Cafe,327.29,Food
+2025-11-22,Imtiaz Super Market,25.22,Shopping
+2025-09-05,PIA Ticket,252.03,Travel
+2026-02-02,Imtiaz Super Market,486.96,Shopping
+2025-06-08,House Leasing,410.77,Rent
+2026-02-10,Foodpanda,40.07,Food
+2025-07-22,Steam Games,262.76,Entertainment
+2025-10-30,Gym Membership,172.58,Subscriptions
+2026-02-07,Pharmacy,288.23,Health
+2025-10-20,Walmart,109.14,Shopping
+2026-02-12,PIA Ticket,239.97,Travel
+2025-10-20,Grocery,248.62,Shopping
+2025-08-20,Agha Khan Hospital,263.65,Health
+2025-12-11,Water Bill,252.62,Utilities
+2025-05-25,PIA Ticket,396.29,Travel
+2025-04-02,Starbucks,152.69,Food
+2026-03-06,PIA Ticket,477.51,Travel
+2025-10-30,Daraz,208.45,Shopping
+2025-09-28,Cloud Storage,448.18,Subscriptions
+2025-10-25,PTCL Internet,210.66,Utilities
+2025-08-05,Medical Store,442.67,Health
+2025-06-08,Cloud Storage,305.63,Subscriptions
+2025-05-27,PIA Ticket,345.01,Travel
+2025-10-07,Sui Gas,176.35,Utilities
+2025-08-30,Concert Ticket,400.1,Entertainment
+2025-12-31,InDrive,104.73,Transport
+2025-08-06,Concert Ticket,431.65,Entertainment
+2025-11-24,Biryani,147.02,Food
+2026-02-05,Panadol,91.54,Health
+2026-02-08,Hostel Dues,401.63,Rent
+2026-02-05,Biryani,188.1,Food
+2025-09-16,Chai,245.94,Food
+2025-09-29,Chai,13.36,Food
+2025-05-25,Starbucks,165.71,Food
+2025-07-28,Imtiaz Super Market,175.94,Shopping
+2025-09-28,Target,224.78,Shopping
+2025-06-12,Target,143.46,Shopping
+2026-02-25,Apartment Rent,387.49,Rent
+2025-07-04,Hotel Booking,82.96,Travel
+2025-09-26,Bus Ticket,377.16,Transport
+2025-06-24,Cafe,406.26,Food
+2025-09-03,Medical Store,225.66,Health
+2025-10-06,Agha Khan Hospital,231.01,Health
+2026-02-03,House Leasing,290.99,Rent
+2025-07-02,Concert Ticket,297.27,Entertainment
+2026-01-17,Agha Khan Hospital,370.67,Health
+2025-11-28,Emirates Airline,445.98,Travel
+2025-10-29,Cloud Storage,129.11,Subscriptions
+2025-09-29,PIA Ticket,477.33,Travel
+2025-09-30,Target,445.79,Shopping
+2025-12-15,Apartment Rent,430.45,Rent
+2025-09-30,Shell Oil,326.89,Transport
+2025-03-31,Foodpanda,132.18,Food
+2026-01-29,PIA Ticket,185.3,Travel
+2025-03-21,Target,269.92,Shopping
+2025-12-18,Cinema,124.21,Entertainment
+2025-07-02,Train Ticket,54.32,Travel
+2025-10-06,Pharmacy,59.41,Health
+2025-05-10,Water Bill,100.58,Utilities
+2025-06-15,Medical Store,141.75,Health
+2025-08-04,Hotel Booking,27.76,Travel
+2025-10-18,Foodpanda,268.37,Food
+2025-07-20,Train Ticket,254.8,Travel
+2025-08-11,Water Bill,128.4,Utilities
+2025-04-28,Foodpanda,461.76,Food
+2026-03-20,Daraz,288.65,Shopping
+2025-11-02,Cinema,345.31,Entertainment
+2025-08-05,Nueplex,184.94,Entertainment
+2026-02-08,Amazon,348.32,Shopping
+2025-09-05,Emirates Airline,18.73,Travel
+2025-07-22,Spotify Premium,317.92,Subscriptions
+2025-05-20,Cinema,155.82,Entertainment
+2025-06-15,Concert Ticket,198.4,Entertainment
+2025-06-12,Apartment Rent,185.78,Rent
+2025-10-08,Sui Gas,251.29,Utilities
+2025-10-28,Concert Ticket,247.58,Entertainment
+2025-09-03,Pharmacy,435.42,Health
+2025-08-16,Steam Games,65.79,Entertainment
+2026-03-09,McDonalds,82.69,Food
+2025-12-02,Apartment Rent,189.7,Rent
+2025-03-31,Sui Gas,241.71,Utilities
+2026-01-29,Emirates Airline,319.4,Travel
+2025-03-31,Spotify Premium,173.47,Subscriptions
+2025-08-09,Cinema,217.24,Entertainment
+2025-12-24,Hotel Booking,436.8,Travel
+2025-05-02,Walmart,443.22,Shopping
+2025-11-30,Panadol,34.11,Health
+2025-04-22,Cloud Storage,339.32,Subscriptions
+2025-06-18,Electric Bill,471.02,Utilities
+2025-12-03,Hostel Dues,278.94,Rent
+2025-11-11,Electric Bill,13.33,Utilities
+2025-10-29,Cloud Storage,236.74,Subscriptions
+2025-10-16,Biryani,21.58,Food
+2025-12-14,Hostel Dues,29.7,Rent
+2025-08-22,Eid Clothes,153.05,Shopping
+2025-03-23,Bykea,206.07,Transport
+2025-08-23,Cinema,472.97,Entertainment
+2025-09-02,Grocery,300.78,Shopping
+2025-10-07,Shell Oil,209.68,Transport
+2026-02-15,Netflix Subscription,434.53,Subscriptions
+2025-03-26,Doctor Clinic,45.56,Health
+2026-03-10,PIA Ticket,359.13,Travel
+2025-09-29,Amazon,316.06,Shopping
+2025-12-11,Concert Ticket,93.09,Entertainment
+2026-02-23,PIA Ticket,203.88,Travel
+2025-07-27,K-Electric,282.49,Utilities
+2025-04-16,Biryani,259.56,Food
+2026-01-10,Grocery,380.57,Shopping
+2025-08-14,Apartment Rent,175.3,Rent
+2025-10-13,Emirates Airline,194.2,Travel
+2025-04-16,Cafe,261.6,Food
+2025-08-12,Sui Gas,436.53,Utilities
+2025-09-11,Panadol,102.4,Health
+2025-05-26,Electric Bill,441.61,Utilities
+2026-02-19,Cinema,72.58,Entertainment
+2025-11-20,Hostel Dues,251.52,Rent
+2025-08-06,Concert Ticket,209.7,Entertainment
+2026-02-14,Concert Ticket,7.16,Entertainment
+2026-02-27,Starbucks,75.99,Food
+2025-06-30,Agha Khan Hospital,487.62,Health
+2025-04-11,Gym Membership,45.9,Subscriptions
+2025-07-21,Medical Store,218.76,Health
+2025-09-06,Hotel Booking,208.05,Travel
+2025-06-01,Biryani,256.01,Food
+2026-02-16,Biryani,184.19,Food
+2025-06-30,Nueplex,438.71,Entertainment
+2025-09-16,Nueplex,75.34,Entertainment
+2025-04-18,PTCL Internet,377.85,Utilities
+2025-08-22,Gym Membership,71.88,Subscriptions
+2025-12-29,Nueplex,463.85,Entertainment
+2025-07-04,Cloud Storage,80.47,Subscriptions
+2025-09-12,Pharmacy,5.96,Health
+2025-10-08,Cinema,262.82,Entertainment
+2025-10-24,Spotify Premium,497.36,Subscriptions
+2025-09-20,Gym Membership,240.76,Subscriptions
+2025-07-05,McDonalds,56.42,Food
+2025-04-21,Electric Bill,78.25,Utilities
+2026-01-05,Sui Gas,416.45,Utilities
+2025-09-07,Restaurant,423.75,Food
+2025-12-07,Hotel Booking,322.92,Travel
+2025-09-27,PIA Ticket,53.57,Travel
+2025-04-15,McDonalds,11.94,Food
+2025-06-16,Grocery,340.14,Shopping
+2025-08-16,Steam Games,453.23,Entertainment
+2025-10-24,Train Ticket,448.24,Travel
+2025-10-29,Netflix Subscription,400.44,Subscriptions
+2025-08-14,House Leasing,280.92,Rent
+2025-11-07,Sui Gas,214.89,Utilities
+2026-01-03,Bus Ticket,289.91,Transport
+2025-12-31,Chai,199.58,Food
+2026-02-24,Starbucks,8.52,Food
+2025-12-24,McDonalds,288.39,Food
+2025-05-30,Cafe,381.81,Food
+2025-09-30,Eid Clothes,382.5,Shopping
+2025-09-30,Eid Clothes,421.85,Shopping
+2025-09-02,Train Ticket,182.24,Travel
+2025-10-31,Sui Gas,123.48,Utilities
+2025-09-10,Nueplex,78.65,Entertainment
+2025-03-31,Spotify Premium,100.23,Subscriptions
+2025-10-24,Netflix Subscription,465.64,Subscriptions
+2025-05-23,Cinema,299.3,Entertainment
+2025-05-08,Steam Games,42.81,Entertainment
+2025-05-04,InDrive,55.65,Transport
+2025-11-09,Emirates Airline,61.65,Travel
+2025-12-08,Grocery,272.27,Shopping
+2025-10-21,Electric Bill,368.34,Utilities
+2025-12-10,PTCL Internet,47.77,Utilities
+2025-05-27,PTCL Internet,114.22,Utilities
+2025-08-03,Sui Gas,443.63,Utilities
+2025-07-21,InDrive,423.6,Transport
+2025-03-23,Restaurant,74.38,Food
+2025-06-29,Imtiaz Super Market,6.87,Shopping
+2025-07-17,Gym Membership,463.39,Subscriptions
+2026-01-30,Electric Bill,480.57,Utilities
+2026-02-14,Netflix Subscription,115.7,Subscriptions
+2025-09-01,Spotify Premium,329.09,Subscriptions
+2025-11-29,Concert Ticket,264.93,Entertainment
+2025-03-31,Cloud Storage,32.47,Subscriptions
+2025-12-11,Petrol,480.24,Transport
+2025-11-26,Hostel Dues,449.04,Rent
+2025-05-18,Emirates Airline,434.71,Travel
+2026-03-04,Daraz,10.95,Shopping
+2025-07-02,Bus Ticket,244.16,Transport
+2025-07-05,Concert Ticket,351.08,Entertainment
+2025-04-07,Apartment Rent,361.06,Rent
+2025-08-26,Water Bill,123.62,Utilities
+2025-07-09,Panadol,298.31,Health
+2025-09-17,Shell Oil,181.88,Transport
+2025-04-03,PIA Ticket,95.26,Travel
+2025-09-05,Shell Oil,424.63,Transport
+2025-04-16,Biryani,303.52,Food
+2025-09-21,Concert Ticket,466.27,Entertainment
+2026-02-27,Cafe,204.78,Food
+2025-12-10,Sui Gas,462.99,Utilities
+2025-10-24,Hotel Booking,282.19,Travel
+2026-01-05,Apartment Rent,12.33,Rent
+2026-03-07,Biryani,20.58,Food
+2026-03-02,PTCL Internet,377.7,Utilities
+2025-06-11,Netflix Subscription,250.7,Subscriptions
+2025-08-20,Bykea,288.8,Transport
+2025-08-01,Petrol,272.92,Transport
+2025-04-20,Hostel Dues,235.09,Rent
+2026-01-14,Careem,252.6,Transport
+2026-01-25,Panadol,444.06,Health
+2025-04-22,Hotel Booking,98.58,Travel
+2026-02-06,Hostel Dues,194.09,Rent
+2025-06-03,Bazaar,183.45,Shopping
+2025-05-24,Agha Khan Hospital,470.31,Health
+2026-03-04,KFC,276.44,Food
+2026-03-19,Foodpanda,232.82,Food
+2025-04-13,House Leasing,32.21,Rent
+2025-07-08,Cloud Storage,39.43,Subscriptions
+2025-08-10,Nueplex,115.73,Entertainment
+2025-03-27,Spotify Premium,111.95,Subscriptions
+2026-02-13,Cloud Storage,312.54,Subscriptions
+2025-05-01,Panadol,475.93,Health
+2025-11-12,Eid Clothes,274.52,Shopping
+2026-01-08,House Leasing,155.19,Rent
+2025-07-01,Petrol,251.36,Transport
+2025-10-15,Sui Gas,368.1,Utilities
+2026-01-16,Spotify Premium,395.62,Subscriptions
+2025-05-31,Gym Membership,306.78,Subscriptions
+2026-01-30,Agha Khan Hospital,92.78,Health
+2025-06-01,Steam Games,452.75,Entertainment
+2025-08-10,Foodpanda,392.33,Food
+2025-04-29,Daraz,83.11,Shopping
+2025-05-16,Agha Khan Hospital,217.33,Health
+2026-01-19,Panadol,181.42,Health
+2025-05-17,Electric Bill,349.25,Utilities
+2026-03-13,Netflix Subscription,369.21,Subscriptions
+2026-02-25,Sui Gas,194.26,Utilities
+2025-09-19,Netflix Subscription,461.25,Subscriptions
+2025-06-30,K-Electric,234.41,Utilities
+2025-05-07,Doctor Clinic,372.03,Health
+2025-09-08,Hotel Booking,209.48,Travel
+2025-09-14,Hostel Dues,116.2,Rent
+2025-09-02,Cinema,75.63,Entertainment
+2025-10-24,Sui Gas,264.61,Utilities
+2025-11-17,Petrol,92.69,Transport
+2025-12-29,Foodpanda,313.17,Food
+2025-12-20,Sui Gas,370.19,Utilities
+2025-07-10,Emirates Airline,464.82,Travel
+2026-02-17,Daraz,234.5,Shopping
+2025-08-26,Hostel Dues,204.08,Rent
+2025-03-20,Electric Bill,207.9,Utilities
+2026-02-12,K-Electric,247.11,Utilities
+2025-05-10,House Leasing,426.26,Rent
+2025-09-03,House Leasing,160.61,Rent
+2026-02-21,KFC,191.8,Food
+2025-04-18,PIA Ticket,152.05,Travel
+2025-09-04,Cinema,339.66,Entertainment
+2026-03-14,Concert Ticket,372.66,Entertainment
+2025-12-12,Bus Ticket,55.14,Transport
+2025-06-14,Bykea,314.66,Transport
+2025-07-31,Hostel Dues,168.27,Rent
+2025-07-05,Panadol,168.24,Health
+2026-02-13,Hotel Booking,199.69,Travel
+2025-08-16,PIA Ticket,165.58,Travel
+2025-03-31,Concert Ticket,457.6,Entertainment
+2025-12-06,Apartment Rent,135.38,Rent
+2025-07-07,K-Electric,119.58,Utilities
+2025-06-15,Shell Oil,331.7,Transport
+2025-08-27,PTCL Internet,191.11,Utilities
+2025-08-06,Grocery,308.92,Shopping
+2025-12-17,Cloud Storage,204.13,Subscriptions
+2025-04-02,Medical Store,52.96,Health
+2026-01-08,Panadol,77.43,Health
+2025-08-11,PIA Ticket,253.1,Travel
+2026-01-12,Panadol,118.03,Health
+2025-05-12,Train Ticket,156.06,Travel
+2025-12-30,Cloud Storage,448.9,Subscriptions
+2025-05-01,K-Electric,421.38,Utilities
+2025-04-17,Biryani,498.86,Food
+2025-10-12,Careem,337.58,Transport
+2025-06-09,Shell Oil,490.26,Transport
+2025-10-19,K-Electric,80.36,Utilities
+2025-10-29,Cinema,305.16,Entertainment
+2025-05-20,House Leasing,160.83,Rent
+2026-01-30,Starbucks,302.58,Food
+2025-04-10,Careem,168.82,Transport
+2025-05-10,Hotel Booking,122.3,Travel
+2025-03-31,Shell Oil,324.5,Transport
+2025-08-23,Eid Clothes,76.78,Shopping
+2025-10-09,Train Ticket,347.71,Travel
+2026-02-27,Train Ticket,21.07,Travel
+2026-01-11,McDonalds,72.8,Food
+2026-03-13,McDonalds,26.13,Food
+2025-03-28,Biryani,124.41,Food
+2026-01-20,Restaurant,139.24,Food
+2025-11-10,Gym Membership,489.56,Subscriptions
+2025-09-23,Eid Clothes,77.25,Shopping
+2025-04-13,Gym Membership,292.5,Subscriptions
+2025-12-31,House Leasing,461.62,Rent
+2025-11-26,Shell Oil,190.8,Transport
+2026-03-05,Hotel Booking,497.08,Travel
+2026-01-31,PIA Ticket,435.6,Travel
+2025-12-03,Amazon,486.11,Shopping
+2025-04-03,House Leasing,50.43,Rent
+2025-11-18,PIA Ticket,206.05,Travel
+2025-10-06,McDonalds,417.3,Food
+2026-01-06,Concert Ticket,485.36,Entertainment
+2025-04-19,InDrive,172.84,Transport
+2025-03-25,Apartment Rent,336.67,Rent
+2025-12-28,Target,123.72,Shopping
+2025-09-26,Imtiaz Super Market,336.6,Shopping
+2025-12-25,Apartment Rent,439.71,Rent
+2025-04-06,Cinema,27.68,Entertainment
+2025-08-04,PIA Ticket,269.23,Travel
+2025-05-16,K-Electric,76.78,Utilities
+2026-02-19,Restaurant,328.09,Food
+2025-08-16,Amazon,176.49,Shopping
+2025-11-25,Sui Gas,91.02,Utilities
+2026-02-01,Water Bill,262.06,Utilities
+2025-11-26,Careem,499.14,Transport
+2025-04-06,Spotify Premium,466.23,Subscriptions
+2025-11-30,Amazon,189.16,Shopping
+2025-10-30,Spotify Premium,292.62,Subscriptions
+2025-10-14,Gym Membership,370.32,Subscriptions
+2026-03-06,Agha Khan Hospital,276.2,Health
+2025-11-15,Pharmacy,61.65,Health
+2025-06-05,McDonalds,254.3,Food
+2025-09-28,Gym Membership,352.38,Subscriptions
+2026-03-19,Medical Store,404.08,Health
+2026-02-16,Agha Khan Hospital,413.6,Health
+2025-05-11,Apartment Rent,23.88,Rent
+2025-07-24,Nueplex,316.25,Entertainment
+2025-11-11,Daraz,354.0,Shopping
+2025-08-05,Bazaar,450.99,Shopping
+2026-02-19,PTCL Internet,206.12,Utilities
+2025-11-08,Cinema,471.69,Entertainment
+2025-04-01,Electric Bill,157.6,Utilities
+2025-07-15,Eid Clothes,6.42,Shopping
+2026-03-10,InDrive,280.2,Transport
+2025-09-08,Foodpanda,174.11,Food
+2025-06-07,Electric Bill,161.49,Utilities
+2025-05-21,Cloud Storage,19.56,Subscriptions
+2025-09-09,Medical Store,166.87,Health
+2025-10-26,Imtiaz Super Market,474.07,Shopping
+2025-10-18,PTCL Internet,44.7,Utilities
+2025-11-12,Concert Ticket,235.3,Entertainment
+2025-06-02,Shell Oil,118.33,Transport
+2026-01-29,Water Bill,385.11,Utilities
+2025-11-25,Nueplex,207.18,Entertainment
+2025-06-02,Imtiaz Super Market,297.4,Shopping
+2025-07-28,Gym Membership,437.7,Subscriptions
+2025-12-02,Bazaar,322.65,Shopping
+2025-10-14,Nueplex,274.42,Entertainment
+2025-11-06,Nueplex,446.46,Entertainment
+2025-11-20,Biryani,141.27,Food
+2026-03-20,Agha Khan Hospital,232.97,Health
+2025-09-18,Medical Store,13.24,Health
+2025-06-29,Bazaar,142.91,Shopping
+2026-01-05,Target,359.11,Shopping
+2025-11-16,Petrol,199.75,Transport
+2026-01-29,Train Ticket,191.74,Travel
+2025-04-06,Nueplex,295.36,Entertainment
+2025-09-25,Water Bill,449.58,Utilities
+2025-12-27,Doctor Clinic,316.17,Health
+2026-03-04,Emirates Airline,86.41,Travel
+2026-03-11,Concert Ticket,45.05,Entertainment
+2026-01-26,Water Bill,5.84,Utilities
+2025-07-11,Cinema,166.36,Entertainment
+2025-12-23,McDonalds,88.21,Food
+2026-02-14,Agha Khan Hospital,117.37,Health
+2026-02-16,PIA Ticket,5.62,Travel
+2025-03-26,Water Bill,428.74,Utilities
+2025-08-16,Biryani,198.56,Food
+2026-02-09,Imtiaz Super Market,31.89,Shopping
+2026-01-02,Doctor Clinic,216.82,Health
+2025-12-09,Imtiaz Super Market,327.69,Shopping
+2025-04-08,Electric Bill,434.74,Utilities
+2025-12-12,Walmart,291.84,Shopping
+2025-11-25,Starbucks,381.38,Food
+2025-06-12,House Leasing,56.18,Rent
+2025-08-04,Steam Games,251.58,Entertainment
+2026-01-08,Grocery,314.17,Shopping
+2025-05-24,Cinema,412.9,Entertainment
+2025-04-09,Hotel Booking,181.49,Travel
+2026-03-19,Spotify Premium,150.48,Subscriptions
+2025-10-13,Doctor Clinic,209.58,Health
+2026-02-20,Electric Bill,272.01,Utilities
+2025-04-30,Hostel Dues,438.99,Rent
+2025-12-11,Bykea,23.89,Transport
+2025-10-20,Daraz,32.93,Shopping
+2025-06-22,Concert Ticket,260.75,Entertainment
+2025-04-10,Uber Ride,150.06,Transport
+2026-01-31,KFC,158.77,Food
+2026-01-22,Gym Membership,8.06,Subscriptions
+2026-01-31,Bykea,110.63,Transport
+2025-10-01,Sui Gas,143.77,Utilities
+2025-09-17,Nueplex,126.91,Entertainment
+2026-03-06,Petrol,82.05,Transport
+2026-01-12,Water Bill,18.25,Utilities
+2025-05-26,Spotify Premium,287.42,Subscriptions
+2025-05-04,Chai,406.36,Food
+2025-11-16,Hotel Booking,458.96,Travel
+2025-12-28,Hostel Dues,65.2,Rent
+2025-07-03,KFC,445.46,Food
+2025-07-30,PIA Ticket,235.35,Travel
+2025-06-03,Train Ticket,190.62,Travel
+2025-11-05,Pharmacy,304.16,Health
+2025-04-10,Electric Bill,279.79,Utilities
+2025-04-08,Petrol,121.75,Transport
+2025-10-01,Biryani,406.5,Food
+2026-03-11,Gym Membership,184.25,Subscriptions
+2025-05-07,Emirates Airline,326.46,Travel
+2025-04-30,InDrive,460.16,Transport
+2025-07-23,Netflix Subscription,104.69,Subscriptions
+2025-12-28,Sui Gas,273.71,Utilities
+2025-08-06,Petrol,129.84,Transport
+2026-03-01,Electric Bill,469.52,Utilities
+2025-09-06,Grocery,472.84,Shopping
+2025-10-14,Bykea,258.09,Transport
+2026-03-11,House Leasing,484.72,Rent
+2025-04-20,Apartment Rent,393.55,Rent
+2026-01-27,Panadol,407.52,Health
+2025-07-08,Uber Ride,394.58,Transport
+2025-03-25,Cinema,301.66,Entertainment
+2025-04-10,Gym Membership,144.62,Subscriptions
+2026-03-04,Sambosa,74.43,Food
+2025-10-11,Sambosa,288.6,Food
+2025-06-30,Hostel Dues,24.2,Rent
+2026-02-03,Electric Bill,190.86,Utilities
+2025-06-09,Apartment Rent,112.74,Rent
+2025-06-08,Cafe,289.63,Food
+2025-07-15,InDrive,178.1,Transport
+2025-12-08,Restaurant,75.75,Food
+2025-06-18,Doctor Clinic,369.25,Health
+2026-01-28,Biryani,213.72,Food
+2025-09-12,Bazaar,349.88,Shopping
+2025-04-14,Hotel Booking,109.06,Travel
+2025-05-26,Amazon,369.9,Shopping
+2025-11-18,Pharmacy,14.55,Health
+2025-10-27,Restaurant,491.23,Food
+2025-05-16,Petrol,469.03,Transport
+2025-04-24,Sambosa,353.79,Food
+2025-04-06,Hostel Dues,193.06,Rent
+2025-04-19,Concert Ticket,33.66,Entertainment
+2025-05-09,Nueplex,229.43,Entertainment
+2025-12-12,Foodpanda,413.65,Food
+2026-02-26,Medical Store,84.29,Health
+2025-08-02,Agha Khan Hospital,441.73,Health
+2025-08-31,Restaurant,234.09,Food
+2025-09-14,Spotify Premium,182.72,Subscriptions
+2026-01-20,Pharmacy,268.75,Health
+2025-09-03,Sui Gas,473.92,Utilities
+2025-05-02,Steam Games,137.63,Entertainment
+2025-05-24,Foodpanda,142.35,Food
+2025-10-17,Chai,156.57,Food
+2025-05-01,Medical Store,165.39,Health
+2025-12-28,Agha Khan Hospital,410.07,Health
+2026-03-04,Cinema,384.91,Entertainment
+2025-05-09,KFC,275.07,Food
+2025-10-30,Starbucks,332.89,Food
+2026-02-20,Chai,416.56,Food
+2026-02-24,Spotify Premium,194.76,Subscriptions
+2025-05-26,K-Electric,10.28,Utilities
+2025-10-13,Cafe,295.72,Food
+2025-04-03,Amazon,433.17,Shopping
+2025-10-17,Nueplex,296.62,Entertainment
+2025-12-03,Chai,304.48,Food
+2025-12-20,Sambosa,47.38,Food
+2025-12-22,Cafe,40.34,Food
+2025-11-15,Hostel Dues,263.07,Rent
+2025-03-21,Foodpanda,265.92,Food
+2026-03-01,Train Ticket,42.29,Travel
+2025-12-25,Agha Khan Hospital,7.46,Health
+2025-10-09,Uber Ride,83.48,Transport
+2025-04-30,Electric Bill,182.95,Utilities
+2025-09-23,McDonalds,470.95,Food
+2025-12-13,Water Bill,163.7,Utilities
+2026-01-09,PSO Pump,106.77,Transport
+2025-05-07,Pharmacy,187.24,Health
+2026-01-02,Water Bill,172.23,Utilities
+2025-10-10,Hostel Dues,89.87,Rent
+2025-09-22,Nueplex,352.82,Entertainment
+2025-08-09,Concert Ticket,197.28,Entertainment
+2025-11-22,Daraz,302.32,Shopping
+2026-01-05,Careem,213.6,Transport
+2026-02-24,Emirates Airline,394.45,Travel
+2025-12-01,Target,365.01,Shopping
+2026-01-26,Steam Games,62.0,Entertainment
+2025-09-04,Water Bill,241.97,Utilities
+2025-06-17,Doctor Clinic,274.35,Health
+2025-07-07,Gym Membership,464.31,Subscriptions
+2025-07-11,Hostel Dues,247.8,Rent
+2026-02-20,Emirates Airline,195.11,Travel
+2025-11-15,Bus Ticket,416.52,Transport
+2025-03-25,Hostel Dues,488.29,Rent
+2025-06-29,Pharmacy,248.75,Health
+2025-10-02,McDonalds,393.27,Food
+2025-07-08,Eid Clothes,493.76,Shopping
+2025-06-11,Medical Store,124.34,Health
+2026-02-16,Hostel Dues,372.73,Rent
+2025-04-08,House Leasing,460.78,Rent
+2025-03-23,K-Electric,44.79,Utilities
+2025-06-14,Starbucks,132.22,Food
+2025-12-28,Amazon,476.1,Shopping
+2025-07-20,Hostel Dues,278.5,Rent
+2025-11-16,Electric Bill,85.59,Utilities
+2025-09-21,Biryani,253.93,Food
+2026-01-22,Concert Ticket,46.29,Entertainment
+2025-03-20,Gym Membership,394.1,Subscriptions
+2026-02-05,Petrol,100.78,Transport
+2025-06-17,Spotify Premium,336.89,Subscriptions
+2026-01-23,Pharmacy,189.79,Health
+2026-01-20,PIA Ticket,93.63,Travel
+2025-10-12,Gym Membership,320.47,Subscriptions
+2025-05-31,Cinema,416.48,Entertainment
+2026-01-10,PIA Ticket,50.32,Travel
+2025-05-06,Spotify Premium,72.99,Subscriptions
+2025-03-21,Sui Gas,432.25,Utilities
+2025-09-07,Cafe,392.95,Food
+2025-05-04,Bus Ticket,106.11,Transport
+2026-02-28,K-Electric,408.4,Utilities
+2025-06-04,House Leasing,54.33,Rent
+2026-01-28,Panadol,157.41,Health
+2026-02-14,Concert Ticket,240.31,Entertainment
+2025-04-20,Starbucks,447.46,Food
+2026-02-20,Eid Clothes,111.49,Shopping
+2025-12-15,Electric Bill,127.12,Utilities
+2025-08-03,Bus Ticket,34.89,Transport
+2025-07-22,Hostel Dues,21.58,Rent
+2026-01-12,Netflix Subscription,416.34,Subscriptions
+2025-06-13,PTCL Internet,141.67,Utilities
+2025-08-04,Cafe,358.12,Food
+2025-09-29,Spotify Premium,348.26,Subscriptions
+2025-04-22,Imtiaz Super Market,59.38,Shopping
+2025-06-17,Panadol,480.29,Health
+2025-07-10,Foodpanda,407.79,Food
+2025-03-20,Spotify Premium,182.41,Subscriptions
+2025-04-20,Sambosa,59.93,Food
+2025-09-21,Cinema,200.62,Entertainment
+2026-01-15,Sui Gas,359.36,Utilities
+2025-07-11,Biryani,470.6,Food
+2026-02-23,Agha Khan Hospital,277.98,Health
+2025-06-14,Nueplex,123.42,Entertainment
+2025-09-30,Gym Membership,486.78,Subscriptions
+2025-11-05,Pharmacy,22.42,Health
+2025-08-17,Spotify Premium,177.67,Subscriptions
+2025-08-17,Medical Store,479.47,Health
+2026-01-04,Sui Gas,180.41,Utilities
+2026-02-01,Petrol,227.6,Transport
+2025-12-24,Gym Membership,31.56,Subscriptions
+2025-11-16,Cinema,388.69,Entertainment
+2025-08-03,Cloud Storage,214.52,Subscriptions
+2025-10-23,KFC,63.6,Food
