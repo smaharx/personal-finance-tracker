@@ -46,7 +46,7 @@ class FinanceAssistant:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
             
-            # --- THE NEW POLISH: Auto-create and load budgets ---
+            # 2. CREATE TABLES FIRST (Before we try to read anything)
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS budgets (
                     Category TEXT PRIMARY KEY,
@@ -54,36 +54,48 @@ class FinanceAssistant:
                 )
             ''')
             
-            # Load all saved budgets from the hard drive into RAM
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS transactions (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Date TEXT,
+                    Description TEXT,
+                    Amount REAL,
+                    Category TEXT
+                )
+            ''')
+            conn.commit()
+
+            # 3. LOAD BUDGETS
             cursor.execute("SELECT Category, Monthly_Limit FROM budgets")
             for row in cursor.fetchall():
                 category_name = row[0]
                 budget_amount = row[1]
                 self.category_budgets[category_name] = budget_amount
-            # -------------------------------------------------------
 
-            # 2. Read transaction data using a real SQL Query
+            # 4. LOAD TRANSACTIONS
             self.data = pd.read_sql_query("SELECT * FROM transactions", conn)
             conn.close()
             
-        except sqlite3.OperationalError:
-            print(" Error: Database not found. Did you run migrate_db.py?")
+        except sqlite3.OperationalError as e:
+            print(f" Error: Database issue - {e}")
             return False
 
         # --- THE AI UPGRADE: No more slow training! Just predict instantly. ---
-        missing_mask = self.data['Category'].isna() | (self.data['Category'] == '')
-        if missing_mask.sum() > 0:
-            print(f" AI is auto-categorizing {missing_mask.sum()} new transactions...")
-            
-            # Call the Kaggle brain directly!
-            self.data.loc[missing_mask, 'Category'] = self.data.loc[missing_mask, 'Description'].apply(
-                lambda desc: predict_category(desc)
-            )
-            
-            # Save updates back to SQL
-            conn = sqlite3.connect(self.db_path)
-            self.data.to_sql('transactions', conn, if_exists='replace', index=False)
-            conn.close()
+        # Note: If database is completely empty, self.data will be empty, so we skip this
+        if not self.data.empty:
+            missing_mask = self.data['Category'].isna() | (self.data['Category'] == '')
+            if missing_mask.sum() > 0:
+                print(f" AI is auto-categorizing {missing_mask.sum()} new transactions...")
+                
+                # Call the API Brain directly!
+                self.data.loc[missing_mask, 'Category'] = self.data.loc[missing_mask, 'Description'].apply(
+                    lambda desc: predict_category(desc)
+                )
+                
+                # Save updates back to SQL
+                conn = sqlite3.connect(self.db_path)
+                self.data.to_sql('transactions', conn, if_exists='replace', index=False)
+                conn.close()
         
         # Count how many budgets we loaded to show the user
         budget_count = len(self.category_budgets)

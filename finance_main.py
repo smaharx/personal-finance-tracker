@@ -65,22 +65,34 @@ def main():
         menu_choice = input("Enter your choice (0-8): ").strip()
 
         if menu_choice == '0':
-            #  2. Using the new AI Brain to instantly predict!
-            print("\n--- AI Categorizer ---")
-            # Inside your main loop under choice == '0'
-            description = input("Enter the expense description: ")
-            amount = float(input("Enter the amount: "))
-            date = datetime.now().strftime("%Y-%m-%d")
+            print("\n--- AI Categorizer & Save ---")
+            desc = input("Enter description (e.g., 'Petrol', 'Chai'): ")
+    
+            # Professional touch: handle errors if user types a letter instead of a number
+            try:
+                 amount = float(input("Enter amount: "))
+            except ValueError:
+                 print(" Invalid amount. Please enter a number.")
+            continue # Skips back to menu
 
-            # 1. Ask the API for the category
-            category = predict_category(description)
-            print(f"AI Prediction: '{description}' belongs in **{category}**")
+            # 1. Get the date automatically
+            from datetime import datetime
+            txn_date = datetime.now().strftime("%Y-%m-%d")
 
-            # 2. SAVE to the real database
-            # (Assuming you have a function called add_expense in your db_manager)
-            db.add_expense(date, description, amount, category) 
+            # 2. Get the AI Category from your API
+            predicted_cat = predict_category(desc)
+    
+            print("-" * 30)
+            print(f" AI Prediction: '{desc}' -> **{predicted_cat}**")
+            print("-" * 30)
 
-            print("✅ Transaction saved successfully to your database!")
+            # 3. SAVE to the real SQL Database
+            # NOTE: Ensure your database helper (e.g., db_manager) has an add_expense function
+            from database.db_manager import add_expense 
+            add_expense(txn_date, desc, amount, predicted_cat)
+
+            print(f" Transaction saved successfully to expenses.db!")
+            time.sleep(1)
 
         elif menu_choice == '1':
             bot.analyze_spending()
