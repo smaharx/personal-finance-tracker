@@ -67,16 +67,20 @@ def main():
         if menu_choice == '0':
             #  2. Using the new AI Brain to instantly predict!
             print("\n--- AI Categorizer ---")
-            desc = input("Enter the expense description (e.g., 'Uber Ride', 'Walmart'): ")
-            
-            # The Brain does its magic here
-            predicted_cat = predict_category(desc)
-            
-            print("-" * 30)
-            print(f" AI Prediction: '{desc}' belongs in **{predicted_cat}**")
-            print("-" * 30)
-            print("(Note: To save this to the database permanently, we will link it to the DB in the next update!)")
-            time.sleep(1)
+            # Inside your main loop under choice == '0'
+            description = input("Enter the expense description: ")
+            amount = float(input("Enter the amount: "))
+            date = datetime.now().strftime("%Y-%m-%d")
+
+            # 1. Ask the API for the category
+            category = predict_category(description)
+            print(f"AI Prediction: '{description}' belongs in **{category}**")
+
+            # 2. SAVE to the real database
+            # (Assuming you have a function called add_expense in your db_manager)
+            db.add_expense(date, description, amount, category) 
+
+            print("✅ Transaction saved successfully to your database!")
 
         elif menu_choice == '1':
             bot.analyze_spending()
