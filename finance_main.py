@@ -4,6 +4,7 @@ from core.assistant import FinanceAssistant
 import sys # maintianences of the sytems openrations
 import time #maintain the time forcating relted operations 
 
+
 def print_header():
     """Prints a beautiful welcome header for the application."""
     print("\n" + "="*55)
@@ -14,7 +15,7 @@ def main():
     print_header()
 
     # 1. Budget Initialization with Crash Protection
-    default_budget = 60000.0
+    default_budget = 50000.0
     budget = default_budget
 
     choice = input("Do you want to set a custom monthly budget? (y/n): ").strip().lower()
@@ -78,10 +79,19 @@ def main():
             from datetime import datetime
             txn_date = datetime.now().strftime("%Y-%m-%d")
 
+            # --- START THE STOPWATCH ---
+            
+            start_time = time.time()
+
             # 2. Get the AI Category (Make sure the API terminal is running!)
             predicted_cat = predict_category(desc)
             
+            # --- STOP THE STOPWATCH ---
+            end_time = time.time()
+            api_speed = end_time - start_time
+            
             print("-" * 30)
+            print(f"⏱️ API Speed: {api_speed:.4f} seconds")
             print(f" AI Prediction: '{desc}' -> **{predicted_cat}**")
             print("-" * 30)
 
@@ -96,7 +106,7 @@ def main():
             conn.commit()
             conn.close()
 
-            print("Transaction saved successfully to expenses.db!")
+            print("✅ Transaction saved successfully to expenses.db!")
             
             # 4. THE CRITICAL STEP: Tell the bot to refresh its memory!
             bot.load_data()
