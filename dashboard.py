@@ -27,17 +27,32 @@ def load_data():
 try:
     df = load_data()
     
-    # Create two columns layout
-    col1, col2 = st.columns([3, 1])
+    # --- NEW: CREATE UI TABS ---
+    tab1, tab2, tab3 = st.tabs(["📊 Dashboard", "🔮 AI Forecasting", "🧠 Teach AI"])
     
-    with col1:
-        st.subheader("Recent Transactions")
-        st.dataframe(df.sort_values(by="Date", ascending=False), use_container_width=True)
+    # --- TAB 1: The Main View ---
+    with tab1:
+        # Create two columns layout inside the tab
+        col1, col2 = st.columns([3, 1])
         
-    with col2:
-        st.subheader("Quick Stats")
-        st.metric(label="Total Transactions", value=len(df))
-        st.metric(label="Total Spent", value=f"${df['Amount'].sum():,.2f}")
+        with col1:
+            st.subheader("Recent Transactions")
+            st.dataframe(df.sort_values(by="Date", ascending=False), use_container_width=True)
+            
+        with col2:
+            st.subheader("Quick Stats")
+            st.metric(label="Total Transactions", value=len(df))
+            st.metric(label="Total Spent", value=f"${df['Amount'].sum():,.2f}")
+
+    # --- TAB 2: Prophet Predictions ---
+    with tab2:
+        st.subheader("Future Expense Forecasting")
+        st.info("The Facebook Prophet AI charts will be built here.")
+
+    # --- TAB 3: Retraining the Categorizer ---
+    with tab3:
+        st.subheader("Teach the AI New Categories")
+        st.info("The UI form to fix AI mistakes will be built here.")
 
 except Exception as e:
     st.error(f"Error loading database: {e}")
