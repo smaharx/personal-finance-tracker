@@ -20,9 +20,12 @@ st.markdown("Welcome to Phase 3. Your AI backend is officially connected to the 
 
 # 2. Connect to your SQLite Database safely
 @st.cache_data # This tells Streamlit to remember the data so it's super fast!
+# 2. Connect to your SQLite Database safely
+@st.cache_data
 def load_data():
     conn = sqlite3.connect('data/expenses.db')
-    df = pd.read_sql_query("SELECT * FROM transactions", conn)
+    # NEW: We pull 'rowid as ID' so we can uniquely target rows for correction
+    df = pd.read_sql_query("SELECT rowid as ID, * FROM transactions", conn)
     conn.close()
     return df
 
@@ -106,9 +109,51 @@ try:
                 except Exception as e:
                     st.error(f"Not enough data to run Prophet. Please add a few more transactions! (Error: {e})")
     # --- TAB 3: Retraining the Categorizer ---
+    # --- TAB 3: Retraining the Categorizer ---
     with tab3:
-        st.subheader("Teach the AI New Categories")
-        st.info("The UI form to fix AI mistakes will be built here.")
+        st.subheader("🧠 Teach AI (Human-in-the-Loop)")
+        st.markdown("If the AI miscategorized an expense, correct it here. This creates a clean dataset for future model retraining.")
+        
+        # 1. Grab the 50 most recent transactions
+        recent_df = df.sort_values(by="Date", ascending=False).head(50)
+        
+        # 2. Create a clean dropdown menu list
+        txn_list = recent_df.apply(
+            lambda x: f"ID: {x['ID']} | {x['Date']} | {x['Description']} - ${x['Amount']:.2f} ➔ {x['Category']}", 
+            axis=1
+        ).tolist()
+        
+        selected_txn = st.selectbox("Select a recent transaction to correct:", ["-- Choose a transaction --"] + txn_list)
+        
+        # 3. The Correction Form
+        if selected_txn != "-- Choose a transaction --":
+            # Extract the ID mathematically from the dropdown string
+            txn_id = int(selected_txn.split("|")[0].replace("ID:", "").strip())
+            current_cat = selected_txn.split("➔")[1].strip()
+            
+            with st.form("teach_ai_form"):
+                st.write(f"**Current AI Guess:** `{current_cat}`")
+                new_cat = st.text_input("Enter Correct Category (e.g., Food, Utilities, Transport):")
+                
+                if st.form_submit_button("Update Database & Log Correction", type="primary"):
+                    if new_cat and new_cat.strip().lower() != current_cat.lower():
+                        try:
+                            # Connect to DB and update the exact row
+                            conn = sqlite3.connect('data/expenses.db')
+                            cursor = conn.cursor()
+                            cursor.execute("UPDATE transactions SET Category = ? WHERE rowid = ?", (new_cat.strip(), txn_id))
+                            conn.commit()
+                            conn.close()
+                            
+                            # Clear UI cache and refresh instantly
+                            st.cache_data.clear()
+                            st.success(f"✅ Successfully updated ID {txn_id} to '{new_cat}'!")
+                            time.sleep(1) # Brief pause so you can read the success message
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Database error: {e}")
+                    else:
+                        st.warning("Please enter a new, valid category.")
 
 except Exception as e:
     st.error(f"Error loading database: {e}")
