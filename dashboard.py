@@ -8,6 +8,69 @@ import plotly.graph_objects as go
 from prophet import Prophet
 import sqlite3
 import os
+import pandas as pd
+import datetime
+
+def generate_smart_insights(df):
+    """Analyzes the dataframe and returns plain-English financial alerts."""
+    
+    # If there's no data yet, return a default message
+    if df.empty:
+        return []
+
+    # Ensure Date column is in the correct datetime format
+    df['Date'] = pd.to_datetime(df['Date'])
+    
+    insights = []
+    
+    # --- 1. THE GREEN INSIGHT: Budget Tracking ---
+    current_month = datetime.datetime.now().month
+    current_year = datetime.datetime.now().year
+    
+    # Get all spending for the current month
+    this_month_df = df[(df['Date'].dt.month == current_month) & (df['Date'].dt.year == current_year)]
+    monthly_spend = this_month_df['Amount'].sum()
+    
+    # Let's set a dummy baseline budget of $2000 for now
+    budget = 2000.00 
+    if monthly_spend < budget:
+        remaining = budget - monthly_spend
+        insights.append({
+            "type": "success", 
+            "msg": f"🟢 **On Track:** You have spent \${monthly_spend:.2f} this month. You are **\${remaining:.2f} under budget**. Keep it up!"
+        })
+    else:
+        overage = monthly_spend - budget
+        insights.append({
+            "type": "error", 
+            "msg": f"🔴 **Over Budget:** You have spent \${monthly_spend:.2f}, exceeding your \${budget} budget by \${overage:.2f}."
+        })
+
+    # --- 2. THE RED INSIGHT: Category Warning ---
+    if not this_month_df.empty:
+        # Find the category they spent the most on this month
+        top_category = this_month_df.groupby('Category')['Amount'].sum().idxmax()
+        top_amount = this_month_df.groupby('Category')['Amount'].sum().max()
+        
+        # If they spent more than $300 in one category, trigger a warning
+        if top_amount > 300:
+            insights.append({
+                "type": "error", 
+                "msg": f"🔴 **Warning:** Based on your current speed, your spending on **{top_category}** is critically high (${top_amount:.2f}). Slow down!"
+            })
+
+    # --- 3. THE YELLOW INSIGHT: Weekend Behavior ---
+    # Day of week: Monday=0, Sunday=6. Weekends are 5 and 6.
+    weekends_df = df[df['Date'].dt.dayofweek >= 5]
+    if not weekends_df.empty:
+        # Calculate average weekend spending
+        avg_weekend = weekends_df.groupby(weekends_df['Date'].dt.isocalendar().week)['Amount'].sum().mean()
+        insights.append({
+            "type": "warning", 
+            "msg": f"🟡 **Pattern Alert:** You usually spend around **${avg_weekend:.2f}** on weekends. Keep an eye on your upcoming weekend plans."
+        })
+
+    return insights
 
 # Import your AI function from your backend!
 try:
@@ -94,10 +157,31 @@ try:
             st.metric(label="Total Spent", value=f"${df['Amount'].sum():,.2f}")
 
     # --- TAB 2: Prophet Predictions ---
+    
     with tab2:
         st.subheader("🔮 Future Expense Forecasting")
         st.markdown("Use Facebook Prophet AI to predict your spending trends for the next 30 days.")
         
+        # --- NEW SMART INSIGHTS ENGINE UI ---
+        st.markdown("---")
+        st.subheader("💡 AI Smart Insights")
+        
+        insights = generate_smart_insights(df)
+        
+        if not insights:
+            st.info("Add some expenses to see your AI financial insights!")
+        else:
+            for insight in insights:
+                if insight["type"] == "success":
+                    st.success(insight["msg"])
+                elif insight["type"] == "error":
+                    st.error(insight["msg"])
+                elif insight["type"] == "warning":
+                    st.warning(insight["msg"])
+                    
+        st.markdown("---")
+        # --- END SMART INSIGHTS ENGINE UI ---
+
         if st.button("Run AI Forecast", type="primary"):
             with st.spinner("AI is analyzing your spending patterns..."):
                 try:
