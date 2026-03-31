@@ -6,6 +6,8 @@ from datetime import datetime
 import plotly.express as px
 import plotly.graph_objects as go
 from prophet import Prophet
+import sqlite3
+import os
 
 # Import your AI function from your backend!
 try:
@@ -28,6 +30,31 @@ def load_data():
     df = pd.read_sql_query("SELECT rowid as ID, * FROM transactions", conn)
     conn.close()
     return df
+
+def init_db():
+    """Creates the database and table if they don't exist yet."""
+    # Ensure the 'data' folder exists
+    os.makedirs('data', exist_ok=True)
+    
+    # Connect to (or create) the database
+    conn = sqlite3.connect('data/expenses.db')
+    cursor = conn.cursor()
+    
+    # Create the table if it's a brand new installation
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS transactions (
+            Date TEXT,
+            Description TEXT,
+            Category TEXT,
+            Amount REAL
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+# RUN THIS ONCE EVERY TIME THE APP STARTS:
+init_db()
+
 
 @st.cache_data
 def generate_forecast(df, days=30):
