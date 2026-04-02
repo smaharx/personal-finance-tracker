@@ -6,6 +6,9 @@ import os
 import datetime
 import plotly.graph_objects as go
 from prophet import Prophet
+from sklearn.ensemble import IsolationForest
+import plotly.express as px
+
 
 # --- 1. SMART INSIGHTS ENGINE ---
 def generate_smart_insights(df):
@@ -195,3 +198,52 @@ try:
 
 except Exception as e:
     st.error(f"App Load Error: {e}")
+
+def detect_anomalies(df):
+    # We only care about the amount spent for anomaly detection
+    # We drop any empty values just in case
+    data = df[['Amount']].dropna()
+    
+    # Initialize the model. 
+    # 'contamination=0.05' means we assume roughly 5% of expenses are unusual/anomalies
+    model = IsolationForest(contamination=0.05, random_state=42)
+    
+    # Train the model and get predictions (-1 means anomaly, 1 means normal)
+    df['Anomaly'] = model.fit_predict(data)
+    
+    # Filter the dataframe to only show the anomalies
+    anomalies_df = df[df['Anomaly'] == -1]
+    
+    return anomalies_df
+
+
+st.subheader("🚨 Anomaly Detection (Isolation Forest)")
+st.write("Our AI analyzes your spending patterns to detect unusual transactions.")
+
+# Run the algorithm on your cached data
+anomalies = detect_anomalies(df)
+
+
+
+# Create a scatter plot of ALL expenses
+fig_anomalies = px.scatter(
+    df, 
+    x="Date", 
+    y="Amount", 
+    color=df['Anomaly'].astype(str), # Color by normal vs anomaly
+    color_discrete_map={'-1': 'red', '1': 'blue'}, # -1 is red (alert!), 1 is blue (safe)
+    hover_data=['Description', 'Category']
+)
+
+# Clean up the legend
+fig_anomalies.update_layout(showlegend=False)
+
+st.plotly_chart(fig_anomalies, use_container_width=True)
+
+# Show a warning if anomalies exist
+if not anomalies.empty:
+    st.error(f"⚠️ We detected {len(anomalies)} unusual transactions!")
+    st.dataframe(anomalies[['Date', 'Description', 'Category', 'Amount']])
+else:
+    st.success("✅ Your spending looks normal. No anomalies detected.")        
+
