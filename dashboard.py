@@ -102,6 +102,22 @@ def generate_forecast(df, days=30):
     future = m.make_future_dataframe(periods=days)
     forecast = m.predict(future)
     return daily_spend, forecast    
+def detect_anomalies(df):
+    # We only care about the amount spent for anomaly detection
+    # We drop any empty values just in case
+    data = df[['Amount']].dropna()
+    
+    # Initialize the model. 
+    # 'contamination=0.05' means we assume roughly 5% of expenses are unusual/anomalies
+    model = IsolationForest(contamination=0.05, random_state=42)
+    
+    # Train the model and get predictions (-1 means anomaly, 1 means normal)
+    df['Anomaly'] = model.fit_predict(data)
+    
+    # Filter the dataframe to only show the anomalies
+    anomalies_df = df[df['Anomaly'] == -1]
+    
+    return anomalies_df    
 
 # --- 3. WEB INTERFACE SETUP ---
 st.set_page_config(page_title="AI Finance Tracker", page_icon="💸", layout="wide")
@@ -109,7 +125,7 @@ st.title("💸 AI Personal Finance Dashboard")
 
 try:
     df = load_data()
-    tab1, tab2, tab3 = st.tabs(["📊 Dashboard", "🔮 AI Forecasting", "🧠 Teach AI"])
+    tab1, tab2, tab3, tab4 = st.tabs(["Dashboard", "Forecast", "Teach AI", "🚨 Alerts"])
     
     # --- TAB 1: MAIN VIEW ---
     with tab1:
@@ -171,6 +187,48 @@ try:
                     st.rerun()
         else:
             st.warning("No data found.")
+    with tab4:
+        st.subheader("🚨 Anomaly Detection (Isolation Forest)")
+        st.write("Our AI analyzes your spending patterns to detect unusual transactions.")
+
+        # Run the algorithm on your cached data
+        anomalies = detect_anomalies(df)
+
+    
+        # Create a scatter plot of ALL expenses
+        fig_anomalies = px.scatter(
+            df, 
+            x="Date", 
+            y="Amount", 
+            color=df['Anomaly'].astype(str), 
+            color_discrete_map={'-1': 'red', '1': 'blue'}, 
+            hover_data=['Description', 'Category']
+        )
+
+        # Clean up the legend
+        # Add professional titles, axis labels, and clean up the legend
+        fig_anomalies.update_layout(
+             title={
+                'text': "Transaction History: Anomalies vs. Normal Spending",
+                    'y':0.95,
+                    'x':0.5,
+                    'xanchor': 'center',
+                    'yanchor': 'top'
+                },
+            xaxis_title="Timeline",
+            yaxis_title="Transaction Amount",
+            showlegend=False
+        )
+
+        st.plotly_chart(fig_anomalies, use_container_width=True)
+
+        #Show a warning if anomalies exist
+        if not anomalies.empty:
+            st.error(f"⚠️ We detected {len(anomalies)} unusual transactions!")
+            st.dataframe(anomalies[['Date', 'Description', 'Category', 'Amount']])
+        else:
+            st.success("✅ Your spending looks normal. No anomalies detected.")             
+            
 
     # --- SIDEBAR: ADD EXPENSE ---
     st.sidebar.header("⚡ Add New Expense")
@@ -194,56 +252,17 @@ try:
                 st.sidebar.success(rf"✅ Saved as {predicted_cat} in {time.time()-start_time:.2f}s!")
                 st.rerun()
             except Exception as e:
-                st.sidebar.error(f"Error: {e}")
+                st.sidebar.error(f"Error: {e}")       
 
 except Exception as e:
     st.error(f"App Load Error: {e}")
-
-def detect_anomalies(df):
-    # We only care about the amount spent for anomaly detection
-    # We drop any empty values just in case
-    data = df[['Amount']].dropna()
     
-    # Initialize the model. 
-    # 'contamination=0.05' means we assume roughly 5% of expenses are unusual/anomalies
-    model = IsolationForest(contamination=0.05, random_state=42)
+
+
+      
+
     
-    # Train the model and get predictions (-1 means anomaly, 1 means normal)
-    df['Anomaly'] = model.fit_predict(data)
     
-    # Filter the dataframe to only show the anomalies
-    anomalies_df = df[df['Anomaly'] == -1]
-    
-    return anomalies_df
 
 
-st.subheader("🚨 Anomaly Detection (Isolation Forest)")
-st.write("Our AI analyzes your spending patterns to detect unusual transactions.")
-
-# Run the algorithm on your cached data
-anomalies = detect_anomalies(df)
-
-
-
-# Create a scatter plot of ALL expenses
-fig_anomalies = px.scatter(
-    df, 
-    x="Date", 
-    y="Amount", 
-    color=df['Anomaly'].astype(str), # Color by normal vs anomaly
-    color_discrete_map={'-1': 'red', '1': 'blue'}, # -1 is red (alert!), 1 is blue (safe)
-    hover_data=['Description', 'Category']
-)
-
-# Clean up the legend
-fig_anomalies.update_layout(showlegend=False)
-
-st.plotly_chart(fig_anomalies, use_container_width=True)
-
-# Show a warning if anomalies exist
-if not anomalies.empty:
-    st.error(f"⚠️ We detected {len(anomalies)} unusual transactions!")
-    st.dataframe(anomalies[['Date', 'Description', 'Category', 'Amount']])
-else:
-    st.success("✅ Your spending looks normal. No anomalies detected.")        
 
