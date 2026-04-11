@@ -191,43 +191,47 @@ try:
         st.subheader("🚨 Anomaly Detection (Isolation Forest)")
         st.write("Our AI analyzes your spending patterns to detect unusual transactions.")
 
-        # Run the algorithm on your cached data
-        anomalies = detect_anomalies(df)
+        # THE FIX: Check if the database has enough data before running the AI
+        if df.empty or len(df) < 5:
+            st.info("⏳ We need a little more data! Please add at least 5 expenses using the sidebar to unlock AI Anomaly Detection.")
+        else:
+        #    Run the algorithm ONLY if we have data
+            anomalies = detect_anomalies(df)
 
-    
-        # Create a scatter plot of ALL expenses
-        fig_anomalies = px.scatter(
-            df, 
-            x="Date", 
-            y="Amount", 
-            color=df['Anomaly'].astype(str), 
-            color_discrete_map={'-1': 'red', '1': 'blue'}, 
-            hover_data=['Description', 'Category']
-        )
+            import plotly.express as px
 
-        # Clean up the legend
-        # Add professional titles, axis labels, and clean up the legend
-        fig_anomalies.update_layout(
-             title={
-                'text': "Transaction History: Anomalies vs. Normal Spending",
+            # Create a scatter plot of ALL expenses
+            fig_anomalies = px.scatter(
+                df, 
+                x="Date", 
+                y="Amount", 
+                color=df['Anomaly'].astype(str), 
+                color_discrete_map={'-1': 'red', '1': 'blue'}, 
+                hover_data=['Description', 'Category']
+            )
+
+            # Add professional titles, axis labels, and clean up the legend
+            fig_anomalies.update_layout(
+                title={
+                    'text': "Transaction History: Anomalies vs. Normal Spending",
                     'y':0.95,
                     'x':0.5,
                     'xanchor': 'center',
                     'yanchor': 'top'
                 },
-            xaxis_title="Timeline",
-            yaxis_title="Transaction Amount",
-            showlegend=False
-        )
+                xaxis_title="Timeline",
+                yaxis_title="Transaction Amount",
+                showlegend=False
+            )
 
-        st.plotly_chart(fig_anomalies, use_container_width=True)
+            st.plotly_chart(fig_anomalies, use_container_width=True)
 
-        #Show a warning if anomalies exist
-        if not anomalies.empty:
-            st.error(f"⚠️ We detected {len(anomalies)} unusual transactions!")
-            st.dataframe(anomalies[['Date', 'Description', 'Category', 'Amount']])
-        else:
-            st.success("✅ Your spending looks normal. No anomalies detected.")             
+            # Show a warning if anomalies exist
+            if not anomalies.empty:
+                st.error(f"⚠️ We detected {len(anomalies)} unusual transactions!")
+                st.dataframe(anomalies[['Date', 'Description', 'Category', 'Amount']])
+            else:
+                st.success("✅ Your spending looks normal. No anomalies detected.")            
             
 
     # --- SIDEBAR: ADD EXPENSE ---
