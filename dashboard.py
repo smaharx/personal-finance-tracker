@@ -234,39 +234,40 @@ try:
                 st.success("✅ Your spending looks normal. No anomalies detected.")            
             
 
-    # --- SIDEBAR: ADD EXPENSE ---
-    st.sidebar.header("⚡ Add New Expense")
+        # --- SIDEBAR: ADD EXPENSE ---
+        st.sidebar.header("⚡ Add New Expense")
     with st.sidebar.form("expense_form", clear_on_submit=True):
         desc = st.text_input("Description")
-        amount = st.number_input("Amount", min_value=0.0)
+        amount = st.number_input(
+            "Amount", 
+            value=None,          
+            placeholder="0.00",  
+            min_value=0.01,      
+            step=1.0
+        )
         submit_button = st.form_submit_button("AI Categorize & Save")
 
-        if submit_button and desc and amount > 0:
-            start_time = time.time()
-            txn_date = datetime.datetime.now().strftime("%Y-%m-%d")
-            try:
-                # ALL LINES BELOW INDENTED CORRECTLY
-                predicted_cat = predict_category(desc)
-                conn = sqlite3.connect('data/expenses.db')
-                cursor = conn.cursor()
-                cursor.execute("INSERT INTO transactions (Date, Description, Amount, Category) VALUES (?, ?, ?, ?)", (txn_date, desc, amount, predicted_cat))
-                conn.commit()
-                conn.close()
-                st.cache_data.clear()
-                st.sidebar.success(rf"✅ Saved as {predicted_cat} in {time.time()-start_time:.2f}s!")
-                st.rerun()
-            except Exception as e:
-                st.sidebar.error(f"Error: {e}")       
-
+        if submit_button:
+            # 1. Validation: Catch empty fields before they crash the app
+            if not desc.strip():
+                st.sidebar.error("Please enter a description.")
+            elif amount is None:
+                st.sidebar.error("Please enter a valid amount.")
+            else:
+                # 2. Execution: Only runs if validation passes
+                start_time = time.time()
+                txn_date = datetime.datetime.now().strftime("%Y-%m-%d")
+                try:
+                    predicted_cat = predict_category(desc)
+                    conn = sqlite3.connect('data/expenses.db')
+                    cursor = conn.cursor()
+                    cursor.execute("INSERT INTO transactions (Date, Description, Amount, Category) VALUES (?, ?, ?, ?)", (txn_date, desc, amount, predicted_cat))
+                    conn.commit()
+                    conn.close()
+                    st.cache_data.clear()
+                    st.sidebar.success(f"✅ Saved as {predicted_cat} in {time.time()-start_time:.2f}s!")
+                    st.rerun()
+                except Exception as e:
+                    st.sidebar.error(f"Error: {e}")
 except Exception as e:
     st.error(f"App Load Error: {e}")
-    
-
-
-      
-
-    
-    
-
-
-
