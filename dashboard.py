@@ -128,15 +128,28 @@ try:
     tab1, tab2, tab3, tab4 = st.tabs(["Dashboard", "Forecast", "Teach AI", "🚨 Alerts"])
     
     # --- TAB 1: MAIN VIEW ---
+    # --- TAB 1: MAIN VIEW ---
     with tab1:
         col1, col2 = st.columns([3, 1])
+        
+        # 1. Filter the master dataframe for the UI (Current Month Only)
+        current_month = datetime.datetime.now().month
+        current_year = datetime.datetime.now().year
+        ui_df = df[(df['Date'].dt.month == current_month) & (df['Date'].dt.year == current_year)]
+        
         with col1:
-            st.subheader("Recent Transactions")
-            st.dataframe(df.sort_values(by="Date", ascending=False), use_container_width=True)
+            # 2. Update headers to reflect the filtered view
+            current_month_name = datetime.datetime.now().strftime("%B %Y")
+            st.subheader(f"Recent Transactions ({current_month_name})")
+            
+            # Limit the table to 100 rows to prevent browser memory crashes
+            st.dataframe(ui_df.sort_values(by="Date", ascending=False).head(100), use_container_width=True)
+            
         with col2:
-            st.subheader("Quick Stats")
-            st.metric(label="Total Transactions", value=len(df))
-            st.metric(label="Total Spent", value=rf"${df['Amount'].sum():,.2f}")
+            st.subheader("Monthly Stats")
+            # 3. Calculate metrics ONLY on the current month's data
+            st.metric(label="Transactions This Month", value=len(ui_df))
+            st.metric(label="Spent This Month", value=f"${ui_df['Amount'].sum():,.2f}")
 
     # --- TAB 2: FORECASTING ---
     with tab2:
