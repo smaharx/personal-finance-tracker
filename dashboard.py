@@ -143,7 +143,9 @@ try:
             st.subheader(f"Recent Transactions ({current_month_name})")
             
             # Limit the table to 100 rows to prevent browser memory crashes
-            st.dataframe(ui_df.sort_values(by="Date", ascending=False).head(100), use_container_width=True)
+            # Select only the user-friendly columns and hide the index
+            display_df = ui_df[['Date', 'Description', 'Category', 'Amount']]
+            st.dataframe(display_df.sort_values(by="Date", ascending=False).head(100), hide_index=True, use_container_width=True)
             
         with col2:
             st.subheader("Monthly Stats")
