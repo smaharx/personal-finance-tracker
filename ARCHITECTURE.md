@@ -34,3 +34,19 @@ personal-finance-tracker/
     ├── seed_db.py       # Generates synthetic load-testing data
     ├── migrate_db.py    # Database schema migrations
     └── import_csv.py    # Legacy data ingestion
+
+    ## 4. Data Flow & Execution
+### A. Data Ingestion
+* Users input data via the Streamlit frontend.
+* The system uses NLP logic to automatically categorize the transaction before saving it to the SQLite database.
+
+### B. Machine Learning Pipeline
+* **Anomaly Detection:** The Isolation Forest model loads the complete historical dataset and flags statistical outliers (contamination set to 0.05).
+* **Forecasting:** The Prophet model aggregates historical daily spending to project a 30-day forward-looking trendline.
+
+### C. UI Rendering Optimization
+* To prevent memory bloat, the frontend UI strictly limits rendering to the current calendar month. The heavy ML models operate on the full historical dataset in the background.
+
+## 5. Future Roadmap (V2.0 SaaS)
+* **Backend API:** Implement FastAPI to act as a secure middleman, decoupling the Streamlit frontend from direct database access.
+* **Database Migration:** Transition from local SQLite to cloud-hosted PostgreSQL (e.g., Supabase) for connection pooling and scalability.
