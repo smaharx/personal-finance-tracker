@@ -1,140 +1,149 @@
-# AI Personal Finance Tracker
+# AI Personal Finance Tracker  
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![Machine Learning](https://img.shields.io/badge/AI-Prophet%20%7C%20Isolation%20Forest-orange)
-![Database](https://img.shields.io/badge/Database-SQLite-lightgrey)
-![Status](https://img.shields.io/badge/Project-Active-green)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)  
+![Machine Learning](https://img.shields.io/badge/AI-Prophet%20%7C%20Isolation%20Forest-orange)  
+![Database](https://img.shields.io/badge/Database-SQLite-lightgrey)  
+![Status](https://img.shields.io/badge/Project-Active-green)  
 
-A local, AI-driven web application designed to help users track expenses, automatically categorize transactions, detect anomalous spending behavior, and forecast future financial trends. The system provides a clean dashboard for real-time insights while leveraging advanced Machine Learning models in the background.
+A local, AI-driven web application designed to help users track expenses, automatically categorize transactions, detect anomalous spending behavior, and forecast future financial trends. The system provides a clean dashboard for real-time insights while leveraging advanced Machine Learning models in the background.  
 
----
+---  
 
-## Overview
+## Overview  
 
-Traditional finance trackers rely on manual entry and basic pie charts. This project elevates personal finance by integrating Machine Learning directly into the data pipeline. 
+Traditional finance trackers rely on manual entry and basic pie charts. This project elevates personal finance by integrating Machine Learning directly into the data pipeline.  
 
-The system allows users to input transactions which are automatically categorized via NLP. It then processes historical data through an Isolation Forest algorithm to flag highly unusual purchases, and utilizes Facebook's Prophet model to project a 30-day spending forecast. The application is built as a highly responsive monolithic architecture using Streamlit and SQLite.
+The system allows users to input transactions which are automatically categorized via NLP. It then processes historical data through an Isolation Forest algorithm to flag highly unusual purchases, and utilizes Facebook's Prophet model to project a 30-day spending forecast. The application is built as a highly responsive monolithic architecture using Streamlit and SQLite.  
 
----
+---  
 
-## Key Features
+## Key Features  
 
-* Interactive financial dashboard with real-time monthly metric filtering
-* NLP-based automatic transaction categorization
-* Unsupervised Anomaly Detection (Isolation Forest) for unusual spending
-* Time-series forecasting (Prophet) for 30-day budget projection
-* "Human-in-the-Loop" UI for correcting AI categorization guesses
-* High-volume synthetic data seeder for ML model stress-testing
-* Secure, local SQLite database management
+- Interactive financial dashboard with real-time monthly metric filtering  
+- NLP-based automatic transaction categorization  
+- Unsupervised anomaly detection (Isolation Forest) for unusual spending  
+- Time-series forecasting (Prophet) for 30-day budget projection  
+- "Human-in-the-loop" UI for correcting AI categorization guesses  
+- High-volume synthetic data seeder for ML model stress-testing  
+- Secure, local SQLite database management  
 
----
+---  
 
-## System Architecture
+## System Architecture  
 
-The application is modularized to separate the UI from heavy data processing:
+The application is modularized to separate the UI from heavy data processing:  
 
-1. **Presentation Layer** — Streamlit UI (Filtered to current calendar month to prevent memory bloat)
-2. **Business & ML Logic Layer** — Pandas data manipulation, Scikit-learn, and Prophet modeling
-3. **Data Access Layer** — Python SQLite3 integration
-4. **Database Layer** — Local SQLite relational database
+1. **Presentation Layer** — Streamlit UI (filtered to current calendar month to prevent memory bloat)  
+2. **Business & ML Logic Layer** — Pandas data manipulation, Scikit-learn, and Prophet modeling  
+3. **Data Access Layer** — Python SQLite3 integration  
+4. **Database Layer** — Local SQLite relational database  
 
-*(For detailed data flow and scaling plans, see [ARCHITECTURE.md](ARCHITECTURE.md))*
+*(For detailed data flow and scaling plans, see [ARCHITECTURE.md](ARCHITECTURE.md))*  
 
----
+---  
 
-## Technology Stack
+## Technology Stack  
 
-    | Component             | Technology              |
-    | --------------------- | ----------------------- |
-    | Programming Language  | Python                  |
-    | Web Framework         | Streamlit               |
-    | Data Manipulation     | Pandas, NumPy           |
-    | Machine Learning      | Scikit-learn, Prophet   |
-    | Visualization         | Plotly Express & Graph  |
-    | Database              | SQLite3                 |
+| Component            | Technology              |
+|---------------------|-------------------------|
+| Programming Language | Python                  |
+| Web Framework        | Streamlit               |
+| Data Manipulation    | Pandas, NumPy           |
+| Machine Learning     | Scikit-learn, Prophet   |
+| Visualization        | Plotly Express & Graph  |
+| Database             | SQLite3                 |
 
----
+---  
 
-## Project Structure
+## Project Structure  
 
-    ```text
-    personal-finance-tracker/
-    │
-    ├── dashboard.py         # Main entry point for the Streamlit UI
-    ├── requirements.txt     # Python dependencies
-    ├── README.md            # Project documentation and setup
-    ├── ARCHITECTURE.md      # System design and data flow details
-    │
-    ├── api/                 # (V2.0) Planned FastAPI routing
-    ├── core/                # Core business logic and NLP configurations
-    ├── ml/                  # Machine learning models (Anomaly & Forecast)
-    ├── analysis/            # Data processing and UI metric calculations
-    │
-    ├── data/                # Local database storage (Git-ignored)
-    │   └── expenses.db      # SQLite database file
-    │
-    └── scripts/             # Utility scripts
-        └── seed_db.py       # Generates 20,000 synthetic records for ML training
+personal-finance-tracker/  
+│  
+├── dashboard.py         # Main entry point for the Streamlit UI  
+├── requirements.txt     # Python dependencies  
+├── README.md            # Project documentation and setup  
+├── ARCHITECTURE.md      # System design and data flow details  
+│  
+├── api/                 # (V2.0) Planned FastAPI routing  
+├── core/                # Core business logic and NLP configurations  
+├── ml/                  # Machine learning models (Anomaly & Forecast)  
+├── analysis/            # Data processing and UI metric calculations  
+│  
+├── data/                # Local database storage (Git-ignored)  
+│   └── expenses.db      # SQLite database file  
+│  
+└── scripts/             # Utility scripts  
+    └── seed_db.py       # Generates 20,000 synthetic records for ML training  
 
+---  
 
-## Installation
+## Installation  
 
-    Clone the repository:
+Clone the repository:  
 
-    git clone https://github.com/smaharx/personal-finance-tracker.git
-    cd personal-finance-tracker
+git clone https://github.com/smaharx/personal-finance-tracker.git  
+cd personal-finance-tracker  
 
-    Set up a virtual environment and install dependencies:
+Set up a virtual environment and install dependencies:  
 
-    python -m venv .venv
-    # Activate on Windows:
-    .venv\Scripts\activate
-    # Activate on Mac/Linux:
-    source .venv/bin/activate
+python -m venv .venv  
 
-    pip install -r requirements.txt
+# Activate on Windows  
+.venv\Scripts\activate  
 
-## Configuration
+# Activate on Mac/Linux  
+source .venv/bin/activate  
 
-    The application uses environment variables for secure configuration.
+pip install -r requirements.txt  
 
-        Locate the .env.example file in the root directory.
+---  
 
-        Duplicate it and rename the copy to .env.
+## Configuration  
 
-        Fill in any required local configuration variables.
+The application uses environment variables for secure configuration.  
 
-    (Note: The database requires no manual setup; expenses.db will auto-generate on the first run).
+- Locate the .env.example file in the root directory  
+- Duplicate it and rename the copy to .env  
+- Fill in any required local configuration variables  
 
-## Running the Application
+(Note: The database requires no manual setup; expenses.db will auto-generate on the first run)  
 
-    To launch the dashboard locally, run:
+---  
 
-    streamlit run dashboard.py
+## Running the Application  
 
-    Alternatively, on Windows, you can use the batch script:
+To launch the dashboard locally, run:  
 
-    ./run_app.bat
+streamlit run dashboard.py  
 
-## Generating Mock Data (For ML Testing)
+Alternatively, on Windows, you can use the batch script:  
 
-    Machine Learning models require significant historical data to function accurately. To test the Prophet forecasting and Isolation Forest models, run the database seeder script to inject 20,000 realistic transactions:
+./run_app.bat  
 
-    python scripts/seed_db.py
+---  
 
-## Future Improvements (V2.0 SaaS Roadmap)
+## Generating Mock Data (For ML Testing)  
 
-        Microservices Architecture: Decoupling the frontend by introducing a FastAPI backend.
+Machine Learning models require significant historical data to function accurately. To test the Prophet forecasting and Isolation Forest models, run the database seeder script to inject 20,000 realistic transactions:  
 
-        Cloud Database Integration: Migrating from local SQLite to PostgreSQL (Supabase).
+python scripts/seed_db.py  
 
-        Multi-Tenant Authentication: Implementing JWT-based user login sessions.
+---  
 
+## Future Improvements (V2.0 SaaS Roadmap)  
 
-## Authors
-        Shahzaib Mahar (@smaharx)
+- Microservices architecture: Decoupling the frontend by introducing a FastAPI backend  
+- Cloud database integration: Migrating from local SQLite to PostgreSQL (Supabase)  
+- Multi-tenant authentication: Implementing JWT-based user login sessions  
 
-## License
+---  
 
-    This project is licensed under the MIT License. See the LICENSE file for details.
-        
+## Authors  
+
+Shahzaib Mahar (@smaharx)  
+
+---  
+
+## License  
+
+This project is licensed under the MIT License. See the LICENSE file for details.
