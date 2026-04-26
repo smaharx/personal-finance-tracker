@@ -1,9 +1,6 @@
 # AI Personal Finance Tracker  
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)  
-![Machine Learning](https://img.shields.io/badge/AI-Prophet%20%7C%20Isolation%20Forest-orange)  
-![Database](https://img.shields.io/badge/Database-SQLite-lightgrey)  
-![Status](https://img.shields.io/badge/Project-Active-green)  
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue) ![AI](https://img.shields.io/badge/AI-Prophet%20%7C%20Isolation%20Forest-orange) ![Database](https://img.shields.io/badge/Database-SQLite-lightgrey) ![Status](https://img.shields.io/badge/Project-Active-yellowgreen)
 
 A local, AI-driven web application designed to help users track expenses, automatically categorize transactions, detect anomalous spending behavior, and forecast future financial trends. The system provides a clean dashboard for real-time insights while leveraging advanced Machine Learning models in the background.  
 
