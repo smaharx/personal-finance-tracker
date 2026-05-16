@@ -2,6 +2,7 @@ import os
 import joblib
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+import sqlite3
 
 # Initialize the API application
 app = FastAPI(title="Finance Tracker API", version="2.0")
@@ -41,3 +42,36 @@ def predict_category(item: Transaction):
         "description": item.description, 
         "predicted_category": prediction
     }
+
+
+
+
+# Helper function to connect to the database securely
+def get_db_connection():
+    # Looking for the database in the root folder
+    conn = sqlite3.connect("expenses.db")
+    # This crucial line tells SQLite to return rows as dictionaries instead of plain tuples
+    conn.row_factory = sqlite3.Row 
+    return conn
+
+# 3. Fetch Transactions Endpoint
+@app.get("/transactions")
+def get_transactions(limit: int = 50):
+    """
+    Fetches the most recent transactions from the database.
+    Defaults to 50 records unless a different limit is specified.
+    """
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        # SQL Query to get the latest transactions
+        cursor.execute("SELECT * FROM transactions ORDER BY date DESC LIMIT ?", (limit,))
+        rows = cursor.fetchall()
+        conn.close()
+        
+        # Convert the SQLite rows into standard Python dictionaries for JSON output
+        return {"count": len(rows), "transactions": [dict(row) for row in rows]}
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")   
