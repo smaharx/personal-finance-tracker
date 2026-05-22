@@ -1,14 +1,18 @@
 import os
 import joblib
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
-import sqlite3
+from sqlalchemy.orm import Session
+
+# Import our custom database configurations and models
+from api.database import get_db
+from api.models import TransactionModel
 
 # Initialize the API application
 app = FastAPI(title="Finance Tracker API", version="2.0")
 
-# Define the data structure we expect from the frontend
-class Transaction(BaseModel):
+# Define the data structure we expect from the frontend for AI classification
+class TransactionCreate(BaseModel):
     description: str
 
 # Safely load the ML model
@@ -20,7 +24,10 @@ except FileNotFoundError:
     model = None
     MODEL_LOADED = False
 
-# 1. Health Check Endpoint
+
+# ==========================================
+# ENDPOINT 1: SERVICE HEALTH CHECK
+# ==========================================
 @app.get("/")
 def health_check():
     return {
@@ -30,13 +37,15 @@ def health_check():
         "ai_model_loaded": MODEL_LOADED
     }
 
-# 2. AI Prediction Endpoint (Uncommented and fixed)
+
+# ==========================================
+# ENDPOINT 2: AI CATEGORY INFERENCE
+# ==========================================
 @app.post("/predict")
-def predict_category(item: Transaction):
+def predict_category(item: TransactionCreate):
     if not MODEL_LOADED:
         raise HTTPException(status_code=503, detail="AI Model is not loaded. Train the model first.")
     
-    # Run the prediction
     prediction = model.predict([item.description])[0]
     return {
         "description": item.description, 
@@ -44,34 +53,33 @@ def predict_category(item: Transaction):
     }
 
 
-
-
-# Helper function to connect to the database securely
-def get_db_connection():
-    # Looking for the database in the root folder
-    conn = sqlite3.connect("expenses.db")
-    # This crucial line tells SQLite to return rows as dictionaries instead of plain tuples
-    conn.row_factory = sqlite3.Row 
-    return conn
-
-# 3. Fetch Transactions Endpoint
+# ==========================================
+# ENDPOINT 3: REFRACTORED ORM DATA FETCHING
+# ==========================================
 @app.get("/transactions")
-def get_transactions(limit: int = 50):
+def get_transactions(limit: int = 50, db: Session = Depends(get_db)):
     """
-    Fetches the most recent transactions from the database.
-    Defaults to 50 records unless a different limit is specified.
+    Fetches the most recent transactions using SQLAlchemy ORM expressions.
+    Injects the database session using FastAPI's dependency injection system.
     """
     try:
-        conn = get_db_connection()
-        cursor = conn.cursor()
+        # We query the database using the Python Class instead of hardcoded SQL strings
+        transactions = db.query(TransactionModel).order_by(TransactionModel.date.desc()).limit(limit).all()
         
-        # SQL Query to get the latest transactions
-        cursor.execute("SELECT * FROM transactions ORDER BY date DESC LIMIT ?", (limit,))
-        rows = cursor.fetchall()
-        conn.close()
+        # Serialize the SQLAlchemy objects into a clean JSON structure
+        serialized_transactions = [
+            {
+                "id": t.id,
+                "date": t.date,
+                "description": t.description,
+                "category": t.category,
+                "amount": t.amount,
+                "is_anomaly": t.is_anomaly
+            }
+            for t in transactions
+        ]
         
-        # Convert the SQLite rows into standard Python dictionaries for JSON output
-        return {"count": len(rows), "transactions": [dict(row) for row in rows]}
-    
+        return {"count": len(serialized_transactions), "transactions": serialized_transactions}
+        
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")   
+        raise HTTPException(status_code=500, detail=f"Database abstraction layer error: {str(e)}")
