@@ -29,8 +29,8 @@ def fetch_transactions(limit: int = 50):
     try:
         response = api_get(f"/transactions?limit={limit}")
         if response.ok:
-            return response.json().get("transactions", [])
-        return [], f"Backend returned {response.status_code}"
+            return response.json().get("transactions", []), None
+        return [], response.text
     except requests.RequestException as e:
         return [], str(e)
 
@@ -39,7 +39,7 @@ def fetch_summary():
         response = api_get("/analytics/summary")
         if response.ok:
             return response.json(), None
-        return None, f"Backend returned {response.status_code}"
+        return None, response.text
     except requests.RequestException as e:
         return None, str(e)
 
