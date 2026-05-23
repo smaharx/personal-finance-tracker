@@ -162,7 +162,9 @@ def create_transaction(item: TransactionCreateInput, db: Session = Depends(get_d
                 "date": new_record.date,
                 "description": new_record.description,
                 "category": new_record.category,
-                "amount": new_record.amount
+                "amount": new_record.amount,
+                "is_anomaly": new_record.is_anomaly
+                
             }
         }
     except Exception as e:
