@@ -1,25 +1,36 @@
 import os
+import statistics
 import joblib
+from typing import Optional
+
 from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
-from sqlalchemy import func 
-import statistics
+from sqlalchemy import func
 
-
-
-# Import our custom database configurations and models
 from api.database import get_db
 from api.models import TransactionModel
 
-# Initialize the API application
 app = FastAPI(title="Finance Tracker API", version="2.0")
 
-# Define the data structure we expect from the frontend for AI classification
+
 class TransactionCreate(BaseModel):
     description: str
 
-# Safely load the ML model
+
+class TransactionCreateInput(BaseModel):
+    date: str
+    description: str
+    amount: float
+
+
+class TransactionUpdateInput(BaseModel):
+    date: Optional[str] = None
+    description: Optional[str] = None
+    amount: Optional[float] = None
+    category: Optional[str] = None
+
+
 MODEL_PATH = os.path.join("ml", "saved_brain.pkl")
 try:
     model = joblib.load(MODEL_PATH)
@@ -29,22 +40,44 @@ except FileNotFoundError:
     MODEL_LOADED = False
 
 
-# ==========================================
-# ENDPOINT 1: SERVICE HEALTH CHECK
-# ==========================================
+def predict_transaction_category(description: str) -> str:
+    if MODEL_LOADED:
+        return model.predict([description])[0]
+    return "Uncategorized (Model Offline)"
+
+
+def check_for_anomaly(db: Session, category: str, new_amount: float, exclude_id: Optional[int] = None):
+    history_query = db.query(TransactionModel.amount).filter(TransactionModel.category == category)
+
+    if exclude_id is not None:
+        history_query = history_query.filter(TransactionModel.id != exclude_id)
+
+    history = history_query.order_by(TransactionModel.id.desc()).limit(20).all()
+
+    if len(history) < 5:
+        return 0
+
+    amounts = [h[0] for h in history]
+    mean = statistics.mean(amounts)
+    std_dev = statistics.stdev(amounts)
+
+    if std_dev == 0:
+        return 0
+
+    z_score = abs(new_amount - mean) / std_dev
+    return 1 if z_score > 3 else 0
+
+
 @app.get("/")
 def health_check():
     return {
         "status": "online",
         "message": "FastAPI backend is running successfully.",
         "version": "2.0",
-        "ai_model_loaded": MODEL_LOADED
+        "ai_model_loaded": MODEL_LOADED,
     }
 
 
-# ==========================================
-# ENDPOINT 2: AI CATEGORY INFERENCE
-# ==========================================
 @app.post("/predict")
 def predict_category(item: TransactionCreate):
     if not MODEL_LOADED:
@@ -52,26 +85,21 @@ def predict_category(item: TransactionCreate):
 
     prediction = model.predict([item.description])[0]
     return {
-        "description": item.description, 
-        "predicted_category": prediction
+        "description": item.description,
+        "predicted_category": prediction,
     }
 
 
-
-# ==========================================
-# ENDPOINT 3: REFRACTORED ORM DATA FETCHING
-# ==========================================
 @app.get("/transactions")
 def get_transactions(limit: int = 50, db: Session = Depends(get_db)):
-    """
-    Fetches the most recent transactions using SQLAlchemy ORM expressions.
-    Injects the database session using FastAPI's dependency injection system.
-    """
     try:
-        # We query the database using the Python Class instead of hardcoded SQL strings
-        transactions = db.query(TransactionModel).order_by(TransactionModel.date.desc()).limit(limit).all()
+        transactions = (
+            db.query(TransactionModel)
+            .order_by(TransactionModel.date.desc())
+            .limit(limit)
+            .all()
+        )
 
-        # Serialize the SQLAlchemy objects into a clean JSON structure
         serialized_transactions = [
             {
                 "id": t.id,
@@ -79,7 +107,7 @@ def get_transactions(limit: int = 50, db: Session = Depends(get_db)):
                 "description": t.description,
                 "category": t.category,
                 "amount": t.amount,
-                "is_anomaly": t.is_anomaly
+                "is_anomaly": t.is_anomaly,
             }
             for t in transactions
         ]
@@ -90,70 +118,23 @@ def get_transactions(limit: int = 50, db: Session = Depends(get_db)):
         raise HTTPException(status_code=500, detail=f"Database abstraction layer error: {str(e)}")
 
 
-
-# ==========================================
-# ENDPOINT 4: CREATE AND CACHE TRANSACTION
-# ==========================================
-# We create a new Pydantic schema specifically for incoming transaction entries
-class TransactionCreateInput(BaseModel):
-    date: str
-    description: str
-    amount: float
-
-def check_for_anomaly(db: Session, category: str, new_amount: float):
-    """
-    Compares the new amount against historical data for the same category.
-    Returns 1 if it's an anomaly, 0 otherwise.
-    """
-    # 1. Fetch the last 20 transaction amounts for this category
-    history = db.query(TransactionModel.amount).filter(
-        TransactionModel.category == category
-    ).order_by(TransactionModel.id.desc()).limit(20).all()
-
-    # We need at least 5 transactions to make a meaningful statistical judgment
-    if len(history) < 5:
-        return 0
-
-    # Convert list of tuples to list of floats
-    amounts = [h[0] for h in history]
-
-    mean = statistics.mean(amounts)
-    std_dev = statistics.stdev(amounts)
-
-    if std_dev == 0: return 0 # Avoid division by zero if all previous spends were identical
-
-    z_score = abs(new_amount - mean) / std_dev
-
-    return 1 if z_score > 3 else 0
-
 @app.post("/transactions")
 def create_transaction(item: TransactionCreateInput, db: Session = Depends(get_db)):
-    """
-    Accepts a new transaction, uses the internal AI model to predict its category,
-    and commits the enriched record directly into the cloud PostgreSQL database.
-    """
+    predicted_cat = predict_transaction_category(item.description)
+    anomaly_status = check_for_anomaly(db, predicted_cat, item.amount)
 
-    # 1. Fallback if the AI model failed to load
-    if MODEL_LOADED:
-        predicted_cat = model.predict([item.description])[0]
-    else:
-        predicted_cat = "Uncategorized (Model Offline)"
-
-    anomaly_status = check_for_anomaly(db, predicted_cat, item.amount)    
     try:
-        # 2. Map the input and AI prediction into our SQLAlchemy relational model
         new_record = TransactionModel(
             date=item.date,
             description=item.description,
             amount=item.amount,
             category=predicted_cat,
-            is_anomaly=anomaly_status # Default to normal; anomaly engine comes in Streak 3
+            is_anomaly=anomaly_status,
         )
 
-        # 3. Use the ORM session to add and commit the record to the cloud network
         db.add(new_record)
         db.commit()
-        db.refresh(new_record) # Pull back the auto-generated database ID
+        db.refresh(new_record)
 
         return {
             "message": "Transaction successfully committed to cloud database.",
@@ -163,45 +144,116 @@ def create_transaction(item: TransactionCreateInput, db: Session = Depends(get_d
                 "description": new_record.description,
                 "category": new_record.category,
                 "amount": new_record.amount,
-                "is_anomaly": new_record.is_anomaly
+                "is_anomaly": new_record.is_anomaly,
+            },
+        }
 
-            }
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"Cloud write failure: {str(e)}")
+
+
+@app.put("/transactions/{transaction_id}")
+def update_transaction(
+    transaction_id: int,
+    item: TransactionUpdateInput,
+    db: Session = Depends(get_db),
+):
+    record = db.query(TransactionModel).filter(TransactionModel.id == transaction_id).first()
+
+    if not record:
+        raise HTTPException(status_code=404, detail="Transaction not found")
+
+    try:
+        if item.date is not None:
+            record.date = item.date
+
+        if item.description is not None:
+            clean_description = item.description.strip()
+            if not clean_description:
+                raise HTTPException(status_code=400, detail="Description cannot be empty.")
+            record.description = clean_description
+
+        if item.amount is not None:
+            if item.amount <= 0:
+                raise HTTPException(status_code=400, detail="Amount must be greater than zero.")
+            record.amount = item.amount
+
+        if item.category is not None:
+            clean_category = item.category.strip()
+            if not clean_category:
+                raise HTTPException(status_code=400, detail="Category cannot be empty.")
+            record.category = clean_category
+        elif item.description is not None:
+            record.category = predict_transaction_category(record.description)
+
+        record.is_anomaly = check_for_anomaly(
+            db,
+            record.category,
+            record.amount,
+            exclude_id=record.id,
+        )
+
+        db.commit()
+        db.refresh(record)
+
+        return {
+            "message": "Transaction updated successfully.",
+            "data": {
+                "id": record.id,
+                "date": record.date,
+                "description": record.description,
+                "category": record.category,
+                "amount": record.amount,
+                "is_anomaly": record.is_anomaly,
+            },
+        }
+
+    except HTTPException:
+        db.rollback()
+        raise
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"Update failed: {str(e)}")
+
+
+@app.delete("/transactions/{transaction_id}")
+def delete_transaction(transaction_id: int, db: Session = Depends(get_db)):
+    record = db.query(TransactionModel).filter(TransactionModel.id == transaction_id).first()
+
+    if not record:
+        raise HTTPException(status_code=404, detail="Transaction not found")
+
+    try:
+        db.delete(record)
+        db.commit()
+        return {
+            "message": "Transaction deleted successfully.",
+            "deleted_id": transaction_id,
         }
     except Exception as e:
-        db.rollback() # Rollback the database state if the network connection drops mid-flight
-        raise HTTPException(status_code=500, detail=f"Cloud write failure: {str(e)}")    
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"Delete failed: {str(e)}")
 
-# ==========================================
-# ENDPOINT 5: FINANCIAL ANALYTICS SUMMARY
-# ==========================================
+
 @app.get("/analytics/summary")
 def get_analytics_summary(db: Session = Depends(get_db)):
-    """
-    Performs server-side aggregation to provide financial insights.
-    Calculates total spending and breaks it down by category.
-    """
     try:
-        # 1. Calculate Total Spending across all transactions
         total_spent = db.query(func.sum(TransactionModel.amount)).scalar() or 0.0
-
-        # 2. Calculate count of transactions
         total_count = db.query(func.count(TransactionModel.id)).scalar() or 0
 
-        # 3. Categorical Breakdown (The heavy lifting)
-        # SQL equivalent: SELECT category, SUM(amount) FROM transactions GROUP BY category
         category_data = db.query(
-            TransactionModel.category, 
+            TransactionModel.category,
             func.sum(TransactionModel.amount).label("total_amount"),
-            func.count(TransactionModel.id).label("count")
+            func.count(TransactionModel.id).label("count"),
         ).group_by(TransactionModel.category).all()
 
-        # Format the categorical data into a clean list of dictionaries
         breakdown = [
             {
                 "category": row.category,
                 "total_amount": row.total_amount,
                 "transaction_count": row.count,
-                "percentage": round((row.total_amount / total_spent) * 100, 2) if total_spent > 0 else 0
+                "percentage": round((row.total_amount / total_spent) * 100, 2) if total_spent > 0 else 0,
             }
             for row in category_data
         ]
@@ -211,8 +263,8 @@ def get_analytics_summary(db: Session = Depends(get_db)):
                 "total_spent": round(total_spent, 2),
                 "transaction_count": total_count,
             },
-            "categorical_breakdown": breakdown
+            "categorical_breakdown": breakdown,
         }
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Analytics Engine Error: {str(e)}")    
+        raise HTTPException(status_code=500, detail=f"Analytics Engine Error: {str(e)}")
