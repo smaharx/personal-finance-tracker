@@ -44,20 +44,44 @@ def fetch_health():
 
 
 @st.cache_data(ttl=5)
-def fetch_transactions(limit: int = 100):
+def fetch_transactions(limit: int = 100, search: str = "", category: str = "All", only_anomalies: bool = False, start_date: str | None = None, end_date: str | None = None):
+    params = {
+        "limit": limit,
+        "search": search or None,
+        "category": category if category != "All" else None,
+        "only_anomalies": str(only_anomalies).lower(),
+        "start_date": start_date,
+        "end_date": end_date,
+    }
+
     try:
-        response = api_get(f"/transactions?limit={limit}")
+        response = api_get("/transactions", timeout=15)
         if response.ok:
-            return response.json().get("transactions", []), None
+            data = response.json().get("transactions", [])
+            return data, None
         return [], response.text
     except requests.RequestException as e:
         return [], str(e)
 
 
 @st.cache_data(ttl=5)
-def fetch_summary():
+def fetch_summary(search: str = "", category: str = "All", only_anomalies: bool = False, start_date: str | None = None, end_date: str | None = None):
+    query = []
+    if search:
+        query.append(f"search={requests.utils.quote(search)}")
+    if category and category != "All":
+        query.append(f"category={requests.utils.quote(category)}")
+    if only_anomalies:
+        query.append("only_anomalies=true")
+    if start_date:
+        query.append(f"start_date={start_date}")
+    if end_date:
+        query.append(f"end_date={end_date}")
+
+    suffix = f"?{'&'.join(query)}" if query else ""
+
     try:
-        response = api_get("/analytics/summary")
+        response = api_get(f"/analytics/summary{suffix}", timeout=15)
         if response.ok:
             return response.json(), None
         return None, response.text
@@ -68,7 +92,7 @@ def fetch_summary():
 @st.cache_data(ttl=5)
 def fetch_corrections(limit: int = 25):
     try:
-        response = api_get(f"/corrections?limit={limit}")
+        response = api_get(f"/corrections?limit={limit}", timeout=15)
         if response.ok:
             return response.json().get("corrections", []), None
         return [], response.text
@@ -149,17 +173,18 @@ else:
     st.error(f"❌ Backend Offline: {health_error}")
     st.stop()
 
-summary, summary_error = fetch_summary()
-transactions, tx_error = fetch_transactions(limit=200)
-corrections, corr_error = fetch_corrections(limit=25)
+if "search_text" not in st.session_state:
+    st.session_state.search_text = ""
+if "selected_category" not in st.session_state:
+    st.session_state.selected_category = "All"
+if "only_anomalies" not in st.session_state:
+    st.session_state.only_anomalies = False
+if "date_range" not in st.session_state:
+    st.session_state.date_range = None
 
-df = pd.DataFrame(transactions) if transactions else pd.DataFrame()
-
-search_text = ""
-selected_category = "All"
-only_anomalies = False
-start_date = None
-end_date = None
+summary_placeholder = st.empty()
+transactions_placeholder = st.empty()
+corrections_placeholder = st.empty()
 
 with st.sidebar:
     st.header("➕ Add Transaction")
@@ -188,43 +213,63 @@ with st.sidebar:
     st.divider()
     st.header("🔎 Filter Transactions")
 
-    search_text = st.text_input("Search description", placeholder="Search by merchant or note")
-    only_anomalies = st.checkbox("Show only anomalies", value=False)
+    st.session_state.search_text = st.text_input("Search description", placeholder="Search by merchant or note", value=st.session_state.search_text)
+    st.session_state.only_anomalies = st.checkbox("Show only anomalies", value=st.session_state.only_anomalies)
 
-    if not df.empty and "category" in df.columns:
-        category_list = sorted([c for c in df["category"].dropna().astype(str).unique().tolist() if c.strip()])
+    raw_transactions, _ = fetch_transactions(limit=500)
+    temp_df = pd.DataFrame(raw_transactions) if raw_transactions else pd.DataFrame()
+
+    if not temp_df.empty and "category" in temp_df.columns:
+        category_list = sorted([c for c in temp_df["category"].dropna().astype(str).unique().tolist() if c.strip()])
         category_options = ["All"] + category_list
-        selected_category = st.selectbox("Category", category_options, index=0)
+        st.session_state.selected_category = st.selectbox("Category", category_options, index=category_options.index(st.session_state.selected_category) if st.session_state.selected_category in category_options else 0)
     else:
-        st.selectbox("Category", ["All"], index=0)
+        st.session_state.selected_category = st.selectbox("Category", ["All"], index=0)
 
-    if not df.empty and "date" in df.columns:
-        temp_dates = pd.to_datetime(df["date"], errors="coerce").dropna().dt.date
+    if not temp_df.empty and "date" in temp_df.columns:
+        temp_dates = pd.to_datetime(temp_df["date"], errors="coerce").dropna().dt.date
         if not temp_dates.empty:
             min_date = temp_dates.min()
             max_date = temp_dates.max()
-            date_range = st.date_input("Date range", value=(min_date, max_date), min_value=min_date, max_value=max_date)
+            date_range = st.date_input(
+                "Date range",
+                value=st.session_state.date_range or (min_date, max_date),
+                min_value=min_date,
+                max_value=max_date,
+            )
             if isinstance(date_range, tuple) and len(date_range) == 2:
-                start_date, end_date = date_range
+                st.session_state.date_range = date_range
             else:
-                start_date = end_date = date_range
+                st.session_state.date_range = (date_range, date_range)
 
+    if st.button("Apply Filters"):
+        st.cache_data.clear()
+        st.rerun()
 
-if not df.empty:
-    if "date" in df.columns:
-        df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.date
+search_text = st.session_state.search_text.strip()
+selected_category = st.session_state.selected_category
+only_anomalies = st.session_state.only_anomalies
+start_date = st.session_state.date_range[0].isoformat() if st.session_state.date_range else None
+end_date = st.session_state.date_range[1].isoformat() if st.session_state.date_range else None
 
-    if search_text.strip():
-        df = df[df["description"].astype(str).str.contains(search_text.strip(), case=False, na=False)]
+summary, summary_error = fetch_summary(
+    search=search_text,
+    category=selected_category,
+    only_anomalies=only_anomalies,
+    start_date=start_date,
+    end_date=end_date,
+)
 
-    if selected_category != "All":
-        df = df[df["category"].astype(str) == selected_category]
+transactions, tx_error = fetch_transactions(
+    limit=100,
+    search=search_text,
+    category=selected_category,
+    only_anomalies=only_anomalies,
+    start_date=start_date,
+    end_date=end_date,
+)
 
-    if only_anomalies and "is_anomaly" in df.columns:
-        df = df[df["is_anomaly"] == 1]
-
-    if start_date and end_date and "date" in df.columns:
-        df = df[(df["date"] >= start_date) & (df["date"] <= end_date)]
+corrections, corr_error = fetch_corrections(limit=25)
 
 st.subheader("Live Dashboard")
 
@@ -244,17 +289,14 @@ else:
     col3.metric("Top Category", "—")
     st.warning(f"Could not load summary: {summary_error}")
 
-if not df.empty:
-    st.write(f"Filtered transactions: **{len(df)}**")
-    st.write(f"Filtered total: **${df['amount'].sum():,.2f}**")
-
 tab1, tab2, tab3, tab4 = st.tabs(["Transactions", "Category Breakdown", "Manage Transactions", "Teach AI"])
 
 with tab1:
     st.subheader("Recent Transactions")
     if tx_error:
         st.error(f"Could not load transactions: {tx_error}")
-    elif not df.empty:
+    elif transactions:
+        df = pd.DataFrame(transactions)
         display_cols = ["id", "date", "description", "category", "amount", "is_anomaly"]
         existing_cols = [c for c in display_cols if c in df.columns]
         st.dataframe(df[existing_cols], use_container_width=True, hide_index=True)
@@ -272,12 +314,12 @@ with tab2:
 with tab3:
     st.subheader("Edit or Delete a Transaction")
 
-    if df.empty:
+    if not transactions:
         st.info("No transactions available to edit or delete.")
     else:
         options = {
             f"ID {row['id']} | {row['date']} | {row['description']} | ${row['amount']:.2f} | {row['category']}": row
-            for _, row in df.iterrows()
+            for _, row in pd.DataFrame(transactions).iterrows()
         }
 
         selected_label = st.selectbox("Select a transaction", list(options.keys()))
@@ -338,12 +380,12 @@ with tab3:
 with tab4:
     st.subheader("Teach the AI")
 
-    if df.empty:
+    if not transactions:
         st.info("No transactions available to teach yet.")
     else:
         options = {
             f"ID {row['id']} | {row['date']} | {row['description']} | ${row['amount']:.2f} | {row['category']}": row
-            for _, row in df.iterrows()
+            for _, row in pd.DataFrame(transactions).iterrows()
         }
 
         selected_label = st.selectbox("Select a transaction to correct", list(options.keys()), key="teach_ai_select")
