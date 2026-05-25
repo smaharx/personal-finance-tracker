@@ -36,10 +36,10 @@ def fetch_health():
     except requests.RequestException as e:
         return None, str(e)
 
-
+@st.cache_data(ttl=5)
 def fetch_transactions(limit: int = 100):
     try:
-        response = api_get(f"/transactions?limit={limit}")
+        response = api_get(f"/transactions?limit={limit}", timeout=15)
         if response.ok:
             return response.json().get("transactions", []), None
         return [], response.text
@@ -47,19 +47,20 @@ def fetch_transactions(limit: int = 100):
         return [], str(e)
 
 
+@st.cache_data(ttl=5)
 def fetch_summary():
     try:
-        response = api_get("/analytics/summary")
+        response = api_get("/analytics/summary", timeout=15)
         if response.ok:
             return response.json(), None
         return None, response.text
     except requests.RequestException as e:
         return None, str(e)
 
-
+@st.cache_data(ttl=5)
 def fetch_corrections(limit: int = 25):
     try:
-        response = api_get(f"/corrections?limit={limit}")
+        response = api_get(f"/corrections?limit={limit}", timeout=15)
         if response.ok:
             return response.json().get("corrections", []), None
         return [], response.text
