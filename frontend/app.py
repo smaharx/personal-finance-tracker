@@ -7,7 +7,6 @@ st.set_page_config(page_title="SaaS Finance Tracker V2", layout="wide")
 
 BACKEND_URL = "http://127.0.0.1:8000"
 
-
 st.title("🛡️ Smart Finance Dashboard (V2.0)")
 st.caption("Frontend client for the FastAPI backend")
 
@@ -58,6 +57,16 @@ def fetch_summary():
         return None, str(e)
 
 
+def fetch_corrections(limit: int = 25):
+    try:
+        response = api_get(f"/corrections?limit={limit}")
+        if response.ok:
+            return response.json().get("corrections", []), None
+        return [], response.text
+    except requests.RequestException as e:
+        return [], str(e)
+
+
 def submit_transaction(txn_date: str, description: str, amount: float):
     payload = {
         "date": txn_date,
@@ -93,6 +102,20 @@ def delete_transaction(transaction_id: int):
         return None, str(e)
 
 
+def submit_correction(transaction_id: int, corrected_category: str, notes: str = ""):
+    payload = {
+        "corrected_category": corrected_category.strip(),
+        "notes": notes.strip() if notes else None,
+    }
+    try:
+        response = api_post(f"/transactions/{transaction_id}/correction", payload)
+        if response.ok:
+            return response.json(), None
+        return None, response.text
+    except requests.RequestException as e:
+        return None, str(e)
+
+
 def parse_date(date_value):
     if not date_value:
         return date.today()
@@ -119,6 +142,7 @@ else:
 
 summary, summary_error = fetch_summary()
 transactions, tx_error = fetch_transactions(limit=100)
+corrections, corr_error = fetch_corrections(limit=25)
 
 with st.sidebar:
     st.header("➕ Add Transaction")
@@ -161,7 +185,7 @@ else:
     col3.metric("Top Category", "—")
     st.warning(f"Could not load summary: {summary_error}")
 
-tab1, tab2, tab3 = st.tabs(["Transactions", "Category Breakdown", "Manage Transactions"])
+tab1, tab2, tab3, tab4 = st.tabs(["Transactions", "Category Breakdown", "Manage Transactions", "Teach AI"])
 
 with tab1:
     st.subheader("Recent Transactions")
@@ -204,8 +228,6 @@ with tab3:
         current_description = str(selected.get("description", ""))
         current_amount = float(selected.get("amount", 0.0))
         current_category = str(selected.get("category", ""))
-
-        st.write("### Edit Transaction")
 
         with st.form("edit_transaction_form"):
             edit_date = st.date_input("Date", value=current_date)
@@ -250,3 +272,59 @@ with tab3:
                 else:
                     st.success("Transaction deleted successfully.")
                     st.rerun()
+
+with tab4:
+    st.subheader("Teach the AI")
+
+    if not transactions:
+        st.info("No transactions available to teach yet.")
+    else:
+        df = pd.DataFrame(transactions)
+
+        options = {
+            f"ID {row['id']} | {row['date']} | {row['description']} | ${row['amount']:.2f} | {row['category']}": row
+            for _, row in df.iterrows()
+        }
+
+        selected_label = st.selectbox("Select a transaction to correct", list(options.keys()), key="teach_ai_select")
+        selected = options[selected_label]
+
+        tx_id = int(selected["id"])
+        current_predicted = str(selected.get("category", ""))
+
+        st.info(f"Current AI guess: {current_predicted}")
+
+        with st.form("teach_ai_form"):
+            corrected_category = st.text_input("Correct Category", value=current_predicted)
+            correction_notes = st.text_area("Notes (optional)", placeholder="Why is this correction needed?")
+            save_correction = st.form_submit_button("Save Correction")
+
+        if save_correction:
+            if not corrected_category.strip():
+                st.error("Corrected category cannot be empty.")
+            else:
+                result, error = submit_correction(tx_id, corrected_category, correction_notes)
+                if error:
+                    st.error(f"Could not save correction: {error}")
+                else:
+                    st.success("Correction saved. The model now has a better clue what it is doing.")
+                    st.rerun()
+
+    st.write("### Recent Corrections")
+    if corr_error:
+        st.error(f"Could not load corrections: {corr_error}")
+    elif corrections:
+        corr_df = pd.DataFrame(corrections)
+        display_cols = [
+            "id",
+            "transaction_id",
+            "original_description",
+            "predicted_category",
+            "corrected_category",
+            "notes",
+            "created_at",
+        ]
+        existing_cols = [c for c in display_cols if c in corr_df.columns]
+        st.dataframe(corr_df[existing_cols], use_container_width=True, hide_index=True)
+    else:
+        st.info("No corrections saved yet.")
