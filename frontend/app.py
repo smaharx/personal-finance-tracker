@@ -15,9 +15,8 @@ st.set_page_config(page_title="SaaS Finance Tracker V2", layout="wide")
 st.title("🛡️ Smart Finance Dashboard (V2.0)")
 st.caption("Frontend client for the FastAPI backend")
 
-
-def api_get(path: str, timeout: int = 15):
-    return requests.get(f"{BACKEND_URL}{path}", timeout=timeout)
+def api_get(path: str, params: dict | None = None, timeout: int = 15):
+    return requests.get(f"{BACKEND_URL}{path}", params=params, timeout=timeout)
 
 
 def api_post(path: str, payload: dict, timeout: int = 15):
@@ -44,7 +43,13 @@ def fetch_health():
 
 
 @st.cache_data(ttl=5)
-def fetch_transactions(limit: int = 100, search: str = "", category: str = "All", only_anomalies: bool = False, start_date: str | None = None, end_date: str | None = None):
+def fetch_transactions(
+    limit: int = 100,
+    search: str = "",
+    category: str = "All",
+    only_anomalies: bool = False,
+    start_date: str | None = None,
+    end_date: str | None = None ):
     params = {
         "limit": limit,
         "search": search or None,
@@ -55,33 +60,31 @@ def fetch_transactions(limit: int = 100, search: str = "", category: str = "All"
     }
 
     try:
-        response = api_get("/transactions", timeout=15)
+        response = api_get("/transactions", params=params, timeout=15)
         if response.ok:
-            data = response.json().get("transactions", [])
-            return data, None
+            return response.json().get("transactions", []), None
         return [], response.text
     except requests.RequestException as e:
         return [], str(e)
 
-
 @st.cache_data(ttl=5)
-def fetch_summary(search: str = "", category: str = "All", only_anomalies: bool = False, start_date: str | None = None, end_date: str | None = None):
-    query = []
-    if search:
-        query.append(f"search={requests.utils.quote(search)}")
-    if category and category != "All":
-        query.append(f"category={requests.utils.quote(category)}")
-    if only_anomalies:
-        query.append("only_anomalies=true")
-    if start_date:
-        query.append(f"start_date={start_date}")
-    if end_date:
-        query.append(f"end_date={end_date}")
-
-    suffix = f"?{'&'.join(query)}" if query else ""
+def fetch_summary(
+    search: str = "",
+    category: str = "All",
+    only_anomalies: bool = False,
+    start_date: str | None = None,
+    end_date: str | None = None,
+):
+    params = {
+        "search": search or None,
+        "category": category if category != "All" else None,
+        "only_anomalies": str(only_anomalies).lower(),
+        "start_date": start_date,
+        "end_date": end_date,
+    }
 
     try:
-        response = api_get(f"/analytics/summary{suffix}", timeout=15)
+        response = api_get("/analytics/summary", params=params, timeout=15)
         if response.ok:
             return response.json(), None
         return None, response.text
