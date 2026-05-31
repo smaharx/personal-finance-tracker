@@ -6,7 +6,7 @@ from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-# Force tests to use isolated SQLite instead of your real Postgres database.
+# Use an isolated SQLite database for tests.
 os.environ["DATABASE_URL"] = "sqlite:///./test_finance_tracker.db"
 
 from api.database import Base, get_db  # noqa: E402
