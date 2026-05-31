@@ -12,7 +12,7 @@ st.set_page_config(page_title="SaaS Finance Tracker V2", layout="wide")
 st.title("🛡️ Smart Finance Dashboard (V2.0)")
 st.caption("Frontend client for the FastAPI backend")
 
-def api_get(path: str, params: dict | None = None, timeout: int = 15):
+def api_get(path: str, params: Optional[dict] = None, timeout: int = 15):
     return requests.get(f"{BACKEND_URL}{path}", params=params, timeout=timeout)
 
 
